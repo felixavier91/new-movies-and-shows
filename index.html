@@ -143,7 +143,7 @@
             /* ROW 1: Shuffle | Keywords | Year Range (3 columns) */
             .mobile-row-1 {
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: 1fr 2fr;
                 gap: 6px;
                 margin-bottom: 6px;
                 width: 100%;
@@ -152,29 +152,22 @@
             .mobile-row-1 .filter-row-shuffle {
                 margin-bottom: 0 !important;
                 width: 100%;
-                display: grid;
-                grid-template-columns: 1fr;
-                gap: 0;
+                display: flex;
+                gap: 6px;
                 position: relative;
             }
             
             .mobile-row-1 .filter-row-shuffle #shuffleBtn {
-                width: 100% !important;
+                flex: 1;
                 padding: 10px 6px !important;
-                grid-column: 1;
-                grid-row: 1;
                 font-size: 12px;
             }
             
             .mobile-row-1 .filter-row-shuffle #restoreBtn {
-                width: 100% !important;
+                flex: 1;
                 padding: 10px 6px !important;
-                grid-column: 1;
-                grid-row: 1;
-                position: absolute;
-                top: 0;
-                left: 0;
                 font-size: 12px;
+                position: static !important;
             }
             
             .mobile-row-1 .filter-row-keywords {
