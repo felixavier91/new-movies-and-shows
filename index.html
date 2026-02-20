@@ -1112,8 +1112,40 @@
                 // Streaming info
                 let streamingHTML = '';
                 if (item.providers && item.providers.streaming && item.providers.streaming.length > 0) {
+                    // Map provider names to brand colors
+                    const getProviderColor = (name) => {
+                        const colors = {
+                            'Netflix': '#E50914',
+                            'Amazon Prime Video': '#00A8E1',
+                            'Prime Video': '#00A8E1',
+                            'Disney Plus': '#113CCF',
+                            'Disney+': '#113CCF',
+                            'Hulu': '#1CE783',
+                            'HBO Max': '#B721FF',
+                            'Max': '#0026FF',
+                            'Apple TV Plus': '#000000',
+                            'Apple TV+': '#000000',
+                            'Peacock': '#000000',
+                            'Peacock Premium': '#000000',
+                            'Paramount Plus': '#0064FF',
+                            'Paramount+': '#0064FF',
+                            'Showtime': '#FF0000',
+                            'Starz': '#000000',
+                            'Crunchyroll': '#F47521',
+                            'fuboTV': '#000000',
+                            'YouTube Premium': '#FF0000',
+                            'Tubi': '#FA541C',
+                            'Pluto TV': '#FFC107',
+                            'The Roku Channel': '#6839CF',
+                            'AMC+': '#000000',
+                            'Discovery+': '#0075DB',
+                            'ESPN+': '#E50019'
+                        };
+                        return colors[name] || '#666666'; // Default gray if not found
+                    };
+                    
                     streamingHTML = '<p style="margin: 8px 0;"><strong>Streaming:</strong> ' + item.providers.streaming.map(p => 
-                        `<span style="background: ${p.color}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
+                        `<span style="background: ${getProviderColor(p.name)}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
                     ).join('') + '</p>';
                 } else {
                     streamingHTML = '<p style="margin: 8px 0;"><strong>Streaming:</strong> N/A</p>';
