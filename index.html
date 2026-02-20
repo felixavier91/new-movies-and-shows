@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Movies & TV - Last 365 Days</title>
+    <title>TMDB Movie & TV Show Scatterplot</title>
+    <script src="https://cdn.plot.ly/plotly-2.27.0.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -12,329 +13,1229 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: #0a0a0a;
-            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000000;
             min-height: 100vh;
+            padding: 10px;
         }
 
-        .header {
+        .container {
+            display: flex;
+            gap: 20px;
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        
+        .controls {
+            background: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            position: sticky;
+            top: 10px;
+            max-height: calc(100vh - 20px);
+            overflow-y: auto;
+            min-width: 280px;
+            max-width: 280px;
+        }
+        
+        .filter-toggle {
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            background: #1a1a1a;
-            border-bottom: 2px solid #333;
-            padding: 15px 20px;
-            z-index: 1000;
+            width: 100%;
+            z-index: 2000;
+            background: #000000 !important;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-bottom: 1px solid #555;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+        
+        .filter-toggle.open {
+            /* No color change - keep default */
+        }
+        
+        .filter-toggle:hover {
+            opacity: 0.9;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+            
+            .container {
+                flex-direction: column;
+                padding: 0;
+                padding-top: 0;
+            }
+            
+            /* Hide filter toggle button on mobile */
+            .filter-toggle {
+                display: none !important;
+            }
+            
+            .controls {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                width: 100% !important;
+                min-width: 100% !important;
+                max-width: 100% !important;
+                height: auto;
+                overflow: visible;
+                z-index: 1500;
+                transform: none !important;
+                transition: none;
+                padding: 8px;
+                margin: 0;
+                background: #1a1a1a;
+                border-bottom: 2px solid #333;
+                border-radius: 0;
+                box-shadow: none;
+            }
+            
+            .controls.open {
+                transform: none !important;
+            }
+            
+            /* Push cards container down */
+            .container > div:last-child {
+                margin-top: 130px;
+            }
+            
+            /* Hide all dividers on mobile */
+            .divider {
+                display: none !important;
+            }
+            
+            /* Hide buttons, show dropdowns on mobile */
+            #genreButtons,
+            #typeButtons,
+            #regionButtons {
+                display: none !important;
+            }
+            
+            #genreDropdown,
+            #typeDropdown,
+            #regionDropdown {
+                display: block !important;
+                width: 100%;
+                padding: 10px;
+                background: #2a2a2a;
+                color: white;
+                border: 2px solid #555;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+            
+            /* ROW 1: Shuffle | Keywords | Year Range (3 columns) */
+            .mobile-row-1 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 6px;
+                margin-bottom: 6px;
+                width: 100%;
+            }
+            
+            .mobile-row-1 .filter-row-shuffle {
+                margin-bottom: 0 !important;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 0;
+                position: relative;
+            }
+            
+            .mobile-row-1 .filter-row-shuffle #shuffleBtn {
+                width: 100% !important;
+                padding: 10px 6px !important;
+                grid-column: 1;
+                grid-row: 1;
+                font-size: 12px;
+            }
+            
+            .mobile-row-1 .filter-row-shuffle #restoreBtn {
+                width: 100% !important;
+                padding: 10px 6px !important;
+                grid-column: 1;
+                grid-row: 1;
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 12px;
+            }
+            
+            .mobile-row-1 .filter-row-keywords {
+                margin-bottom: 0 !important;
+                width: 100%;
+            }
+            
+            .mobile-row-1 .filter-row-keywords input {
+                width: 100%;
+                padding: 10px 8px;
+                font-size: 13px;
+            }
+            
+            .mobile-row-1 .filter-row-year {
+                margin-bottom: 0 !important;
+                width: 100%;
+            }
+            
+            .mobile-row-1 .filter-row-year > div {
+                display: flex;
+                gap: 3px;
+                align-items: center;
+            }
+            
+            .mobile-row-1 .filter-row-year input {
+                flex: 1;
+                padding: 10px 4px !important;
+                font-size: 12px !important;
+            }
+            
+            .mobile-row-1 .filter-row-year span {
+                font-size: 10px;
+                flex-shrink: 0;
+            }
+            
+            /* ROW 2: Region Dropdown | Type Dropdown | Genre Dropdown (3 columns) */
+            .mobile-row-2 {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 6px;
+                margin-bottom: 0;
+                width: 100%;
+            }
+            
+            .mobile-row-2 .filter-row-region,
+            .mobile-row-2 .filter-row-type,
+            .mobile-row-2 .filter-row-genre {
+                margin-bottom: 0 !important;
+                width: 100%;
+            }
+            
+            .mobile-row-2 select {
+                font-size: 13px;
+                padding: 10px 6px;
+            }
+            
+            /* Hide item count on mobile */
+            #itemCount {
+                display: none !important;
+            }
+            
+            #cardsContainer {
+                padding: 10px;
+            }
+            
+            /* No overlay needed - cards visible below */
+            .overlay {
+                display: none !important;
+            }
+        }
+        
+        .controls label {
+            color: #ffffff;
+        }
+        
+        .controls .status {
+            color: #cccccc;
         }
 
-        .header-content {
-            max-width: 1400px;
-            margin: 0 auto;
+        .input-group {
             display: flex;
+            flex-direction: column;
             gap: 15px;
-            align-items: center;
-            flex-wrap: wrap;
+            margin-bottom: 5px;
+        }
         }
 
-        .title {
-            font-size: 20px;
-            font-weight: 700;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            white-space: nowrap;
+        input[type="text"], input[type="password"], select {
+            flex: 0 0 auto;
+            min-width: 150px;
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+        
+        input[type="number"] {
+            flex: 0 0 auto;
+            padding: 8px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 13px;
         }
 
-        .controls {
-            display: flex;
-            gap: 10px;
-            flex: 1;
-            min-width: 300px;
+        select {
+            width: 180px;
+        }
+        
+        #typeSelect {
+            width: 120px;
         }
 
         button {
-            padding: 10px 18px;
-            border-radius: 20px;
-            border: 2px solid #555;
-            background: #2a2a2a;
+            padding: 8px 16px;
+            background: #333333;
             color: white;
+            border: 1px solid #555555;
+            border-radius: 5px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
-            transition: all 0.2s;
+            transition: background 0.3s;
+            white-space: nowrap;
+        }
+        
+        button:hover {
+            background: #444444;
+        }
+
+        .slider-container {
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
+            padding: 8px 12px;
+            background: #f9f9f9;
+            border-radius: 5px;
+            flex: 1;
+        }
+
+        .range-slider-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+        }
+
+        .range-slider-label {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 12px;
             white-space: nowrap;
+        }
+
+        .range-slider-container {
+            position: relative;
+            flex: 1;
+            height: 30px;
+        }
+
+        .range-slider-container input[type="range"] {
+            position: absolute;
+            width: 100%;
+            pointer-events: none;
+            -webkit-appearance: none;
+            appearance: none;
+            height: 8px;
+            background: transparent;
+            outline: none;
+        }
+
+        .range-slider-container input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: auto;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .range-slider-container input[type="range"]::-moz-range-thumb {
+            width: 20px;
+            height: 20px;
+            background: #667eea;
+            border-radius: 50%;
+            cursor: pointer;
+            pointer-events: auto;
+            border: 2px solid white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .range-slider-track {
+            position: absolute;
+            width: 100%;
+            height: 8px;
+            background: #ddd;
+            border-radius: 5px;
+            top: 16px;
+        }
+
+        .range-slider-range {
+            position: absolute;
+            height: 8px;
+            background: #667eea;
+            border-radius: 5px;
+            top: 16px;
+        }
+
+        .range-values {
+            font-weight: 600;
+            color: #333;
+            white-space: nowrap;
+            font-size: 13px;
+        }
+
+        button {
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background 0.3s;
         }
 
         button:hover {
-            border-color: #888;
-            transform: translateY(-1px);
+            background: #5568d3;
         }
 
-        #shuffleBtn.active {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-color: #667eea;
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
         }
 
-        #restoreBtn {
-            background: #22c55e;
-            border-color: #22c55e;
-            display: none;
-        }
-
-        #restoreBtn:hover {
-            background: #16a34a;
-        }
-
-        #searchFilter {
-            flex: 1;
-            max-width: 500px;
-            padding: 10px 18px;
-            background: #2a2a2a;
-            border: 2px solid #555;
-            border-radius: 20px;
-            color: white;
-            font-size: 14px;
-            transition: border-color 0.2s;
-        }
-
-        #searchFilter:focus {
-            outline: none;
-            border-color: #667eea;
-        }
-
-        #searchFilter::placeholder {
-            color: #888;
-        }
-
-        .stats {
-            color: #999;
-            font-size: 13px;
-            white-space: nowrap;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 100px 20px 40px;
-        }
-
-        #cardsContainer {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .movie-card {
-            position: relative;
+        .chart-container {
+            background: white;
+            padding: 15px;
             border-radius: 10px;
-            overflow: hidden;
-            cursor: pointer;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s;
+            position: relative;
+            height: 250px;
+            margin-bottom: 10px;
         }
 
-        .movie-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .movie-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.9);
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            color: white;
+        .info-panel {
+            background: white;
             padding: 20px;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            overflow-y: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            min-height: 200px;
+            position: absolute;
+            z-index: 1000;
+            display: none;
+            max-width: 500px;
             pointer-events: none;
         }
 
-        .card-overlay h3 {
-            margin: 0 0 12px 0;
-            color: white;
-            font-size: 16px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        .info-panel h2 {
+            color: #667eea;
+            margin-bottom: 15px;
         }
 
-        .card-overlay p {
-            margin: 4px 0;
-            color: #fff;
-            font-size: 12px;
+        .info-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .info-poster {
+            width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .info-details {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .info-details p {
+            margin: 5px 0;
             line-height: 1.6;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
         }
 
-        @media (max-width: 768px) {
-            .header-content {
-                flex-direction: column;
-                align-items: stretch;
-                gap: 10px;
-            }
+        .info-details strong {
+            color: #667eea;
+        }
 
-            .title {
-                text-align: center;
-                font-size: 18px;
-            }
+        .items-list {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-top: 10px;
+            width: 100%;
+        }
 
-            .controls {
-                flex-direction: column;
-                min-width: 0;
-            }
+        .items-list h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
 
-            #searchFilter {
-                max-width: none;
-            }
+        .legend {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 15px;
+        }
 
-            .stats {
-                text-align: center;
-            }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
 
-            #cardsContainer {
-                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-                gap: 15px;
-            }
-
-            .movie-card img {
-                height: 225px;
-            }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
         }
 
         .loading {
             text-align: center;
-            padding: 100px 20px;
+            color: #667eea;
             font-size: 18px;
+            padding: 20px;
+        }
+
+        .error {
+            background: #fee;
+            color: #c00;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .status {
+            text-align: center;
             color: #666;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        #itemsListContent {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        #itemsListContent table {
+            width: auto;
+            min-width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        #itemsListContent th {
+            background: #667eea;
+            color: white;
+            padding: 8px 12px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 13px;
+            white-space: nowrap;
+        }
+
+        #itemsListContent td {
+            padding: 8px 12px;
+            border-bottom: 1px solid #ddd;
+            font-size: 12px;
+            white-space: nowrap;
+            overflow: visible;
+        }
+
+        #itemsListContent td.description {
+            white-space: nowrap;
+            max-width: none;
+        }
+
+        #itemsListContent tr:hover {
+            background: #f5f5f5;
+        }
+
+        .season-list {
+            margin-top: 8px;
+            padding-left: 15px;
+            font-size: 11px;
+            color: #555;
+        }
+
+        .hover-poster-container {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        .hover-poster-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .hover-poster-container img {
+            max-width: 200px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .hover-poster-container h3 {
+            color: #667eea;
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+
+        .hover-poster-info {
+            line-height: 1.6;
+        }
+
+        .hover-poster-info p {
+            margin: 5px 0;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <div class="header-content">
-            <div class="title">🎬 Fresh Movies & TV Shows</div>
-            <div class="controls">
-                <button id="shuffleBtn">
-                    <span>🔀</span>
-                    <span>Shuffle</span>
-                </button>
-                <button id="restoreBtn">
-                    <span>↺</span>
-                    <span>Restore</span>
-                </button>
-                <input type="text" id="searchFilter" placeholder="Search by title, actor, or director...">
-            </div>
-            <div class="stats" id="stats">Loading...</div>
-        </div>
-    </div>
-
+    <button class="filter-toggle" id="filterToggle">
+        <span>Filters</span>
+        <span id="filterArrow">▼</span>
+    </button>
+    <div class="overlay" id="overlay"></div>
+    
     <div class="container">
-        <div id="cardsContainer">
-            <div class="loading">Loading fresh content...</div>
+        <div class="controls" id="controls">
+            <input type="file" id="jsonFile" accept=".json" style="display: none;">
+            
+            <!-- ROW 1 on mobile: Shuffle+Restore | Keywords | Year Range -->
+            <div class="mobile-row-1">
+                <div class="filter-row-shuffle" style="margin-bottom: 15px; display: flex; gap: 8px;">
+                    <button id="shuffleBtn" style="width: calc(50% - 4px); padding: 6px 10px; background: #2a2a2a; color: white; border: 1px solid #555; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                        <span style="display: inline-block; width: 16px; text-align: center;">🔀</span>
+                        <span>Shuffle</span>
+                    </button>
+                    <button id="restoreBtn" style="width: calc(50% - 4px); padding: 6px 10px; background: #22c55e; color: white; border: 1px solid #22c55e; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.2s; display: none; align-items: center; justify-content: center; gap: 6px;">
+                        <span style="display: inline-block; width: 16px; text-align: center;">↺</span>
+                        <span>Restore</span>
+                    </button>
+                </div>
+                
+                <div class="filter-row-keywords" style="margin-bottom: 15px;">
+                    <input type="text" id="searchFilter" placeholder="Filter by keywords..." style="width: 100%; padding: 8px; border: 2px solid #555; background: #2a2a2a; color: white; border-radius: 5px; font-size: 13px;">
+                    <p id="itemCount" style="margin-top: 8px; margin-bottom: 0; color: #999; font-size: 11px;">No items loaded</p>
+                </div>
+                
+                <div class="filter-row-year" style="margin-bottom: 15px;">
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <input type="number" id="minYear" min="1900" max="2026" value="1990" placeholder="e.g. 1990" style="flex: 1; padding: 8px; border: 2px solid #555; background: #2a2a2a; color: white; border-radius: 5px; font-size: 13px; text-align: center;">
+                        <span style="color: #999;">to</span>
+                        <input type="number" id="maxYear" min="1900" max="2026" value="2026" placeholder="e.g. 2026" style="flex: 1; padding: 8px; border: 2px solid #555; background: #2a2a2a; color: white; border-radius: 5px; font-size: 13px; text-align: center;">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
+            
+            <!-- ROW 2 on mobile: Region Dropdown | Content Type Dropdown | Genre Dropdown -->
+            <div class="mobile-row-2">
+                <!-- Desktop: Content Type buttons -->
+                <div class="filter-row-type" style="margin-bottom: 15px;">
+                    <div id="typeButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <!-- Populated with buttons -->
+                    </div>
+                    <!-- Mobile: Content Type dropdown (hidden by default) -->
+                    <select id="typeDropdown" style="display: none;">
+                        <option value="movie">Movies</option>
+                        <option value="tv">TV Shows</option>
+                    </select>
+                </div>
+                
+                <div class="divider desktop-only-divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
+                
+                <!-- Desktop: Region buttons -->
+                <div class="filter-row-region" style="margin-bottom: 15px;">
+                    <div id="regionButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <!-- Populated with buttons -->
+                    </div>
+                    <!-- Mobile: Region dropdown (hidden by default) -->
+                    <select id="regionDropdown" style="display: none;">
+                        <option value="US">United States</option>
+                        <option value="">International</option>
+                    </select>
+                </div>
+                
+                <div class="divider desktop-only-divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
+                
+                <!-- Desktop: Genre buttons -->
+                <div class="filter-row-genre" style="margin-bottom: 15px;">
+                    <div id="genreButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <!-- Populated dynamically with buttons -->
+                    </div>
+                    <!-- Mobile: Genre dropdown (hidden by default) -->
+                    <select id="genreDropdown" style="display: none;">
+                        <option value="">All Genres</option>
+                        <!-- Populated dynamically -->
+                    </select>
+                </div>
+            </div>
+            
+        </div>
+
+        <div style="flex: 1; overflow-y: auto;">
+            <div id="cardsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 0;">
+                <!-- Cards will be populated here -->
+            </div>
         </div>
     </div>
 
     <script>
+        let chart = null;
         let allData = [];
-        let displayData = [];
-        let isShuffled = false;
+        let movieGenres = {};
+        let tvGenres = {};
 
-        // Load data from data.json
-        async function loadData() {
+        const API_BASE = 'https://api.themoviedb.org/3';
+
+        // Hardcoded genre list with both movie and TV mappings
+        const GENRE_MAPPINGS = {
+            'Action': { movie: 28, tv: 10759 }, // TV uses "Action & Adventure"
+            'Action & Adventure': { movie: null, tv: 10759 },
+            'Adventure': { movie: 12, tv: 10759 },
+            'Animation': { movie: 16, tv: 16 },
+            'Comedy': { movie: 35, tv: 35 },
+            'Crime': { movie: 80, tv: 80 },
+            'Documentary': { movie: 99, tv: 99 },
+            'Drama': { movie: 18, tv: 18 },
+            'Family': { movie: 10751, tv: 10751 },
+            'Fantasy': { movie: 14, tv: 10765 }, // TV uses "Sci-Fi & Fantasy"
+            'History': { movie: 36, tv: null },
+            'Horror': { movie: 27, tv: null },
+            'Kids': { movie: null, tv: 10762 },
+            'Music': { movie: 10402, tv: null },
+            'Mystery': { movie: 9648, tv: 9648 },
+            'News': { movie: null, tv: 10763 },
+            'Reality': { movie: null, tv: 10764 },
+            'Romance': { movie: 10749, tv: null },
+            'Science Fiction': { movie: 878, tv: 10765 },
+            'Sci-Fi & Fantasy': { movie: null, tv: 10765 },
+            'Soap': { movie: null, tv: 10766 },
+            'Talk': { movie: null, tv: 10767 },
+            'Thriller': { movie: 53, tv: null },
+            'TV Movie': { movie: 10770, tv: null },
+            'War': { movie: 10752, tv: 10768 }, // TV uses "War & Politics"
+            'War & Politics': { movie: null, tv: 10768 },
+            'Western': { movie: 37, tv: 37 }
+        };
+
+        // Populate genre dropdown with ALL genres (not just shared ones)
+
+        // Fetch genre lists from TMDB and update the mappings
+        async function fetchGenres(token) {
+            const headers = {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            };
+
             try {
-                const response = await fetch('data.json');
-                const data = await response.json();
+                const movieGenresResponse = await fetch(`${API_BASE}/genre/movie/list`, { headers });
+                const movieGenresData = await movieGenresResponse.json();
                 
-                // Combine movies and TV shows
-                allData = [...data.movies, ...data.tv_shows];
-                
-                // Sort by release date (newest first)
-                allData.sort((a, b) => {
-                    const dateA = new Date(a.release_date || a.first_air_date);
-                    const dateB = new Date(b.release_date || b.first_air_date);
-                    return dateB - dateA;
+                const tvGenresResponse = await fetch(`${API_BASE}/genre/tv/list`, { headers });
+                const tvGenresData = await tvGenresResponse.json();
+
+                // Create genre lookup objects
+                movieGenresData.genres.forEach(g => {
+                    movieGenres[g.id] = g.name;
                 });
                 
-                displayData = [...allData];
-                displayCards(displayData);
-                updateStats(data.metadata);
-                
+                tvGenresData.genres.forEach(g => {
+                    tvGenres[g.id] = g.name;
+                });
             } catch (error) {
-                console.error('Error loading data:', error);
-                document.getElementById('cardsContainer').innerHTML = 
-                    '<div class="loading">⚠️ Error loading data. Please refresh.</div>';
-                document.getElementById('stats').textContent = 'Error';
+                console.error('Error fetching genres:', error);
+                // Use hardcoded genres as fallback
+                Object.entries(GENRE_MAPPINGS).forEach(([name, ids]) => {
+                    if (ids.movie) movieGenres[ids.movie] = name;
+                    if (ids.tv) tvGenres[ids.tv] = name;
+                });
             }
         }
 
-        // Display cards with click-to-reveal overlay
-        function displayCards(data) {
-            const container = document.getElementById('cardsContainer');
+        // Populate year dropdown
+        function populateYearDropdown() {
+            const yearSelect = document.getElementById('yearSelect');
+            const currentYear = new Date().getFullYear();
             
-            if (data.length === 0) {
-                container.innerHTML = '<div class="loading">No results found</div>';
+            for (let year = currentYear; year >= 1900; year--) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            }
+            
+            // Set default to current year
+            yearSelect.value = currentYear;
+        }
+
+        async function fetchAllPages(url, headers) {
+            let allResults = [];
+            let page = 1;
+            let totalPages = 1;
+
+            while (page <= totalPages) {
+                const response = await fetch(`${url}&page=${page}`, { headers });
+                const data = await response.json();
+                
+                if (data.results && data.results.length > 0) {
+                    allResults = allResults.concat(data.results);
+                    totalPages = data.total_pages;
+                    
+                    const status = document.getElementById('status');
+                    const currentStatus = status.textContent;
+                    status.textContent = `${currentStatus.split('(')[0]}(page ${page}/${totalPages}, ${allResults.length} items)`;
+                } else {
+                    // If we get an empty page, we're done
+                    break;
+                }
+                
+                page++;
+                
+                // Small delay to avoid rate limiting
+                await new Promise(resolve => setTimeout(resolve, 100));
+            }
+
+            return allResults;
+        }
+
+        async function fetchTMDBData(token, genreName, minReviews, minRating, contentType) {
+            const status = document.getElementById('status');
+            status.textContent = '🔄 Starting data fetch...';
+            
+            try {
+                const headers = {
+                    'Authorization': `Bearer ${token}`,
+                    'Content-Type': 'application/json'
+                };
+
+                // Ensure genres are loaded
+                if (Object.keys(movieGenres).length === 0 || Object.keys(tvGenres).length === 0) {
+                    await fetchGenres(token);
+                }
+
+                // Get the correct genre IDs for movies and TV
+                const genreMapping = GENRE_MAPPINGS[genreName];
+                const movieGenreId = genreMapping ? genreMapping.movie : null;
+                const tvGenreId = genreMapping ? genreMapping.tv : null;
+
+                const genreText = genreName ? ` ${genreName}` : '';
+                let moviePoints = [];
+                let tvPoints = [];
+
+                // Fetch movies if requested
+                if (contentType === 'movie') {
+                    let moviesUrl = `${API_BASE}/discover/movie?sort_by=popularity.desc&vote_count.gte=${minReviews}&vote_average.gte=${minRating}`;
+                    
+                    if (movieGenreId) {
+                        moviesUrl += `&with_genres=${movieGenreId}`;
+                    }
+
+                    console.log('Movies URL:', moviesUrl);
+                    status.textContent = `📥 FETCHING:${genreText} movies with ${minReviews}+ reviews...`;
+                    const movies = await fetchAllPages(moviesUrl, headers);
+                    console.log('Raw movies fetched:', movies.length);
+                    
+                    status.textContent = `📥 FETCHING: Credits for ${movies.length} movies...`;
+                    
+                    // Fetch credits and streaming providers for each movie
+                    moviePoints = await Promise.all(movies.map(async (movie, index) => {
+                        let director = 'N/A';
+                        let actors = 'N/A';
+                        let primaryProvider = null;
+                        let providerColor = '#666';
+                        
+                        try {
+                            const creditsUrl = `${API_BASE}/movie/${movie.id}/credits`;
+                            const creditsResponse = await fetch(creditsUrl, { headers });
+                            const credits = await creditsResponse.json();
+                            
+                            // Get director
+                            const crew = credits.crew || [];
+                            const directorPerson = crew.find(person => person.job === 'Director');
+                            director = directorPerson ? directorPerson.name : 'N/A';
+                            
+                            // Get top 3 actors
+                            const cast = credits.cast || [];
+                            const topActors = cast.slice(0, 3).map(actor => actor.name).join(', ');
+                            actors = topActors || 'N/A';
+                            
+                            // Get streaming provider
+                            try {
+                                const providersUrl = `${API_BASE}/movie/${movie.id}/watch/providers`;
+                                const providersResponse = await fetch(providersUrl, { headers });
+                                const providersData = await providersResponse.json();
+                                const usProviders = providersData.results?.US;
+                                
+                                const providerColors = {
+                                    'Netflix': '#E50914',
+                                    'Amazon Prime Video': '#00A8E1',
+                                    'Disney Plus': '#113CCF',
+                                    'Hulu': '#1CE783',
+                                    'HBO Max': '#B900E8',
+                                    'Max': '#B900E8',
+                                    'Apple TV Plus': '#000000',
+                                    'Paramount Plus': '#0064FF',
+                                    'Peacock': '#000000',
+                                    'Showtime': '#C00000',
+                                    'Starz': '#000000',
+                                    'Crunchyroll': '#F47521',
+                                    'YouTube Premium': '#FF0000',
+                                    'Vudu': '#4B4EFF'
+                                };
+                                
+                                if (usProviders?.flatrate && usProviders.flatrate.length > 0) {
+                                    primaryProvider = usProviders.flatrate[0].provider_name;
+                                    providerColor = providerColors[primaryProvider] || '#666';
+                                }
+                            } catch (error) {
+                                console.error(`Error fetching providers for ${movie.title}:`, error);
+                            }
+                            
+                            // Update status every 10 items
+                            if ((index + 1) % 10 === 0) {
+                                status.textContent = `📥 FETCHING: Credits ${index + 1}/${movies.length}...`;
+                            }
+                            
+                            await new Promise(resolve => setTimeout(resolve, 50));
+                        } catch (error) {
+                            console.error(`Error fetching credits for ${movie.title}:`, error);
+                        }
+                        
+                        return {
+                            x: movie.vote_count,
+                            y: movie.vote_average,
+                            type: 'movie',
+                            title: movie.title,
+                            overview: movie.overview,
+                            releaseDate: movie.release_date,
+                            year: movie.release_date ? new Date(movie.release_date).getFullYear() : 'N/A',
+                            posterPath: movie.poster_path,
+                            popularity: movie.popularity,
+                            genres: (movie.genre_ids || []).map(id => movieGenres[id]).filter(Boolean).join(', '),
+                            id: movie.id,
+                            director: director,
+                            actors: actors,
+                            primaryProvider: primaryProvider,
+                            providerColor: providerColor
+                        };
+                    }));
+
+                    status.textContent = `✅ FETCHED: ${moviePoints.length}${genreText} movies`;
+                    await new Promise(resolve => setTimeout(resolve, 300));
+                }
+
+                // Fetch TV shows if requested
+                if (contentType === 'tv') {
+                    let tvUrl = `${API_BASE}/discover/tv?sort_by=popularity.desc&vote_count.gte=${minReviews}&vote_average.gte=${minRating}`;
+                    
+                    if (tvGenreId) {
+                        tvUrl += `&with_genres=${tvGenreId}`;
+                    }
+
+                    console.log('TV URL:', tvUrl);
+                    status.textContent = `📥 FETCHING:${genreText} TV shows with ${minReviews}+ reviews...`;
+                    const tvShows = await fetchAllPages(tvUrl, headers);
+                    console.log('Raw TV shows fetched:', tvShows.length);
+                    
+                    status.textContent = `📥 FETCHING: Credits for ${tvShows.length} TV shows...`;
+                    
+                    // Fetch credits and streaming providers for each TV show
+                    tvPoints = await Promise.all(tvShows.map(async (show, index) => {
+                        let actors = 'N/A';
+                        let primaryProvider = null;
+                        let providerColor = '#666';
+                        
+                        try {
+                            const creditsUrl = `${API_BASE}/tv/${show.id}/credits`;
+                            const creditsResponse = await fetch(creditsUrl, { headers });
+                            const credits = await creditsResponse.json();
+                            
+                            // Get top 3 actors
+                            const cast = credits.cast || [];
+                            const topActors = cast.slice(0, 3).map(actor => actor.name).join(', ');
+                            actors = topActors || 'N/A';
+                            
+                            // Get streaming provider
+                            try {
+                                const providersUrl = `${API_BASE}/tv/${show.id}/watch/providers`;
+                                const providersResponse = await fetch(providersUrl, { headers });
+                                const providersData = await providersResponse.json();
+                                const usProviders = providersData.results?.US;
+                                
+                                const providerColors = {
+                                    'Netflix': '#E50914',
+                                    'Amazon Prime Video': '#00A8E1',
+                                    'Disney Plus': '#113CCF',
+                                    'Hulu': '#1CE783',
+                                    'HBO Max': '#B900E8',
+                                    'Max': '#B900E8',
+                                    'Apple TV Plus': '#000000',
+                                    'Paramount Plus': '#0064FF',
+                                    'Peacock': '#000000',
+                                    'Showtime': '#C00000',
+                                    'Starz': '#000000',
+                                    'Crunchyroll': '#F47521',
+                                    'YouTube Premium': '#FF0000',
+                                    'Vudu': '#4B4EFF'
+                                };
+                                
+                                if (usProviders?.flatrate && usProviders.flatrate.length > 0) {
+                                    primaryProvider = usProviders.flatrate[0].provider_name;
+                                    providerColor = providerColors[primaryProvider] || '#666';
+                                }
+                            } catch (error) {
+                                console.error(`Error fetching providers for ${show.name}:`, error);
+                            }
+                            
+                            // Update status every 10 items
+                            if ((index + 1) % 10 === 0) {
+                                status.textContent = `📥 FETCHING: Credits ${index + 1}/${tvShows.length}...`;
+                            }
+                            
+                            await new Promise(resolve => setTimeout(resolve, 50));
+                        } catch (error) {
+                            console.error(`Error fetching credits for ${show.name}:`, error);
+                        }
+                        
+                        return {
+                            x: show.vote_count,
+                            y: show.vote_average,
+                            type: 'tv',
+                            title: show.name,
+                            overview: show.overview,
+                            releaseDate: show.first_air_date,
+                            year: show.first_air_date ? new Date(show.first_air_date).getFullYear() : 'N/A',
+                            posterPath: show.poster_path,
+                            popularity: show.popularity,
+                            genres: (show.genre_ids || []).map(id => tvGenres[id]).filter(Boolean).join(', '),
+                            id: show.id,
+                            director: 'N/A',
+                            actors: actors,
+                            primaryProvider: primaryProvider,
+                            providerColor: providerColor
+                        };
+                    }));
+
+                    status.textContent = `✅ FETCHED: ${tvPoints.length}${genreText} TV shows`;
+                    await new Promise(resolve => setTimeout(resolve, 300));
+                }
+
+                allData = [...moviePoints, ...tvPoints];
+                const totalItems = moviePoints.length + tvPoints.length;
+                const typeLabel = contentType === 'movie' ? 'movies' : 'TV shows';
+                status.textContent = `🎉 COMPLETE: ${totalItems} ${typeLabel}!`;
+                
+                return { movies: moviePoints, tv: tvPoints };
+            } catch (error) {
+                status.textContent = '❌ ERROR: Failed to load data. Check your API token.';
+                console.error('Error fetching data:', error);
+                throw error;
+            }
+        }
+
+        function displayCards(data) {
+            // Scroll to top instantly when filter changes
+            window.scrollTo(0, 0);
+            
+            const container = document.getElementById('cardsContainer');
+            const itemCount = document.getElementById('itemCount');
+            
+            // Update count display
+            const totalMovies = data.movies.length;
+            const totalTV = data.tv.length;
+            const totalItems = totalMovies + totalTV;
+            
+            if (totalItems === 0) {
+                itemCount.textContent = 'No items match filters';
+            } else if (totalMovies > 0 && totalTV > 0) {
+                itemCount.textContent = `Showing ${totalMovies} movie${totalMovies !== 1 ? 's' : ''} and ${totalTV} TV show${totalTV !== 1 ? 's' : ''}`;
+            } else if (totalMovies > 0) {
+                itemCount.textContent = `Showing ${totalMovies} movie${totalMovies !== 1 ? 's' : ''}`;
+            } else {
+                itemCount.textContent = `Showing ${totalTV} TV show${totalTV !== 1 ? 's' : ''}`;
+            }
+            
+            // Get today's date for filtering
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+            
+            // Filter out future releases and combine
+            let allItems = [...data.movies, ...data.tv]
+                .filter(item => {
+                    // Filter out items with no genres
+                    if (!item.genres || item.genres === 'N/A' || item.genres.trim() === '') {
+                        return false;
+                    }
+                    
+                    // Get the release date
+                    const releaseDate = item.releaseDate || item.release_date || item.first_air_date;
+                    if (!releaseDate || releaseDate === 'N/A') return true;
+                    
+                    // Filter out future releases
+                    const itemDate = new Date(releaseDate);
+                    return itemDate <= today;
+                })
+                .sort((a, b) => {
+                    // First sort by full release date (most recent first)
+                    const dateA = a.releaseDate || a.release_date || a.first_air_date;
+                    const dateB = b.releaseDate || b.release_date || b.first_air_date;
+                    
+                    if (dateA && dateB && dateA !== 'N/A' && dateB !== 'N/A') {
+                        const timeA = new Date(dateA).getTime();
+                        const timeB = new Date(dateB).getTime();
+                        if (timeA !== timeB) {
+                            return timeB - timeA; // Most recent first
+                        }
+                    }
+                    
+                    // Then by rating
+                    if (b.y !== a.y) {
+                        return b.y - a.y;
+                    }
+                    
+                    // Finally by number of reviews
+                    return b.x - a.x;
+                });
+            
+            // Use shuffled order if shuffle is active
+            if (isShuffled && originalOrder.length > 0) {
+                // Match items from originalOrder that are in filtered allItems
+                const itemMap = new Map(allItems.map(item => [item.id, item]));
+                allItems = originalOrder.filter(item => itemMap.has(item.id));
+                
+                // Fisher-Yates shuffle
+                for (let i = allItems.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
+                }
+            } else {
+                // Save original chronological order
+                originalOrder = [...allItems];
+            }
+            
+            if (allItems.length === 0) {
+                container.innerHTML = '<p style="text-align: center; padding: 40px; color: #666;">No items match your filters</p>';
                 return;
             }
             
-            container.innerHTML = data.map(item => {
+            container.innerHTML = allItems.map(item => {
                 const posterUrl = item.poster_path 
-                    ? `https://image.tmdb.org/t/p/w342${item.poster_path}`
+                    ? `https://image.tmdb.org/t/p/w500${item.poster_path}`
                     : 'https://via.placeholder.com/300x450?text=No+Poster';
                 
-                const year = item.year || 'N/A';
-                const typeEmoji = item.type === 'movie' ? '🎬' : '📺';
-                
-                // Format release date
+                // Format release date as mm-dd-yyyy
                 let formattedDate = 'N/A';
-                const dateValue = item.release_date || item.first_air_date;
+                const dateValue = item.releaseDate || item.release_date || item.first_air_date;
                 if (dateValue && dateValue !== 'N/A') {
-                    const [year, month, day] = dateValue.split('-');
-                    formattedDate = `${month}-${day}-${year}`;
+                    try {
+                        const [year, month, day] = dateValue.split('-');
+                        if (year && month && day) {
+                            formattedDate = `${month}-${day}-${year}`;
+                        } else {
+                            formattedDate = dateValue;
+                        }
+                    } catch (e) {
+                        formattedDate = dateValue;
+                    }
                 }
                 
                 // Streaming info
                 let streamingHTML = '';
                 if (item.providers && item.providers.streaming && item.providers.streaming.length > 0) {
-                    streamingHTML = '<p><strong>Streaming:</strong> ' + item.providers.streaming.map(p => p.name).join(', ') + '</p>';
+                    streamingHTML = '<p style="margin: 8px 0;"><strong>Streaming:</strong> ' + item.providers.streaming.map(p => 
+                        `<span style="background: ${p.color}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
+                    ).join('') + '</p>';
+                } else {
+                    streamingHTML = '<p style="margin: 8px 0;"><strong>Streaming:</strong> N/A</p>';
                 }
                 
-                // Status for TV shows
+                // TV status
                 let statusHTML = '';
-                if (item.type === 'tv' && item.status) {
-                    statusHTML = `<p><strong>Status:</strong> ${item.status}</p>`;
+                if (item.type === 'tv' && item.tv_status) {
+                    const status = item.tv_status.status;
+                    const inProduction = item.tv_status.in_production;
+                    let statusText = status === 'Ended' ? '❌ Ended' : (inProduction ? '✅ Ongoing' : '⏸️ ' + status);
+                    
+                    if (item.tv_status.last_episode) {
+                        const lastEp = item.tv_status.last_episode;
+                        const season = lastEp.season_number || lastEp.season;
+                        const episode = lastEp.episode_number || lastEp.episode;
+                        const airDate = lastEp.air_date;
+                        statusText += `<br><small>Last: S${season}E${episode} (${airDate})</small>`;
+                    }
+                    
+                    if (item.tv_status.next_episode) {
+                        const nextEp = item.tv_status.next_episode;
+                        const season = nextEp.season_number || nextEp.season;
+                        const episode = nextEp.episode_number || nextEp.episode;
+                        const airDate = nextEp.air_date;
+                        statusText += `<br><small>Next: S${season}E${episode} (${airDate})</small>`;
+                    }
+                    
+                    statusHTML = `<p style="margin: 8px 0;"><strong>Status:</strong> ${statusText}</p>`;
                 }
                 
                 return `
-                    <div class="movie-card">
-                        <img src="${posterUrl}" alt="${item.title}" loading="lazy">
-                        <div class="card-overlay">
-                            <h3>${item.title}</h3>
-                            <p><strong>${typeEmoji} ${year}</strong></p>
-                            <p><strong>Rating:</strong> ⭐ ${item.vote_average.toFixed(1)}/10 (${item.vote_count.toLocaleString()} reviews)</p>
-                            <p><strong>Release:</strong> ${formattedDate}</p>
-                            ${statusHTML}
-                            ${item.actors && item.actors !== 'N/A' ? `<p><strong>Cast:</strong> ${item.actors}</p>` : ''}
-                            ${item.director && item.director !== 'N/A' ? `<p><strong>Director:</strong> ${item.director}</p>` : ''}
-                            ${streamingHTML}
-                            ${item.overview ? `<p style="margin-top: 8px;"><strong>Overview:</strong> ${item.overview}</p>` : ''}
+                    <div class="movie-card" style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
+                        <img src="${posterUrl}" alt="${item.title}" loading="lazy" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+                        
+                        <!-- Overlay that appears on click/tap -->
+                        <div class="card-overlay" style="
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            background: rgba(0, 0, 0, 0.75);
+                            backdrop-filter: blur(8px);
+                            -webkit-backdrop-filter: blur(8px);
+                            color: white;
+                            padding: 20px;
+                            opacity: 0;
+                            transition: opacity 0.3s ease;
+                            overflow-y: auto;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            pointer-events: none;
+                        ">
+                            <h3 style="margin: 0 0 12px 0; color: white; font-size: 18px; text-shadow: 2px 2px 4px rgba(0,0,0,0.8);">${item.title}</h3>
+                            <p style="margin: 0 0 12px 0; color: #fff; line-height: 1.5; font-size: 13px; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">${item.overview || 'No overview available.'}</p>
+                            
+                            <div style="color: #fff; font-size: 13px; line-height: 1.8; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
+                                <p style="margin: 4px 0;"><strong>Release Date:</strong> ${formattedDate}</p>
+                                <p style="margin: 4px 0;"><strong>Genres:</strong> ${item.genres || 'N/A'}</p>
+                                ${statusHTML}
+                                <p style="margin: 4px 0;"><strong>Cast:</strong> ${item.actors || 'N/A'}</p>
+                                ${streamingHTML}
+                            </div>
                         </div>
                     </div>
                 `;
@@ -343,22 +1244,26 @@
             // Add click/tap toggle functionality
             document.querySelectorAll('.movie-card').forEach(card => {
                 const overlay = card.querySelector('.card-overlay');
+                let isOverlayVisible = false;
                 
+                // Click/tap to toggle overlay
                 card.addEventListener('click', (e) => {
                     e.stopPropagation();
                     
-                    const isVisible = overlay.style.opacity === '1';
-                    
-                    // Close all overlays
-                    document.querySelectorAll('.card-overlay').forEach(o => {
-                        o.style.opacity = '0';
-                        o.style.pointerEvents = 'none';
-                    });
-                    
-                    // Toggle this overlay
-                    if (!isVisible) {
+                    if (isOverlayVisible) {
+                        overlay.style.opacity = '0';
+                        overlay.style.pointerEvents = 'none';
+                        isOverlayVisible = false;
+                    } else {
+                        // Close any other open overlays first
+                        document.querySelectorAll('.card-overlay').forEach(o => {
+                            o.style.opacity = '0';
+                            o.style.pointerEvents = 'none';
+                        });
+                        
                         overlay.style.opacity = '1';
                         overlay.style.pointerEvents = 'auto';
+                        isOverlayVisible = true;
                     }
                 });
             });
@@ -374,86 +1279,950 @@
             });
         }
 
-        // Update stats
-        function updateStats(metadata) {
-            if (metadata) {
-                document.getElementById('stats').textContent = 
-                    `${displayData.length} items • Last 365 days`;
-            } else {
-                document.getElementById('stats').textContent = `${displayData.length} items`;
+        function createChart(data) {
+            const movieTrace = {
+                x: data.movies.map(m => m.y),  // Rating on X-axis
+                y: data.movies.map(m => m.x),  // Reviews on Y-axis
+                mode: 'markers',
+                type: 'scatter',
+                name: 'Movies',
+                marker: {
+                    color: '#666',
+                    size: 4,
+                    line: {
+                        color: '#333',
+                        width: 1
+                    }
+                },
+                text: data.movies.map(m => {
+                    return `<b>${m.title}</b><br>` +
+                        `Year: ${m.year}<br>` +
+                        `Rating: ${m.y.toFixed(1)}/10<br>` +
+                        `Reviews: ${m.x.toLocaleString()}<br>` +
+                        `Genres: ${m.genres || 'N/A'}`;
+                }),
+                hovertemplate: '%{text}<extra></extra>',
+                customdata: data.movies
+            };
+
+            const tvTrace = {
+                x: data.tv.map(t => t.y),  // Rating on X-axis
+                y: data.tv.map(t => t.x),  // Reviews on Y-axis
+                mode: 'markers',
+                type: 'scatter',
+                name: 'TV Shows',
+                marker: {
+                    color: '#666',
+                    size: 4,
+                    line: {
+                        color: '#333',
+                        width: 1
+                    }
+                },
+                text: data.tv.map(t => {
+                    return `<b>${t.title}</b><br>` +
+                        `Year: ${t.year}<br>` +
+                        `Rating: ${t.y.toFixed(1)}/10<br>` +
+                        `Reviews: ${t.x.toLocaleString()}<br>` +
+                        `Genres: ${t.genres || 'N/A'}`;
+                }),
+                hovertemplate: '%{text}<extra></extra>',
+                customdata: data.tv
+            };
+
+            // Calculate X-axis range (Rating) based on data
+            const allRatings = [...data.movies.map(m => m.y), ...data.tv.map(t => t.y)];
+            let minRating = allRatings.length > 0 ? Math.min(...allRatings) : 0;
+            let maxRating = allRatings.length > 0 ? Math.max(...allRatings) : 10;
+            
+            // Add some padding to the range
+            const padding = 0.5;
+            minRating = Math.max(0, minRating - padding);
+            maxRating = Math.min(10, maxRating + padding);
+
+            const layout = {
+                xaxis: {
+                    title: 'TMDB Rating (out of 10)',
+                    range: [minRating, maxRating]
+                },
+                yaxis: {
+                    title: 'Number of Reviews',
+                    zeroline: true
+                },
+                hovermode: 'closest',
+                dragmode: 'zoom',
+                showlegend: false,
+                plot_bgcolor: '#f5f5f5',
+                paper_bgcolor: 'white',
+                margin: { t: 20, r: 20, b: 50, l: 60 }
+            };
+
+            const config = {
+                responsive: true,
+                displayModeBar: true,
+                modeBarButtonsToRemove: ['lasso2d', 'select2d'],
+                displaylogo: false
+            };
+
+            Plotly.newPlot('scatterChart', [movieTrace, tvTrace], layout, config);
+
+            // Add hover event to show poster
+            document.getElementById('scatterChart').on('plotly_hover', function(data) {
+                const point = data.points[0];
+                const itemData = point.data.customdata[point.pointIndex];
+                
+                const posterContainer = document.getElementById('hoverPoster');
+                const posterTitle = document.getElementById('posterTitle');
+                const posterImage = document.getElementById('posterImage');
+                const posterInfo = document.getElementById('posterInfo');
+                
+                posterTitle.textContent = itemData.title;
+                
+                // Poster URL from JSON data
+                const posterUrl = itemData.poster_path 
+                    ? `https://image.tmdb.org/t/p/w300${itemData.poster_path}`
+                    : 'https://via.placeholder.com/300x450?text=No+Poster';
+                
+                posterImage.src = posterUrl;
+                posterImage.alt = itemData.title;
+                
+                // Use data already in JSON (no API calls needed)
+                const castInfo = itemData.actors || 'N/A';
+                const directorInfo = itemData.director || 'N/A';
+                
+                // TV status info with episode details
+                let tvStatusInfo = '';
+                if (itemData.type === 'tv' && itemData.tv_status) {
+                    const status = itemData.tv_status.status;
+                    const inProduction = itemData.tv_status.in_production;
+                    let statusText = status === 'Ended' ? '❌ Ended' : (inProduction ? '✅ Ongoing' : '⏸️ ' + status);
+                    
+                    // Add last episode info
+                    if (itemData.tv_status.last_episode) {
+                        const lastEp = itemData.tv_status.last_episode;
+                        const season = lastEp.season_number || lastEp.season;
+                        const episode = lastEp.episode_number || lastEp.episode;
+                        const airDate = lastEp.air_date;
+                        statusText += `<br><strong>Last Episode:</strong> S${season}E${episode} (aired ${airDate})`;
+                    }
+                    
+                    // Add next episode info
+                    if (itemData.tv_status.next_episode) {
+                        const nextEp = itemData.tv_status.next_episode;
+                        const season = nextEp.season_number || nextEp.season;
+                        const episode = nextEp.episode_number || nextEp.episode;
+                        const airDate = nextEp.air_date;
+                        statusText += `<br><strong>Next Episode:</strong> S${season}E${episode} (airing ${airDate})`;
+                    }
+                    
+                    tvStatusInfo = `<p><strong>Status:</strong> ${statusText}</p>`;
+                }
+                
+                // Streaming info - show all providers
+                let streamingInfo = '';
+                if (itemData.providers) {
+                    const providers = itemData.providers;
+                    
+                    // Streaming (subscription) providers
+                    if (providers.streaming && providers.streaming.length > 0) {
+                        const badges = providers.streaming.map(p => 
+                            `<span style="background: ${p.color}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
+                        ).join('');
+                        streamingInfo = `<p><strong>Streaming:</strong> ${badges}</p>`;
+                    } else {
+                        streamingInfo = '<p><strong>Streaming:</strong> N/A</p>';
+                    }
+                    
+                    // Rent providers
+                    if (providers.rent && providers.rent.length > 0) {
+                        const badges = providers.rent.map(p => 
+                            `<span style="background: ${p.color}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
+                        ).join('');
+                        streamingInfo += `<p><strong>Rent:</strong> ${badges}</p>`;
+                    }
+                    
+                    // Buy providers
+                    if (providers.buy && providers.buy.length > 0) {
+                        const badges = providers.buy.map(p => 
+                            `<span style="background: ${p.color}; color: white; padding: 2px 8px; border-radius: 4px; margin-left: 4px; display: inline-block; font-size: 11px; font-weight: 600;">${p.name}</span>`
+                        ).join('');
+                        streamingInfo += `<p><strong>Buy:</strong> ${badges}</p>`;
+                    }
+                } else {
+                    streamingInfo = '<p><strong>Streaming:</strong> N/A</p>';
+                }
+                
+                posterInfo.innerHTML = `
+                    <p><strong>Year:</strong> ${itemData.year}</p>
+                    <p><strong>Rating:</strong> ${itemData.y.toFixed(1)} / 10</p>
+                    <p><strong>Reviews:</strong> ${itemData.x.toLocaleString()}</p>
+                    <p><strong>Genres:</strong> ${itemData.genres || 'N/A'}</p>
+                    ${tvStatusInfo}
+                    ${streamingInfo}
+                    <p><strong>Overview:</strong> ${itemData.overview || 'No overview available.'}</p>
+                    ${itemData.type === 'movie' ? `<p><strong>Director:</strong> ${directorInfo}</p>` : ''}
+                    <p><strong>Main Actors:</strong> ${castInfo}</p>
+                `;
+                
+                posterContainer.style.display = 'block';
+            });
+        }
+
+        function displayItemsList(data) {
+            const itemsList = document.getElementById('itemsList');
+            const itemsListContent = document.getElementById('itemsListContent');
+            
+            // Sort by rating (y) descending, then by reviews (x) descending
+            const allItems = [...data.movies, ...data.tv].sort((a, b) => {
+                if (b.y !== a.y) {
+                    return b.y - a.y; // Sort by rating first
+                }
+                return b.x - a.x; // Then by reviews
+            });
+            
+            let html = '<table>';
+            html += '<thead><tr><th>Title</th><th>Year</th><th>Rating</th><th>Reviews</th><th>Director</th><th>Main Actors</th><th>Overview</th></tr></thead><tbody>';
+            allItems.forEach(item => {
+                const overview = item.overview || 'N/A';
+                const director = item.director || 'N/A';
+                const actors = item.actors || 'N/A';
+                html += `
+                    <tr>
+                        <td>${item.title}</td>
+                        <td>${item.year}</td>
+                        <td>${item.y.toFixed(1)}</td>
+                        <td>${item.x.toLocaleString()}</td>
+                        <td>${director}</td>
+                        <td>${actors}</td>
+                        <td class="description">${overview}</td>
+                    </tr>
+                `;
+            });
+            html += '</tbody></table>';
+            
+            itemsListContent.innerHTML = html;
+            itemsList.style.display = 'block';
+        }
+
+        let allLoadedData = { movies: [], tv: [] }; // Store all loaded data globally
+        let rawJsonData = null; // Store the raw JSON data
+        let originalOrder = []; // Store original chronological order
+        let isShuffled = false; // Track if currently shuffled
+
+        // Populate Content Type and Region buttons immediately on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            populateContentTypeButtons();
+            populateRegionButtons();
+        });
+
+        // Auto-load on page load
+        window.addEventListener('load', async () => {
+            await loadData();
+        });
+
+        // Load function that can be called on page load or button click
+        async function loadData() {
+            try {
+                // Try to fetch the file (works on web servers like Netlify)
+                const response = await fetch('data.json');
+                if (response.ok) {
+                    rawJsonData = await response.json();
+                    
+                    // Populate genre buttons (needs data)
+                    populateGenreButtons();
+                    
+                    // Apply filters and display
+                    applyFiltersAndDisplay();
+                } else {
+                    throw new Error('File not found');
+                }
+            } catch (error) {
+                // Fetch failed (probably file:// protocol or file not found)
+                console.log('Auto-load failed:', error);
             }
         }
 
-        // Shuffle button
-        document.getElementById('shuffleBtn').addEventListener('click', () => {
-            const shuffled = [...displayData];
-            
-            // Fisher-Yates shuffle
-            for (let i = shuffled.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
-            }
-            
-            displayData = shuffled;
-            displayCards(displayData);
-            
-            isShuffled = true;
-            document.getElementById('shuffleBtn').classList.add('active');
-            document.getElementById('restoreBtn').style.display = 'flex';
-        });
+        // Track selections (null = show all)
+        let selectedContentType = 'movie';  // Default to Movies only
+        let selectedRegion = 'US';  // Default to United States for performance
+        let selectedGenre = null;  // Default to showing all genres
 
-        // Restore button
-        document.getElementById('restoreBtn').addEventListener('click', () => {
-            isShuffled = false;
-            document.getElementById('shuffleBtn').classList.remove('active');
-            document.getElementById('restoreBtn').style.display = 'none';
-            
-            // Re-apply search if active
-            const searchTerm = document.getElementById('searchFilter').value;
-            if (searchTerm) {
-                performSearch();
-            } else {
-                displayData = [...allData];
-                displayCards(displayData);
-            }
-        });
-
-        // Search with debounce (wait 300ms after user stops typing)
-        let searchTimeout;
-        document.getElementById('searchFilter').addEventListener('input', function() {
-            clearTimeout(searchTimeout);
-            searchTimeout = setTimeout(performSearch, 300);
-        });
-
-        function performSearch() {
-            const searchTerm = document.getElementById('searchFilter').value.toLowerCase().trim();
-            
-            // Auto-restore when searching
+        // Helper function to reset shuffle state
+        function resetShuffle() {
             if (isShuffled) {
                 isShuffled = false;
-                document.getElementById('shuffleBtn').classList.remove('active');
                 document.getElementById('restoreBtn').style.display = 'none';
+                const shuffleBtn = document.getElementById('shuffleBtn');
+                shuffleBtn.style.background = '#2a2a2a';
+                shuffleBtn.style.borderColor = '#555';
+            }
+        }
+
+        // Country name mapping
+        const countryNames = {
+            'US': 'United States',
+            'GB': 'United Kingdom',
+            'CA': 'Canada',
+            'AU': 'Australia',
+            'FR': 'France',
+            'DE': 'Germany',
+            'IT': 'Italy',
+            'ES': 'Spain',
+            'JP': 'Japan',
+            'KR': 'South Korea',
+            'IN': 'India',
+            'BR': 'Brazil',
+            'MX': 'Mexico',
+            'CN': 'China',
+            'RU': 'Russia',
+            'NL': 'Netherlands',
+            'SE': 'Sweden',
+            'NO': 'Norway',
+            'DK': 'Denmark',
+            'FI': 'Finland',
+            'PL': 'Poland',
+            'BE': 'Belgium',
+            'CH': 'Switzerland',
+            'AT': 'Austria',
+            'IE': 'Ireland',
+            'NZ': 'New Zealand',
+            'ZA': 'South Africa',
+            'AR': 'Argentina',
+            'CL': 'Chile',
+            'CO': 'Colombia',
+            'TH': 'Thailand',
+            'SG': 'Singapore',
+            'MY': 'Malaysia',
+            'ID': 'Indonesia',
+            'PH': 'Philippines',
+            'HK': 'Hong Kong',
+            'TW': 'Taiwan'
+        };
+
+        // Country popularity order (higher index = more popular)
+        const countryPopularity = {
+            'US': 100,  // United States - always first
+            'IN': 90,   // India
+            'KR': 85,   // South Korea
+            'GB': 80,   // United Kingdom
+            'ES': 75,   // Spain
+            'JP': 70,   // Japan
+            'FR': 65,   // France
+            'CA': 60,   // Canada
+            'DE': 55,   // Germany
+            'MX': 50,   // Mexico
+            'BR': 48,   // Brazil
+            'AU': 45,   // Australia
+            'IT': 42,   // Italy
+            'CN': 40,   // China
+            'RU': 38,   // Russia
+            'AR': 35,   // Argentina
+            'TH': 32,   // Thailand
+            'ID': 30,   // Indonesia
+            'PH': 28,   // Philippines
+            'HK': 25,   // Hong Kong
+            'TW': 22,   // Taiwan
+            'SG': 20,   // Singapore
+            'MY': 18,   // Malaysia
+            'NL': 16,   // Netherlands
+            'SE': 14,   // Sweden
+            'NO': 12,   // Norway
+            'DK': 10,   // Denmark
+            'FI': 8,    // Finland
+            'PL': 6,    // Poland
+            'BE': 5,    // Belgium
+            'CH': 4,    // Switzerland
+            'AT': 3,    // Austria
+            'IE': 2,    // Ireland
+            'NZ': 1,    // New Zealand
+            'ZA': 0     // South Africa
+        };
+
+        // Populate country dropdown from data
+        // Populate Content Type buttons
+        function populateContentTypeButtons() {
+            const container = document.getElementById('typeButtons');
+            container.innerHTML = '';
+            
+            const types = [
+                { value: 'movie', label: 'Movies' },
+                { value: 'tv', label: 'TV Shows' }
+            ];
+            
+            types.forEach(type => {
+                const button = document.createElement('button');
+                button.textContent = type.label;
+                button.dataset.type = type.value;
+                
+                // Style based on selection
+                if (selectedContentType === type.value) {
+                    button.style.cssText = 'padding: 6px 14px; background: #3b82f6; color: white; border: 1px solid #3b82f6; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                } else {
+                    button.style.cssText = 'padding: 6px 14px; background: transparent; color: white; border: 1px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                }
+                
+                button.addEventListener('click', () => {
+                    // Only switch if clicking a different button (can't deselect)
+                    if (selectedContentType !== type.value) {
+                        // Auto-restore if shuffled
+                        resetShuffle();
+                        
+                        // Deselect all buttons
+                        container.querySelectorAll('button').forEach(btn => {
+                            btn.style.background = 'transparent';
+                            btn.style.borderColor = '#555';
+                        });
+                        
+                        // Select this type
+                        selectedContentType = type.value;
+                        button.style.background = '#3b82f6';
+                        button.style.borderColor = '#3b82f6';
+                        
+                        populateGenreButtons();  // Update genres for new type
+                        if (rawJsonData) applyFiltersAndDisplay();
+                    }
+                });
+                
+                button.addEventListener('mouseenter', () => {
+                    if (selectedContentType !== type.value) {
+                        button.style.borderColor = '#888';
+                    }
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    if (selectedContentType !== type.value) {
+                        button.style.borderColor = '#555';
+                    }
+                });
+                
+                container.appendChild(button);
+            });
+        }
+
+        // Populate Region buttons
+        function populateRegionButtons() {
+            const container = document.getElementById('regionButtons');
+            container.innerHTML = '';
+            
+            const regions = [
+                { value: 'US', label: 'United States' },
+                { value: 'International', label: 'International' }
+            ];
+            
+            regions.forEach(region => {
+                const button = document.createElement('button');
+                button.textContent = region.label;
+                button.dataset.region = region.value;
+                
+                // Style based on selection
+                if (selectedRegion === region.value) {
+                    button.style.cssText = 'padding: 6px 14px; background: #3b82f6; color: white; border: 1px solid #3b82f6; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                } else {
+                    button.style.cssText = 'padding: 6px 14px; background: transparent; color: white; border: 1px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                }
+                
+                button.addEventListener('click', () => {
+                    // Auto-restore if shuffled
+                    resetShuffle();
+                    
+                    // Deselect all buttons
+                    container.querySelectorAll('button').forEach(btn => {
+                        btn.style.background = 'transparent';
+                        btn.style.borderColor = '#555';
+                    });
+                    
+                    // Toggle selection
+                    if (selectedRegion === region.value) {
+                        selectedRegion = null;  // Deselect - show all
+                    } else {
+                        selectedRegion = region.value;  // Select this region
+                        button.style.background = '#3b82f6';
+                        button.style.borderColor = '#3b82f6';
+                    }
+                    
+                    if (rawJsonData) applyFiltersAndDisplay();
+                });
+                
+                button.addEventListener('mouseenter', () => {
+                    if (selectedRegion !== region.value) {
+                        button.style.borderColor = '#888';
+                    }
+                });
+                
+                button.addEventListener('mouseleave', () => {
+                    if (selectedRegion !== region.value) {
+                        button.style.borderColor = '#555';
+                    }
+                });
+                
+                container.appendChild(button);
+            });
+        }
+
+        // Populate genre buttons
+        function populateGenreButtons() {
+            const container = document.getElementById('genreButtons');
+            const dropdown = document.getElementById('genreDropdown');
+            container.innerHTML = '';
+            dropdown.innerHTML = '<option value="">All Genres</option>'; // Reset dropdown
+            
+            // Get all unique genres from the data based on selected type
+            const allGenres = new Set();
+            if (rawJsonData) {
+                if (selectedContentType === 'movie') {
+                    rawJsonData.movies.forEach(m => {
+                        if (m.genres) {
+                            m.genres.split(',').forEach(g => allGenres.add(g.trim()));
+                        }
+                    });
+                } else if (selectedContentType === 'tv') {
+                    rawJsonData.tv_shows.forEach(tv => {
+                        if (tv.genres) {
+                            tv.genres.split(',').forEach(g => allGenres.add(g.trim()));
+                        }
+                    });
+                }
             }
             
-            if (!searchTerm) {
-                displayData = [...allData];
-            } else {
-                displayData = allData.filter(item => {
+            // If current selected genre doesn't exist in new type, deselect (show all)
+            if (selectedGenre && !allGenres.has(selectedGenre)) {
+                selectedGenre = null;
+            }
+            
+            // Sort genres alphabetically and create buttons (excluding Animation only)
+            const sortedGenres = Array.from(allGenres).sort();
+            sortedGenres.forEach(genre => {
+                if (genre !== 'Animation') {
+                    // Create button for desktop
+                    const button = document.createElement('button');
+                    button.textContent = genre;
+                    
+                    // Style button based on selection
+                    if (genre === selectedGenre) {
+                        button.style.cssText = 'padding: 6px 14px; background: #3b82f6; color: white; border: 1px solid #3b82f6; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                    } else {
+                        button.style.cssText = 'padding: 6px 14px; background: transparent; color: white; border: 1px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;';
+                    }
+                    button.dataset.genre = genre;
+                    
+                    button.addEventListener('click', () => {
+                        // Auto-restore if shuffled
+                        resetShuffle();
+                        
+                        // Deselect all other buttons
+                        container.querySelectorAll('button').forEach(btn => {
+                            btn.style.background = 'transparent';
+                            btn.style.borderColor = '#555';
+                        });
+                        
+                        // Toggle selection
+                        if (selectedGenre === genre) {
+                            selectedGenre = null;  // Deselect - show all genres
+                            dropdown.value = ''; // Sync dropdown
+                        } else {
+                            selectedGenre = genre;  // Select this genre
+                            button.style.background = '#3b82f6';
+                            button.style.borderColor = '#3b82f6';
+                            dropdown.value = genre; // Sync dropdown
+                        }
+                        
+                        if (rawJsonData) applyFiltersAndDisplay();
+                    });
+                    
+                    button.addEventListener('mouseenter', () => {
+                        if (selectedGenre !== genre) {
+                            button.style.borderColor = '#888';
+                        }
+                    });
+                    
+                    button.addEventListener('mouseleave', () => {
+                        if (selectedGenre !== genre) {
+                            button.style.borderColor = '#555';
+                        }
+                    });
+                    
+                    container.appendChild(button);
+                    
+                    // Also add to dropdown for mobile
+                    const option = document.createElement('option');
+                    option.value = genre;
+                    option.textContent = genre;
+                    if (selectedGenre === genre) {
+                        option.selected = true;
+                    }
+                    dropdown.appendChild(option);
+                }
+            });
+        }
+        
+        // Genre dropdown change handler (for mobile)
+        document.getElementById('genreDropdown').addEventListener('change', function() {
+            resetShuffle(); // Auto-restore if shuffled
+            selectedGenre = this.value || null; // Empty string = null (all genres)
+            if (rawJsonData) applyFiltersAndDisplay();
+        });
+        
+        // Region dropdown change handler (for mobile)
+        document.getElementById('regionDropdown').addEventListener('change', function() {
+            resetShuffle(); // Auto-restore if shuffled
+            selectedRegion = this.value || null; // Empty string = null (show all/international)
+            if (rawJsonData) applyFiltersAndDisplay();
+        });
+        
+        // Content Type dropdown change handler (for mobile)
+        document.getElementById('typeDropdown').addEventListener('change', function() {
+            resetShuffle(); // Auto-restore if shuffled
+            selectedContentType = this.value;
+            populateGenreButtons(); // Update genres for new type
+            if (rawJsonData) applyFiltersAndDisplay();
+        });
+
+        // Populate genre buttons based on selected content type
+
+        // Handle file selection
+        document.getElementById('jsonFile').addEventListener('change', async (event) => {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            try {
+                const text = await file.text();
+                rawJsonData = JSON.parse(text);
+                
+                // Populate genre buttons
+                populateGenreButtons();
+                
+                // Apply filters and display
+                applyFiltersAndDisplay();
+            } catch (error) {
+                console.error('Load error:', error);
+                alert(`Failed to load data: ${error.message}\n\nMake sure you selected a valid JSON file.`);
+            }
+        });
+
+        function applyFiltersAndDisplay() {
+            if (!rawJsonData) return;
+            
+            // Hardcoded filter values (no longer in UI)
+            const minReviews = 100;
+            const maxReviews = 100000;
+            const minRating = 6.0;
+            const maxRating = 10.0;
+            
+            // Get year range from UI
+            const minYear = parseInt(document.getElementById('minYear').value);
+            const maxYear = parseInt(document.getElementById('maxYear').value);
+            
+            // Filter movies
+            let filteredMovies = [];
+            if (selectedContentType === 'movie') {
+                filteredMovies = rawJsonData.movies.filter(movie => {
+                    // Filter by region
+                    if (selectedRegion) {
+                        if (selectedRegion === 'US' && movie.country !== 'US') return false;
+                        if (selectedRegion === 'International' && movie.country === 'US') return false;
+                    }
+                    
+                    // Exclude Animation genre completely
+                    if (movie.genres && movie.genres.includes('Animation')) return false;
+                    
+                    // Check reviews and rating ranges
+                    if (movie.vote_count < minReviews || movie.vote_count > maxReviews) return false;
+                    if (movie.vote_average < minRating || movie.vote_average > maxRating) return false;
+                    
+                    // Check year range
+                    if (movie.year && movie.year !== 'N/A') {
+                        if (movie.year < minYear || movie.year > maxYear) return false;
+                    }
+                    
+                    // Check genre (if one selected, movie must have it)
+                    if (selectedGenre && movie.genres) {
+                        const movieGenres = movie.genres.split(',').map(g => g.trim());
+                        if (!movieGenres.includes(selectedGenre)) return false;
+                    }
+                    
+                    return true;
+                }).map(movie => ({
+                    id: movie.id,
+                    title: movie.title,
+                    x: movie.vote_count,
+                    y: movie.vote_average,
+                    year: movie.year,
+                    genres: movie.genres,
+                    overview: movie.overview,
+                    director: movie.director,
+                    actors: movie.actors,
+                    releaseDate: movie.release_date,
+                    type: 'movie',
+                    poster_path: movie.poster_path,
+                    providers: movie.providers
+                }));
+            }
+            
+            // Filter TV shows
+            let filteredTv = [];
+            if (selectedContentType === 'tv') {
+                filteredTv = rawJsonData.tv_shows.filter(show => {
+                    // Filter by region
+                    if (selectedRegion) {
+                        if (selectedRegion === 'US' && show.country !== 'US') return false;
+                        if (selectedRegion === 'International' && show.country === 'US') return false;
+                    }
+                    
+                    // Exclude Animation genre completely
+                    if (show.genres && show.genres.includes('Animation')) return false;
+                    
+                    // Check reviews and rating ranges
+                    if (show.vote_count < minReviews || show.vote_count > maxReviews) return false;
+                    if (show.vote_average < minRating || show.vote_average > maxRating) return false;
+                    
+                    // Check year range
+                    if (show.year && show.year !== 'N/A') {
+                        if (show.year < minYear || show.year > maxYear) return false;
+                    }
+                    
+                    // Check genre (if one selected, show must have it)
+                    if (selectedGenre && show.genres) {
+                        const showGenres = show.genres.split(',').map(g => g.trim());
+                        if (!showGenres.includes(selectedGenre)) return false;
+                    }
+                    
+                    return true;
+                }).map(show => ({
+                    id: show.id,
+                    title: show.title,
+                    x: show.vote_count,
+                    y: show.vote_average,
+                    year: show.year,
+                    genres: show.genres,
+                    overview: show.overview,
+                    actors: show.actors,
+                    creator: show.creator,
+                    releaseDate: show.first_air_date,
+                    type: 'tv',
+                    poster_path: show.poster_path,
+                    tv_status: show.tv_status,
+                    providers: show.providers
+                }));
+            }
+            
+            allLoadedData = { movies: filteredMovies, tv: filteredTv };
+            
+            // Check if there's an active search term and reapply it
+            const searchTerm = document.getElementById('searchFilter').value.toLowerCase().trim();
+            let displayData = allLoadedData;
+            
+            if (searchTerm) {
+                // Filter movies with search term
+                const searchedMovies = allLoadedData.movies.filter(item => {
+                    // Exclude Animation
+                    if (item.genres && (item.genres.includes('Animation'))) return false;
+                    
+                    // Check if any streaming provider matches
+                    let hasStreamingMatch = false;
+                    if (item.providers && item.providers.streaming) {
+                        hasStreamingMatch = item.providers.streaming.some(p => 
+                            p.name && p.name.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    
                     return (
                         (item.title && item.title.toLowerCase().includes(searchTerm)) ||
                         (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
+                        (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
+                        (item.director && item.director.toLowerCase().includes(searchTerm)) ||
                         (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
-                        (item.director && item.director.toLowerCase().includes(searchTerm))
+                        (item.year && item.year.toString().includes(searchTerm)) ||
+                        hasStreamingMatch
                     );
                 });
+                
+                // Filter TV shows with search term
+                const searchedTv = allLoadedData.tv.filter(item => {
+                    // Exclude Animation
+                    if (item.genres && (item.genres.includes('Animation'))) return false;
+                    
+                    // Check if any streaming provider matches
+                    let hasStreamingMatch = false;
+                    if (item.providers && item.providers.streaming) {
+                        hasStreamingMatch = item.providers.streaming.some(p => 
+                            p.name && p.name.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    
+                    return (
+                        (item.title && item.title.toLowerCase().includes(searchTerm)) ||
+                        (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
+                        (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
+                        (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
+                        (item.year && item.year.toString().includes(searchTerm)) ||
+                        hasStreamingMatch
+                    );
+                });
+                
+                displayData = { movies: searchedMovies, tv: searchedTv };
             }
             
+            // Display
             displayCards(displayData);
-            document.getElementById('stats').textContent = `${displayData.length} items`;
         }
 
-        // Initialize
-        loadData();
+        // Re-apply filters when year inputs change
+        document.getElementById('minYear').addEventListener('change', () => {
+            resetShuffle();  // Auto-restore when year changes
+            if (rawJsonData) applyFiltersAndDisplay();
+        });
+        
+        document.getElementById('maxYear').addEventListener('change', () => {
+            resetShuffle();  // Auto-restore when year changes
+            if (rawJsonData) applyFiltersAndDisplay();
+        });
+
+
+        // Search filter functionality - filters already loaded data
+        let searchTimeout;
+        document.getElementById('searchFilter').addEventListener('input', function() {
+            // Clear previous timeout
+            clearTimeout(searchTimeout);
+            
+            // Wait 500ms after user stops typing before filtering
+            searchTimeout = setTimeout(() => {
+                resetShuffle();  // Auto-restore when searching
+                
+                const searchTerm = this.value.toLowerCase().trim();
+                
+                if (!searchTerm) {
+                    // No search term, show all loaded data
+                    displayCards(allLoadedData);
+                    return;
+                }
+                
+                // Filter movies
+                const filteredMovies = allLoadedData.movies.filter(item => {
+                    // Check if any streaming provider matches
+                    let hasStreamingMatch = false;
+                    if (item.providers && item.providers.streaming) {
+                        hasStreamingMatch = item.providers.streaming.some(p => 
+                            p.name && p.name.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    
+                    return (
+                        (item.title && item.title.toLowerCase().includes(searchTerm)) ||
+                        (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
+                        (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
+                        (item.director && item.director.toLowerCase().includes(searchTerm)) ||
+                        (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
+                        (item.year && item.year.toString().includes(searchTerm)) ||
+                        hasStreamingMatch
+                    );
+                });
+                
+                // Filter TV shows
+                const filteredTv = allLoadedData.tv.filter(item => {
+                    // Check if any streaming provider matches
+                    let hasStreamingMatch = false;
+                    if (item.providers && item.providers.streaming) {
+                        hasStreamingMatch = item.providers.streaming.some(p => 
+                            p.name && p.name.toLowerCase().includes(searchTerm)
+                        );
+                    }
+                    
+                    return (
+                        (item.title && item.title.toLowerCase().includes(searchTerm)) ||
+                    (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
+                    (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
+                    (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
+                    (item.year && item.year.toString().includes(searchTerm)) ||
+                    hasStreamingMatch
+                );
+            });
+            
+            const filteredData = { movies: filteredMovies, tv: filteredTv };
+            displayCards(filteredData);
+            }, 500); // Wait 500ms after user stops typing
+        });
+
+        // Shuffle button functionality
+        document.getElementById('shuffleBtn').addEventListener('click', () => {
+            if (!rawJsonData || (!rawJsonData.movies && !rawJsonData.tv_shows)) {
+                alert('No data to shuffle. Please load data first.');
+                return;
+            }
+            
+            isShuffled = true;
+            
+            // Change shuffle button to purple when active
+            const shuffleBtn = document.getElementById('shuffleBtn');
+            shuffleBtn.style.background = '#3b82f6';
+            shuffleBtn.style.borderColor = '#3b82f6';
+            
+            // Show restore button
+            document.getElementById('restoreBtn').style.display = 'flex';
+            
+            // Re-display with shuffle
+            applyFiltersAndDisplay();
+        });
+        
+        // Restore button functionality
+        document.getElementById('restoreBtn').addEventListener('click', () => {
+            isShuffled = false;
+            
+            // Change shuffle button back to black
+            const shuffleBtn = document.getElementById('shuffleBtn');
+            shuffleBtn.style.background = '#2a2a2a';
+            shuffleBtn.style.borderColor = '#555';
+            
+            // Hide restore button
+            document.getElementById('restoreBtn').style.display = 'none';
+            
+            // Re-display in chronological order
+            applyFiltersAndDisplay();
+        });
+
+        // Function to download table as CSV
+        function downloadTableAsCSV() {
+            if (!allLoadedData || (!allLoadedData.movies.length && !allLoadedData.tv.length)) {
+                alert('No data to download. Please load data first.');
+                return;
+            }
+
+            // Combine all items
+            const allItems = [...allLoadedData.movies, ...allLoadedData.tv].sort((a, b) => {
+                if (b.y !== a.y) return b.y - a.y;
+                return b.x - a.x;
+            });
+
+            // CSV header
+            let csv = ['Title,Year,Rating,Reviews,Director,Main Actors,Overview'];
+            
+            // Add rows
+            allItems.forEach(item => {
+                const row = [
+                    `"${(item.title || '').replace(/"/g, '""')}"`,
+                    item.year || '',
+                    item.y.toFixed(1),
+                    item.x,
+                    `"${(item.director || 'N/A').replace(/"/g, '""')}"`,
+                    `"${(item.actors || 'N/A').replace(/"/g, '""')}"`,
+                    `"${(item.overview || '').replace(/"/g, '""')}"`
+                ];
+                csv.push(row.join(','));
+            });
+            
+            const csvContent = csv.join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            const url = URL.createObjectURL(blob);
+            
+            link.setAttribute('href', url);
+            link.setAttribute('download', 'tmdb_data.csv');
+            link.style.visibility = 'hidden';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        
     </script>
 </body>
 </html>
