@@ -1457,11 +1457,6 @@
         let originalOrder = []; // Store original chronological order
         let isShuffled = false; // Track if currently shuffled
 
-        // Populate Content Type buttons immediately on page load
-        document.addEventListener('DOMContentLoaded', () => {
-            populateContentTypeButtons();
-        });
-
         // Auto-load on page load
         window.addEventListener('load', async () => {
             await loadData();
@@ -1491,9 +1486,6 @@
                 console.log('Auto-load failed:', error);
             }
         }
-
-        // Track selections (null = show all)
-        let selectedContentType = 'movie';  // Default to Movies only
 
         // Helper function to reset shuffle state
         function resetShuffle() {
@@ -1626,7 +1618,6 @@
                         button.style.background = '#3b82f6';
                         button.style.borderColor = '#3b82f6';
                         
-                        populateGenreButtons();  // Update genres for new type
                         if (rawJsonData) applyFiltersAndDisplay();
                     }
                 });
@@ -1850,30 +1841,25 @@
         function applyFiltersAndDisplay() {
             if (!rawJsonData) return;
             
-            // Filter movies
-            let filteredMovies = [];
-            if (selectedContentType === 'movie') {
-                filteredMovies = rawJsonData.movies.map(movie => ({
-                    id: movie.id,
-                    title: movie.title,
-                    x: movie.vote_count,
-                    y: movie.vote_average,
-                    year: movie.year,
-                    genres: movie.genres,
-                    overview: movie.overview,
-                    director: movie.director,
-                    actors: movie.actors,
-                    releaseDate: movie.release_date,
-                    type: 'movie',
-                    poster_path: movie.poster_path,
-                    providers: movie.providers
-                }));
-            }
+            // Show ALL movies
+            const filteredMovies = rawJsonData.movies.map(movie => ({
+                id: movie.id,
+                title: movie.title,
+                x: movie.vote_count,
+                y: movie.vote_average,
+                year: movie.year,
+                genres: movie.genres,
+                overview: movie.overview,
+                director: movie.director,
+                actors: movie.actors,
+                releaseDate: movie.release_date,
+                type: 'movie',
+                poster_path: movie.poster_path,
+                providers: movie.providers
+            }));
             
-            // Filter TV shows
-            let filteredTv = [];
-            if (selectedContentType === 'tv') {
-                filteredTv = rawJsonData.tv.map(show => ({
+            // Show ALL TV shows
+            const filteredTv = rawJsonData.tv.map(show => ({
                     id: show.id,
                     title: show.title,
                     x: show.vote_count,
