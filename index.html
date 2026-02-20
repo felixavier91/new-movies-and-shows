@@ -1795,28 +1795,6 @@
         }
         
         // Genre dropdown change handler (for mobile)
-        document.getElementById('genreDropdown').addEventListener('change', function() {
-            resetShuffle(); // Auto-restore if shuffled
-            selectedGenre = this.value || null; // Empty string = null (all genres)
-            if (rawJsonData) applyFiltersAndDisplay();
-        });
-        
-        // Region dropdown change handler (for mobile)
-        document.getElementById('regionDropdown').addEventListener('change', function() {
-            resetShuffle(); // Auto-restore if shuffled
-            selectedRegion = this.value || null; // Empty string = null (show all/international)
-            if (rawJsonData) applyFiltersAndDisplay();
-        });
-        
-        // Content Type dropdown change handler (for mobile)
-        document.getElementById('typeDropdown').addEventListener('change', function() {
-            resetShuffle(); // Auto-restore if shuffled
-            selectedContentType = this.value;
-            populateGenreButtons(); // Update genres for new type
-            if (rawJsonData) applyFiltersAndDisplay();
-        });
-
-        // Populate genre buttons based on selected content type
 
         // Handle file selection
         document.getElementById('jsonFile').addEventListener('change', async (event) => {
@@ -1937,17 +1915,6 @@
             // Display
             displayCards(displayData);
         }
-
-        // Re-apply filters when year inputs change
-        document.getElementById('minYear').addEventListener('change', () => {
-            resetShuffle();  // Auto-restore when year changes
-            if (rawJsonData) applyFiltersAndDisplay();
-        });
-        
-        document.getElementById('maxYear').addEventListener('change', () => {
-            resetShuffle();  // Auto-restore when year changes
-            if (rawJsonData) applyFiltersAndDisplay();
-        });
 
 
         // Search filter functionality - filters already loaded data
