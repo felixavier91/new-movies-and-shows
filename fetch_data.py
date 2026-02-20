@@ -8,10 +8,14 @@ import os
 import json
 import requests
 import time
+import sys
 from datetime import datetime, timedelta
 
+# Flush output immediately for GitHub Actions visibility
+sys.stdout.reconfigure(line_buffering=True)
+
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 1          # Minimum number of reviews/votes
+MIN_VOTES = 1            # Minimum number of reviews/votes
 MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
 DAYS_BACK = 365          # How many days back to fetch (365 = last year)
 MAX_PAGES_PER_TYPE = 50  # Max pages to fetch per content type (movies/TV)
@@ -100,8 +104,9 @@ print("📥 Fetching movie details (credits + providers)...")
 movies_data = []
 
 for i, movie in enumerate(movies):
-    if i % 50 == 0 and i > 0:
-        print(f"  Progress: {i}/{len(movies)} movies processed...")
+    if i % 10 == 0:
+        progress_pct = int((i / len(movies)) * 100) if len(movies) > 0 else 0
+        print(f"  Movies: {i}/{len(movies)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(movie['id'], 'movie')
     
@@ -165,8 +170,9 @@ print("📥 Fetching TV show details (credits + providers)...")
 tv_data = []
 
 for i, show in enumerate(tv_shows):
-    if i % 50 == 0 and i > 0:
-        print(f"  Progress: {i}/{len(tv_shows)} TV shows processed...")
+    if i % 10 == 0:
+        progress_pct = int((i / len(tv_shows)) * 100) if len(tv_shows) > 0 else 0
+        print(f"  TV Shows: {i}/{len(tv_shows)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(show['id'], 'tv')
     
