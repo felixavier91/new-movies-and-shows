@@ -643,58 +643,6 @@
                     <p id="itemCount" style="margin-top: 8px; margin-bottom: 0; color: #999; font-size: 11px;">No items loaded</p>
                 </div>
                 
-                <div class="filter-row-year" style="margin-bottom: 15px;">
-                    <div style="display: flex; gap: 8px; align-items: center;">
-                        <input type="number" id="minYear" min="1900" max="2026" value="1990" placeholder="e.g. 1990" style="flex: 1; padding: 8px; border: 2px solid #555; background: #2a2a2a; color: white; border-radius: 5px; font-size: 13px; text-align: center;">
-                        <span style="color: #999;">to</span>
-                        <input type="number" id="maxYear" min="1900" max="2026" value="2026" placeholder="e.g. 2026" style="flex: 1; padding: 8px; border: 2px solid #555; background: #2a2a2a; color: white; border-radius: 5px; font-size: 13px; text-align: center;">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
-            
-            <!-- ROW 2 on mobile: Region Dropdown | Content Type Dropdown | Genre Dropdown -->
-            <div class="mobile-row-2">
-                <!-- Desktop: Content Type buttons -->
-                <div class="filter-row-type" style="margin-bottom: 15px;">
-                    <div id="typeButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <!-- Populated with buttons -->
-                    </div>
-                    <!-- Mobile: Content Type dropdown (hidden by default) -->
-                    <select id="typeDropdown" style="display: none;">
-                        <option value="movie">Movies</option>
-                        <option value="tv">TV Shows</option>
-                    </select>
-                </div>
-                
-                <div class="divider desktop-only-divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
-                
-                <!-- Desktop: Region buttons -->
-                <div class="filter-row-region" style="margin-bottom: 15px;">
-                    <div id="regionButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <!-- Populated with buttons -->
-                    </div>
-                    <!-- Mobile: Region dropdown (hidden by default) -->
-                    <select id="regionDropdown" style="display: none;">
-                        <option value="US">United States</option>
-                        <option value="">International</option>
-                    </select>
-                </div>
-                
-                <div class="divider desktop-only-divider" style="border-top: 1px solid #333; margin: 15px 0;"></div>
-                
-                <!-- Desktop: Genre buttons -->
-                <div class="filter-row-genre" style="margin-bottom: 15px;">
-                    <div id="genreButtons" style="display: flex; flex-wrap: wrap; gap: 8px;">
-                        <!-- Populated dynamically with buttons -->
-                    </div>
-                    <!-- Mobile: Genre dropdown (hidden by default) -->
-                    <select id="genreDropdown" style="display: none;">
-                        <option value="">All Genres</option>
-                        <!-- Populated dynamically -->
-                    </select>
-                </div>
             </div>
             
         </div>
@@ -1509,10 +1457,9 @@
         let originalOrder = []; // Store original chronological order
         let isShuffled = false; // Track if currently shuffled
 
-        // Populate Content Type and Region buttons immediately on page load
+        // Populate Content Type buttons immediately on page load
         document.addEventListener('DOMContentLoaded', () => {
             populateContentTypeButtons();
-            populateRegionButtons();
         });
 
         // Auto-load on page load
@@ -1526,10 +1473,13 @@
                 // Try to fetch the file (works on web servers like Netlify)
                 const response = await fetch('data.json');
                 if (response.ok) {
-                    rawJsonData = await response.json();
+                    const loadedData = await response.json();
                     
-                    // Populate genre buttons (needs data)
-                    populateGenreButtons();
+                    // Transform data structure if needed (tv_shows → tv)
+                    rawJsonData = {
+                        movies: loadedData.movies || [],
+                        tv: loadedData.tv_shows || loadedData.tv || []
+                    };
                     
                     // Apply filters and display
                     applyFiltersAndDisplay();
@@ -1544,8 +1494,6 @@
 
         // Track selections (null = show all)
         let selectedContentType = 'movie';  // Default to Movies only
-        let selectedRegion = 'US';  // Default to United States for performance
-        let selectedGenre = null;  // Default to showing all genres
 
         // Helper function to reset shuffle state
         function resetShuffle() {
@@ -1902,46 +1850,10 @@
         function applyFiltersAndDisplay() {
             if (!rawJsonData) return;
             
-            // Hardcoded filter values (no longer in UI)
-            const minReviews = 100;
-            const maxReviews = 100000;
-            const minRating = 6.0;
-            const maxRating = 10.0;
-            
-            // Get year range from UI
-            const minYear = parseInt(document.getElementById('minYear').value);
-            const maxYear = parseInt(document.getElementById('maxYear').value);
-            
             // Filter movies
             let filteredMovies = [];
             if (selectedContentType === 'movie') {
-                filteredMovies = rawJsonData.movies.filter(movie => {
-                    // Filter by region
-                    if (selectedRegion) {
-                        if (selectedRegion === 'US' && movie.country !== 'US') return false;
-                        if (selectedRegion === 'International' && movie.country === 'US') return false;
-                    }
-                    
-                    // Exclude Animation genre completely
-                    if (movie.genres && movie.genres.includes('Animation')) return false;
-                    
-                    // Check reviews and rating ranges
-                    if (movie.vote_count < minReviews || movie.vote_count > maxReviews) return false;
-                    if (movie.vote_average < minRating || movie.vote_average > maxRating) return false;
-                    
-                    // Check year range
-                    if (movie.year && movie.year !== 'N/A') {
-                        if (movie.year < minYear || movie.year > maxYear) return false;
-                    }
-                    
-                    // Check genre (if one selected, movie must have it)
-                    if (selectedGenre && movie.genres) {
-                        const movieGenres = movie.genres.split(',').map(g => g.trim());
-                        if (!movieGenres.includes(selectedGenre)) return false;
-                    }
-                    
-                    return true;
-                }).map(movie => ({
+                filteredMovies = rawJsonData.movies.map(movie => ({
                     id: movie.id,
                     title: movie.title,
                     x: movie.vote_count,
@@ -1961,33 +1873,7 @@
             // Filter TV shows
             let filteredTv = [];
             if (selectedContentType === 'tv') {
-                filteredTv = rawJsonData.tv_shows.filter(show => {
-                    // Filter by region
-                    if (selectedRegion) {
-                        if (selectedRegion === 'US' && show.country !== 'US') return false;
-                        if (selectedRegion === 'International' && show.country === 'US') return false;
-                    }
-                    
-                    // Exclude Animation genre completely
-                    if (show.genres && show.genres.includes('Animation')) return false;
-                    
-                    // Check reviews and rating ranges
-                    if (show.vote_count < minReviews || show.vote_count > maxReviews) return false;
-                    if (show.vote_average < minRating || show.vote_average > maxRating) return false;
-                    
-                    // Check year range
-                    if (show.year && show.year !== 'N/A') {
-                        if (show.year < minYear || show.year > maxYear) return false;
-                    }
-                    
-                    // Check genre (if one selected, show must have it)
-                    if (selectedGenre && show.genres) {
-                        const showGenres = show.genres.split(',').map(g => g.trim());
-                        if (!showGenres.includes(selectedGenre)) return false;
-                    }
-                    
-                    return true;
-                }).map(show => ({
+                filteredTv = rawJsonData.tv.map(show => ({
                     id: show.id,
                     title: show.title,
                     x: show.vote_count,
