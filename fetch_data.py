@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 25            # Minimum number of reviews/votes
+MIN_VOTES = 1            # Minimum number of reviews/votes
 MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
 DAYS_BACK = 365          # How many days back to fetch (365 = last year)
 MAX_PAGES_PER_TYPE = 50  # Max pages to fetch per content type (movies/TV)
@@ -136,6 +136,13 @@ for i, movie in enumerate(movies):
             for p in providers['flatrate']
         ]
     
+    # Extract genres
+    genres = 'N/A'
+    if details.get('genres'):
+        genre_names = [g['name'] for g in details['genres']]
+        if genre_names:
+            genres = ', '.join(genre_names)
+    
     movies_data.append({
         'id': movie['id'],
         'title': movie['title'],
@@ -147,6 +154,7 @@ for i, movie in enumerate(movies):
         'vote_count': movie['vote_count'],
         'director': director,
         'actors': actors,
+        'genres': genres,
         'providers': {'streaming': streaming},
         'type': 'movie'
     })
@@ -195,6 +203,13 @@ for i, show in enumerate(tv_shows):
             for p in providers['flatrate']
         ]
     
+    # Extract genres
+    genres = 'N/A'
+    if details.get('genres'):
+        genre_names = [g['name'] for g in details['genres']]
+        if genre_names:
+            genres = ', '.join(genre_names)
+    
     tv_data.append({
         'id': show['id'],
         'title': show['name'],
@@ -205,6 +220,7 @@ for i, show in enumerate(tv_shows):
         'vote_average': show['vote_average'],
         'vote_count': show['vote_count'],
         'actors': actors,
+        'genres': genres,
         'status': details.get('status', 'N/A'),
         'providers': {'streaming': streaming},
         'type': 'tv'
