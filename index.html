@@ -1037,11 +1037,6 @@
             // Filter out future releases and combine
             let allItems = [...data.movies, ...data.tv]
                 .filter(item => {
-                    // Filter out items with no genres
-                    if (!item.genres || item.genres === 'N/A' || item.genres.trim() === '') {
-                        return false;
-                    }
-                    
                     // Get the release date
                     const releaseDate = item.releaseDate || item.release_date || item.first_air_date;
                     if (!releaseDate || releaseDate === 'N/A') return true;
