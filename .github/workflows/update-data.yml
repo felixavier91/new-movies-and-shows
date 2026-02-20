@@ -1,21 +1,25 @@
-name: Update TMDB Data Hourly
+name: Update TMDB Data & Deploy
 
 on:
   # Run every hour
   schedule:
-    - cron: '0 * * * *'  # At minute 0 of every hour
+    - cron: '0 * * * *'
+  
+  # Run on ANY push to main branch (including index.html changes)
+  push:
+    branches:
+      - main
   
   # Allow manual trigger
   workflow_dispatch:
 
-# Set permissions for GitHub Pages deployment
 permissions:
   contents: write
   pages: write
   id-token: write
 
 jobs:
-  update-data:
+  update-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -27,23 +31,23 @@ jobs:
         with:
           python-version: '3.11'
       
-      - name: Install Python dependencies
-        run: |
-          pip install requests
+      - name: Install dependencies
+        run: pip install requests
       
+      # Only fetch new data if triggered by schedule or manual dispatch
+      # Skip data fetch if triggered by a regular push (like index.html change)
       - name: Fetch TMDB data
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         env:
           TMDB_TOKEN: ${{ secrets.TMDB_TOKEN }}
-        run: |
-          python fetch_data.py
+        run: python fetch_data.py
       
-      - name: Commit and push if data changed
+      - name: Commit data changes
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add data.json
-          
-          # Only commit if there are changes
           if git diff --staged --quiet; then
             echo "No changes to data.json"
           else
@@ -60,5 +64,4 @@ jobs:
           path: '.'
       
       - name: Deploy to GitHub Pages
-        id: deployment
         uses: actions/deploy-pages@v4
