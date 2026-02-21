@@ -15,12 +15,12 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 200            # Minimum number of reviews/votes
-MIN_RATING = 7.0         # Minimum TMDB rating (0-10)
+MIN_VOTES = 1            # Minimum number of reviews/votes
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
 
 # Date range: Fetch content from START_YEAR/START_MONTH to present
-START_YEAR = 2010        # Year to start fetching from (e.g., 2024)
-START_MONTH = 1          # Month to start fetching from (1-12, e.g., 2 = February)
+START_YEAR = 2024        # Year to start fetching from (e.g., 2024)
+START_MONTH = 2          # Month to start fetching from (1-12, e.g., 2 = February)
 
 MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500 pages = ~10,000 items
 
@@ -152,6 +152,18 @@ for i, movie in enumerate(movies):
     if any(g in ['Animation', 'Music', 'Documentary', 'Kids', 'Reality'] for g in genre_list):
         continue
     
+    # Skip Mexican titles (origin_country or original_language = es from Mexico)
+    origin_countries = details.get('origin_country', [])
+    original_language = details.get('original_language', '')
+    if 'MX' in origin_countries or (original_language == 'es' and 'MX' in origin_countries):
+        continue
+    
+    # Skip Passionflix Amazon channel titles
+    if details.get('watch/providers', {}).get('results', {}).get('US', {}).get('flatrate'):
+        provider_names = [p.get('provider_name', '') for p in details['watch/providers']['results']['US']['flatrate']]
+        if 'Passionflix Amazon Channel' in provider_names:
+            continue
+    
     movies_data.append({
         'id': movie['id'],
         'title': movie['title'],
@@ -234,6 +246,18 @@ for i, show in enumerate(tv_shows):
     # Skip if Animation, Music, Documentary, Kids, or Reality genre
     if any(g in ['Animation', 'Music', 'Documentary', 'Kids', 'Reality'] for g in genre_list):
         continue
+    
+    # Skip Mexican titles (origin_country or original_language = es from Mexico)
+    origin_countries = details.get('origin_country', [])
+    original_language = details.get('original_language', '')
+    if 'MX' in origin_countries or (original_language == 'es' and 'MX' in origin_countries):
+        continue
+    
+    # Skip Passionflix Amazon channel titles
+    if providers.get('flatrate'):
+        provider_names = [p.get('provider_name', '') for p in providers['flatrate']]
+        if 'Passionflix Amazon Channel' in provider_names:
+            continue
     
     # Extract TV show status and episodes
     tv_status_info = {
