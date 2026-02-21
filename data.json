@@ -4713,6 +4713,10 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
+          },
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           }
         ]
       },
@@ -9011,32 +9015,6 @@
       "type": "movie"
     },
     {
-      "id": 1356039,
-      "title": "Counterattack",
-      "overview": "When a hostage rescue mission creates a new enemy, Capt. Guerrero and his elite soldiers must face an ambush by a criminal group.",
-      "poster_path": "/38I76hGcFY6xB47pjm7pZwkfuAF.jpg",
-      "release_date": "2025-02-27",
-      "year": 2025,
-      "vote_average": 8.262,
-      "vote_count": 785,
-      "director": "Chava Cartas",
-      "actors": "Luis Alberti, Noé Hernández, Leonardo Alonso",
-      "genres": "Action, Adventure, Thriller",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 399404,
       "title": "Darkest Hour",
       "overview": "In May 1940, the fate of World War II hangs on Winston Churchill, who must decide whether to negotiate with Adolf Hitler or fight on knowing that it could mean the end of the British Empire.",
@@ -11463,23 +11441,6 @@
       "type": "movie"
     },
     {
-      "id": 114168,
-      "title": "Perras",
-      "overview": "Something terrible is happening in class 3A at Calmecatl Junior High. No one can leave the classroom until the guilty party is found. This is the device that gives us a glimpse of the ethics, games, esthetics and eroticism of these girl-women. It is not easy to say what the subject is, there are so many: the discovery of sexuality, discrimination, chance, drugs, maternity, traditions, betrayals, power, love. A mural of a complex reality from the point of view of twenty-something women in the skin of 14 to 15 year old girls.",
-      "poster_path": "/jrJrgwFjAyzkZLiaU5dA8o1hcUA.jpg",
-      "release_date": "2011-03-04",
-      "year": 2011,
-      "vote_average": 7.224,
-      "vote_count": 304,
-      "director": "Guillermo Ríos",
-      "actors": "Claudia Zepeda, Karen de la Hoya, Scarlet Dergal",
-      "genres": "Thriller, Drama, Romance",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 923667,
       "title": "Twilight of the Warriors: Walled In",
       "overview": "In 1980s Hong Kong, troubled youth Chan Lok-kwun, a mainland refugee, struggles to survive in the Kowloon Walled City by joining underground fights. Betrayed by crime boss Mr. Big while trying to buy a fake ID, he steals drugs from him and seeks refuge in the Walled City, where he encounters Cyclone, a compassionate yet authoritative crime lord.",
@@ -11631,52 +11592,6 @@
       "genres": "Drama, Thriller",
       "providers": {
         "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 373226,
-      "title": "Belzebuth",
-      "overview": "While leading a police investigation of a massacre in a public school at the border of Mexico and U.S.A, special Agent Emanuel Ritter links this strange case to the coming and rising of the ancient demon Belzebuth. But in order to stop the trail of upcoming infanticides, Ritter shall have to confront himself before dealing with the forces of good and evil.",
-      "poster_path": "/em79Vu871uUVZEpBY6qkO5O6psP.jpg",
-      "release_date": "2019-01-11",
-      "year": 2019,
-      "vote_average": 7.2,
-      "vote_count": 369,
-      "director": "Emilio Portes",
-      "actors": "Joaquín Cosío, Tobin Bell, Tate Ellington",
-      "genres": "Horror, Fantasy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "AMC Plus Apple TV Channel ",
-            "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
-          },
-          {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
-          },
-          {
-            "name": "AMC+",
-            "logo": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
-          },
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
-          },
-          {
-            "name": "Shudder",
-            "logo": "https://image.tmdb.org/t/p/original/vEtdiYRPRbDCp1Tcn3BEPF1Ni76.jpg"
-          },
-          {
-            "name": "Shudder Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/qb6Lj5BhNJavdmRVDzAqAjd4Tj3.jpg"
-          },
-          {
-            "name": "Shudder Apple TV Channel",
-            "logo": "https://image.tmdb.org/t/p/original/kLfq0I2MwiUFUY9yI1GwOeKxX8f.jpg"
-          }
-        ]
       },
       "type": "movie"
     },
@@ -14712,32 +14627,6 @@
       "type": "movie"
     },
     {
-      "id": 45958,
-      "title": "Biutiful",
-      "overview": "This is a story of a man in free fall. On the road to redemption, darkness lights his way. Connected with the afterlife, Uxbal is a tragic hero and father of two who's sensing the danger of death. He struggles with a tainted reality and a fate that works against him in order to forgive, for love, and forever.",
-      "poster_path": "/4BLshBMp8INRDhvfuKwxMlHDIIt.jpg",
-      "release_date": "2010-10-20",
-      "year": 2010,
-      "vote_average": 7.254,
-      "vote_count": 1183,
-      "director": "Alejandro González Iñárritu",
-      "actors": "Javier Bardem, Maricel Álvarez, Hanaa Bouchaib",
-      "genres": "Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 388399,
       "title": "Patriots Day",
       "overview": "In the aftermath of an unspeakable act of terror, Police Sergeant Tommy Saunders joins courageous survivors, first responders and investigators in a race against the clock to hunt down the Boston Marathon bombers before they strike again.",
@@ -15461,23 +15350,6 @@
             "logo": "https://image.tmdb.org/t/p/original/fts6X10Jn4QT0X6ac3udKEn2tJA.jpg"
           }
         ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 52629,
-      "title": "El Infierno",
-      "overview": "After being deported back to Mexico, a man has no choice but to join the vicious drug cartel that has corrupted his hometown in order to survive.",
-      "poster_path": "/ar8BpJ5xAzTIw9bqD9Sra6TjBvw.jpg",
-      "release_date": "2010-09-03",
-      "year": 2010,
-      "vote_average": 7.884,
-      "vote_count": 744,
-      "director": "Luis Estrada",
-      "actors": "Damián Alcázar, Joaquín Cosío, Ernesto Gómez Cruz",
-      "genres": "Action, Crime, Western, Comedy, Drama",
-      "providers": {
-        "streaming": []
       },
       "type": "movie"
     },
@@ -18180,32 +18052,6 @@
       "type": "movie"
     },
     {
-      "id": 899405,
-      "title": "Anonymously Yours",
-      "overview": "After an accidental text message turns into a digital friendship, Vale and Alex start crushing on each other without realizing they've met in real life.",
-      "poster_path": "/kQu9rNkiB0nSSRGQX0B6u9sxwfw.jpg",
-      "release_date": "2021-12-10",
-      "year": 2021,
-      "vote_average": 7.528,
-      "vote_count": 375,
-      "director": "María Torres",
-      "actors": "Annie Cabello, Ralf, Estefi Merelles",
-      "genres": "Drama, Romance",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 512895,
       "title": "Lady and the Tramp",
       "overview": "The love story between a pampered Cocker Spaniel named Lady and a streetwise mongrel named Tramp. Lady finds herself out on the street after her owners have a baby and is saved from a pack by Tramp, who tries to show her to live her life footloose and collar-free.",
@@ -19550,32 +19396,6 @@
       "type": "movie"
     },
     {
-      "id": 1058694,
-      "title": "Radical",
-      "overview": "In a Mexican border town plagued by neglect, corruption, and violence, a frustrated teacher tries an unorthodox new method to break through his students’ apathy and unlock their curiosity, their potential... and perhaps even their genius.",
-      "poster_path": "/lOAJYpX608aT0ApIv63ZTnol27Y.jpg",
-      "release_date": "2023-10-19",
-      "year": 2023,
-      "vote_average": 8.34,
-      "vote_count": 490,
-      "director": "Christopher Zalla",
-      "actors": "Eugenio Derbez, Daniel Haddad, Jennifer Trejo",
-      "genres": "Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 73532,
       "title": "Le Havre",
       "overview": "In the French harbor city of Le Havre, an elderly shoeshiner with an ailing wife crosses paths with a young African refugee pursued by the police for deportation.",
@@ -20047,28 +19867,6 @@
       "type": "movie"
     },
     {
-      "id": 554596,
-      "title": "No manches, Frida 2: paraíso destruido",
-      "overview": "Zequi and Lucy are about to get married. Although he promises not to overdo it during the bachelor party, things get out of control.",
-      "poster_path": "/rG7rDoTe1ZEa936eonDCkV76nkx.jpg",
-      "release_date": "2019-03-15",
-      "year": 2019,
-      "vote_average": 7.89,
-      "vote_count": 935,
-      "director": "Nacho G. Velilla",
-      "actors": "Omar Chaparro, Martha Higareda, Carla Adell",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "VIX ",
-            "logo": "https://image.tmdb.org/t/p/original/jwRPknT20dfU1GeVqbcDXFyvtdG.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 823147,
       "title": "To Leslie",
       "overview": "A West Texas single mother wins the lottery and squanders it just as fast, leaving behind a world of heartbreak. Years later, with her charm running out and nowhere to go, she fights to rebuild her life and find redemption.",
@@ -20197,28 +19995,6 @@
       "genres": "Drama",
       "providers": {
         "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 761053,
-      "title": "Gabriel's Inferno: Part III",
-      "overview": "The final part of the film adaption of the erotic romance novel Gabriel's Inferno written by an anonymous Canadian author under the pen name Sylvain Reynard.",
-      "poster_path": "/fYtHxTxlhzD4QWfEbrC1rypysSD.jpg",
-      "release_date": "2020-11-19",
-      "year": 2020,
-      "vote_average": 8.362,
-      "vote_count": 1073,
-      "director": "Tosca Musk",
-      "actors": "Melanie Zanetti, Giulio Berruti, Rhett Wellington Ramirez",
-      "genres": "Romance, Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Passionflix Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/7uW24jZJ6BpwQaul7dWnPxcI9DH.jpg"
-          }
-        ]
       },
       "type": "movie"
     },
@@ -21817,32 +21593,6 @@
       "type": "movie"
     },
     {
-      "id": 709629,
-      "title": "War of Likes",
-      "overview": "In order to advance her career in the dynamic world of publicity in Mexico City, Raquel tries to reunite with her high school friend Cecy who has become the queen of social media. But unlike followers, friendships do not come instantly.",
-      "poster_path": "/jpdWHOu6EJbYnLXLCA52h82nLEz.jpg",
-      "release_date": "2021-03-12",
-      "year": 2021,
-      "vote_average": 7.7,
-      "vote_count": 241,
-      "director": "María Ripoll",
-      "actors": "Regina Blandón, Ludwika Paleta, José Sefami",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 426426,
       "title": "Roma",
       "overview": "In 1970s Mexico City, two domestic workers help a mother of four while her husband is away for an extended period of time.",
@@ -22432,32 +22182,6 @@
       "type": "movie"
     },
     {
-      "id": 375794,
-      "title": "No manches, Frida",
-      "overview": "After being released from prison, Zequi, a bank robber, sets out to recover money buried by his accomplice; but is horrified to learn that a high school gymnasium is now over the site where the loot is hidden.",
-      "poster_path": "/6HfyXfIEywLa2HvcswKi44dDKxL.jpg",
-      "release_date": "2016-09-02",
-      "year": 2016,
-      "vote_average": 7.686,
-      "vote_count": 935,
-      "director": "Nacho G. Velilla",
-      "actors": "Omar Chaparro, Martha Higareda, Fernanda Castillo",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 404378,
       "title": "A Street Cat Named Bob",
       "overview": "James Bowen, a homeless busker and recovering drug addict, has his life transformed when he meets a stray ginger cat.",
@@ -22917,28 +22641,6 @@
       "type": "movie"
     },
     {
-      "id": 696374,
-      "title": "Gabriel's Inferno",
-      "overview": "An intriguing and sinful exploration of seduction, forbidden love, and redemption, Gabriel's Inferno is a captivating and wildly passionate tale of one man's escape from his own personal hell as he tries to earn the impossible--forgiveness and love.",
-      "poster_path": "/oyG9TL7FcRP4EZ9Vid6uKzwdndz.jpg",
-      "release_date": "2020-05-29",
-      "year": 2020,
-      "vote_average": 8.4,
-      "vote_count": 2442,
-      "director": "Tosca Musk",
-      "actors": "Melanie Zanetti, Giulio Berruti, Kurt McKinney",
-      "genres": "Romance, Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Passionflix Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/7uW24jZJ6BpwQaul7dWnPxcI9DH.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 245913,
       "title": "Pelé: Birth of a Legend",
       "overview": "The life story of Brazilian football legend, Pele.",
@@ -23361,36 +23063,6 @@
           {
             "name": "Disney Plus",
             "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 211954,
-      "title": "Instructions Not Included",
-      "overview": "Valentin is Acapulco's resident playboy, until a former fling leaves a baby on his doorstep and him heading with her out of Mexico.",
-      "poster_path": "/x3Ygv0aZbZ3iUMeXyIlSu0Ugyp5.jpg",
-      "release_date": "2013-07-20",
-      "year": 2013,
-      "vote_average": 7.743,
-      "vote_count": 947,
-      "director": "Eugenio Derbez",
-      "actors": "Eugenio Derbez, Loreto Peralta, Jessica Lindsey",
-      "genres": "Comedy, Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
       },
@@ -26982,32 +26654,6 @@
       "type": "movie"
     },
     {
-      "id": 256962,
-      "title": "Little Boy",
-      "overview": "An eight-year-old boy is willing to do whatever it takes to end World War II so he can bring his father home. The story reveals the indescribable love a father has for his little boy and the love a son has for his father.",
-      "poster_path": "/lAU9pgq3niI6sFemcKm4FGGmrnW.jpg",
-      "release_date": "2015-04-23",
-      "year": 2015,
-      "vote_average": 7.215,
-      "vote_count": 553,
-      "director": "Alejandro Monteverde",
-      "actors": "Jakob Salvati, Emily Watson, Cary-Hiroyuki Tagawa",
-      "genres": "Comedy, Drama, War",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 340027,
       "title": "Brain on Fire",
       "overview": "Susannah Cahalan, an up-and-coming journalist at the New York Post becomes plagued by voices in her head and seizures, causing a rapid descent into insanity.",
@@ -27648,23 +27294,6 @@
             "logo": "https://image.tmdb.org/t/p/original/aCEpg6aKYM6UUYP95frtKYyVQWD.jpg"
           }
         ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 667257,
-      "title": "Impossible Things",
-      "overview": "After the death of her abusive husband, Matilde finds her new best friend in Miguel, her young, insecure, and disoriented neighbor.",
-      "poster_path": "/t2Ew8NZ8Ci2kqmoecZUNQUFDJnQ.jpg",
-      "release_date": "2021-06-17",
-      "year": 2021,
-      "vote_average": 8.421,
-      "vote_count": 419,
-      "director": "Ernesto Contreras",
-      "actors": "Nora Velázquez, Benny Emmanuel, Luisa Huertas",
-      "genres": "Family, Drama",
-      "providers": {
-        "streaming": []
       },
       "type": "movie"
     },
@@ -29226,23 +28855,6 @@
       "type": "movie"
     },
     {
-      "id": 180147,
-      "title": "We Are the Nobles",
-      "overview": "Tells the \"riches to rags\" story of the Nobles, three upper-class twenty-somethings that appear to have no limits to their checkbooks, and no direction in their lives. Until one day, their father tries to teach them a lesson by staging a financial scandal that forces the whole family to escape to an old house in the poor side of town, and leads the \"kids\" to do what they haven't done before: get jobs.",
-      "poster_path": "/40JLnLz5KEQeZnUCKD3zf8sQJFx.jpg",
-      "release_date": "2013-03-28",
-      "year": 2013,
-      "vote_average": 7.923,
-      "vote_count": 527,
-      "director": "Gary Alazraki",
-      "actors": "Gonzalo Vega, Luis Gerardo Méndez, Karla Souza",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 621191,
       "title": "Blue Story",
       "overview": "Blue Story is a tragic tale of a friendship between Timmy and Marco, two young boys from opposing postcodes. Timmy, a shy, smart, naive and timid young boy from Deptford, goes to school in Peckham where he strikes up a friendship with Marco, a charismatic, streetwise kid from the local area. Although from warring postcodes, the two quickly form a firm friendship until it is tested and they wind up on rival sides of a street war. Blue Story depicts elements of Rapman's own personal experiences and aspects of his childhood.",
@@ -29474,28 +29086,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 724089,
-      "title": "Gabriel's Inferno: Part II",
-      "overview": "Professor Gabriel Emerson finally learns the truth about Julia Mitchell's identity, but his realization comes a moment too late. Julia is done waiting for the well-respected Dante specialist to remember her and wants nothing more to do with him. Can Gabriel win back her heart before she finds love in another's arms?",
-      "poster_path": "/x5o8cLZfEXMoZczTYWLrUo1P7UJ.jpg",
-      "release_date": "2020-07-31",
-      "year": 2020,
-      "vote_average": 8.371,
-      "vote_count": 1536,
-      "director": "Tosca Musk",
-      "actors": "Melanie Zanetti, Giulio Berruti, James Andrew Fraser",
-      "genres": "Romance, Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Passionflix Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/7uW24jZJ6BpwQaul7dWnPxcI9DH.jpg"
           }
         ]
       },
@@ -30117,32 +29707,6 @@
       "type": "movie"
     },
     {
-      "id": 571391,
-      "title": "Chicuarotes",
-      "overview": "Cagalera and Moloteco are two teenagers from San Gregorio Atlapulco who are desperate to get out and move up and away from oppressive circumstances. When they hear of an opportunity to buy a spot in the electrician’s union, which could transform their lives, they quickly devolve into the criminal, adult underworld of Mexico City in a bid to buy their freedom.",
-      "poster_path": "/vN43s4gcqANLuVn5ImuTyb673iz.jpg",
-      "release_date": "2019-06-28",
-      "year": 2019,
-      "vote_average": 7.8,
-      "vote_count": 248,
-      "director": "Gael García Bernal",
-      "actors": "Benny Emmanuel, Gabriel Carbajal, Leidi Gutiérrez",
-      "genres": "Drama, Crime",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Disney Plus",
-            "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          },
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 259943,
       "title": "Coming Home",
       "overview": "Lu and Feng are a devoted couple forced to separate when Lu is arrested and sent to a labor camp as a political prisoner during the Cultural Revolution. He finally returns home only to find that his beloved wife no longer remembers him.",
@@ -30270,23 +29834,6 @@
       "director": "Alexandre Arcady",
       "actors": "Nora Arnezeder, Fu'ad Aït Aattou, Anne Parillaud",
       "genres": "Drama, Romance",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 369299,
-      "title": "Don't Blame the Kid",
-      "overview": "After a one-night stand results in pregnancy, a young woman decides to become partners with the emotionally immature father-to-be.",
-      "poster_path": "/zWp8QZ1KxNrirNK9MF1EAIHjqVw.jpg",
-      "release_date": "2016-05-13",
-      "year": 2016,
-      "vote_average": 7.717,
-      "vote_count": 658,
-      "director": "Gustavo Loza",
-      "actors": "Karla Souza, Ricardo Abarca, Biassini Segura",
-      "genres": "Comedy, Romance",
       "providers": {
         "streaming": []
       },
@@ -31122,23 +30669,6 @@
       "type": "movie"
     },
     {
-      "id": 554590,
-      "title": "Tod@s Caen",
-      "overview": "A pair of seducers try to prove who has the best techniques while trying not to fall in love with each other.",
-      "poster_path": "/3FldRByUqkzOPOZzsPO1PRFzbaQ.jpg",
-      "release_date": "2019-08-30",
-      "year": 2019,
-      "vote_average": 7.819,
-      "vote_count": 480,
-      "director": "Ariel Winograd",
-      "actors": "Martha Higareda, Omar Chaparro, Claudia Álvarez",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 431937,
       "title": "Mr & Mme Adelman",
       "overview": "How did Sarah and Victor get along for more than 45 years? Who was this enigmatic woman living in the shadow of her husband? Love, ambition, betrayals and secrets feed the story of this extraordinary couple, as they experience both the large and small moments of the last century's history.",
@@ -31787,28 +31317,6 @@
       "type": "movie"
     },
     {
-      "id": 557940,
-      "title": "My Boyfriend's Meds",
-      "overview": "A Woman's island getaway with her boyfriend is thrown for a loop when he forgets to take his prescription medications along.",
-      "poster_path": "/hVSOXCBuPXw8yXqbNfwU9ogIp88.jpg",
-      "release_date": "2020-02-14",
-      "year": 2020,
-      "vote_average": 7.153,
-      "vote_count": 288,
-      "director": "Diego Kaplan",
-      "actors": "Jaime Camil, Sandra Echeverría, Brooke Shields",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "MovieSphere+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/bEI5UgVjthdjiBXGiKRy7uSCRvF.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 364051,
       "title": "The Innocents",
       "overview": "Poland, 1945. Mathilde, a young French Red Cross doctor, is on a mission to help the war survivors. When a nun seeks for her help, she is brought to a convent where several pregnant sisters are hiding, unable to reconcile their faith with their pregnancy. Mathilde becomes their only hope.",
@@ -31925,23 +31433,6 @@
       "type": "movie"
     },
     {
-      "id": 678580,
-      "title": "El mesero",
-      "overview": "A waiter pretends to be an important businessman in order to reach the upper class through his entrepreneurial dreams.",
-      "poster_path": "/zvGC5jX5wQmU1GgPc0VGZz7Mtcs.jpg",
-      "release_date": "2021-07-15",
-      "year": 2021,
-      "vote_average": 7.989,
-      "vote_count": 356,
-      "director": "Raúl Martínez",
-      "actors": "Vadhir Derbez, Bárbara López, Arturo Barba",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 404604,
       "title": "Mom",
       "overview": "After her stepdaughter is sexually assaulted at a party, a furious mother sets out to destroy the lives of the four perpetrators who walked free.",
@@ -32047,23 +31538,6 @@
       "director": "Chloé Zhao",
       "actors": "Brady Jandreau, Tim Jandreau, Lilly Jandreau",
       "genres": "Drama, Western",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 958182,
-      "title": "Heroic",
-      "overview": "Luis, an 18-year-old Mexican boy with indigenous roots, enters the Heroico Military College with the hope of securing a better future. There, he encounters a rigid and institutionally violent system designed to make him a perfect soldier.",
-      "poster_path": "/tRD18JW9iKqmwkQKvzPYDQetRoI.jpg",
-      "release_date": "2023-09-21",
-      "year": 2023,
-      "vote_average": 7.2,
-      "vote_count": 201,
-      "director": "David Zonana",
-      "actors": "Santiago Sandoval, Fernando Cuautle, Mónica del Carmen",
-      "genres": "Drama, Thriller",
       "providers": {
         "streaming": []
       },
@@ -32274,32 +31748,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 582927,
-      "title": "I'm No Longer Here",
-      "overview": "In Monterrey, Mexico, a young street gang spends their days dancing to slowed-down cumbia and attending parties. After a mix-up with a local cartel, their leader is forced to migrate to the U.S. but quickly longs to return home.",
-      "poster_path": "/AtfK71xkVaaHTZwU5mgfDgBqg9Y.jpg",
-      "release_date": "2019-10-21",
-      "year": 2019,
-      "vote_average": 7.888,
-      "vote_count": 520,
-      "director": "Luis Fernando Frías de la Parra",
-      "actors": "Juan Daniel Garcia Treviño, Jonathan Espinoza, Xueming Angelina Chen",
-      "genres": "Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -32808,32 +32256,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 671295,
-      "title": "Blue Miracle",
-      "overview": "To save their cash-strapped orphanage, a guardian and his kids partner with a washed-up boat captain for a chance to win a lucrative fishing competition.",
-      "poster_path": "/wlDSL8Rn4eQCzDPy1pPRkCh8H32.jpg",
-      "release_date": "2021-05-27",
-      "year": 2021,
-      "vote_average": 7.348,
-      "vote_count": 297,
-      "director": "Julio Quintana",
-      "actors": "Jimmy Gonzáles, Dennis Quaid, Anthony Gonzalez",
-      "genres": "Adventure, Drama, Family",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -33358,32 +32780,6 @@
       "type": "movie"
     },
     {
-      "id": 264525,
-      "title": "The Perfect Dictatorship",
-      "overview": "TV MX, the most powerful Mexican Television Corporation, discloses a scandalous story involving Governor Carmelo Vargas in serious crimes and illicit business. Governor Vargas worried about his political future, decides to clean his image and negotiates a billionaire secret agreement with the owners of the TV Corporation. Carlos Rojo, an ambitious young news producer, and Ricardo Diaz, TV network star reporter, are responsible for making a dirty campaign to change the image the public has of the corrupt Governor and make him, at any cost, a political star and a great presidential candidate. Mexican Television believes that democracy is a farce and has already placed one President... Will they do it again?",
-      "poster_path": "/cgg9WVENbrSmNsX8BlBfrhTY0IA.jpg",
-      "release_date": "2014-10-16",
-      "year": 2014,
-      "vote_average": 7.4,
-      "vote_count": 204,
-      "director": "Luis Estrada",
-      "actors": "Damián Alcázar, Alfonso Herrera, Joaquín Cosío",
-      "genres": "Drama, Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 656563,
       "title": "Rich in Love",
       "overview": "Working incognito at his rich dad's company to test his own merits, Teto falls for Paula and tells her he grew up poor, a lie that spins out of control.",
@@ -33728,32 +33124,6 @@
       "type": "movie"
     },
     {
-      "id": 660637,
-      "title": "Dance of the Forty One",
-      "overview": "Mexico City, November 1901. The police raid a private home where a secret party is being held. Among those attending is the son-in-law of President Porfirio Díaz.",
-      "poster_path": "/jcSqwsEtT7wKfQ8oKaaulMMGUdS.jpg",
-      "release_date": "2020-11-19",
-      "year": 2020,
-      "vote_average": 7.845,
-      "vote_count": 219,
-      "director": "David Pablos",
-      "actors": "Alfonso Herrera, Emiliano Zurita, Fernando Becerril",
-      "genres": "Drama, History",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 332835,
       "title": "Piku",
       "overview": "A taxi driver is caught between a dysfunctional relationship between a woman and her father as he drives them to Kolkata.",
@@ -33925,28 +33295,6 @@
       "genres": "Comedy",
       "providers": {
         "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 579792,
-      "title": "Cindy La Regia",
-      "overview": "When Cindy decides that she doesn't want to marry her boyfriend, she runs to Mexico City, where new friendships and unexpected paths teach her that there are so much more possibilities on her life and her talent than she imagines.",
-      "poster_path": "/1KGbMtuySUtRggWlYPXyTWFcxLx.jpg",
-      "release_date": "2020-01-24",
-      "year": 2020,
-      "vote_average": 7.817,
-      "vote_count": 251,
-      "director": "Catalina Aguilar Mastretta",
-      "actors": "Cassandra Sánchez Navarro, Regina Blandón, Diana Bovio",
-      "genres": "Comedy, Romance",
-      "providers": {
-        "streaming": [
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          }
-        ]
       },
       "type": "movie"
     },
@@ -34442,23 +33790,6 @@
       "type": "movie"
     },
     {
-      "id": 317925,
-      "title": "A la mala",
-      "overview": "Maria Laura \"Mala\" is an actress with little luck, but she is successful working for other women, seducing their boyfriends to know if they are faithful or not. But everything changes when her dream to perform in her acting career depends on a job to be performed with Santiago who breaks the pattern and shakes her professional convictions.",
-      "poster_path": "/AinFWAtZFif4SociC1yRTqkk8WQ.jpg",
-      "release_date": "2015-02-27",
-      "year": 2015,
-      "vote_average": 7.751,
-      "vote_count": 211,
-      "director": "Pedro Pablo Ibarra",
-      "actors": "Aislinn Derbez, Mauricio Ochmann, Luis Arrieta",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 520736,
       "title": "Loro 2",
       "overview": "\"Loro\", in two parts, is a period movie that chronicles, as a fiction story, events likely happened in Italy (or even made up) between 2006 and 2010.  \"Loro\" wants to suggest in portraits and glimps, through a composite constellation of characters, a moment in history, now definitively ended, which can be described in a very summary picture of the events as amoral, decadent but extraordinarily alive.  Additionally, \"Loro\" wishes to tell the story of some Italians, fresh and ancient people at the same time: souls from a modern imaginary Purgatory who, moved by heterogeneous intents like ambition, admiration, affection, curiosity, personal interests, establish to try and orbit around the walking Paradise that is the man named Silvio Berlusconi.",
@@ -34536,23 +33867,6 @@
       "type": "movie"
     },
     {
-      "id": 268854,
-      "title": "The Thin Yellow Line",
-      "overview": "Five men are hired to paint the yellow line the road between two villages in Mexico forgotten. Aboard an old pickup truck, initiated the work of more than two hundred kilometers of asphalt and yellow paint to be completed in less than a fortnight",
-      "poster_path": "/bjcegq38wYxrQuCCmZWHfUfdem.jpg",
-      "release_date": "2015-03-06",
-      "year": 2015,
-      "vote_average": 8.246,
-      "vote_count": 224,
-      "director": "Celso R. García",
-      "actors": "Damián Alcázar, Joaquín Cosío, Silverio Palacios",
-      "genres": "Drama",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 438634,
       "title": "Summer 1993",
       "overview": "After her mother's death, six-year-old Frida is sent to her uncle's family to live with them in the countryside. But Frida finds it hard to forget her mother and adapt to her new life.",
@@ -34571,23 +33885,6 @@
             "logo": "https://image.tmdb.org/t/p/original/jxavsObOHN6UqlbuZQ1UpVRVv6X.jpg"
           }
         ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 252444,
-      "title": "Get Married If You Can",
-      "overview": "Ana Paula catches her fiancé cheating. After a night of drinking, she wakes up far from home, not so certain she wants to go back.",
-      "poster_path": "/qShzlTIGJRDENDgvgVVvrIqpmIJ.jpg",
-      "release_date": "2014-02-14",
-      "year": 2014,
-      "vote_average": 7.359,
-      "vote_count": 220,
-      "director": "Marco Polo Constandse",
-      "actors": "Martha Higareda, Luis Gerardo Méndez, Michel Brown",
-      "genres": "Comedy, Romance",
-      "providers": {
-        "streaming": []
       },
       "type": "movie"
     },
@@ -35011,32 +34308,6 @@
       "type": "movie"
     },
     {
-      "id": 746957,
-      "title": "You've Got This",
-      "overview": "An ad creative and a successful exec have a great marriage — until he wants to be a dad just as her star is rising. Then he brings someone new home.",
-      "poster_path": "/wpY2ZhxqsHYXjaaFUHzQ0nmIjYs.jpg",
-      "release_date": "2020-10-02",
-      "year": 2020,
-      "vote_average": 7.885,
-      "vote_count": 288,
-      "director": "Salvador Espinosa",
-      "actors": "Mauricio Ochmann, Esmeralda Pimentel, Matteo Giannini",
-      "genres": "Romance, Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 406385,
       "title": "I Can Quit Whenever I Want 2: Masterclass",
       "overview": "Pietro Zinni is asked by the police to revive the old gang to create a task force that will stop the spread of smart drugs.",
@@ -35389,23 +34660,6 @@
             "logo": "https://image.tmdb.org/t/p/original/jUgtBLZzpaLVTNnqGYDOU9BlCzU.jpg"
           }
         ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 772071,
-      "title": "Cuando sea joven",
-      "overview": "70-year-old Malena gets a second chance at life when she magically turns into her 22-year-old self. Now, posing as \"Maria\" to hide her true identity, she becomes the lead singer of her grandson's band and tries to recover her dream of singing, which she had to give up at some point.",
-      "poster_path": "/9hPa1NDUZCjGBDt0nvg4hnWis7W.jpg",
-      "release_date": "2022-09-14",
-      "year": 2022,
-      "vote_average": 8.413,
-      "vote_count": 283,
-      "director": "Raúl Martínez",
-      "actors": "Verónica Castro, Natasha Dupeyrón, Michael Ronda",
-      "genres": "Comedy, Fantasy",
-      "providers": {
-        "streaming": []
       },
       "type": "movie"
     },
@@ -35859,23 +35113,6 @@
       "type": "movie"
     },
     {
-      "id": 610461,
-      "title": "Veinteañera, divorciada y fantástica",
-      "overview": "Regina, our young protagonist, always dreamed of getting married. And she did it - but the dream lasted much less than she thought and now she has to face life in a very funny way as a divorcee.",
-      "poster_path": "/oSbCdDI0SAAOdywGe0YVO2iDdV9.jpg",
-      "release_date": "2020-02-14",
-      "year": 2020,
-      "vote_average": 8.0,
-      "vote_count": 390,
-      "director": "Noé Santillán-López",
-      "actors": "Paulina Goto, Jesús Zavala, Vadhir Derbez",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 529531,
       "title": "Hannah Gadsby: Nanette",
       "overview": "The Australian comedian Hannah Gadsby is taking an anti-comedy stance in her newest special.",
@@ -36028,7 +35265,7 @@
       "year": 2026,
       "vote_average": 8.536,
       "vote_count": 351,
-      "actors": "Peter Claffey, Dexter Sol Ansell",
+      "actors": "Peter Claffey, Dexter Sol Ansell, Daniel Ings",
       "genres": "Drama, Sci-Fi & Fantasy, Action & Adventure",
       "tv_status": {
         "status": "Returning Series",
@@ -44779,46 +44016,6 @@
       "type": "tv"
     },
     {
-      "id": 63764,
-      "title": "Senora Acero",
-      "overview": "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
-      "poster_path": "/vXhBxsvpW2mGuXRbIK5Yazdp8Zg.jpg",
-      "first_air_date": "2014-09-23",
-      "year": 2014,
-      "vote_average": 7.815,
-      "vote_count": 647,
-      "actors": "Carolina Miranda, Oscar Priego, Michel Duval",
-      "genres": "Drama, Crime, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 5,
-          "episode": 77,
-          "air_date": "2019-01-31",
-          "name": "Episode 77"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "NBC",
-            "logo": "https://image.tmdb.org/t/p/original/6hFf3sIdmXSAczy3i6tLSmy6gwK.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 43901,
       "title": "Longmire",
       "overview": "A Wyoming sheriff rebuilds his life and career following the death of his wife. Based on the “Walt Longmire” series of mystery novels written by best-selling author Craig Johnson.",
@@ -53286,33 +52483,6 @@
       "type": "tv"
     },
     {
-      "id": 58539,
-      "title": "Wild at Heart",
-      "overview": "Corazón indomable is a Mexican telenovela produced by Nathalie Lartilleux for Televisa. It is a remake of Marimar, produced in 1994, and starring Thalía and Eduardo Capetillo.\n\nAna Brenda Contreras and Daniel Arenas star as the protagonists, while Ingrid Martz, Elizabeth Álvarez, Carlos de la Mota and René Strickler star as the antagonists.",
-      "poster_path": "/yXpYJyLptcASCUQxLI4bbE4SmZ2.jpg",
-      "first_air_date": "2013-02-25",
-      "year": 2013,
-      "vote_average": 7.761,
-      "vote_count": 490,
-      "actors": "Ana Brenda Contreras, Daniel Arenas, Elizabeth Álvarez",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 162,
-          "air_date": "2013-10-08",
-          "name": "Episode 162"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 154825,
       "title": "Business Proposal",
       "overview": "In disguise as her friend, Ha-ri shows up to a blind date to scare him away. But plans go awry when he turns out to be her CEO — and makes a proposal.",
@@ -53964,42 +53134,6 @@
       "type": "tv"
     },
     {
-      "id": 74428,
-      "title": "Rosario Tijeras (Mexico)",
-      "overview": "Worlds collide when a vengeance-obsessed young woman from the other side of the tracks captures the attention of two well-off friends.",
-      "poster_path": "/q03eQL8AUx49lVH6IT3IlmWzhQu.jpg",
-      "first_air_date": "2016-10-30",
-      "year": 2016,
-      "vote_average": 7.596,
-      "vote_count": 1755,
-      "actors": "Bárbara de Regil, Iván Arana, Samantha Acuña",
-      "genres": "Drama, Crime",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 4,
-          "episode": 40,
-          "air_date": "2025-06-18",
-          "name": "Episode 40"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 69470,
       "title": "Santa Clarita Diet",
       "overview": "They're ordinary husband and wife realtors until she undergoes a dramatic change that sends them down a road of death and destruction. In a good way.",
@@ -54088,33 +53222,6 @@
             "logo": "https://image.tmdb.org/t/p/original/kLfq0I2MwiUFUY9yI1GwOeKxX8f.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 42280,
-      "title": "Abyss of Passion",
-      "overview": "Rosendo Arango, the owner of Grupo La Anita, is married to Alfonsina. They have one son, Damian. Estefanía Bouvier is married to Augusto Castanon and they have one daughter, Elisa. Rosendo cheats on his wife with Carmina Bouvier, Estefanía's sister. Damian and Elisa become friends because Augusto and Rosendo were best friends. But one day, Rosendo and Carmina try to go away from La Ermita, the pueblo in which they live in. But, Estefanía, who had found out about their plans, wants to prevent this, shuts Carmina in her room and then goes with Rosendo in his car, trying to convince him not to run away with Carmina. They have an accident and die and everyone thinks they were lovers.",
-      "poster_path": "/eMo6VTGf3uNZrh9RShZDFSwwpfQ.jpg",
-      "first_air_date": "2012-01-23",
-      "year": 2012,
-      "vote_average": 7.437,
-      "vote_count": 254,
-      "actors": "Angelique Boyer, David Zepeda, Sabine Moussier",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 162,
-          "air_date": "2012-09-02",
-          "name": "Episode 162"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -56125,42 +55232,6 @@
       "type": "tv"
     },
     {
-      "id": 82809,
-      "title": "False Identity",
-      "overview": "Isabel and Diego, two complete strangers, must assume the identity of a married couple in order to flee the state of Sonora.",
-      "poster_path": "/rGIVID9KFrE6oMOtqost2Ccd9Co.jpg",
-      "first_air_date": "2018-10-03",
-      "year": 2018,
-      "vote_average": 7.6,
-      "vote_count": 533,
-      "actors": "Luis Ernesto Franco, Camila Sodi, Dulce María",
-      "genres": "Crime, Action & Adventure",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 80,
-          "air_date": "2021-01-18",
-          "name": "Episode 80"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 79649,
       "title": "Project Blue Book",
       "overview": "A chronicle of the true top secret U.S. Air Force-sponsored investigations into UFO-related phenomena in the 1950s and ’60s, known as “Project Blue Book”.",
@@ -56839,42 +55910,6 @@
       "type": "tv"
     },
     {
-      "id": 105214,
-      "title": "Dark Desire",
-      "overview": "Married Alma spends a fateful weekend away from home that ignites passion, ends in tragedy and leads her to question the truth about those close to her.",
-      "poster_path": "/uxFNAo2A6ZRcgNASLk02hJUbybn.jpg",
-      "first_air_date": "2020-07-15",
-      "year": 2020,
-      "vote_average": 7.31,
-      "vote_count": 4257,
-      "actors": "N/A",
-      "genres": "Mystery, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 15,
-          "air_date": "2022-02-02",
-          "name": "Facing the Darkness..."
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 66761,
       "title": "Medici: Masters of Florence",
       "overview": "The story of the Medici family of Florence, their ascent from simple merchants to power brokers sparking an economic and cultural revolution. Along the way, they also accrue a long list of powerful enemies.",
@@ -57435,33 +56470,6 @@
       "type": "tv"
     },
     {
-      "id": 12926,
-      "title": "Teresa",
-      "overview": "Teresa Chavez is a young woman with an obsession for money and ambition. Despite her beauty and the fact that she was raised in the bosom of a loving family, she is resentful; her one desire is to leave her humble but poor neighbourhood.",
-      "poster_path": "/5U8eEPG2ESPOsjDB0J9aXMelctc.jpg",
-      "first_air_date": "2010-08-02",
-      "year": 2010,
-      "vote_average": 7.682,
-      "vote_count": 1796,
-      "actors": "Angelique Boyer, Aarón Díaz, Cynthia Klitbo",
-      "genres": "Soap, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 151,
-          "air_date": "2011-02-27",
-          "name": "Episode 151"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 76148,
       "title": "Derry Girls",
       "overview": "Amidst the political conflict of Northern Ireland in the 1990s, five secondary school students square off with the universal challenges of being a teenager.",
@@ -57829,42 +56837,6 @@
       "type": "tv"
     },
     {
-      "id": 80169,
-      "title": "The House of Flowers",
-      "overview": "A wealthy matriarch tries to maintain her family's facade of perfection after her husband's mistress exposes their dirty secrets.",
-      "poster_path": "/zAIp0cT4Hy6faiPYcOPl1VsuGR.jpg",
-      "first_air_date": "2018-08-10",
-      "year": 2018,
-      "vote_average": 7.749,
-      "vote_count": 906,
-      "actors": "Aislinn Derbez, Dario Yazbek Bernal, Arturo Ríos",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 11,
-          "air_date": "2020-04-23",
-          "name": "LAUREL (Symb. glory)"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 66551,
       "title": "The Mick",
       "overview": "Mackenzie \"Mickey\" Murphy is a hard-living, foul-mouthed, cigarette-smoking woman who moves to affluent Greenwich, CT to raise the spoiled kids of her wealthy sister who fled the country to avoid a federal indictment. She quickly learns what the rest of us already know - other people's children are awful.",
@@ -58035,46 +57007,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 68878,
-      "title": "La Doña",
-      "overview": "A story of revenge and ambition, seduction and betrayal; all told from the perspective of an offended and abused woman named Altagracia. Altagracia represents the hundreds of thousands of Mexican women who have been victims of the violence by faceless men who are protected by impunity. But Altagracia, transformed into a strong-willed, ruthless man-eater known as La Doña, will seek out each and every one of these men to bring them to justice.",
-      "poster_path": "/xPe11sREBZIPUB1SnwckuElru1h.jpg",
-      "first_air_date": "2016-11-29",
-      "year": 2016,
-      "vote_average": 7.376,
-      "vote_count": 636,
-      "actors": "Aracely Arámbula, Andrea Martí, Carlos Ponce",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 60,
-          "air_date": "2020-06-04",
-          "name": "Episode 60"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "NBC",
-            "logo": "https://image.tmdb.org/t/p/original/6hFf3sIdmXSAczy3i6tLSmy6gwK.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
           }
         ]
       },
@@ -58518,77 +57450,6 @@
             "logo": "https://image.tmdb.org/t/p/original/rcBwnERpNfPfWB5DaSTyEMCZbCA.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 44914,
-      "title": "The Return",
-      "overview": "La Patrona is a Spanish-language telenovela produced by United States-based television network Telemundo Studios, Miami and Mexican Argos Comunicación. The telenovela is a remake of the Venezuelan telenovela La Dueña, written by José Ignacio Cabrujas.\n\nThe name reflects a local term or slang in Mexico to address a person recognized as the main boss. However, the title is also a reflection of both the protagonist and the antagonist struggle to conquer power, authority and respect in a labor field traditionally deemed to be a man's job.",
-      "poster_path": "/sY5Uf3VQmxA3MVxSgdDrHQcKwCV.jpg",
-      "first_air_date": "2013-01-08",
-      "year": 2013,
-      "vote_average": 7.7,
-      "vote_count": 310,
-      "actors": "Aracely Arámbula, Jorge Luis Pila, Christian Bach",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 128,
-          "air_date": "2013-07-04",
-          "name": "Episode 128"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          },
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "NBC",
-            "logo": "https://image.tmdb.org/t/p/original/6hFf3sIdmXSAczy3i6tLSmy6gwK.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 77567,
-      "title": "Mi marido tiene familia",
-      "overview": "Julieta is quite happy in her relationship with her live in boyfriend, Robert... and thrilled that she won't have to deal with in-laws since Robert doesn't know his family. Things start going downhill for the couple when they rent an apartment from a very eccentric family dealing with a traumatic incident from their past.",
-      "poster_path": "/jSuUar73WzYWgf0fwB2oKQTSr2r.jpg",
-      "first_air_date": "2017-06-05",
-      "year": 2017,
-      "vote_average": 7.8,
-      "vote_count": 245,
-      "actors": "Zuria Vega, Daniel Arenas, Susana González",
-      "genres": "Soap, Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 167,
-          "air_date": "2019-02-24",
-          "name": "Episode 167"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -59447,46 +58308,6 @@
           {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 77341,
-      "title": "Enemigo íntimo",
-      "overview": "The story of two siblings who witness the murder of their parents in the hands of one of the drug cartels in Mexico, after which Alejandro Ferrer's younger sister is kidnapped. 25 years later, Alejandro is now the captain of the Federal Police and seeks revenge against the narcos for destroying his family.",
-      "poster_path": "/81URAPXi0GP9Ul4MxcVSiDEnpPq.jpg",
-      "first_air_date": "2018-02-21",
-      "year": 2018,
-      "vote_average": 7.601,
-      "vote_count": 434,
-      "actors": "Matías Novoa, Fernanda Castillo, Raúl Méndez",
-      "genres": "Action & Adventure, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 60,
-          "air_date": "2020-09-21",
-          "name": "Episode 60"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "NBC",
-            "logo": "https://image.tmdb.org/t/p/original/6hFf3sIdmXSAczy3i6tLSmy6gwK.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
           }
         ]
       },
@@ -60412,38 +59233,6 @@
           {
             "name": "Rakuten Viki",
             "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 90239,
-      "title": "The Game of Keys",
-      "overview": "A casual encounter between Adriana and Sergio, two former high school friends, triggers the beginning of the game of the keys where four couples generate new sexual and emotional combinations in a dangerous and lustful game.\n\nThe game consists of everyone putting their keys in a bowl. At random, each one chooses some keys and he must go to spend the night with the owner of the keys. This game will revolutionize the group of friends and their lives. It will make them discover who they are and what they really want.",
-      "poster_path": "/a2dhpxmBGfpSx6HaeUpSozR1Z9x.jpg",
-      "first_air_date": "2019-08-16",
-      "year": 2019,
-      "vote_average": 7.466,
-      "vote_count": 2021,
-      "actors": "Gaby Espino, Fabiola Campomanes, Humberto Busto",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 6,
-          "air_date": "2024-02-14",
-          "name": "I pronounce you ex husband and ex wife!"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "VIX ",
-            "logo": "https://image.tmdb.org/t/p/original/jwRPknT20dfU1GeVqbcDXFyvtdG.jpg"
           }
         ]
       },
@@ -63712,33 +62501,6 @@
       "type": "tv"
     },
     {
-      "id": 33761,
-      "title": "Triumph of Love",
-      "overview": "Victoria's life is perfect. She is a famous designer, mother of two and the wife of an actor. But she suffers the absence of her daughter Maria, who was separated from her when she was a little girl.",
-      "poster_path": "/qjuI9tYDJikLcomkFLwkKoOAagm.jpg",
-      "first_air_date": "2010-10-25",
-      "year": 2010,
-      "vote_average": 7.736,
-      "vote_count": 468,
-      "actors": "Victoria Ruffo, Maite Perroni, William Levy",
-      "genres": "Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 176,
-          "air_date": "2011-06-26",
-          "name": "Episode 176"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 81354,
       "title": "Ratched",
       "overview": "An origins story, beginning in 1947, which follows Ratched's journey and evolution from nurse to full-fledged monster tracking her murderous progression through the mental health care system.",
@@ -64254,42 +63016,6 @@
       "type": "tv"
     },
     {
-      "id": 102903,
-      "title": "Control Z",
-      "overview": "When a hacker begins releasing students' secrets to the entire high school, the socially isolated but observant Sofía works to uncover his/her identity.",
-      "poster_path": "/oEDU7EGbmS6f7kpMmViyGHMfhwp.jpg",
-      "first_air_date": "2020-05-22",
-      "year": 2020,
-      "vote_average": 8.188,
-      "vote_count": 2343,
-      "actors": "Ana Valeria Becerril, Michael Ronda, Yankel Stevan",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 8,
-          "air_date": "2022-07-06",
-          "name": "Graduation"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 234763,
       "title": "The Boy's Word: Blood on the Asphalt",
       "overview": "In the late 1980s, when “perestroika” was taking place in the USSR and the era of the Soviet Union was about to collapse, life became unstable and very different. The 1980s brought not only freedom, but also waves of crime on the city streets. While some young people began to ‘grow up’ on the streets, others found it difficult to find their place in this unpredictable reality. Andrey, lives with his mother and five-year-old sister. He studies at a music school and often encounters street teenagers who harass him. To protect himself, Andrey makes friends with one of these teenagers, Marat, who introduces him to gang life. Youth groups fight for every piece of territory; they defend their right to live the life, even breaking laws and promises. The only thing that matters to them is the vows they make to their gang members-brothers, with whom they confront the violence and fears of the adult world.",
@@ -64349,47 +63075,6 @@
       "type": "tv"
     },
     {
-      "id": 84969,
-      "title": "LOL: Last One Laughing",
-      "overview": "An unscripted variety series from Mexico in which ten professional comedians compete for a cash prize by trying to make each other laugh. The one who refrains from laughing the longest, while forcing other contestants to laugh first, is the winner.",
-      "poster_path": "/RHkYMwtfUuhddxZoXGDTq56rPT.jpg",
-      "first_air_date": "2018-12-13",
-      "year": 2018,
-      "vote_average": 7.4,
-      "vote_count": 318,
-      "actors": "Eugenio Derbez",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 8,
-          "episode": 3,
-          "air_date": "2026-02-19",
-          "name": "Episode 3"
-        },
-        "next_episode": {
-          "season": 8,
-          "episode": 4,
-          "air_date": "2026-02-26",
-          "name": "Episode 4"
-        }
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 113367,
       "title": "The Wilds",
       "overview": "A group of teen girls from different backgrounds must fight for survival after a plane crash strands them on a deserted island. The castaways both clash and bond as they learn more about each other, the secrets they keep, and the traumas they've all endured. But there’s just one twist… these girls did not end up on this island by accident.",
@@ -64422,33 +63107,6 @@
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 58450,
-      "title": "What Life Took From Me",
-      "overview": "\"What Life Took From Me\" is a Mexican telenovela produced by Angelli Nesma Medina for Televisa. It is a remake of Bodas de odio, produced by Ernesto Alonso in 1983. In 2003, \"True Love\", the first remake, was produced by Carla Estrada. Unlike Bodas de odio and \"True Love\", \"What Life Took From Me\" has been adapted to the present time.",
-      "poster_path": "/qHPdvdPE0U2B4nuQaU0IrWtqoQ2.jpg",
-      "first_air_date": "2013-10-28",
-      "year": 2013,
-      "vote_average": 7.706,
-      "vote_count": 1337,
-      "actors": "Angelique Boyer, Sebastián Rulli, Luis Roberto Guzmán",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 197,
-          "air_date": "2014-10-06",
-          "name": "Episode 197"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -65692,33 +64350,6 @@
       "type": "tv"
     },
     {
-      "id": 46883,
-      "title": "Porque el Amor Manda",
-      "overview": "Porque el Amor Manda is a 2012 Mexican telenovela produced by Juan Osorio for Televisa. It is a remake of the Colombian telenovela El secretario, produced by Juan Andrés Flórez in 2011.\n\nFernando Colunga and Blanca Soto star as the protagonists Claudia Álvarez stars as the antagonist.",
-      "poster_path": "/uf6f1YqRUV52Xzj7ytYB7F7sd9S.jpg",
-      "first_air_date": "2012-10-08",
-      "year": 2012,
-      "vote_average": 8.1,
-      "vote_count": 433,
-      "actors": "Blanca Soto, Fernando Colunga, Carmen Salinas",
-      "genres": "Drama, Comedy, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 182,
-          "air_date": "2013-06-18",
-          "name": "Episodio  182"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 79026,
       "title": "The Protector",
       "overview": "The epic adventure of Hakan, a young shopkeeper whose modern world gets turned upside down when he learns he’s connected to a secret, ancient order, tasked with protecting Istanbul.",
@@ -65850,42 +64481,6 @@
       },
       "providers": {
         "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 120168,
-      "title": "Who Killed Sara?",
-      "overview": "Hell-bent on exacting revenge and proving he was framed for his sister's murder, Álex sets out to unearth much more than the crime's real culprit.",
-      "poster_path": "/o7uk5ChRt3quPIv8PcvPfzyXdMw.jpg",
-      "first_air_date": "2021-03-24",
-      "year": 2021,
-      "vote_average": 7.587,
-      "vote_count": 1208,
-      "actors": "Manolo Cardona, Carolina Miranda, Ginés García Millán",
-      "genres": "Drama, Crime, Mystery",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 7,
-          "air_date": "2022-05-18",
-          "name": "What Did You Do, Sara?"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
       },
       "type": "tv"
     },
@@ -66120,33 +64715,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 63407,
-      "title": "Mi corazón es tuyo",
-      "overview": "Fernando Lascurain is a wealthy businessman and recent widower, attempting to raise his seven unruly children. He seeks the assistance of a new nanny. He hires and falls in love with Ana Leal, a struggling exotic dancer who tries to hide her double life. Although Ana lacks experience and a refined education, she quickly bonds with the Lascurain children. Ana dreams of being a mother, but when her home is destroyed following an accident, she must borrow money from her ruthless boss at \"Chicago\", the night club where she is secretly employed. When Fernando simultaneously falls for Ana and Isabela, an economist and sophisticated woman who is trained by her mother to marry a millionaire, he must choose between both women.",
-      "poster_path": "/kMF4iYqlnsQMglOsr0C6KIVtB2X.jpg",
-      "first_air_date": "2014-06-30",
-      "year": 2014,
-      "vote_average": 7.987,
-      "vote_count": 1198,
-      "actors": "Silvia Navarro, Jorge Salinas, Mayrín Villanueva",
-      "genres": "Soap, Comedy, Drama, Family",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 177,
-          "air_date": "2015-03-02",
-          "name": "Episode 177"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -66479,42 +65047,6 @@
       "type": "tv"
     },
     {
-      "id": 115857,
-      "title": "Daughter from Another Mother",
-      "overview": "After realizing their babies were exchanged at birth, two women develop a plan to adjust to their new lives: creating a single —and peculiar— family.",
-      "poster_path": "/lq0n5QzBA78ndUDb9SdN93P8hjY.jpg",
-      "first_air_date": "2021-01-20",
-      "year": 2021,
-      "vote_average": 7.633,
-      "vote_count": 1251,
-      "actors": "Ludwika Paleta, Paulina Goto, Martín Altomaro",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 10,
-          "air_date": "2022-12-25",
-          "name": "A Beautiful Family"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 98161,
       "title": "Home Before Dark",
       "overview": "Young investigative journalist Hilde Lisko moves with her family to the small town her father left behind, only to unearth shocking secrets in her pursuit of the truth.",
@@ -66545,42 +65077,6 @@
           {
             "name": "Apple TV Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/mHrYMgnZIp6lgW2aXg7ix9zGOnA.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 279060,
-      "title": "Chespirito: Not Really on Purpose",
-      "overview": "Miniseries that follow the life and career of Mexican actor, comedian and producer Roberto Gómez Bolaños, known for being the creator of El Chavo del 8, El Chapulín Colorado and Chespirito.",
-      "poster_path": "/mwsuIxLL84wfJGWhN7oOrFfpZ6d.jpg",
-      "first_air_date": "2025-06-05",
-      "year": 2025,
-      "vote_average": 7.949,
-      "vote_count": 450,
-      "actors": "Pablo Cruz Guerrero, Paulina Dávila, Bárbara López",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2025-07-24",
-          "name": "It Was Worth It"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          },
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
           }
         ]
       },
@@ -67908,38 +66404,6 @@
       "type": "tv"
     },
     {
-      "id": 72306,
-      "title": "La piloto",
-      "overview": "Yolanda dreamed her entire life of being a pilot. She found a stewardess job, and an unexpected role in drug smuggling.",
-      "poster_path": "/ra6YqDIq9KW44ssVSVaPBZh9FgC.jpg",
-      "first_air_date": "2017-03-07",
-      "year": 2017,
-      "vote_average": 7.393,
-      "vote_count": 355,
-      "actors": "Livia Brito Pestana, Juan Eduardo Colucho, Marcelo Buquet",
-      "genres": "Drama, Crime",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 2,
-          "episode": 82,
-          "air_date": "2018-10-09",
-          "name": "Episode 82"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "VIX ",
-            "logo": "https://image.tmdb.org/t/p/original/jwRPknT20dfU1GeVqbcDXFyvtdG.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 194567,
       "title": "The Lazarus Project",
       "overview": "George wakes up to find himself several months in the past before being recruited for the Lazarus Project – a secret organization that turns back time when the world is at threat of extinction.",
@@ -68201,38 +66665,6 @@
       "type": "tv"
     },
     {
-      "id": 71740,
-      "title": "40 y 20",
-      "overview": "A comedy series about a divorced dad who likes younger women, and his son who likes older women.",
-      "poster_path": "/jS3N1pZpBAj8Ugqgv332oi20Til.jpg",
-      "first_air_date": "2016-04-01",
-      "year": 2016,
-      "vote_average": 8.044,
-      "vote_count": 1506,
-      "actors": "Jorge Van Rankin, Michelle Rodríguez, Mauricio Garza",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 12,
-          "episode": 12,
-          "air_date": "2025-03-10",
-          "name": "Se me van"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 105804,
       "title": "Candy",
       "overview": "Candy Montgomery is a 1980s housewife and mother who did everything right — but when the pressure of conformity builds within her, her actions scream for just a bit of freedom. Until someone tells her to shush. With deadly results.",
@@ -68433,33 +66865,6 @@
             "logo": "https://image.tmdb.org/t/p/original/hwsU65QW7A4dbMEWkDpgHyCNcfS.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 109470,
-      "title": "Imperio De Mentiras",
-      "overview": "Elisa Cantú never imagined that, upon returning to Mexico from New York, where she resides, she would encounter an unexpected tragedy that changes her life. The night Elisa would celebrate her birthday, fate leads her to meet Leonardo Velasco, a policeman in love with Julia, a teacher, to whom he was to marry. At the end of the evening, Leonardo receives an emergency call, in which the discovery of two bodies is reported, one of them is that of his fiancée, who lies next to the body of Augusto Cantú, millionaire businessman and father of Elisa. Elisa and Leonardo will come together to search for the truth of what happened.",
-      "poster_path": "/5adCPn5cthQcTN1q1e45gYD6v3Z.jpg",
-      "first_air_date": "2020-09-14",
-      "year": 2020,
-      "vote_average": 7.4,
-      "vote_count": 348,
-      "actors": "Angelique Boyer, Andrés Palacios, Leticia Calderón",
-      "genres": "Drama, Action & Adventure, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 92,
-          "air_date": "2021-01-17",
-          "name": "Episode 92"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -69495,33 +67900,6 @@
       "type": "tv"
     },
     {
-      "id": 46901,
-      "title": "Amores verdaderos",
-      "overview": "Amores verdaderos is a 2012 Mexican telenovela produced by Nicandro Díaz Gonzalez for Televisa. It is based on Amor en Custodia, produced in Colombia, Argentina, and Mexico.",
-      "poster_path": "/smcTh9fyEBQkasD5TSuqdNeFlzW.jpg",
-      "first_air_date": "2012-09-03",
-      "year": 2012,
-      "vote_average": 7.691,
-      "vote_count": 740,
-      "actors": "Erika Buenfil, Eduardo Yáñez, Eiza González",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 183,
-          "air_date": "2013-05-12",
-          "name": "Episode 183"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 70540,
       "title": "Andi Mack",
       "overview": "Andi is contemplative and artistic and sheltered by overprotective parents. But on the eve of her 13th birthday, Andi's free-spirited older sister Bex returns home with a revelation that changes everything and sends Andi on an uncharted course of self-discovery.",
@@ -69778,60 +68156,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 86189,
-      "title": "Betty in New York",
-      "overview": "Betty is a young Latina in New York who, rejected in multiple jobs, accepts one below her qualifications in the fashion industry. Amid the glamor and business, the war between the pretty and the ugly, Betty grows and faces the biggest challenge of her life: love.",
-      "poster_path": "/sPmwvryzRnCoEv8oeTAT2jeM8Yy.jpg",
-      "first_air_date": "2019-02-06",
-      "year": 2019,
-      "vote_average": 8.081,
-      "vote_count": 203,
-      "actors": "Cesar Bono, Elyfer Torres, Erick Elías",
-      "genres": "Comedy, Family",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 127,
-          "air_date": "2019-08-01",
-          "name": "Episode 127"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 42350,
-      "title": "Por ella soy Eva",
-      "overview": "Por Ella Soy Eva is a Mexican soap opera produced by Rosy Ocampo for Televisa based on the Colombian soap opera En los tacones de Eva. Jaime Camil and Lucero starred as main protagonists, while Mariana Seoane and Marcelo Córdoba starred as the main antagonists.\n\n\"The Best Telenovela of the Year 2013.\"",
-      "poster_path": "/vERzXYHkNxQaHhenEgeO77D1Bmw.jpg",
-      "first_air_date": "2012-02-20",
-      "year": 2012,
-      "vote_average": 7.8,
-      "vote_count": 295,
-      "actors": "Lucero, Jaime Camil, Helena Rojo",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 166,
-          "air_date": "2012-10-07",
-          "name": "Episode 166"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -70177,69 +68501,6 @@
       "type": "tv"
     },
     {
-      "id": 226241,
-      "title": "Vgly",
-      "overview": "Though stuck at the bottom of the social ladder with no money or contacts, aspiring artist Vgly and his crew strive to break into the music business.",
-      "poster_path": "/SYvwtsk4vWPAtB0wlgLlecWCFc.jpg",
-      "first_air_date": "2023-05-25",
-      "year": 2023,
-      "vote_average": 8.323,
-      "vote_count": 248,
-      "actors": "Benny Emmanuel, Juan Daniel Garcia Treviño, Sasha González",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 2,
-          "episode": 10,
-          "air_date": "2025-12-11",
-          "name": "Episode 10"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          },
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/5AkEgpCNaBP3Fbwd2m1GdQIk0vv.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 66579,
-      "title": "The Three Sides of Ana",
-      "overview": "Over a road trip, triplets Ana Laura, Ana Leticia, and Ana Lucía, along with their parents, suffer a dramatic accident crashing by the side of a river. The consequences of this event are catastrophic: Both parents die, Ana Laura loses one leg, and Ana Lucía, unconscious, is dragged by the river’s flow. Only Ana Leticia, who actually caused the accident, emerges unscathed. Soledad, a woman who was seriously hurt after her daughter’s death, helps Ana Lucía, whom she finds agonizing. Although Soledad discovers who the girl is, she takes advantage of her memory loss regarding the accident and her family and decides to keep her, making her believe she is her mother. Despite everyone declares Ana Lucía is death, Ernestina, the triplets' grandmother, and Ramiro, their uncle, don’t give up and do everything they can to find Ana Lucía. But years go by, the same as their wishful",
-      "poster_path": "/nHURRha9cvKI6LaFVl7gbfEaGjt.jpg",
-      "first_air_date": "2016-05-23",
-      "year": 2016,
-      "vote_average": 7.097,
-      "vote_count": 330,
-      "actors": "Angelique Boyer, Sebastián Rulli, David Zepeda",
-      "genres": "Soap, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 123,
-          "air_date": "2017-02-08",
-          "name": "Episode 123"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 94154,
       "title": "El Dragón: Return of a Warrior",
       "overview": "A Tokyo business man returns to his home country of Mexico where he must battle rivals to replace his grandfather as the head of a cartel.",
@@ -70344,33 +68605,6 @@
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 32218,
-      "title": "Soy tu dueña",
-      "overview": "Soy Tu Dueña is a Mexican telenovela produced by Nicandro Díaz González for Televisa. It starred Lucero, Gabriela Spanic, Fernando Colunga, David Zepeda, Sergio Goyri and Jacqueline Andere.",
-      "poster_path": "/6Ey5MIVKGDXPo4TMZy2FkB7FxUH.jpg",
-      "first_air_date": "2010-06-15",
-      "year": 2010,
-      "vote_average": 7.706,
-      "vote_count": 589,
-      "actors": "Lucero, Fernando Colunga, Gabriela Spanic",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 90,
-          "air_date": "2010-08-20",
-          "name": "Episode 90"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -70709,42 +68943,6 @@
       "type": "tv"
     },
     {
-      "id": 79008,
-      "title": "Luis Miguel: The Series",
-      "overview": "The series dramatizes the life story of Mexican superstar singer Luis Miguel, who has captivated audiences in Latin America and beyond for decades.",
-      "poster_path": "/zs9nMZdCy0EzWe6ZQoVYWZJpVcm.jpg",
-      "first_air_date": "2018-04-22",
-      "year": 2018,
-      "vote_average": 7.979,
-      "vote_count": 599,
-      "actors": "Diego Boneta, Albi De Abreu, Carlos Ponce",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 6,
-          "air_date": "2021-10-29",
-          "name": "La Bikina"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 95555,
       "title": "Daisy Jones & the Six",
       "overview": "In 1977, Daisy Jones & The Six were on top of the world. Fronted by two charismatic lead singers — Daisy Jones and Billy Dunne — the band had risen from obscurity to fame. And then, after a sold-out show at Chicago's Soldier Field, they called it quits. Now, decades later, the band members finally agree to reveal the truth.",
@@ -70804,38 +69002,6 @@
       },
       "providers": {
         "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 67872,
-      "title": "Nosotros los Guapos",
-      "overview": "Vítor and Albertano are in pursuit of the same objective: to find a place to live, and as much as they don't want to, get a job that allows them to live and pay the rent for the room that the two decide to share at Doña Cuca's house.",
-      "poster_path": "/4UBNKLvpGotNQ8bo3ZuaWgmh6FV.jpg",
-      "first_air_date": "2016-08-19",
-      "year": 2016,
-      "vote_average": 8.225,
-      "vote_count": 414,
-      "actors": "Adrián Uribe, Ariel Miramontes, Carmen Salinas",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 4,
-          "episode": 26,
-          "air_date": "2019-11-24",
-          "name": "La novia fea"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          }
-        ]
       },
       "type": "tv"
     },
@@ -71007,33 +69173,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 82282,
-      "title": "Like, la Leyenda",
-      "overview": "The experiences of a group of young people interned at the Life Institute of Knowledge and Evolution (LIKE), a prestigious and cosmopolitan educational institution, with a supposedly modern and open educational system, but in reality it is deeply traditional and schematic.",
-      "poster_path": "/62Jps0cBQnMoq7TgqmmNRfHiCsP.jpg",
-      "first_air_date": "2018-09-10",
-      "year": 2018,
-      "vote_average": 7.774,
-      "vote_count": 499,
-      "actors": "Roberta Damián, Mauricio Abad, Macarena García",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 97,
-          "air_date": "2019-01-22",
-          "name": "Episode 97"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -71212,42 +69351,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 134949,
-      "title": "Rebelde",
-      "overview": "Head back to Elite Way School as a new generation of students hope to win the Battle of the Bands.",
-      "poster_path": "/b1IBsimEJOLjBLYsdBZ1VAcmq73.jpg",
-      "first_air_date": "2022-01-05",
-      "year": 2022,
-      "vote_average": 7.442,
-      "vote_count": 452,
-      "actors": "Azul Guaita, Franco Masini, Sergio Mayer Mori",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2022-07-27",
-          "name": "Otro día que va"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -71500,33 +69603,6 @@
       "type": "tv"
     },
     {
-      "id": 83596,
-      "title": "Amar a Muerte",
-      "overview": "",
-      "poster_path": "/l4WxZ6jOIPfr2cc4jKmN9ISQOpV.jpg",
-      "first_air_date": "2018-10-29",
-      "year": 2018,
-      "vote_average": 7.794,
-      "vote_count": 512,
-      "actors": "Angelique Boyer, Michel Brown, Alejandro Nones",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 90,
-          "air_date": "2019-03-07",
-          "name": "Episode 90"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 102619,
       "title": "I May Destroy You",
       "overview": "Set in London, where gratification is only an app away, the story centers on Arabella,  a carefree, self-assured Londoner with a group of great friends, a boyfriend in Italy, and a burgeoning writing career. But when her drink is spiked, she must question and rebuild every element of her life.",
@@ -71746,69 +69822,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 40403,
-      "title": "Miss XV",
-      "overview": "Miss XV follows the story of two teenage best friends, Valentina and Natalia, (who were born on the same day at the same hour), who dream of the perfect quinceañera birthday party, and long to become the girlfriends of their respective crushes, Niko and Eddy.",
-      "poster_path": "/6RHi5u5bDY4j5hUIaJXN6TbNjac.jpg",
-      "first_air_date": "2012-04-16",
-      "year": 2012,
-      "vote_average": 7.958,
-      "vote_count": 213,
-      "actors": "Paulina Goto, Natasha Dupeyrón, Eleazar Gómez",
-      "genres": "Soap, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 120,
-          "air_date": "2012-09-28",
-          "name": "Episode 120"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 259666,
-      "title": "No One Will Miss Us",
-      "overview": "It's the '90s, and five losers run an illegal business at their high school. They sell homework and assignments to their classmates. The advantage is that no one ever suspects the nerds. Their business brings them money and popularity. But hormones and an unexpected death threaten to ruin everything. If the business collapses, their futures and their friendships are at risk.",
-      "poster_path": "/py0s87C9214KRbZ4kWLQfgsE9ET.jpg",
-      "first_air_date": "2024-08-09",
-      "year": 2024,
-      "vote_average": 8.546,
-      "vote_count": 280,
-      "actors": "Axel Madrazo, Nicolás Haza, Virgilio Delgado",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2024-08-09",
-          "name": "No one is going to miss us"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
       },
@@ -72350,69 +70363,6 @@
       "type": "tv"
     },
     {
-      "id": 71731,
-      "title": "Run Coyote Run",
-      "overview": "",
-      "poster_path": "/8CgAjOVpgPWZEAvpFnXwE0ygUC6.jpg",
-      "first_air_date": "2017-05-08",
-      "year": 2017,
-      "vote_average": 8.1,
-      "vote_count": 313,
-      "actors": "Harold Torres, Jean Roland Dufresne, Harrison Jones",
-      "genres": "Action & Adventure, Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 3,
-          "episode": 13,
-          "air_date": "2020-07-20",
-          "name": "Episode 13"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 133086,
-      "title": "The Five Juanas",
-      "overview": "Five women with the same birthmark set out to unravel the truth about their pasts and discover a tragic web of lies spun by a powerful politician.",
-      "poster_path": "/iFffOCcrtf5mSoGKd2J31d2b5yg.jpg",
-      "first_air_date": "2021-10-06",
-      "year": 2021,
-      "vote_average": 7.331,
-      "vote_count": 272,
-      "actors": "Zuria Vega, Renata Notni, Oka Giner",
-      "genres": "Drama, Mystery, Crime",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 18,
-          "air_date": "2021-10-06",
-          "name": "Las Juanas"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 60637,
       "title": "Griselda Blanco: The Black Widow",
       "overview": "La Viuda Negra is a 2014 Spanish-language telenovela produced by RTI Producciones and Televisa for United States-based television network Univisión and for Colombia-based television network Caracol Television. It is an adaptation of the book La patrona de Pablo Escobar de José Guarnizo based on history from Griselda Blanco.",
@@ -72576,33 +70526,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 32778,
-      "title": "Timeless Love",
-      "overview": "Cuando me enamoro, se detiene el tiempo is a Mexican Spanish-language telenovela produced by Carlos Moreno Laguillo and Televisa. It is a remake of the 1998 Televisa telenovela La mentira.\n\nSilvia Navarro, Juan Soler and Jessica Coch are stars, with the participations of Rocío Banquells and Lisardo Guarinos as the main villains, the stellar participations of René Casados, Julieta Rosen, José Ron, and the special participation of Sebastián Zurita.\n\nUnivision promoted Cuando me enamoro for the United States audience, with the first promo shown on March 30, and was initially scheduled to air at 8pm central. A second promo confirmed an April 19 airing at 7pm central. The third promo aired on April 5, confirming a 7pm/6pm central on Univision, and aired from April 20, 2011 to January 6, 2012.",
-      "poster_path": "/zOUviZ6A4aExs2Y0TD3X0Y2U7Gq.jpg",
-      "first_air_date": "2010-07-05",
-      "year": 2010,
-      "vote_average": 7.508,
-      "vote_count": 300,
-      "actors": "Silvia Navarro, Juan Soler, Rocío Banquells",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 182,
-          "air_date": "2013-12-23",
-          "name": "Episode 182"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -72835,38 +70758,6 @@
       "type": "tv"
     },
     {
-      "id": 82585,
-      "title": "The Inmate",
-      "overview": "A former U.S. Marine, Lázaro Mendoza, enters a maximum security prison in Mexico (La Rotunda), under a false identity and accused of an alleged triple murder. Now as Dante Pardo, his mission is to infiltrate a dangerous band of inmates and guards that operate inside and outside of prison who are the prime suspects of the kidnapping of the teenage daughter of U.S. Judge, John Morris. Inside La Rotunda, Lázaro has to find out who carried out the kidnapping and the whereabouts of the girl.",
-      "poster_path": "/2Cs9p1kl6s2i1LfFmcquoFb56yl.jpg",
-      "first_air_date": "2018-09-25",
-      "year": 2018,
-      "vote_average": 7.017,
-      "vote_count": 487,
-      "actors": "Ignacio Serricchio, Ana Claudia Talancón, Erik Hayser",
-      "genres": "Drama, Crime",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 13,
-          "air_date": "2018-10-11",
-          "name": "Episode 13"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 67230,
       "title": "Silvana Sin Lana",
       "overview": "A high society woman loses everything and has to move with her three daughters, and her mom to a middle-class neighborhood.",
@@ -72975,33 +70866,6 @@
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 107171,
-      "title": "La CQ",
-      "overview": "La CQ is about 8 students named Angel, Monche, Beto, Clara, Adri, Roque, Jenny and, Danny. They are in secondary and our going through ups and downs which include bullies, love, assignments and it shows how the kids are like in secondary school",
-      "poster_path": "/e3R3sTrIMOp6hOGlRUprEfXhP8X.jpg",
-      "first_air_date": "2012-08-06",
-      "year": 2012,
-      "vote_average": 8.091,
-      "vote_count": 254,
-      "actors": "Emiliano Flores, Alejandra Müller, Harold Azuara",
-      "genres": "Comedy, Family",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 4,
-          "episode": 27,
-          "air_date": "2014-02-10",
-          "name": "Episode 27"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -73307,42 +71171,6 @@
       "type": "tv"
     },
     {
-      "id": 105904,
-      "title": "Someone Has to Die",
-      "overview": "In 1950s Spain, a couple summon their son home from Mexico to introduce him to his fiancée, but are shocked when he returns with a ballerino.",
-      "poster_path": "/srFvdWGF1ZJc8JYHx9AdyMy968p.jpg",
-      "first_air_date": "2020-10-16",
-      "year": 2020,
-      "vote_average": 7.0,
-      "vote_count": 226,
-      "actors": "Ernesto Alterio, Carmen Maura, Carlos Cuevas",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 3,
-          "air_date": "2020-10-16",
-          "name": "Pull the Trigger"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 45871,
       "title": "Locked Up: The Oasis",
       "overview": "After a few years dedicating themselves to robbing jewelers, banks and casinos, it is time for Macarena and Zulema to separate.",
@@ -73397,38 +71225,6 @@
       "type": "tv"
     },
     {
-      "id": 205442,
-      "title": "La mujer del diablo",
-      "overview": "Natalia is a school teacher who wants to dedicate herself to local tourism. Cristo is a criminal who pretends to be a benefactor to those in need. Cristo becomes obsessed with Natalia and does unimaginable things to win her over.",
-      "poster_path": "/lhGcQeib5dltKUVlI7c7oniZUZ7.jpg",
-      "first_air_date": "2022-07-21",
-      "year": 2022,
-      "vote_average": 7.518,
-      "vote_count": 257,
-      "actors": "Carolina Miranda, José Ron, Adriana Louvier",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 10,
-          "air_date": "2023-01-06",
-          "name": "Episode 10"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "VIX ",
-            "logo": "https://image.tmdb.org/t/p/original/jwRPknT20dfU1GeVqbcDXFyvtdG.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 126531,
       "title": "Elite Short Stories: Guzmán Caye Rebe",
       "overview": "Rebe hosts an intimate house warming party for her friends, but the situation takes a dramatic turn with the help of drugs and unexpected visitors.",
@@ -73461,33 +71257,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 82515,
-      "title": "Fall Into Temptation",
-      "overview": "Raquel and Damián are happily married with two children. Destiny leads Damián to meet Carolina and feels an undeniable attraction towards her. Damián did not know that Carolina was already married to Santiago Álvarado, a construction architect with whom she has two children. When Raquel drops off her son Fede at school, she accidentally backs her car to Santiago's truck, and they realize that their sons know each other. Raquel volunteers to pay for the damages but Santiago refuses. Raquel insists and goes to the Álvarado home with Damián. The two couples become great friends. But the desire between Damián and Carolina is stronger than their marriage commitment and both decide to deceive to their spouses. Damián and Carolina have a terrible car accident. Rescuers only find a seriously injured Damián, and Carolina has mysteriously disappeared from the scene. During the investigation by the police, Raquel and Santiago learn that their spouses are lovers.",
-      "poster_path": "/2E8bvsc30vIglIAWuK3TW0hqdJ3.jpg",
-      "first_air_date": "2017-09-24",
-      "year": 2017,
-      "vote_average": 7.8,
-      "vote_count": 253,
-      "actors": "Silvia Navarro, Gabriel Soto, Adriana Louvier",
-      "genres": "Drama, Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 103,
-          "air_date": "2018-02-11",
-          "name": "Episode 103"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -73573,33 +71342,6 @@
           "episode": 6,
           "air_date": "2019-11-15",
           "name": "The Old World"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 110637,
-      "title": "Overcoming heartbreak",
-      "overview": "Four women of different ages and social strata are forced to live together under the same roof. At first, the coexistence between them is complicated and tense due to their different visions and ways of facing life, but little by little the sisterhood and solidarity prevail when realizing the peculiar bond that exists between them: each one has suffered, in one or otherwise, the absence and abandonment of their respective partners.",
-      "poster_path": "/ntVTYZ5dCbGEwuQoMredNKT8Neq.jpg",
-      "first_air_date": "2020-10-12",
-      "year": 2020,
-      "vote_average": 7.6,
-      "vote_count": 239,
-      "actors": "Claudia Álvarez, Paulina Goto, Lourdes Reyes",
-      "genres": "Soap, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 94,
-          "air_date": "2021-02-22",
-          "name": "Episode 94"
         },
         "next_episode": null
       },
@@ -74003,33 +71745,6 @@
       "type": "tv"
     },
     {
-      "id": 79251,
-      "title": "Hijas de la luna... y la familia cambió",
-      "overview": "",
-      "poster_path": "/aDdAtBuiiL8S51qNezEcURcPooI.jpg",
-      "first_air_date": "2018-02-19",
-      "year": 2018,
-      "vote_average": 7.79,
-      "vote_count": 233,
-      "actors": "Michelle Renaud, Danilo Carrera, Jade Fraser",
-      "genres": "Soap, Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 82,
-          "air_date": "2018-06-10",
-          "name": "Episode 82"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 84452,
       "title": "Nicky Jam: El Ganador",
       "overview": "Follow Reggaeton artist Nicky Jam's struggles to overcome drug addiction and rise to international success in this dramatization of his life story.",
@@ -74062,33 +71777,6 @@
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 111499,
-      "title": "De brutas nada",
-      "overview": "In a contemporary Mexico City, a group of six sophisticated close friends navigate through every life experience imaginable together: love, lies, heartbreak, marriage, divorce, kids, career, job loss, fights, break-ups, and unbreakable friendships.",
-      "poster_path": "/j2z4qiYmHLelSdnqSAMkDB7jk7F.jpg",
-      "first_air_date": "2020-06-11",
-      "year": 2020,
-      "vote_average": 8.1,
-      "vote_count": 559,
-      "actors": "Tessa Ía, Alejandro Montero, Carolina Ramírez",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 3,
-          "episode": 10,
-          "air_date": "2023-01-18",
-          "name": "Episode 10"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
       },
       "type": "tv"
     },
@@ -74197,42 +71885,6 @@
       "type": "tv"
     },
     {
-      "id": 18712,
-      "title": "The Search",
-      "overview": "When a girl vanishes from a suburb near Mexico City, the personal goals of some involved in the case muddy the search. Based on a true story.",
-      "poster_path": "/kHfbT8U8W9exQWYW49h3aVFdReA.jpg",
-      "first_air_date": "2020-06-12",
-      "year": 2020,
-      "vote_average": 7.2,
-      "vote_count": 346,
-      "actors": "Regina Blandón, Dario Yazbek Bernal, Diana Bovio",
-      "genres": "Crime, Drama, Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2020-06-12",
-          "name": "The Burial"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 91445,
       "title": "Two Weeks to Live",
       "overview": "When strange young misfit Kim Noakes was just a little girl, her father died in murky circumstances and her mother Tina whisked her away to a remote rural life of seclusion and bizarre survival techniques. Now all grown up, Kim sets out into the real world for the first time to begin a secret mission of honouring her father’s memory.",
@@ -74263,42 +71915,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 127571,
-      "title": "The War Next-door",
-      "overview": "When two antagonistic families end up living next door in a posh neighborhood, the matriarchs ensue a full-scale war of unintended consequences.",
-      "poster_path": "/btZ7EjWaap6bdPTGKefn9rsc4Ok.jpg",
-      "first_air_date": "2021-07-07",
-      "year": 2021,
-      "vote_average": 7.2,
-      "vote_count": 268,
-      "actors": "Luz Aldán",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2022-06-17",
-          "name": "Team LopeZpinosa"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -74379,42 +71995,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 103787,
-      "title": "How to Survive Being Single",
-      "overview": "Sebastián, an actor known for just one role he played years ago, is about to get engaged, but life has other plans for him. Just when his life seemed to be all mapped out, he is thrown back in the fold with his long time friends who are bad at relationships. All of the sudden, he goes back to the life he left almost 10 years ago: being single.",
-      "poster_path": "/98g6g0hWlVeQNhO1Q5NARDP1aXy.jpg",
-      "first_air_date": "2020-06-26",
-      "year": 2020,
-      "vote_average": 7.1,
-      "vote_count": 322,
-      "actors": "Sebastián Zurita, Tato Alexander, Pamela Almanza",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 3,
-          "episode": 8,
-          "air_date": "2023-03-22",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
       },
@@ -74568,33 +72148,6 @@
       "type": "tv"
     },
     {
-      "id": 63441,
-      "title": "I Dare You to Leave",
-      "overview": "A heartbreaking story in which power, obsession, and desire will tragically mark the love between Paulina and Adrián who will fight for their love against all odds, even if it takes their life. ",
-      "poster_path": "/4OodlZVeOnydmMK0MTYsSLuHINq.jpg",
-      "first_air_date": "2015-07-27",
-      "year": 2015,
-      "vote_average": 7.6,
-      "vote_count": 219,
-      "actors": "Adrián Escalona, Daniela Cordero",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 71,
-          "air_date": "2016-02-09",
-          "name": "Episode 71"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 113600,
       "title": "Equinox",
       "overview": "Haunted by visions after her sister vanished with her classmates 21 years before, Astrid begins an investigation that uncovers the dark, eerie truth.",
@@ -74688,42 +72241,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 158793,
-      "title": "Harina",
-      "overview": "The misadventures of Lieutenant Harina and his partner, Officer Ramírez, a very special police couple, who find themselves with the opportunity of a lifetime",
-      "poster_path": "/aqW5UWQ2M13lQWVrGNrUzs3hn2x.jpg",
-      "first_air_date": "2022-03-10",
-      "year": 2022,
-      "vote_average": 8.252,
-      "vote_count": 214,
-      "actors": "Memo Villegas, Verónica Bravo, Luis Fernando Peña",
-      "genres": "Comedy, Action & Adventure, Crime",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2023-10-10",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
         ]
       },
@@ -74829,195 +72346,6 @@
       "type": "tv"
     },
     {
-      "id": 90630,
-      "title": "The Heart Is Never Wrong",
-      "overview": "Love story between Aristóteles & Temo, who leave Oaxaca to start a new life together in Mexico City.",
-      "poster_path": "/26cHDc2FmAjNRMTxgU0abvRp9Ke.jpg",
-      "first_air_date": "2019-06-23",
-      "year": 2019,
-      "vote_average": 8.198,
-      "vote_count": 373,
-      "actors": "Joaquín Bondoni, Laura Vignatti, Emiliano Vázquez",
-      "genres": "Soap",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 26,
-          "air_date": "2019-07-26",
-          "name": "Episode 26"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 92468,
-      "title": "La Familia del Barrio",
-      "overview": "",
-      "poster_path": "/iabeD5JK8xHSQd0AC474BMeszWw.jpg",
-      "first_air_date": "2013-05-05",
-      "year": 2013,
-      "vote_average": 8.4,
-      "vote_count": 492,
-      "actors": "Sergio Lebrija",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 6,
-          "episode": 1,
-          "air_date": "2013-05-05",
-          "name": "Episode 1"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 82565,
-      "title": "El secreto de Selena",
-      "overview": "",
-      "poster_path": "/m1upq0Ujt1WB0jnRmohCYGBvDVe.jpg",
-      "first_air_date": "2018-09-23",
-      "year": 2018,
-      "vote_average": 7.1,
-      "vote_count": 431,
-      "actors": "Diana Simán, Sofía Lama, Maya Zapata",
-      "genres": "Drama, Crime",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 13,
-          "air_date": "2018-12-16",
-          "name": "Episode 13"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 77568,
-      "title": "La doble vida de Estela Carrillo",
-      "overview": "After witnessing a murder, single mother Estela Carrillo must hide the fact that she is an undocumented immigrant escaping a dark past. While hiding her secret, romantic interests and her dream of becoming a singer complicate her plans.",
-      "poster_path": "/lzPPH7s0szdPOt7mqycLbLs8yyf.jpg",
-      "first_air_date": "2017-02-13",
-      "year": 2017,
-      "vote_average": 7.529,
-      "vote_count": 278,
-      "actors": "Ariadne Díaz, David Zepeda, África Zavala",
-      "genres": "Soap, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 72,
-          "air_date": "2017-05-21",
-          "name": "Episode 72"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 95314,
-      "title": "Juliantina",
-      "overview": "A spin-off for Juliana and Valentina from the Spanish soap opera, Amar a Muerte. Story of two girls with many differences such as social status and education, but that didn't stop them from being very good friends who ended up falling in love. With a surprising and nothing morbid interpretation the actresses gave voice and courage to many to express their feelings without fear. A love story that shows us that Love is Love.",
-      "poster_path": "/loqrU2DvWUhghU2hPkWPaen4lSJ.jpg",
-      "first_air_date": "2019-11-08",
-      "year": 2019,
-      "vote_average": 8.2,
-      "vote_count": 283,
-      "actors": "Bárbara López, Macarena Achaga",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 19,
-          "air_date": "2019-11-08",
-          "name": "We were destined to meet"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 103435,
-      "title": "Herederos por accidente",
-      "overview": "After the death of Don José by an 'accident', two families, the Spanish and a Mexican, end up fighting for their inheritance. The baby Lupe is expecting is the heir to that fortune. We discover that both families are hiding great secrets.",
-      "poster_path": "/6NcqGz6b4kJbHFj1NIOMvsOEucO.jpg",
-      "first_air_date": "2020-03-26",
-      "year": 2020,
-      "vote_average": 7.0,
-      "vote_count": 281,
-      "actors": "N/A",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 13,
-          "air_date": "2020-04-03",
-          "name": "Episode 13"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 87956,
-      "title": "Ringo, la pelea de su vida",
-      "overview": "Ringo is a young man, who has dedicated his life to boxing, and at the peak of his career he loses the national title upon receiving the news of the death of his brother. From that moment, Ringo decides to retire from boxing. Gloria, his wife, leaves him to go live with El Turco, Ringo's main rival in the ring. Gloria's decision leaves Ringo alone in charge of the care of his son Santi. Then, Gloria will return to claim custody of her son, and in that situation, Ringo will have to obtain a job that provides fixed income, to keep custody of his son. He decides to return to boxing with the clear goal to be crowned champion.",
-      "poster_path": "/lUkVJPd70pxDBzCoNtfgUsVHKLB.jpg",
-      "first_air_date": "2019-01-23",
-      "year": 2019,
-      "vote_average": 7.096,
-      "vote_count": 240,
-      "actors": "José Ron, Mariana Torres, Jorge Poza",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 82,
-          "air_date": "2020-08-12",
-          "name": "Episode 82"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 135647,
       "title": "2 Good 2 Be True",
       "overview": "Car mechanic Eloy makes a terrible first impression on Ali, who works for a real estate magnate. But both of them are hiding their true personas.",
@@ -75109,15 +72437,15 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-21T14:23:00.771196",
+    "generated_at": "2026-02-21T16:01:53.197305",
     "start_date": "2010-01-01",
     "end_date": "2026-02-21",
     "start_year": 2010,
     "start_month": 1,
     "min_votes": 200,
     "min_rating": 7.0,
-    "total_movies": 1437,
-    "total_tv": 1039,
-    "total_items": 2476
+    "total_movies": 1403,
+    "total_tv": 978,
+    "total_items": 2381
   }
 }
