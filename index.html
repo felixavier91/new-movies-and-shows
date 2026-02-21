@@ -112,7 +112,7 @@
             
             /* Push cards container down */
             .container > div:last-child {
-                margin-top: 160px;
+                margin-top: 210px;
             }
             
             /* Hide all dividers on mobile */
@@ -691,10 +691,6 @@
                             <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
                             <span>💬 Most Reviewed</span>
                         </label>
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
-                            <input type="radio" name="sortOrder" value="shuffle" style="cursor: pointer;">
-                            <span>🔀 Shuffle</span>
-                        </label>
                     </div>
                 </div>
                 
@@ -1118,13 +1114,7 @@
                 })
             
             // Apply sorting based on currentSortOrder
-            if (currentSortOrder === 'shuffle') {
-                // Fisher-Yates shuffle
-                for (let i = allItems.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
-                }
-            } else if (currentSortOrder === 'rating') {
+            if (currentSortOrder === 'rating') {
                 // Sort by highest rating first
                 allItems.sort((a, b) => {
                     if (b.y !== a.y) return b.y - a.y;
@@ -2100,17 +2090,6 @@
                 
                 // Re-display with new sort order
                 applyFiltersAndDisplay();
-            });
-        });
-        
-        // Special handler for shuffle: re-shuffle on every click, even if already selected
-        document.querySelectorAll('input[name="sortOrder"][value="shuffle"]').forEach(shuffleRadio => {
-            const label = shuffleRadio.closest('label');
-            label.addEventListener('click', (e) => {
-                if (currentSortOrder === 'shuffle') {
-                    // Already on shuffle, just re-shuffle with new random order
-                    applyFiltersAndDisplay();
-                }
             });
         });
         
