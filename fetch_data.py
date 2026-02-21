@@ -17,7 +17,7 @@ sys.stdout.reconfigure(line_buffering=True)
 # ============= CONFIGURATION (EDIT THESE) =============
 MIN_VOTES = 100            # Minimum number of reviews/votes
 MIN_RATING = 7.0         # Minimum TMDB rating (0-10)
-DAYS_BACK = 365*15          # How many days back to fetch (365 = last year)
+DAYS_BACK = 365*25          # How many days back to fetch (365 = last year)
 MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500 pages = ~10,000 items
 
 # Rate limiting
