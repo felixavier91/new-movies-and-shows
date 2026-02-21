@@ -2072,62 +2072,11 @@
             // Clear previous timeout
             clearTimeout(searchTimeout);
             
-            // Wait 500ms after user stops typing before filtering
+            // Wait 300ms after user stops typing before filtering
             searchTimeout = setTimeout(() => {
-                  
-                
-                const searchTerm = this.value.toLowerCase().trim();
-                
-                if (!searchTerm) {
-                    // No search term, show all loaded data
-                    displayCards(allLoadedData);
-                    return;
-                }
-                
-                // Filter movies
-                const filteredMovies = allLoadedData.movies.filter(item => {
-                    // Check if any streaming provider matches
-                    let hasStreamingMatch = false;
-                    if (item.providers && item.providers.streaming) {
-                        hasStreamingMatch = item.providers.streaming.some(p => 
-                            p.name && p.name.toLowerCase().includes(searchTerm)
-                        );
-                    }
-                    
-                    return (
-                        (item.title && item.title.toLowerCase().includes(searchTerm)) ||
-                        (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
-                        (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
-                        (item.director && item.director.toLowerCase().includes(searchTerm)) ||
-                        (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
-                        (item.year && item.year.toString().includes(searchTerm)) ||
-                        hasStreamingMatch
-                    );
-                });
-                
-                // Filter TV shows
-                const filteredTv = allLoadedData.tv.filter(item => {
-                    // Check if any streaming provider matches
-                    let hasStreamingMatch = false;
-                    if (item.providers && item.providers.streaming) {
-                        hasStreamingMatch = item.providers.streaming.some(p => 
-                            p.name && p.name.toLowerCase().includes(searchTerm)
-                        );
-                    }
-                    
-                    return (
-                        (item.title && item.title.toLowerCase().includes(searchTerm)) ||
-                    (item.overview && item.overview.toLowerCase().includes(searchTerm)) ||
-                    (item.genres && item.genres.toLowerCase().includes(searchTerm)) ||
-                    (item.actors && item.actors.toLowerCase().includes(searchTerm)) ||
-                    (item.year && item.year.toString().includes(searchTerm)) ||
-                    hasStreamingMatch
-                );
-            });
-            
-            const filteredData = { movies: filteredMovies, tv: filteredTv };
-            displayCards(filteredData);
-            }, 500); // Wait 500ms after user stops typing
+                // Just trigger the main filter function which handles everything
+                applyFiltersAndDisplay();
+            }, 300);
         });
 
         // Sort order radio button functionality
