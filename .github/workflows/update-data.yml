@@ -3,7 +3,7 @@ name: Update TMDB Data & Deploy
 on:
   # Run every hour
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 0 * * *'
   
   # Run on ANY push to main branch (including index.html changes)
   push:
