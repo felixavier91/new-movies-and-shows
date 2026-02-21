@@ -2030,6 +2030,17 @@
             });
         });
         
+        // Special handler for shuffle: re-shuffle on every click, even if already selected
+        document.querySelectorAll('input[name="sortOrder"][value="shuffle"]').forEach(shuffleRadio => {
+            const label = shuffleRadio.closest('label');
+            label.addEventListener('click', (e) => {
+                if (currentSortOrder === 'shuffle') {
+                    // Already on shuffle, just re-shuffle with new random order
+                    applyFiltersAndDisplay();
+                }
+            });
+        });
+        
         // Initialize selected radio button styling
         document.querySelectorAll('input[name="sortOrder"]').forEach(r => {
             const label = r.closest('label');
