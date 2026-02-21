@@ -2201,6 +2201,7 @@
         const minYearLabel = document.getElementById('minYearLabel');
         const maxYearLabel = document.getElementById('maxYearLabel');
         
+        // Update label while dragging (smooth visual feedback)
         minYearSlider.addEventListener('input', function() {
             minYear = parseInt(this.value);
             if (minYear > maxYear) {
@@ -2208,9 +2209,14 @@
                 this.value = maxYear;
             }
             minYearLabel.textContent = minYear;
+        });
+        
+        // Filter only when user releases the slider (smooth dragging)
+        minYearSlider.addEventListener('change', function() {
             applyFiltersAndDisplay();
         });
         
+        // Update label while dragging (smooth visual feedback)
         maxYearSlider.addEventListener('input', function() {
             maxYear = parseInt(this.value);
             if (maxYear < minYear) {
@@ -2218,6 +2224,10 @@
                 this.value = minYear;
             }
             maxYearLabel.textContent = maxYear;
+        });
+        
+        // Filter only when user releases the slider (smooth dragging)
+        maxYearSlider.addEventListener('change', function() {
             applyFiltersAndDisplay();
         });
 
