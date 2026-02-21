@@ -4081,7 +4081,7 @@
       "year": 2023,
       "vote_average": 7.33,
       "vote_count": 4387,
-      "director": "John Francis Daley",
+      "director": "Jonathan Goldstein",
       "actors": "Chris Pine, Michelle Rodriguez, Justice Smith",
       "genres": "Adventure, Fantasy, Comedy",
       "providers": {
@@ -5054,7 +5054,7 @@
       "year": 2020,
       "vote_average": 7.122,
       "vote_count": 8628,
-      "director": "Bilall Fallah",
+      "director": "Adil El Arbi",
       "actors": "Will Smith, Martin Lawrence, Vanessa Hudgens",
       "genres": "Thriller, Action, Crime",
       "providers": {
@@ -10011,7 +10011,7 @@
       "year": 2017,
       "vote_average": 7.2,
       "vote_count": 3042,
-      "director": "Josh Safdie",
+      "director": "Benny Safdie",
       "actors": "Robert Pattinson, Benny Safdie, Buddy Duress",
       "genres": "Crime, Thriller, Drama",
       "providers": {
@@ -19213,7 +19213,7 @@
       "year": 2023,
       "vote_average": 7.199,
       "vote_count": 322,
-      "director": "William Kaufman",
+      "director": "Johnny Strong",
       "actors": "Johnny Strong, Athena Durner, Raj Kala",
       "genres": "Action, War, Drama",
       "providers": {
@@ -25802,7 +25802,7 @@
       "year": 2018,
       "vote_average": 7.211,
       "vote_count": 152,
-      "director": "Mag Hsu",
+      "director": "Chih-yen Hsu",
       "actors": "Hsieh Ying-shiuan, Roy Chiu, Joseph Huang",
       "genres": "Drama, Comedy",
       "providers": {
@@ -33753,7 +33753,7 @@
       "year": 2020,
       "vote_average": 7.1,
       "vote_count": 106,
-      "director": "Amanda McBaine",
+      "director": "Jesse Moss",
       "actors": "Ben Feinstein, Steven Garza, Robert MacDougall",
       "genres": "Documentary",
       "providers": {
@@ -60048,7 +60048,7 @@
       "vote_count": 157,
       "actors": "Luca Marinelli, Francesco Russo, Barbara Chichiarelli",
       "genres": "Drama, War & Politics",
-      "status": "Ended",
+      "status": "Canceled",
       "providers": {
         "streaming": [
           {
@@ -69248,7 +69248,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-21T02:55:24.280439",
+    "generated_at": "2026-02-21T04:01:09.243749",
     "start_date": "2016-02-24",
     "end_date": "2026-02-21",
     "days_back": 3650,
