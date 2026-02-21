@@ -143,31 +143,31 @@
             /* ROW 1: Shuffle | Keywords | Year Range (3 columns) */
             .mobile-row-1 {
                 display: grid;
-                grid-template-columns: 1fr 2fr;
+                grid-template-columns: 1fr;
                 gap: 6px;
                 margin-bottom: 6px;
                 width: 100%;
             }
             
-            .mobile-row-1 .filter-row-shuffle {
+            .mobile-row-1 .filter-row-sort {
                 margin-bottom: 0 !important;
                 width: 100%;
-                display: flex;
+            }
+            
+            .mobile-row-1 .filter-row-sort > div {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
                 gap: 6px;
-                position: relative;
             }
             
-            .mobile-row-1 .filter-row-shuffle #shuffleBtn {
-                flex: 1;
-                padding: 10px 6px !important;
-                font-size: 12px;
+            .mobile-row-1 .filter-row-sort label {
+                font-size: 11px !important;
+                padding: 8px 6px !important;
+                justify-content: center;
             }
             
-            .mobile-row-1 .filter-row-shuffle #restoreBtn {
-                flex: 1;
-                padding: 10px 6px !important;
-                font-size: 12px;
-                position: static !important;
+            .mobile-row-1 .filter-row-sort label span {
+                font-size: 11px;
             }
             
             .mobile-row-1 .filter-row-keywords {
@@ -622,13 +622,25 @@
             <div class="mobile-row-1">
                 <div class="filter-row-shuffle" style="margin-bottom: 15px; display: flex; gap: 8px;">
                     <button id="shuffleBtn" style="width: calc(50% - 4px); padding: 6px 10px; background: #2a2a2a; color: white; border: 1px solid #555; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.2s; display: flex; align-items: center; justify-content: center; gap: 6px;">
-                        <span style="display: inline-block; width: 16px; text-align: center;">🔀</span>
-                        <span>Shuffle</span>
-                    </button>
-                    <button id="restoreBtn" style="width: calc(50% - 4px); padding: 6px 10px; background: #22c55e; color: white; border: 1px solid #22c55e; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; transition: background 0.2s; display: none; align-items: center; justify-content: center; gap: 6px;">
-                        <span style="display: inline-block; width: 16px; text-align: center;">↺</span>
-                        <span>Restore</span>
-                    </button>
+                <div class="filter-row-sort" style="margin-bottom: 15px;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
+                            <span>📅 Most Recent</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="sortOrder" value="rating" style="cursor: pointer;">
+                            <span>⭐ Highest Rated</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
+                            <span>💬 Most Reviewed</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="sortOrder" value="shuffle" style="cursor: pointer;">
+                            <span>🔀 Shuffle</span>
+                        </label>
+                    </div>
                 </div>
                 
                 <div class="filter-row-keywords" style="margin-bottom: 15px;">
@@ -1038,42 +1050,42 @@
                     const itemDate = new Date(releaseDate);
                     return itemDate <= today;
                 })
-                .sort((a, b) => {
-                    // First sort by full release date (most recent first)
+            
+            // Apply sorting based on currentSortOrder
+            if (currentSortOrder === 'shuffle') {
+                // Fisher-Yates shuffle
+                for (let i = allItems.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
+                }
+            } else if (currentSortOrder === 'rating') {
+                // Sort by highest rating first
+                allItems.sort((a, b) => {
+                    if (b.y !== a.y) return b.y - a.y;
+                    return b.x - a.x; // Tie-breaker: more reviews
+                });
+            } else if (currentSortOrder === 'reviews') {
+                // Sort by most reviews first
+                allItems.sort((a, b) => {
+                    if (b.x !== a.x) return b.x - a.x;
+                    return b.y - a.y; // Tie-breaker: higher rating
+                });
+            } else { // 'recent' - default
+                // Sort by most recent first
+                allItems.sort((a, b) => {
                     const dateA = a.releaseDate || a.release_date || a.first_air_date;
                     const dateB = b.releaseDate || b.release_date || b.first_air_date;
                     
                     if (dateA && dateB && dateA !== 'N/A' && dateB !== 'N/A') {
                         const timeA = new Date(dateA).getTime();
                         const timeB = new Date(dateB).getTime();
-                        if (timeA !== timeB) {
-                            return timeB - timeA; // Most recent first
-                        }
+                        if (timeA !== timeB) return timeB - timeA;
                     }
                     
-                    // Then by rating
-                    if (b.y !== a.y) {
-                        return b.y - a.y;
-                    }
-                    
-                    // Finally by number of reviews
+                    // Tie-breaker: higher rating
+                    if (b.y !== a.y) return b.y - a.y;
                     return b.x - a.x;
                 });
-            
-            // Use shuffled order if shuffle is active
-            if (isShuffled && originalOrder.length > 0) {
-                // Match items from originalOrder that are in filtered allItems
-                const itemMap = new Map(allItems.map(item => [item.id, item]));
-                allItems = originalOrder.filter(item => itemMap.has(item.id));
-                
-                // Fisher-Yates shuffle
-                for (let i = allItems.length - 1; i > 0; i--) {
-                    const j = Math.floor(Math.random() * (i + 1));
-                    [allItems[i], allItems[j]] = [allItems[j], allItems[i]];
-                }
-            } else {
-                // Save original chronological order
-                originalOrder = [...allItems];
             }
             
             if (allItems.length === 0) {
@@ -1200,6 +1212,8 @@
                             <div style="color: #fff; font-size: 13px; line-height: 1.8; text-shadow: 1px 1px 3px rgba(0,0,0,0.8);">
                                 <p style="margin: 4px 0;"><strong>Release Date:</strong> ${formattedDate}</p>
                                 <p style="margin: 4px 0;"><strong>Type:</strong> ${item.type === 'movie' ? '🎬 Movie' : '📺 TV Show'}</p>
+                                <p style="margin: 4px 0;"><strong>TMDB Rating:</strong> ⭐ ${item.y ? item.y.toFixed(1) : 'N/A'}/10</p>
+                                <p style="margin: 4px 0;"><strong>Number of Reviews:</strong> 💬 ${item.x ? item.x.toLocaleString() : 'N/A'}</p>
                                 <p style="margin: 4px 0;"><strong>Genres:</strong> ${item.genres || 'N/A'}</p>
                                 ${statusHTML}
                                 <p style="margin: 4px 0;"><strong>Cast:</strong> ${item.actors || 'N/A'}</p>
@@ -1475,8 +1489,7 @@
 
         let allLoadedData = { movies: [], tv: [] }; // Store all loaded data globally
         let rawJsonData = null; // Store the raw JSON data
-        let originalOrder = []; // Store original chronological order
-        let isShuffled = false; // Track if currently shuffled
+        let currentSortOrder = 'recent'; // Track current sort order
 
         // Auto-load on page load
         window.addEventListener('load', async () => {
@@ -1509,15 +1522,6 @@
         }
 
         // Helper function to reset shuffle state
-        function resetShuffle() {
-            if (isShuffled) {
-                isShuffled = false;
-                document.getElementById('restoreBtn').style.display = 'none';
-                const shuffleBtn = document.getElementById('shuffleBtn');
-                shuffleBtn.style.background = '#2a2a2a';
-                shuffleBtn.style.borderColor = '#555';
-            }
-        }
 
         // Country name mapping
         const countryNames = {
@@ -1625,8 +1629,8 @@
                 button.addEventListener('click', () => {
                     // Only switch if clicking a different button (can't deselect)
                     if (selectedContentType !== type.value) {
-                        // Auto-restore if shuffled
-                        resetShuffle();
+                        
+                        
                         
                         // Deselect all buttons
                         container.querySelectorAll('button').forEach(btn => {
@@ -1682,8 +1686,8 @@
                 }
                 
                 button.addEventListener('click', () => {
-                    // Auto-restore if shuffled
-                    resetShuffle();
+                    
+                    
                     
                     // Deselect all buttons
                     container.querySelectorAll('button').forEach(btn => {
@@ -1766,8 +1770,8 @@
                     button.dataset.genre = genre;
                     
                     button.addEventListener('click', () => {
-                        // Auto-restore if shuffled
-                        resetShuffle();
+                        
+                        
                         
                         // Deselect all other buttons
                         container.querySelectorAll('button').forEach(btn => {
@@ -1945,7 +1949,7 @@
             
             // Wait 500ms after user stops typing before filtering
             searchTimeout = setTimeout(() => {
-                resetShuffle();  // Auto-restore when searching
+                  
                 
                 const searchTerm = this.value.toLowerCase().trim();
                 
@@ -2001,41 +2005,35 @@
             }, 500); // Wait 500ms after user stops typing
         });
 
-        // Shuffle button functionality
-        document.getElementById('shuffleBtn').addEventListener('click', () => {
-            if (!rawJsonData || (!rawJsonData.movies && !rawJsonData.tv_shows)) {
-                alert('No data to shuffle. Please load data first.');
-                return;
-            }
-            
-            isShuffled = true;
-            
-            // Change shuffle button to purple when active
-            const shuffleBtn = document.getElementById('shuffleBtn');
-            shuffleBtn.style.background = '#3b82f6';
-            shuffleBtn.style.borderColor = '#3b82f6';
-            
-            // Show restore button
-            document.getElementById('restoreBtn').style.display = 'flex';
-            
-            // Re-display with shuffle
-            applyFiltersAndDisplay();
+        // Sort order radio button functionality
+        document.querySelectorAll('input[name="sortOrder"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                currentSortOrder = e.target.value;
+                
+                // Update label styling
+                document.querySelectorAll('input[name="sortOrder"]').forEach(r => {
+                    const label = r.closest('label');
+                    if (r.checked) {
+                        label.style.background = '#3b82f6';
+                        label.style.borderColor = '#3b82f6';
+                    } else {
+                        label.style.background = '#2a2a2a';
+                        label.style.borderColor = '#555';
+                    }
+                });
+                
+                // Re-display with new sort order
+                applyFiltersAndDisplay();
+            });
         });
         
-        // Restore button functionality
-        document.getElementById('restoreBtn').addEventListener('click', () => {
-            isShuffled = false;
-            
-            // Change shuffle button back to black
-            const shuffleBtn = document.getElementById('shuffleBtn');
-            shuffleBtn.style.background = '#2a2a2a';
-            shuffleBtn.style.borderColor = '#555';
-            
-            // Hide restore button
-            document.getElementById('restoreBtn').style.display = 'none';
-            
-            // Re-display in chronological order
-            applyFiltersAndDisplay();
+        // Initialize selected radio button styling
+        document.querySelectorAll('input[name="sortOrder"]').forEach(r => {
+            const label = r.closest('label');
+            if (r.checked) {
+                label.style.background = '#3b82f6';
+                label.style.borderColor = '#3b82f6';
+            }
         });
 
         // Function to download table as CSV
