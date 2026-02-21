@@ -145,7 +145,7 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 6px;
-                margin-bottom: 6px;
+                margin-bottom: 0px;
                 width: 100%;
             }
             
@@ -155,19 +155,24 @@
             }
             
             .mobile-row-1 .filter-row-sort > div {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
+                display: flex;
+                flex-wrap: wrap;
                 gap: 6px;
+                justify-content: center;
             }
             
             .mobile-row-1 .filter-row-sort label {
                 font-size: 11px !important;
-                padding: 8px 6px !important;
+                padding: 8px 12px !important;
                 justify-content: center;
             }
             
             .mobile-row-1 .filter-row-sort label span {
                 font-size: 11px;
+            }
+            
+            .mobile-row-1 .filter-row-year-slider {
+                margin-bottom: 0 !important;
             }
             
             .mobile-row-1 .filter-row-keywords {
