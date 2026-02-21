@@ -15,10 +15,10 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 100            # Minimum number of reviews/votes
-MIN_RATING = 7.0         # Minimum TMDB rating (0-10)
-DAYS_BACK = 365*10          # How many days back to fetch (365 = last year)
-MAX_PAGES_PER_TYPE = 100  # Max pages to fetch per content type (movies/TV)
+MIN_VOTES = 1            # Minimum number of reviews/votes
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
+DAYS_BACK = 365          # How many days back to fetch (365 = last year)
+MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500 pages = ~10,000 items
 
 # Rate limiting
 REQUESTS_PER_10_SEC = 40
@@ -220,6 +220,32 @@ for i, show in enumerate(tv_shows):
     if any(g in ['Animation', 'Music'] for g in genre_list):
         continue
     
+    # Extract TV show status and episodes
+    tv_status_info = {
+        'status': details.get('status', 'N/A'),
+        'in_production': details.get('in_production', False),
+        'last_episode': None,
+        'next_episode': None
+    }
+    
+    if details.get('last_episode_to_air'):
+        last_ep = details['last_episode_to_air']
+        tv_status_info['last_episode'] = {
+            'season': last_ep.get('season_number'),
+            'episode': last_ep.get('episode_number'),
+            'air_date': last_ep.get('air_date'),
+            'name': last_ep.get('name')
+        }
+    
+    if details.get('next_episode_to_air'):
+        next_ep = details['next_episode_to_air']
+        tv_status_info['next_episode'] = {
+            'season': next_ep.get('season_number'),
+            'episode': next_ep.get('episode_number'),
+            'air_date': next_ep.get('air_date'),
+            'name': next_ep.get('name')
+        }
+    
     tv_data.append({
         'id': show['id'],
         'title': show['name'],
@@ -231,7 +257,7 @@ for i, show in enumerate(tv_shows):
         'vote_count': show['vote_count'],
         'actors': actors,
         'genres': genres,
-        'status': details.get('status', 'N/A'),
+        'tv_status': tv_status_info,
         'providers': {'streaming': streaming},
         'type': 'tv'
     })
