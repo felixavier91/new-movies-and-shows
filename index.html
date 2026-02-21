@@ -112,7 +112,7 @@
             
             /* Push cards container down */
             .container > div:last-child {
-                margin-top: 210px;
+                margin-top: 250px;
             }
             
             /* Hide all dividers on mobile */
@@ -171,6 +171,30 @@
             }
             
             .mobile-row-1 .filter-row-sort label span {
+                font-size: 11px;
+            }
+            
+            .mobile-row-1 .filter-row-content-type {
+                margin-bottom: 0 !important;
+                width: 100%;
+            }
+            
+            .mobile-row-1 .filter-row-content-type > div {
+                display: flex;
+                gap: 6px;
+                justify-content: center;
+                flex-wrap: nowrap;
+            }
+            
+            .mobile-row-1 .filter-row-content-type label {
+                font-size: 11px !important;
+                padding: 8px 12px !important;
+                justify-content: center;
+                white-space: nowrap;
+                flex: 1;
+            }
+            
+            .mobile-row-1 .filter-row-content-type label span {
                 font-size: 11px;
             }
             
@@ -619,7 +643,8 @@
         }
         
         /* Hide radio button circles completely, just show the label with icon/text */
-        input[type="radio"][name="sortOrder"] {
+        input[type="radio"][name="sortOrder"],
+        input[type="radio"][name="contentType"] {
             display: none;
         }
         
@@ -689,7 +714,7 @@
             
             <!-- Sort and Search Controls -->
             <div class="mobile-row-1">
-                <div class="filter-row-sort" style="margin-bottom: 15px;">
+                <div class="filter-row-sort" style="margin-bottom: 10px;">
                     <div style="display: flex; flex-wrap: wrap; gap: 8px;">
                         <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
                             <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
@@ -702,6 +727,19 @@
                         <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
                             <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
                             <span>💬 Most Reviewed</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="filter-row-content-type" style="margin-bottom: 15px;">
+                    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
+                            <span>🎬 Movies</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
+                            <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
+                            <span>📺 TV Shows</span>
                         </label>
                     </div>
                 </div>
@@ -1558,6 +1596,7 @@
         let allLoadedData = { movies: [], tv: [] }; // Store all loaded data globally
         let rawJsonData = null; // Store the raw JSON data
         let currentSortOrder = 'recent'; // Track current sort order
+        let currentContentType = 'movies'; // Track current content type (movies or tv)
 
         // Auto-load on page load
         window.addEventListener('load', async () => {
@@ -2014,6 +2053,13 @@
                 displayData = { movies: searchedMovies, tv: searchedTv };
             }
             
+            // Filter by content type (movies or tv)
+            if (currentContentType === 'movies') {
+                displayData = { movies: displayData.movies, tv: [] };
+            } else if (currentContentType === 'tv') {
+                displayData = { movies: [], tv: displayData.tv };
+            }
+            
             // Display
             displayCards(displayData);
         }
@@ -2103,6 +2149,37 @@
                 // Re-display with new sort order
                 applyFiltersAndDisplay();
             });
+        });
+        
+        // Content type radio button functionality
+        document.querySelectorAll('input[name="contentType"]').forEach(radio => {
+            radio.addEventListener('change', (e) => {
+                currentContentType = e.target.value;
+                
+                // Update label styling
+                document.querySelectorAll('input[name="contentType"]').forEach(r => {
+                    const label = r.closest('label');
+                    if (r.checked) {
+                        label.style.background = '#3b82f6';
+                        label.style.borderColor = '#3b82f6';
+                    } else {
+                        label.style.background = '#2a2a2a';
+                        label.style.borderColor = '#555';
+                    }
+                });
+                
+                // Re-display with new content type filter
+                applyFiltersAndDisplay();
+            });
+        });
+        
+        // Initialize selected content type button styling
+        document.querySelectorAll('input[name="contentType"]').forEach(r => {
+            const label = r.closest('label');
+            if (r.checked) {
+                label.style.background = '#3b82f6';
+                label.style.borderColor = '#3b82f6';
+            }
         });
         
         // Initialize selected radio button styling
