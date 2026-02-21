@@ -15,9 +15,9 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 100            # Minimum number of reviews/votes
-MIN_RATING = 7.0         # Minimum TMDB rating (0-10)
-DAYS_BACK = 365*5          # How many days back to fetch (365 = last year)
+MIN_VOTES = 1            # Minimum number of reviews/votes
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
+DAYS_BACK = 365          # How many days back to fetch (365 = last year)
 MAX_PAGES_PER_TYPE = 50  # Max pages to fetch per content type (movies/TV)
 
 # Rate limiting
@@ -138,10 +138,15 @@ for i, movie in enumerate(movies):
     
     # Extract genres
     genres = 'N/A'
+    genre_list = []
     if details.get('genres'):
-        genre_names = [g['name'] for g in details['genres']]
-        if genre_names:
-            genres = ', '.join(genre_names)
+        genre_list = [g['name'] for g in details['genres']]
+        if genre_list:
+            genres = ', '.join(genre_list)
+    
+    # Skip if Animation or Music genre
+    if any(g in ['Animation', 'Music'] for g in genre_list):
+        continue
     
     movies_data.append({
         'id': movie['id'],
@@ -205,10 +210,15 @@ for i, show in enumerate(tv_shows):
     
     # Extract genres
     genres = 'N/A'
+    genre_list = []
     if details.get('genres'):
-        genre_names = [g['name'] for g in details['genres']]
-        if genre_names:
-            genres = ', '.join(genre_names)
+        genre_list = [g['name'] for g in details['genres']]
+        if genre_list:
+            genres = ', '.join(genre_list)
+    
+    # Skip if Animation or Music genre
+    if any(g in ['Animation', 'Music'] for g in genre_list):
+        continue
     
     tv_data.append({
         'id': show['id'],
