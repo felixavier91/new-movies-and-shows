@@ -610,6 +610,58 @@
         input[type="radio"][name="sortOrder"] {
             display: none;
         }
+        
+        /* Dual-range year slider styling */
+        input[type="range"] {
+            pointer-events: auto !important;
+        }
+        
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+            pointer-events: auto;
+            position: relative;
+            z-index: 3;
+        }
+        
+        input[type="range"]::-moz-range-thumb {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #3b82f6;
+            cursor: pointer;
+            border: none;
+            pointer-events: auto;
+            position: relative;
+            z-index: 3;
+        }
+        
+        input[type="range"]::-webkit-slider-runnable-track {
+            width: 100%;
+            height: 4px;
+            background: #555;
+            border-radius: 2px;
+        }
+        
+        input[type="range"]::-moz-range-track {
+            width: 100%;
+            height: 4px;
+            background: #555;
+            border-radius: 2px;
+        }
+        
+        #maxYearSlider {
+            pointer-events: auto !important;
+        }
+        
+        #minYearSlider {
+            pointer-events: auto !important;
+        }
     </style>
 </head>
 <body>
@@ -643,6 +695,18 @@
                             <input type="radio" name="sortOrder" value="shuffle" style="cursor: pointer;">
                             <span>🔀 Shuffle</span>
                         </label>
+                    </div>
+                </div>
+                
+                <div class="filter-row-year-slider" style="margin-bottom: 20px;">
+                    <label style="display: block; margin-bottom: 8px; color: #999; font-size: 12px; font-weight: 600;">📅 Year Range</label>
+                    <div style="position: relative; height: 40px;">
+                        <input type="range" id="minYearSlider" min="2000" max="2026" value="2000" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
+                        <input type="range" id="maxYearSlider" min="2000" max="2026" value="2026" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
+                    </div>
+                    <div style="display: flex; justify-content: space-between; margin-top: 5px; font-size: 12px; color: #999;">
+                        <span id="minYearLabel">2000</span>
+                        <span id="maxYearLabel">2026</span>
                     </div>
                 </div>
                 
@@ -1847,25 +1911,35 @@
         function applyFiltersAndDisplay() {
             if (!rawJsonData) return;
             
-            // Show ALL movies
-            const filteredMovies = rawJsonData.movies.map(movie => ({
-                id: movie.id,
-                title: movie.title,
-                x: movie.vote_count,
-                y: movie.vote_average,
-                year: movie.year,
-                genres: movie.genres,
-                overview: movie.overview,
-                director: movie.director,
-                actors: movie.actors,
-                releaseDate: movie.release_date,
-                type: 'movie',
-                poster_path: movie.poster_path,
-                providers: movie.providers
-            }));
+            // Filter movies by year range
+            const filteredMovies = rawJsonData.movies
+                .filter(movie => {
+                    if (!movie.year || movie.year === 'N/A') return true;
+                    return movie.year >= minYear && movie.year <= maxYear;
+                })
+                .map(movie => ({
+                    id: movie.id,
+                    title: movie.title,
+                    x: movie.vote_count,
+                    y: movie.vote_average,
+                    year: movie.year,
+                    genres: movie.genres,
+                    overview: movie.overview,
+                    director: movie.director,
+                    actors: movie.actors,
+                    releaseDate: movie.release_date,
+                    type: 'movie',
+                    poster_path: movie.poster_path,
+                    providers: movie.providers
+                }));
             
-            // Show ALL TV shows
-            const filteredTv = rawJsonData.tv.map(show => ({
+            // Filter TV shows by year range
+            const filteredTv = rawJsonData.tv
+                .filter(show => {
+                    if (!show.year || show.year === 'N/A') return true;
+                    return show.year >= minYear && show.year <= maxYear;
+                })
+                .map(show => ({
                     id: show.id,
                     title: show.title,
                     x: show.vote_count,
@@ -2048,6 +2122,35 @@
                 label.style.background = '#3b82f6';
                 label.style.borderColor = '#3b82f6';
             }
+        });
+        
+        // Year range slider functionality
+        let minYear = 2000;
+        let maxYear = 2026;
+        
+        const minYearSlider = document.getElementById('minYearSlider');
+        const maxYearSlider = document.getElementById('maxYearSlider');
+        const minYearLabel = document.getElementById('minYearLabel');
+        const maxYearLabel = document.getElementById('maxYearLabel');
+        
+        minYearSlider.addEventListener('input', function() {
+            minYear = parseInt(this.value);
+            if (minYear > maxYear) {
+                minYear = maxYear;
+                this.value = maxYear;
+            }
+            minYearLabel.textContent = minYear;
+            applyFiltersAndDisplay();
+        });
+        
+        maxYearSlider.addEventListener('input', function() {
+            maxYear = parseInt(this.value);
+            if (maxYear < minYear) {
+                maxYear = minYear;
+                this.value = minYear;
+            }
+            maxYearLabel.textContent = maxYear;
+            applyFiltersAndDisplay();
         });
 
         // Function to download table as CSV
