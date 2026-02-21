@@ -15,9 +15,13 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 100            # Minimum number of reviews/votes
-MIN_RATING = 7.0         # Minimum TMDB rating (0-10)
-DAYS_BACK = 365*25          # How many days back to fetch (365 = last year)
+MIN_VOTES = 1            # Minimum number of reviews/votes
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
+
+# Date range: Fetch content from START_YEAR/START_MONTH to present
+START_YEAR = 2024        # Year to start fetching from (e.g., 2024)
+START_MONTH = 2          # Month to start fetching from (1-12, e.g., 2 = February)
+
 MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500 pages = ~10,000 items
 
 # Rate limiting
@@ -35,9 +39,9 @@ HEADERS = {
     'Content-Type': 'application/json'
 }
 
-# Calculate date range
+# Calculate date range from START_YEAR/START_MONTH to now
 end_date = datetime.now()
-start_date = end_date - timedelta(days=DAYS_BACK)
+start_date = datetime(START_YEAR, START_MONTH, 1)
 START_DATE_STR = start_date.strftime('%Y-%m-%d')
 
 print(f"🚀 Starting TMDB data fetch")
@@ -272,7 +276,8 @@ output_data = {
         'generated_at': datetime.now().isoformat(),
         'start_date': START_DATE_STR,
         'end_date': end_date.strftime('%Y-%m-%d'),
-        'days_back': DAYS_BACK,
+        'start_year': START_YEAR,
+        'start_month': START_MONTH,
         'min_votes': MIN_VOTES,
         'min_rating': MIN_RATING,
         'total_movies': len(movies_data),
