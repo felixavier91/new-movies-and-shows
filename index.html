@@ -715,33 +715,38 @@
             
             <!-- Sort and Search Controls -->
             <div class="mobile-row-1">
-                <div class="filter-row-sort" style="margin-bottom: 10px;">
-                    <div style="display: flex; flex-wrap: nowrap; gap: 8px;">
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap;">
-                            <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
-                            <span>📅 Most Recent</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap;">
-                            <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
-                            <span>💬 Most Reviewed</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap;">
-                            <input type="radio" name="sortOrder" value="rating" style="cursor: pointer;">
-                            <span>⭐ Highest Rated</span>
-                        </label>
+                <!-- Two-column layout for desktop -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px;">
+                    <!-- Left column: Sort buttons stacked -->
+                    <div class="filter-row-sort">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                                <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
+                                <span>📅 Most Recent</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                                <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
+                                <span>💬 Most Reviewed</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                                <input type="radio" name="sortOrder" value="rating" style="cursor: pointer;">
+                                <span>⭐ Highest Rated</span>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="filter-row-content-type" style="margin-bottom: 15px;">
-                    <div style="display: flex; flex-wrap: nowrap; gap: 8px;">
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
-                            <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
-                            <span>🎬 Movies</span>
-                        </label>
-                        <label style="display: flex; align-items: center; gap: 6px; padding: 6px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s;">
-                            <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
-                            <span>📺 TV Shows</span>
-                        </label>
+                    
+                    <!-- Right column: Content type buttons stacked -->
+                    <div class="filter-row-content-type">
+                        <div style="display: flex; flex-direction: column; gap: 8px;">
+                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                                <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
+                                <span>🎬 Movies</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                                <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
+                                <span>📺 TV Shows</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 
