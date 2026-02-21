@@ -156,15 +156,18 @@
             
             .mobile-row-1 .filter-row-sort > div {
                 display: flex;
-                flex-wrap: wrap;
                 gap: 6px;
                 justify-content: center;
+                flex-wrap: nowrap;
+                overflow-x: auto;
             }
             
             .mobile-row-1 .filter-row-sort label {
-                font-size: 11px !important;
-                padding: 8px 12px !important;
+                font-size: 10px !important;
+                padding: 8px 10px !important;
                 justify-content: center;
+                white-space: nowrap;
+                flex-shrink: 0;
             }
             
             .mobile-row-1 .filter-row-sort label span {
@@ -701,12 +704,12 @@
                 
                 <div class="filter-row-year-slider" style="margin-bottom: 0px; padding: 0 30px;">
                     <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; color: #999; font-weight: 600;">
-                        <span id="minYearLabel">2000</span>
+                        <span id="minYearLabel">2010</span>
                         <span id="maxYearLabel">2026</span>
                     </div>
                     <div style="position: relative; height: 40px;">
-                        <input type="range" id="minYearSlider" min="2000" max="2026" value="2000" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
-                        <input type="range" id="maxYearSlider" min="2000" max="2026" value="2026" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
+                        <input type="range" id="minYearSlider" min="2010" max="2026" value="2010" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
+                        <input type="range" id="maxYearSlider" min="2010" max="2026" value="2026" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
                     </div>
                 </div>
                 
@@ -2108,7 +2111,7 @@
         });
         
         // Year range slider functionality
-        let minYear = 2000;
+        let minYear = 2010;
         let maxYear = 2026;
         
         const minYearSlider = document.getElementById('minYearSlider');
