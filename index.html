@@ -754,9 +754,9 @@
                     </div>
                 </div>
                 
-                <!-- Row 2: Content type + Genre -->
-                <div style="display: flex; gap: 8px; margin-bottom: 15px;">
-                    <div class="filter-row-content-type" style="display: flex; gap: 8px;">
+                <!-- Row 2: Content type -->
+                <div class="filter-row-content-type" style="margin-bottom: 10px;">
+                    <div style="display: flex; gap: 8px; justify-content: center;">
                         <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
                             <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
                             <span>🎬 Movies</span>
@@ -766,12 +766,13 @@
                             <span>📺 TV Shows</span>
                         </label>
                     </div>
-                    
-                    <div class="filter-row-genre" style="flex: 1;">
-                        <select id="genreFilter" style="width: 100%; padding: 10px 14px; background: #2a2a2a; color: #ffffff; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; outline: none;">
-                            <option value="" style="background: #2a2a2a; color: #ffffff;">🎭 All Genres</option>
-                        </select>
-                    </div>
+                </div>
+                
+                <!-- Row 3: Genre dropdown -->
+                <div class="filter-row-genre" style="margin-bottom: 15px;">
+                    <select id="genreFilter" style="width: 100%; padding: 10px 14px; background: #2a2a2a; color: #ffffff; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 13px; font-weight: 600; outline: none;">
+                        <option value="" style="background: #2a2a2a; color: #ffffff;">🎭 All Genres</option>
+                    </select>
                 </div>
                 
                 <div class="filter-row-year-slider" style="margin-bottom: 0px; padding: 0 50px;">
