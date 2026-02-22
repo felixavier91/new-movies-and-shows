@@ -112,7 +112,7 @@
             
             /* Push cards container down */
             .container > div:last-child {
-                margin-top: 250px;
+                margin-top: 280px;
             }
             
             /* Hide all dividers on mobile */
@@ -765,6 +765,15 @@
                             <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
                             <span>📺 TV Shows</span>
                         </label>
+                    </div>
+                </div>
+                
+                <!-- Row 3: Genre -->
+                <div class="filter-row-genre" style="margin-bottom: 15px;">
+                    <div style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; font-size: 12px;">
+                        <select id="genreFilter" style="width: 100%; background: transparent; color: #ffffff; border: none; cursor: pointer; font-size: 12px; font-weight: 600; outline: none; text-align: center;">
+                            <option value="">🎭 All Genres</option>
+                        </select>
                     </div>
                 </div>
                 
@@ -1628,6 +1637,7 @@
         let rawJsonData = null; // Store the raw JSON data
         let currentSortOrder = 'recent'; // Track current sort order
         let currentContentType = 'movies'; // Track current content type (movies or tv)
+        let selectedGenre = ''; // Track selected genre
         let selectedGenre = ''; // Track selected genre (empty = all genres)
 
         // Auto-load on page load
