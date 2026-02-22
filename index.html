@@ -112,7 +112,7 @@
             
             /* Push cards container down */
             .container > div:last-child {
-                margin-top: 280px;
+                margin-top: 250px;
             }
             
             /* Hide all dividers on mobile */
@@ -768,15 +768,11 @@
                     </div>
                 </div>
                 
-                <!-- Row 3: Genre -->
+                <!-- Row 3: Genre dropdown -->
                 <div class="filter-row-genre" style="margin-bottom: 15px;">
-                    <div style="display: flex; gap: 8px; justify-content: center;">
-                        <div style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; font-size: 12px;">
-                            <select id="genreFilter" style="background: transparent; color: #ffffff; border: none; cursor: pointer; font-size: 12px; font-weight: 600; outline: none;">
-                                <option value="">🎭 All Genres</option>
-                            </select>
-                        </div>
-                    </div>
+                    <select id="genreFilter" style="width: 100%; height: 40px; padding: 8px 12px; background: #2a2a2a; color: #ffffff; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; outline: none; line-height: 1.5;">
+                        <option value="" style="background: #2a2a2a; color: #ffffff;">🎭 All Genres</option>
+                    </select>
                 </div>
                 
                 <div class="filter-row-year-slider" style="margin-bottom: 0px; padding: 0 50px;">
@@ -1632,7 +1628,6 @@
         let rawJsonData = null; // Store the raw JSON data
         let currentSortOrder = 'recent'; // Track current sort order
         let currentContentType = 'movies'; // Track current content type (movies or tv)
-        let selectedGenre = ''; // Track selected genre
         let selectedGenre = ''; // Track selected genre (empty = all genres)
 
         // Auto-load on page load
