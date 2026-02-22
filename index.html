@@ -2162,6 +2162,9 @@
                     }
                 });
                 
+                // Repopulate genre dropdown with genres for selected content type
+                populateGenreDropdown();
+                
                 // Re-display with new content type filter
                 applyFiltersAndDisplay();
             });
@@ -2176,14 +2179,16 @@
             }
         });
         
-        // Populate genre dropdown with all unique genres from data
+        // Populate genre dropdown based on current content type (movies or TV)
         function populateGenreDropdown() {
             if (!rawJsonData) return;
             
             const genreSet = new Set();
             
-            // Collect all unique genres from movies and TV shows
-            [...rawJsonData.movies, ...rawJsonData.tv].forEach(item => {
+            // Collect genres only from the currently selected content type
+            const dataSource = currentContentType === 'movies' ? rawJsonData.movies : rawJsonData.tv;
+            
+            dataSource.forEach(item => {
                 if (item.genres && item.genres !== 'N/A') {
                     item.genres.split(',').forEach(genre => {
                         genreSet.add(genre.trim());
@@ -2196,6 +2201,7 @@
             
             // Populate dropdown
             const genreFilter = document.getElementById('genreFilter');
+            const currentValue = genreFilter.value; // Remember current selection
             genreFilter.innerHTML = '<option value="">🎭 All Genres</option>';
             
             sortedGenres.forEach(genre => {
@@ -2204,6 +2210,14 @@
                 option.textContent = genre;
                 genreFilter.appendChild(option);
             });
+            
+            // Try to restore previous selection if it exists in new list
+            if (currentValue && sortedGenres.includes(currentValue)) {
+                genreFilter.value = currentValue;
+            } else {
+                genreFilter.value = '';
+                selectedGenre = '';
+            }
         }
         
         // Genre filter change handler
