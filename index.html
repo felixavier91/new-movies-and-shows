@@ -1690,6 +1690,18 @@
                 btn.textContent = '🔽 Show Filters';
             }
         }
+        
+        // Remove button on desktop (when controls has sticky positioning)
+        window.addEventListener('DOMContentLoaded', function() {
+            const controls = document.getElementById('controls');
+            const btn = document.getElementById('collapseBtn');
+            const computedStyle = window.getComputedStyle(controls);
+            
+            if (computedStyle.position === 'sticky') {
+                // Desktop - remove button completely
+                if (btn) btn.remove();
+            }
+        });
 
         // Auto-load on page load
         window.addEventListener('load', async () => {
