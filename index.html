@@ -115,37 +115,32 @@
                 margin-top: 250px;
             }
             
-            /* Collapsible filters - both mobile and desktop */
+            /* Collapse button - hidden on desktop, visible on mobile */
             #collapseBtn {
-                display: block;
-                width: 100%;
-                padding: 10px;
-                background: #2a2a2a;
-                border: 2px solid #555;
-                border-radius: 10px;
-                color: white;
-                font-size: 13px;
-                font-weight: 600;
-                cursor: pointer;
-                margin-bottom: 10px;
-            }
-            
-            .filters-collapsed .mobile-row-1,
-            .filters-collapsed .filter-row-year-slider,
-            .filters-collapsed .filter-row-keywords {
-                display: none !important;
+                display: none;
             }
             
             @media (max-width: 768px) {
-                .filters-collapsed ~ div:last-child {
-                    margin-top: 60px !important;
+                #collapseBtn {
+                    display: block;
+                    width: 100%;
+                    padding: 10px;
+                    background: #2a2a2a;
+                    border: 2px solid #555;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin-bottom: 10px;
                 }
-            }
-            
-            @media (min-width: 769px) {
-                .filters-collapsed {
-                    min-width: 80px !important;
-                    max-width: 80px !important;
+                
+                .filters-collapsed .mobile-row-1 {
+                    display: none;
+                }
+                
+                .container .filters-collapsed ~ div:last-child {
+                    margin-top: 60px !important;
                 }
             }
             
@@ -765,10 +760,10 @@
     <div class="overlay" id="overlay"></div>
     
     <div class="container">
-        <div class="controls" id="controls">
+        <div class="controls filters-collapsed" id="controls">
             <input type="file" id="jsonFile" accept=".json" style="display: none;">
             
-            <button id="collapseBtn" onclick="toggleCollapse()">🔼 Hide Filters</button>
+            <button id="collapseBtn" onclick="toggleCollapse()">🔽 Show Filters</button>
             
             <!-- Sort and Search Controls -->
             <div class="mobile-row-1">
