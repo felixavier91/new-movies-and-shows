@@ -130,24 +130,22 @@
                 margin-bottom: 10px;
             }
             
+            .filters-collapsed .mobile-row-1,
+            .filters-collapsed .filter-row-year-slider,
+            .filters-collapsed .filter-row-keywords {
+                display: none !important;
+            }
+            
             @media (max-width: 768px) {
-                .filters-collapsed .mobile-row-1 {
-                    display: none;
-                }
-                
                 .filters-collapsed ~ div:last-child {
                     margin-top: 60px !important;
                 }
             }
             
             @media (min-width: 769px) {
-                .filters-collapsed .mobile-row-1 {
-                    display: none;
-                }
-                
                 .filters-collapsed {
-                    min-width: 60px !important;
-                    max-width: 60px !important;
+                    min-width: 80px !important;
+                    max-width: 80px !important;
                 }
             }
             
