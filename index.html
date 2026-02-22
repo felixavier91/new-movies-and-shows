@@ -115,13 +115,13 @@
                 margin-top: 250px;
             }
             
-            /* Collapse button - hide on desktop (sticky sidebar), show on mobile (fixed full-width) */
-            .controls:not([style*="position: fixed"]) #collapseBtn,
-            .controls[style*="position: sticky"] #collapseBtn {
+            /* Collapse button - default hidden */
+            #collapseBtn {
                 display: none !important;
             }
             
-            @media (max-width: 900px) {
+            @media (max-width: 768px) {
+                /* On mobile, controls is position: fixed, so show button */
                 #collapseBtn {
                     display: block !important;
                     width: 100%;
