@@ -115,8 +115,9 @@
                 margin-top: 250px;
             }
             
-            /* Collapse button - hidden on desktop, visible on mobile */
-            #collapseBtn {
+            /* Collapse button - hide on desktop (sticky sidebar), show on mobile (fixed full-width) */
+            .controls:not([style*="position: fixed"]) #collapseBtn,
+            .controls[style*="position: sticky"] #collapseBtn {
                 display: none !important;
             }
             
