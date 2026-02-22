@@ -41,6 +41,11 @@
             max-width: 420px;
         }
         
+        /* Hide collapse button on desktop sidebar */
+        .controls:not(.mobile-controls) #collapseBtn {
+            display: none !important;
+        }
+        
         .filter-toggle {
             display: none;
             position: fixed;
@@ -117,8 +122,12 @@
             
             /* Collapsible filters - mobile only */
             @media (max-width: 1024px) {
+                .controls {
+                    /* Mark as mobile for the button selector */
+                }
+                
                 #collapseBtn {
-                    display: block;
+                    display: block !important;
                     width: 100%;
                     padding: 10px;
                     background: #2a2a2a;
