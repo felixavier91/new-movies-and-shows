@@ -37,8 +37,8 @@
             top: 10px;
             max-height: calc(100vh - 20px);
             overflow-y: auto;
-            min-width: 350px;
-            max-width: 350px;
+            min-width: 420px;
+            max-width: 420px;
         }
         
         .filter-toggle {
@@ -149,7 +149,7 @@
                 width: 100%;
             }
             
-            /* Override desktop two-column layout on mobile */
+            /* Override desktop three-column layout on mobile */
             .mobile-row-1 > div:first-child {
                 grid-template-columns: 1fr !important;
                 gap: 6px !important;
@@ -723,38 +723,41 @@
             
             <!-- Sort and Search Controls -->
             <div class="mobile-row-1">
-                <!-- Two-column layout for desktop -->
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 15px;">
-                    <!-- Left column: Sort buttons stacked -->
-                    <div class="filter-row-sort">
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
-                                <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
-                                <span>📅 Most Recent</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
-                                <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
-                                <span>💬 Most Reviewed</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
-                                <input type="radio" name="sortOrder" value="rating" style="cursor: pointer;">
-                                <span>⭐ Highest Rated</span>
-                            </label>
-                        </div>
+                <!-- Row 1: Sort buttons -->
+                <div class="filter-row-sort" style="margin-bottom: 10px;">
+                    <div style="display: flex; gap: 8px; justify-content: space-between;">
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center; flex: 1;">
+                            <input type="radio" name="sortOrder" value="recent" checked style="cursor: pointer;">
+                            <span>📅 Most Recent</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center; flex: 1;">
+                            <input type="radio" name="sortOrder" value="reviews" style="cursor: pointer;">
+                            <span>💬 Most Reviewed</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center; flex: 1;">
+                            <input type="radio" name="sortOrder" value="rating" style="cursor: pointer;">
+                            <span>⭐ Highest Rated</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Row 2: Content type + Genre -->
+                <div style="display: flex; gap: 8px; margin-bottom: 15px;">
+                    <div class="filter-row-content-type" style="display: flex; gap: 8px;">
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                            <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
+                            <span>🎬 Movies</span>
+                        </label>
+                        <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
+                            <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
+                            <span>📺 TV Shows</span>
+                        </label>
                     </div>
                     
-                    <!-- Right column: Content type buttons stacked -->
-                    <div class="filter-row-content-type">
-                        <div style="display: flex; flex-direction: column; gap: 8px;">
-                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
-                                <input type="radio" name="contentType" value="movies" checked style="cursor: pointer;">
-                                <span>🎬 Movies</span>
-                            </label>
-                            <label style="display: flex; align-items: center; gap: 6px; padding: 8px 12px; background: #2a2a2a; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; transition: all 0.2s; white-space: nowrap; justify-content: center;">
-                                <input type="radio" name="contentType" value="tv" style="cursor: pointer;">
-                                <span>📺 TV Shows</span>
-                            </label>
-                        </div>
+                    <div class="filter-row-genre" style="flex: 1;">
+                        <select id="genreFilter" style="width: 100%; height: 100%; padding: 8px 12px; background: #2a2a2a; color: white; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; outline: none;">
+                            <option value="">🎭 All Genres</option>
+                        </select>
                     </div>
                 </div>
                 
@@ -1611,6 +1614,7 @@
         let rawJsonData = null; // Store the raw JSON data
         let currentSortOrder = 'recent'; // Track current sort order
         let currentContentType = 'movies'; // Track current content type (movies or tv)
+        let selectedGenre = ''; // Track selected genre (empty = all genres)
 
         // Auto-load on page load
         window.addEventListener('load', async () => {
@@ -1630,6 +1634,9 @@
                         movies: loadedData.movies || [],
                         tv: loadedData.tv_shows || loadedData.tv || []
                     };
+                    
+                    // Populate genre dropdown with unique genres
+                    populateGenreDropdown();
                     
                     // Apply filters and display
                     applyFiltersAndDisplay();
@@ -2067,6 +2074,16 @@
                 displayData = { movies: searchedMovies, tv: searchedTv };
             }
             
+            // Filter by genre if selected
+            if (selectedGenre) {
+                displayData.movies = displayData.movies.filter(item => {
+                    return item.genres && item.genres.includes(selectedGenre);
+                });
+                displayData.tv = displayData.tv.filter(item => {
+                    return item.genres && item.genres.includes(selectedGenre);
+                });
+            }
+            
             // Filter by content type (movies or tv)
             if (currentContentType === 'movies') {
                 displayData = { movies: displayData.movies, tv: [] };
@@ -2143,6 +2160,42 @@
                 label.style.background = '#3b82f6';
                 label.style.borderColor = '#3b82f6';
             }
+        });
+        
+        // Populate genre dropdown with all unique genres from data
+        function populateGenreDropdown() {
+            if (!rawJsonData) return;
+            
+            const genreSet = new Set();
+            
+            // Collect all unique genres from movies and TV shows
+            [...rawJsonData.movies, ...rawJsonData.tv].forEach(item => {
+                if (item.genres && item.genres !== 'N/A') {
+                    item.genres.split(',').forEach(genre => {
+                        genreSet.add(genre.trim());
+                    });
+                }
+            });
+            
+            // Sort genres alphabetically
+            const sortedGenres = Array.from(genreSet).sort();
+            
+            // Populate dropdown
+            const genreFilter = document.getElementById('genreFilter');
+            genreFilter.innerHTML = '<option value="">🎭 All Genres</option>';
+            
+            sortedGenres.forEach(genre => {
+                const option = document.createElement('option');
+                option.value = genre;
+                option.textContent = genre;
+                genreFilter.appendChild(option);
+            });
+        }
+        
+        // Genre filter change handler
+        document.getElementById('genreFilter').addEventListener('change', function() {
+            selectedGenre = this.value;
+            applyFiltersAndDisplay();
         });
         
         // Initialize selected radio button styling
