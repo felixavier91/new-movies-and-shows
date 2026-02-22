@@ -110,46 +110,41 @@
                 transform: none !important;
             }
             
-            /* Collapsible filters on mobile */
-            .mobile-row-1 {
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.3s ease-in-out;
+            /* Push cards container down */
+            .container > div:last-child {
+                margin-top: 250px;
             }
             
-            .mobile-row-1.show-filters {
-                max-height: 500px;
-            }
-            
-            /* Filter toggle button */
-            .filter-toggle-btn {
-                display: none;
-                width: 100%;
-                padding: 12px;
-                background: #2a2a2a;
-                border: 2px solid #555;
-                border-radius: 10px;
-                color: white;
-                font-size: 14px;
-                font-weight: 600;
-                cursor: pointer;
-                margin-bottom: 10px;
-                text-align: center;
-            }
-            
+            /* Mobile filter collapse */
             @media (max-width: 768px) {
-                .filter-toggle-btn {
+                .filters-collapsed .mobile-row-1 {
+                    display: none;
+                }
+                
+                .filters-collapsed ~ .container > div:last-child {
+                    margin-top: 60px !important;
+                }
+                
+                #collapseFiltersBtn {
                     display: block;
+                    width: 100%;
+                    padding: 10px;
+                    background: #2a2a2a;
+                    border: 2px solid #555;
+                    border-radius: 10px;
+                    color: white;
+                    font-size: 13px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin-bottom: 10px;
+                    text-align: center;
                 }
             }
             
-            /* Push cards container down */
-            .container > div:last-child {
-                margin-top: 80px;
-            }
-            
-            .show-filters ~ .container > div:last-child {
-                margin-top: 250px;
+            @media (min-width: 769px) {
+                #collapseFiltersBtn {
+                    display: none;
+                }
             }
             
             /* Hide all dividers on mobile */
@@ -771,13 +766,11 @@
         <div class="controls" id="controls">
             <input type="file" id="jsonFile" accept=".json" style="display: none;">
             
-            <!-- Filter toggle button (mobile only) -->
-            <button class="filter-toggle-btn" id="filterToggleBtn" onclick="toggleFilters()">
-                🔽 Show Filters
-            </button>
+            <!-- Collapse filters button (mobile only) -->
+            <button id="collapseFiltersBtn" onclick="toggleFiltersCollapse()">🔼 Hide Filters</button>
             
             <!-- Sort and Search Controls -->
-            <div class="mobile-row-1" id="mobileFilters">
+            <div class="mobile-row-1">
                 <!-- Row 1: Sort buttons -->
                 <div class="filter-row-sort" style="margin-bottom: 10px;">
                     <div style="display: flex; gap: 8px; justify-content: space-between;">
@@ -811,8 +804,8 @@
                 </div>
                 
                 <!-- Row 3: Genre dropdown -->
-                <div class="filter-row-genre" style="margin-bottom: 15px; display: flex; justify-content: center;">
-                    <select id="genreFilter" style="max-width: 150px; padding: 8px 12px; background: #2a2a2a; color: #ffffff; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; outline: none;">
+                <div class="filter-row-genre" style="margin-bottom: 15px;">
+                    <select id="genreFilter" style="width: 100%; height: 40px; padding: 8px 12px; background: #2a2a2a; color: #ffffff; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; outline: none; line-height: 1.5;">
                         <option value="" style="background: #2a2a2a; color: #ffffff;">🎭 All Genres</option>
                     </select>
                 </div>
@@ -1670,21 +1663,21 @@
         let rawJsonData = null; // Store the raw JSON data
         let currentSortOrder = 'recent'; // Track current sort order
         let currentContentType = 'movies'; // Track current content type (movies or tv)
-        let selectedGenre = ''; // Track selected genre
+        let selectedGenre = ''; // Track selected genre (empty = all genres)
         
-        // Toggle filters visibility on mobile
-        function toggleFilters() {
-            const filters = document.getElementById('mobileFilters');
-            const btn = document.getElementById('filterToggleBtn');
+        // Toggle filters collapse on mobile
+        function toggleFiltersCollapse() {
+            const controls = document.querySelector('.controls');
+            const btn = document.getElementById('collapseFiltersBtn');
             
-            if (filters.classList.contains('show-filters')) {
-                filters.classList.remove('show-filters');
-                btn.textContent = '🔽 Show Filters';
-            } else {
-                filters.classList.add('show-filters');
+            if (controls.classList.contains('filters-collapsed')) {
+                controls.classList.remove('filters-collapsed');
                 btn.textContent = '🔼 Hide Filters';
+            } else {
+                controls.classList.add('filters-collapsed');
+                btn.textContent = '🔽 Show Filters';
             }
-        } (empty = all genres)
+        }
 
         // Auto-load on page load
         window.addEventListener('load', async () => {
