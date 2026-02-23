@@ -702,7 +702,7 @@
       "year": 2018,
       "vote_average": 8.234,
       "vote_count": 31515,
-      "director": "Joe Russo",
+      "director": "Anthony Russo",
       "actors": "Robert Downey Jr., Chris Evans, Chris Hemsworth",
       "genres": "Adventure, Action, Science Fiction",
       "providers": {
@@ -2418,7 +2418,12 @@
       "actors": "Robert De Niro, Ray Liotta, Joe Pesci",
       "genres": "Drama, Crime",
       "providers": {
-        "streaming": []
+        "streaming": [
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+          }
+        ]
       },
       "type": "movie"
     },
@@ -3795,6 +3800,10 @@
       "genres": "Drama, Adventure, Science Fiction",
       "providers": {
         "streaming": [
+          {
+            "name": "AMC Plus Apple TV Channel ",
+            "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
+          },
           {
             "name": "AMC+ Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
@@ -6861,6 +6870,10 @@
       "providers": {
         "streaming": [
           {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+          },
+          {
             "name": "Paramount+ Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
           },
@@ -7680,7 +7693,7 @@
       "year": 2017,
       "vote_average": 6.653,
       "vote_count": 12637,
-      "director": "Espen Sandberg",
+      "director": "Joachim Rønning",
       "actors": "Johnny Depp, Javier Bardem, Geoffrey Rush",
       "genres": "Adventure, Action, Fantasy",
       "providers": {
@@ -8604,7 +8617,7 @@
       "year": 2023,
       "vote_average": 7.328,
       "vote_count": 4394,
-      "director": "John Francis Daley",
+      "director": "Jonathan Goldstein",
       "actors": "Chris Pine, Michelle Rodriguez, Justice Smith",
       "genres": "Adventure, Fantasy, Comedy",
       "providers": {
@@ -16209,7 +16222,7 @@
       "year": 2004,
       "vote_average": 7.572,
       "vote_count": 8057,
-      "director": "Eric Bress",
+      "director": "J. Mackye Gruber",
       "actors": "Ashton Kutcher, Amy Smart, Melora Walters",
       "genres": "Science Fiction, Thriller",
       "providers": {
@@ -17871,6 +17884,10 @@
           {
             "name": "Amazon Prime Video",
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+          },
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           },
           {
             "name": "Paramount+ Amazon Channel",
@@ -20398,7 +20415,7 @@
       "year": 2002,
       "vote_average": 7.638,
       "vote_count": 355,
-      "director": "Adam Doench",
+      "director": "Cess Silvera",
       "actors": "Ky-Mani Marley, Spragga Benz, Paul Campbell",
       "genres": "Action, Adventure, Crime, Drama",
       "providers": {
@@ -22087,7 +22104,7 @@
       "year": 1998,
       "vote_average": 6.62,
       "vote_count": 5232,
-      "director": "Bobby Farrelly",
+      "director": "Peter Farrelly",
       "actors": "Cameron Diaz, Matt Dillon, Ben Stiller",
       "genres": "Romance, Comedy",
       "providers": {
@@ -23144,7 +23161,7 @@
       "year": 2023,
       "vote_average": 6.717,
       "vote_count": 451,
-      "director": "Cary Solomon",
+      "director": "Chuck Konzelman",
       "actors": "Sean Patrick Flanery, Jordan Belfi, Tom Ohmer",
       "genres": "Horror, Drama",
       "providers": {
@@ -23331,12 +23348,7 @@
       "actors": "Matthew McConaughey, Sandra Bullock, Samuel L. Jackson",
       "genres": "Crime, Drama, Thriller",
       "providers": {
-        "streaming": [
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          }
-        ]
+        "streaming": []
       },
       "type": "movie"
     },
@@ -23818,6 +23830,10 @@
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
           },
           {
+            "name": "Philo",
+            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
+          },
+          {
             "name": "Peacock Premium Plus",
             "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
           },
@@ -24019,7 +24035,7 @@
       "year": 2005,
       "vote_average": 6.653,
       "vote_count": 301,
-      "director": "Alan Mak Siu-Fai",
+      "director": "Andrew Lau Wai-Keung",
       "actors": "Jay Chou, Anne Suzuki, Jordan Chan Siu-Chun",
       "genres": "Action, Crime, Drama",
       "providers": {
@@ -26026,7 +26042,7 @@
       "year": 2006,
       "vote_average": 7.69,
       "vote_count": 7679,
-      "director": "Jonathan Dayton",
+      "director": "Valerie Faris",
       "actors": "Greg Kinnear, Toni Collette, Steve Carell",
       "genres": "Comedy, Drama",
       "providers": {
@@ -26496,6 +26512,10 @@
       "genres": "Comedy, Drama, Family, Romance",
       "providers": {
         "streaming": [
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+          },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
@@ -35686,7 +35706,7 @@
       "year": 2014,
       "vote_average": 6.626,
       "vote_count": 764,
-      "director": "Aaron Moorhead",
+      "director": "Justin Benson",
       "actors": "Lou Taylor Pucci, Nadia Hilker, Nick Nevern",
       "genres": "Horror, Romance, Science Fiction",
       "providers": {
@@ -45269,10 +45289,6 @@
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
           },
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           },
@@ -50900,7 +50916,7 @@
       "year": 2019,
       "vote_average": 6.93,
       "vote_count": 362,
-      "director": "Alix Mathurin",
+      "director": "Leïla Sy",
       "actors": "Bakary Diombera, Jammeh Diangana, Chloé Jouannet",
       "genres": "Drama, Crime",
       "providers": {
@@ -52990,7 +53006,7 @@
       "vote_count": 1312,
       "director": "Wes Anderson",
       "actors": "Ralph Fiennes, Benedict Cumberbatch, Dev Patel",
-      "genres": "Comedy, Fantasy, Adventure, Drama",
+      "genres": "Comedy, Fantasy, Drama",
       "providers": {
         "streaming": [
           {
@@ -58801,6 +58817,10 @@
           {
             "name": "Starz",
             "logo": "https://image.tmdb.org/t/p/original/yIKwylTLP1u8gl84Is7FItpYLGL.jpg"
+          },
+          {
+            "name": "Philo",
+            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
           },
           {
             "name": "Starz Amazon Channel",
@@ -65800,10 +65820,6 @@
             "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
           },
           {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
-          },
-          {
             "name": "AMC+",
             "logo": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
           },
@@ -66672,7 +66688,7 @@
       "year": 2017,
       "vote_average": 6.762,
       "vote_count": 1939,
-      "director": "Jonathan Dayton",
+      "director": "Valerie Faris",
       "actors": "Emma Stone, Steve Carell, Andrea Riseborough",
       "genres": "Drama, Comedy, History",
       "providers": {
@@ -68262,12 +68278,7 @@
       "actors": "Jeff Daniels, Anna Paquin, Dana Delany",
       "genres": "Adventure, Drama, Family",
       "providers": {
-        "streaming": [
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          }
-        ]
+        "streaming": []
       },
       "type": "movie"
     },
@@ -76446,7 +76457,7 @@
       "year": 2006,
       "vote_average": 6.8,
       "vote_count": 815,
-      "director": "Sylvain Chomet",
+      "director": "Olivier Assayas",
       "actors": "Steve Buscemi, Natalie Portman, Willem Dafoe",
       "genres": "Drama, Romance",
       "providers": {
@@ -76651,7 +76662,7 @@
       "year": 2006,
       "vote_average": 7.34,
       "vote_count": 1088,
-      "director": "Éric Toledano",
+      "director": "Olivier Nakache",
       "actors": "Jean-Paul Rouve, Marilou Berry, Omar Sy",
       "genres": "Comedy, Family",
       "providers": {
@@ -86507,7 +86518,7 @@
       "year": 2020,
       "vote_average": 6.501,
       "vote_count": 784,
-      "director": "Al Campbell",
+      "director": "Alice Mathias",
       "actors": "Samuel L. Jackson, Hugh Grant, Lisa Kudrow",
       "genres": "Comedy",
       "providers": {
@@ -88525,7 +88536,7 @@
       "year": 2019,
       "vote_average": 6.877,
       "vote_count": 801,
-      "director": "Mehdi Idir",
+      "director": "Grand Corps Malade",
       "actors": "Zita Hanrot, Liam Pierron, Soufiane Guerrab",
       "genres": "Drama, Comedy, Family",
       "providers": {
@@ -90493,7 +90504,7 @@
       "year": 2019,
       "vote_average": 6.8,
       "vote_count": 311,
-      "director": "Matthieu Delaporte",
+      "director": "Alexandre de La Patellière",
       "actors": "Fabrice Luchini, Patrick Bruel, Zineb Triki",
       "genres": "Comedy, Drama",
       "providers": {
@@ -96832,7 +96843,7 @@
       "year": 2023,
       "vote_average": 7.724,
       "vote_count": 1062,
-      "actors": "Gabriel Basso",
+      "actors": "Gabriel Basso, Fola Evans-Akingbola, Louis Herthum",
       "genres": "Action & Adventure, Drama, Mystery",
       "tv_status": {
         "status": "Returning Series",
@@ -96902,10 +96913,6 @@
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
           },
           {
             "name": "Paramount+ Originals Amazon Channel",
@@ -102738,10 +102745,6 @@
             "logo": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
           },
           {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
-          },
-          {
             "name": "Paramount Plus Essential",
             "logo": "https://image.tmdb.org/t/p/original/5wym1C0jAvJeGirPdgVpcW0CCuy.jpg"
           },
@@ -103088,7 +103091,7 @@
           "season": 13,
           "episode": 2,
           "air_date": "2026-02-22",
-          "name": "February 22, 2026"
+          "name": "February 22, 2026: Twitter"
         },
         "next_episode": {
           "season": 13,
@@ -105356,10 +105359,6 @@
           {
             "name": "Paramount+ Roku Premium Channel",
             "logo": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
-          },
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
           },
           {
             "name": "Peacock Premium Plus",
@@ -134400,7 +134399,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-23T15:29:50.120074",
+    "generated_at": "2026-02-23T18:52:50.318054",
     "start_date": "1990-01-01",
     "end_date": "2026-02-23",
     "start_year": 1990,
