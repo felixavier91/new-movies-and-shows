@@ -1409,8 +1409,18 @@
                     const bgColor = getProviderColor(providerName);
                     
                     streamingBadge = `
-                        <div style="position: absolute; bottom: 8px; right: 8px; background: ${bgColor}; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 600; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: ${bgColor}; padding: 8px 12px; border-radius: 8px; font-size: 14px; font-weight: 700; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.4);">
                             ${providerName}
+                        </div>
+                    `;
+                }
+                
+                // Rating badge on bottom-left
+                let ratingBadge = '';
+                if (item.y) {
+                    ratingBadge = `
+                        <div style="position: absolute; bottom: 8px; left: 8px; background: rgba(0,0,0,0.85); padding: 8px 12px; border-radius: 8px; font-size: 14px; font-weight: 700; color: white; box-shadow: 0 2px 6px rgba(0,0,0,0.4);">
+                            ⭐ ${item.y.toFixed(1)}
                         </div>
                     `;
                 }
@@ -1419,6 +1429,7 @@
                     <div class="movie-card" style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
                         <img src="${posterUrl}" alt="${item.title}" loading="lazy" style="width: 100%; height: 450px; object-fit: cover; display: block;">
                         
+                        ${ratingBadge}
                         ${streamingBadge}
                         
                         <!-- Overlay that appears on click/tap -->
