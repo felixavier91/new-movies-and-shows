@@ -1368,13 +1368,48 @@
                     statusHTML = `<p style="margin: 8px 0;"><strong>Status:</strong> ${statusText}</p>`;
                 }
                 
-                // Get first streaming provider for badge
+                // Get first streaming provider for badge with brand color
                 let streamingBadge = '';
                 if (item.providers && item.providers.streaming && item.providers.streaming.length > 0) {
                     const provider = item.providers.streaming[0];
                     const providerName = provider.name || provider;
+                    
+                    // Map provider names to brand colors
+                    const getProviderColor = (name) => {
+                        const colors = {
+                            'Netflix': '#E50914',
+                            'Amazon Prime Video': '#00A8E1',
+                            'Prime Video': '#00A8E1',
+                            'Disney Plus': '#113CCF',
+                            'Disney+': '#113CCF',
+                            'Hulu': '#1CE783',
+                            'HBO Max': '#B721FF',
+                            'Max': '#0026FF',
+                            'Apple TV Plus': '#000000',
+                            'Apple TV+': '#000000',
+                            'Peacock': '#000000',
+                            'Peacock Premium': '#000000',
+                            'Paramount Plus': '#0064FF',
+                            'Paramount+': '#0064FF',
+                            'Showtime': '#FF0000',
+                            'Starz': '#000000',
+                            'Crunchyroll': '#F47521',
+                            'fuboTV': '#000000',
+                            'YouTube Premium': '#FF0000',
+                            'Tubi': '#FA541C',
+                            'Pluto TV': '#FFC107',
+                            'The Roku Channel': '#6839CF',
+                            'AMC+': '#000000',
+                            'Discovery+': '#0075DB',
+                            'ESPN+': '#E50019'
+                        };
+                        return colors[name] || '#666666';
+                    };
+                    
+                    const bgColor = getProviderColor(providerName);
+                    
                     streamingBadge = `
-                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 600; color: white; backdrop-filter: blur(4px);">
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: ${bgColor}; padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 600; color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.3);">
                             ${providerName}
                         </div>
                     `;
