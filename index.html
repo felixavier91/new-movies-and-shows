@@ -1368,9 +1368,22 @@
                     statusHTML = `<p style="margin: 8px 0;"><strong>Status:</strong> ${statusText}</p>`;
                 }
                 
+                // Get first streaming provider for badge
+                let streamingBadge = '';
+                if (item.providers && item.providers.streaming && item.providers.streaming.length > 0) {
+                    const provider = item.providers.streaming[0];
+                    streamingBadge = `
+                        <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 600; color: white; backdrop-filter: blur(4px);">
+                            ${provider}
+                        </div>
+                    `;
+                }
+                
                 return `
                     <div class="movie-card" style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); cursor: pointer;">
                         <img src="${posterUrl}" alt="${item.title}" loading="lazy" style="width: 100%; height: 450px; object-fit: cover; display: block;">
+                        
+                        ${streamingBadge}
                         
                         <!-- Overlay that appears on click/tap -->
                         <div class="card-overlay" style="
