@@ -591,7 +591,7 @@
       "year": 2018,
       "vote_average": 8.234,
       "vote_count": 31508,
-      "director": "Anthony Russo",
+      "director": "Joe Russo",
       "actors": "Robert Downey Jr., Chris Evans, Chris Hemsworth",
       "genres": "Adventure, Action, Science Fiction",
       "providers": {
@@ -1699,7 +1699,7 @@
       "year": 2025,
       "vote_average": 7.067,
       "vote_count": 2649,
-      "director": "Adam B. Stein",
+      "director": "Zach Lipovsky",
       "actors": "Kaitlyn Santa Juana, Teo Briones, Rya Kihlstedt",
       "genres": "Horror, Mystery",
       "providers": {
@@ -5093,7 +5093,7 @@
       "year": 2025,
       "vote_average": 7.349,
       "vote_count": 1439,
-      "director": "Danny Philippou",
+      "director": "Michael Philippou",
       "actors": "Billy Barratt, Sally Hawkins, Mischa Heywood",
       "genres": "Horror",
       "providers": {
@@ -7385,7 +7385,7 @@
       "vote_count": 5041,
       "director": "Jason Reitman",
       "actors": "Mckenna Grace, Finn Wolfhard, Carrie Coon",
-      "genres": "Fantasy, Comedy, Adventure, Science Fiction",
+      "genres": "Fantasy, Comedy, Adventure",
       "providers": {
         "streaming": [
           {
@@ -8862,7 +8862,7 @@
       "year": 2020,
       "vote_average": 7.122,
       "vote_count": 8630,
-      "director": "Bilall Fallah",
+      "director": "Adil El Arbi",
       "actors": "Will Smith, Martin Lawrence, Vanessa Hudgens",
       "genres": "Thriller, Action, Crime",
       "providers": {
@@ -14197,7 +14197,7 @@
       "year": 2010,
       "vote_average": 7.304,
       "vote_count": 5635,
-      "director": "Joel Coen",
+      "director": "Ethan Coen",
       "actors": "Jeff Bridges, Hailee Steinfeld, Matt Damon",
       "genres": "Drama, Adventure, Western",
       "providers": {
@@ -14257,7 +14257,7 @@
       "year": 2002,
       "vote_average": 7.638,
       "vote_count": 355,
-      "director": "Cess Silvera",
+      "director": "Adam Doench",
       "actors": "Ky-Mani Marley, Spragga Benz, Paul Campbell",
       "genres": "Action, Adventure, Crime, Drama",
       "providers": {
@@ -15214,7 +15214,7 @@
       "poster_path": "/tNPEGju4DpTdbhBphNmZoEi9Bd3.jpg",
       "release_date": "1998-02-27",
       "year": 1998,
-      "vote_average": 7.3,
+      "vote_average": 7.334,
       "vote_count": 3105,
       "director": "Alex Proyas",
       "actors": "Rufus Sewell, William Hurt, Kiefer Sutherland",
@@ -15440,7 +15440,7 @@
       "release_date": "2000-12-16",
       "year": 2000,
       "vote_average": 7.269,
-      "vote_count": 3729,
+      "vote_count": 3730,
       "director": "Kinji Fukasaku",
       "actors": "Tatsuya Fujiwara, Aki Maeda, Takeshi Kitano",
       "genres": "Drama, Thriller, Action",
@@ -21366,8 +21366,8 @@
       "poster_path": "/bzvzaHqKBSuGIIWhinTQPHvT0zf.jpg",
       "release_date": "2019-11-22",
       "year": 2019,
-      "vote_average": 7.534,
-      "vote_count": 2453,
+      "vote_average": 7.535,
+      "vote_count": 2454,
       "director": "Todd Haynes",
       "actors": "Mark Ruffalo, Anne Hathaway, Tim Robbins",
       "genres": "Drama, Thriller",
@@ -21383,8 +21383,8 @@
       "poster_path": "/dKT8rGDR55cM1vGn7QZLA9Tg9YC.jpg",
       "release_date": "2021-01-29",
       "year": 2021,
-      "vote_average": 7.178,
-      "vote_count": 3277,
+      "vote_average": 7.177,
+      "vote_count": 3278,
       "director": "Chloé Zhao",
       "actors": "Frances McDormand, David Strathairn, Linda May",
       "genres": "Drama",
@@ -21595,7 +21595,7 @@
       "release_date": "2009-11-06",
       "year": 2009,
       "vote_average": 7.797,
-      "vote_count": 6123,
+      "vote_count": 6124,
       "director": "Jaco Van Dormael",
       "actors": "Jared Leto, Sarah Polley, Diane Kruger",
       "genres": "Science Fiction, Drama, Romance",
@@ -21654,8 +21654,8 @@
       "poster_path": "/3xb0FpWaCn2Mn93Atzxeprci9OU.jpg",
       "release_date": "2006-09-09",
       "year": 2006,
-      "vote_average": 7.62,
-      "vote_count": 1480,
+      "vote_average": 7.6,
+      "vote_count": 1481,
       "director": "Tarsem Singh",
       "actors": "Lee Pace, Justine Waddell, Daniel Caltagirone",
       "genres": "Adventure, Fantasy, Drama",
@@ -22240,7 +22240,7 @@
       "year": 2017,
       "vote_average": 7.216,
       "vote_count": 3043,
-      "director": "Benny Safdie",
+      "director": "Josh Safdie",
       "actors": "Robert Pattinson, Benny Safdie, Buddy Duress",
       "genres": "Crime, Thriller, Drama",
       "providers": {
@@ -23253,7 +23253,7 @@
       "year": 2016,
       "vote_average": 7.0,
       "vote_count": 6960,
-      "director": "Henry Joost",
+      "director": "Ariel Schulman",
       "actors": "Emma Roberts, Dave Franco, Emily Meade",
       "genres": "Mystery, Adventure, Crime",
       "providers": {
@@ -25341,7 +25341,7 @@
       "year": 1993,
       "vote_average": 7.487,
       "vote_count": 865,
-      "director": "Albert Hughes",
+      "director": "Allen Hughes",
       "actors": "Tyrin Turner, Larenz Tate, Glenn Plummer",
       "genres": "Drama, Crime, Thriller",
       "providers": {
@@ -29998,7 +29998,7 @@
       "year": 2009,
       "vote_average": 7.522,
       "vote_count": 711,
-      "director": "Kevin Hooks",
+      "director": "Brad Turner",
       "actors": "Wentworth Miller, Sarah Wayne Callies, Dominic Purcell",
       "genres": "Action, Drama, Thriller",
       "providers": {
@@ -31714,7 +31714,7 @@
       "year": 2023,
       "vote_average": 7.199,
       "vote_count": 322,
-      "director": "William Kaufman",
+      "director": "Johnny Strong",
       "actors": "Johnny Strong, Athena Durner, Raj Kala",
       "genres": "Action, War, Drama",
       "providers": {
@@ -32681,7 +32681,7 @@
       "year": 2003,
       "vote_average": 7.2,
       "vote_count": 523,
-      "director": "Shari Springer Berman",
+      "director": "Robert Pulcini",
       "actors": "Paul Giamatti, Hope Davis, Judah Friedlander",
       "genres": "Comedy, Drama",
       "providers": {
@@ -33410,7 +33410,7 @@
       "year": 2003,
       "vote_average": 7.3,
       "vote_count": 462,
-      "director": "Alan Mak Siu-Fai",
+      "director": "Andrew Lau Wai-Keung",
       "actors": "Shawn Yue, Edison Chen, Francis Ng Chun-Yu",
       "genres": "Action, Thriller, Crime",
       "providers": {
@@ -35923,23 +35923,6 @@
       "type": "movie"
     },
     {
-      "id": 40096,
-      "title": "A Dog's Will",
-      "overview": "The lively João Grilo and the sly Chicó are poor guys living in the hinterland who cheat a bunch of people in a small town in Northeastern Brazil. When they die, they have to be judged by Christ, the Devil and the Virgin Mary before they are admitted to paradise.",
-      "poster_path": "/ctfNJw6gofTjQvhOZeH8QKt0O2x.jpg",
-      "release_date": "2000-09-15",
-      "year": 2000,
-      "vote_average": 8.421,
-      "vote_count": 1203,
-      "director": "Guel Arraes",
-      "actors": "Matheus Nachtergaele, Selton Mello, Rogério Cardoso",
-      "genres": "Comedy, Drama, Fantasy, Romance",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 527,
       "title": "Once Were Warriors",
       "overview": "In a violent relationship, it takes a mother’s strength to save herself and her children from the man she loved. Once Were Warriors is a violent love story set against a contemporary urban backdrop.",
@@ -36086,7 +36069,7 @@
       "year": 2019,
       "vote_average": 7.655,
       "vote_count": 1121,
-      "director": "Juliano Dornelles",
+      "director": "Kleber Mendonça Filho",
       "actors": "Bárbara Colen, Thomás Aquino, Silvero Pereira",
       "genres": "Mystery, Western, Thriller",
       "providers": {
@@ -37618,7 +37601,7 @@
       "year": 2022,
       "vote_average": 7.616,
       "vote_count": 809,
-      "director": "Charlotte Vandermeersch",
+      "director": "Felix van Groeningen",
       "actors": "Luca Marinelli, Alessandro Borghi, Lupo Barbiero",
       "genres": "Drama",
       "providers": {
@@ -38274,8 +38257,8 @@
       "poster_path": "/iGZHMSIxbsvjG1M5PfUYq1doMDK.jpg",
       "release_date": "2013-11-12",
       "year": 2013,
-      "vote_average": 7.007,
-      "vote_count": 306,
+      "vote_average": 7.013,
+      "vote_count": 307,
       "director": "Wes Anderson",
       "actors": "Jason Schwartzman, Giada Colagrande, Giorgio Zancolla",
       "genres": "Comedy, Drama",
@@ -38456,7 +38439,7 @@
       "poster_path": "/ku1UvTWYvhFQbSesOD6zteY7bXT.jpg",
       "release_date": "2021-07-22",
       "year": 2021,
-      "vote_average": 8.0,
+      "vote_average": 8.005,
       "vote_count": 580,
       "director": "Bo Burnham",
       "actors": "Bo Burnham",
@@ -42784,7 +42767,7 @@
       "year": 2019,
       "vote_average": 7.782,
       "vote_count": 971,
-      "director": "Olivier Nakache",
+      "director": "Éric Toledano",
       "actors": "Vincent Cassel, Reda Kateb, Hélène Vincent",
       "genres": "Comedy, Drama",
       "providers": {
@@ -43570,7 +43553,7 @@
       "year": 2011,
       "vote_average": 7.071,
       "vote_count": 449,
-      "director": "Jean-Pierre Dardenne",
+      "director": "Luc Dardenne",
       "actors": "Cécile de France, Thomas Doret, Jérémie Renier",
       "genres": "Drama",
       "providers": {
@@ -46554,8 +46537,8 @@
       "poster_path": "/b54xDk98oWtEtAso9sj1wjaZDDH.jpg",
       "release_date": "1995-07-21",
       "year": 1995,
-      "vote_average": 7.178,
-      "vote_count": 311,
+      "vote_average": 7.175,
+      "vote_count": 312,
       "director": "Tom DiCillo",
       "actors": "Steve Buscemi, Catherine Keener, Dermot Mulroney",
       "genres": "Comedy",
@@ -47380,8 +47363,8 @@
       "poster_path": "/ekmFbyMgm3SPklSlDUW1wZ33yMP.jpg",
       "release_date": "2003-05-01",
       "year": 2003,
-      "vote_average": 7.0,
-      "vote_count": 392,
+      "vote_average": 7.048,
+      "vote_count": 393,
       "director": "Denys Arcand",
       "actors": "Rémy Girard, Stéphane Rousseau, Marie-Josée Croze",
       "genres": "Comedy, Drama",
@@ -47538,7 +47521,7 @@
       "year": 1999,
       "vote_average": 7.177,
       "vote_count": 328,
-      "director": "Luc Dardenne",
+      "director": "Jean-Pierre Dardenne",
       "actors": "Émilie Dequenne, Olivier Gourmet, Fabrizio Rongione",
       "genres": "Drama",
       "providers": {
@@ -48919,7 +48902,7 @@
       "year": 2000,
       "vote_average": 7.653,
       "vote_count": 1714,
-      "director": "Aldo Baglio",
+      "director": "Giovanni Storti",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -49559,16 +49542,11 @@
         "in_production": true,
         "last_episode": {
           "season": 1,
-          "episode": 5,
-          "air_date": "2026-02-15",
-          "name": "In the Name of the Mother"
-        },
-        "next_episode": {
-          "season": 1,
           "episode": 6,
           "air_date": "2026-02-22",
           "name": "The Morrow"
-        }
+        },
+        "next_episode": null
       },
       "providers": {
         "streaming": [
@@ -55434,15 +55412,15 @@
         "in_production": true,
         "last_episode": {
           "season": 13,
-          "episode": 1,
-          "air_date": "2026-02-15",
-          "name": "February 15, 2026: ICE"
-        },
-        "next_episode": {
-          "season": 13,
           "episode": 2,
           "air_date": "2026-02-22",
           "name": "February 22, 2026"
+        },
+        "next_episode": {
+          "season": 13,
+          "episode": 3,
+          "air_date": "2026-03-01",
+          "name": "March 1, 2026"
         }
       },
       "providers": {
@@ -62133,8 +62111,8 @@
       "poster_path": "/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
       "first_air_date": "2024-02-27",
       "year": 2024,
-      "vote_average": 8.435,
-      "vote_count": 1631,
+      "vote_average": 8.433,
+      "vote_count": 1633,
       "actors": "Hiroyuki Sanada, Cosmo Jarvis, Anna Sawai",
       "genres": "Drama, War & Politics",
       "tv_status": {
@@ -84226,15 +84204,15 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-23T00:37:25.063172",
+    "generated_at": "2026-02-23T06:42:09.207016",
     "start_date": "1990-01-01",
     "end_date": "2026-02-23",
     "start_year": 1990,
     "start_month": 1,
     "min_votes": 300,
     "min_rating": 7.0,
-    "total_movies": 1981,
+    "total_movies": 1980,
     "total_tv": 895,
-    "total_items": 2876
+    "total_items": 2875
   }
 }
