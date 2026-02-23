@@ -1372,9 +1372,10 @@
                 let streamingBadge = '';
                 if (item.providers && item.providers.streaming && item.providers.streaming.length > 0) {
                     const provider = item.providers.streaming[0];
+                    const providerName = provider.name || provider;
                     streamingBadge = `
                         <div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.8); padding: 4px 8px; border-radius: 6px; font-size: 10px; font-weight: 600; color: white; backdrop-filter: blur(4px);">
-                            ${provider}
+                            ${providerName}
                         </div>
                     `;
                 }
