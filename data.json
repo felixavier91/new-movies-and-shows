@@ -998,7 +998,7 @@
       "vote_average": 6.6,
       "vote_count": 2248,
       "director": "Danny Boyle",
-      "actors": "Jodie Comer, Alfie Williams, Aaron Taylor-Johnson",
+      "actors": "Jodie Comer, Aaron Taylor-Johnson, Alfie Williams",
       "genres": "Horror, Thriller, Science Fiction",
       "providers": {
         "streaming": [
@@ -7697,7 +7697,7 @@
       "year": 2003,
       "vote_average": 7.1,
       "vote_count": 11724,
-      "director": "Lana Wachowski",
+      "director": "Lilly Wachowski",
       "actors": "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss",
       "genres": "Adventure, Action, Thriller, Science Fiction",
       "providers": {
@@ -8643,7 +8643,7 @@
       "year": 2023,
       "vote_average": 7.328,
       "vote_count": 4394,
-      "director": "Jonathan Goldstein",
+      "director": "John Francis Daley",
       "actors": "Chris Pine, Michelle Rodriguez, Justice Smith",
       "genres": "Adventure, Fantasy, Comedy",
       "providers": {
@@ -14924,7 +14924,7 @@
       "year": 2010,
       "vote_average": 6.792,
       "vote_count": 6546,
-      "director": "Allen Hughes",
+      "director": "Albert Hughes",
       "actors": "Denzel Washington, Gary Oldman, Mila Kunis",
       "genres": "Action, Thriller, Science Fiction",
       "providers": {
@@ -19591,7 +19591,7 @@
       "year": 2023,
       "vote_average": 7.137,
       "vote_count": 3594,
-      "director": "Michael Philippou",
+      "director": "Danny Philippou",
       "actors": "Sophie Wilde, Alexandra Jensen, Joe Bird",
       "genres": "Horror",
       "providers": {
@@ -20359,7 +20359,7 @@
       "year": 2002,
       "vote_average": 7.638,
       "vote_count": 355,
-      "director": "Cess Silvera",
+      "director": "Adam Doench",
       "actors": "Ky-Mani Marley, Spragga Benz, Paul Campbell",
       "genres": "Action, Adventure, Crime, Drama",
       "providers": {
@@ -22104,7 +22104,7 @@
       "year": 2010,
       "vote_average": 7.304,
       "vote_count": 5639,
-      "director": "Joel Coen",
+      "director": "Ethan Coen",
       "actors": "Jeff Bridges, Hailee Steinfeld, Matt Damon",
       "genres": "Drama, Adventure, Western",
       "providers": {
@@ -26289,7 +26289,7 @@
       "year": 1996,
       "vote_average": 7.2,
       "vote_count": 1052,
-      "director": "Lana Wachowski",
+      "director": "Lilly Wachowski",
       "actors": "Gina Gershon, Jennifer Tilly, Joe Pantoliano",
       "genres": "Drama, Thriller, Crime",
       "providers": {
@@ -29539,7 +29539,7 @@
       "year": 2009,
       "vote_average": 6.619,
       "vote_count": 2143,
-      "director": "Paco Plaza",
+      "director": "Jaume Balagueró",
       "actors": "Manuela Velasco, Jonathan D. Mellor, Óscar Zafra",
       "genres": "Thriller, Horror",
       "providers": {
@@ -32508,23 +32508,6 @@
       "type": "movie"
     },
     {
-      "id": 433498,
-      "title": "Papillon",
-      "overview": "Henri “Papillon” Charrière, a safecracker from the Parisian underworld, is wrongfully convicted and sentenced to life imprisonment in the penal colony of French Guiana, where he forges a strong friendship with Louis Dega, a counterfeiter who needs his protection.",
-      "poster_path": "/ahF5c6vyP8HWMqIwlhecbRALkjq.jpg",
-      "release_date": "2017-09-07",
-      "year": 2017,
-      "vote_average": 7.321,
-      "vote_count": 2086,
-      "director": "Michael Noer",
-      "actors": "Charlie Hunnam, Rami Malek, Christopher Fairbank",
-      "genres": "Adventure, Crime, Drama",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 531428,
       "title": "Portrait of a Lady on Fire",
       "overview": "On an isolated island in Brittany at the end of the eighteenth century, a female painter is obliged to paint a wedding portrait of a young woman.",
@@ -32657,7 +32640,7 @@
       "year": 2009,
       "vote_average": 6.711,
       "vote_count": 2293,
-      "director": "Joel Coen",
+      "director": "Ethan Coen",
       "actors": "Michael Stuhlbarg, Richard Kind, Fred Melamed",
       "genres": "Comedy, Drama",
       "providers": {
@@ -33410,7 +33393,7 @@
       "year": 2022,
       "vote_average": 7.297,
       "vote_count": 1728,
-      "director": "Channing Tatum",
+      "director": "Reid Carolin",
       "actors": "Channing Tatum, Aavi Haas, Ryder McLaughlin",
       "genres": "Drama, Comedy",
       "providers": {
@@ -35471,7 +35454,7 @@
       "year": 2016,
       "vote_average": 6.962,
       "vote_count": 878,
-      "director": "Katharina Schöde",
+      "director": "Felix Fuchssteiner",
       "actors": "Maria Ehrich, Jannis Niewöhner, Peter Simonischek",
       "genres": "Fantasy, Action, Mystery",
       "providers": {
@@ -35803,7 +35786,7 @@
       "year": 2014,
       "vote_average": 6.626,
       "vote_count": 764,
-      "director": "Aaron Moorhead",
+      "director": "Justin Benson",
       "actors": "Lou Taylor Pucci, Nadia Hilker, Nick Nevern",
       "genres": "Horror, Romance, Science Fiction",
       "providers": {
@@ -37003,7 +36986,7 @@
       "vote_count": 2857,
       "director": "Richard Donner",
       "actors": "Mel Gibson, Danny Glover, Joe Pesci",
-      "genres": "Action, Adventure, Comedy, Crime, Thriller",
+      "genres": "Action, Crime, Thriller",
       "providers": {
         "streaming": []
       },
@@ -37337,7 +37320,7 @@
       "year": 2012,
       "vote_average": 6.893,
       "vote_count": 7403,
-      "director": "Lilly Wachowski",
+      "director": "Lana Wachowski",
       "actors": "Tom Hanks, Halle Berry, Jim Broadbent",
       "genres": "Drama, Science Fiction",
       "providers": {
@@ -41448,7 +41431,7 @@
       "vote_count": 3149,
       "director": "Richard Donner",
       "actors": "Mel Gibson, Danny Glover, Joe Pesci",
-      "genres": "Action, Comedy, Thriller, Crime",
+      "genres": "Action, Thriller, Crime",
       "providers": {
         "streaming": []
       },
@@ -42599,23 +42582,6 @@
       "type": "movie"
     },
     {
-      "id": 382748,
-      "title": "Stargirl",
-      "overview": "An unassuming high schooler finds himself inexplicably drawn to the free-spirited new girl, whose unconventional ways change how they see themselves…and their world.",
-      "poster_path": "/gwsrtzSrr7G6xjxsa7IwaAMHpEF.jpg",
-      "release_date": "2020-03-10",
-      "year": 2020,
-      "vote_average": 7.392,
-      "vote_count": 571,
-      "director": "Julia Hart",
-      "actors": "Grace VanderWaal, Graham Verchere, Karan Brar",
-      "genres": "Comedy, Drama, Romance, Family",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 8051,
       "title": "Punch-Drunk Love",
       "overview": "A socially awkward and volatile small business owner meets the love of his life after being threatened by a gang of scammers.",
@@ -43047,8 +43013,8 @@
       "poster_path": "/iX77zMSqUv2Qt7ToEnN2mmEudEf.jpg",
       "release_date": "2017-10-27",
       "year": 2017,
-      "vote_average": 7.281,
-      "vote_count": 1780,
+      "vote_average": 7.282,
+      "vote_count": 1781,
       "director": "Sergio G. Sánchez",
       "actors": "George MacKay, Anya Taylor-Joy, Charlie Heaton",
       "genres": "Thriller, Horror, Mystery",
@@ -43326,6 +43292,52 @@
       "type": "movie"
     },
     {
+      "id": 1934,
+      "title": "Shakespeare in Love",
+      "overview": "Young William Shakespeare is forced to stage his latest comedy, 'Romeo and Ethel, the Pirate's Daughter', before it's even written. When lovely noblewoman Viola de Lesseps auditions for a role, they fall into forbidden love — and Shakespeare's play finds a new life (and title). As their relationship intensifies, the comedy soon transforms into tragedy.",
+      "poster_path": "/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg",
+      "release_date": "1998-12-11",
+      "year": 1998,
+      "vote_average": 6.8,
+      "vote_count": 3156,
+      "director": "John Madden",
+      "actors": "Joseph Fiennes, Gwyneth Paltrow, Geoffrey Rush",
+      "genres": "Romance, History, Comedy",
+      "providers": {
+        "streaming": [
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
+          },
+          {
+            "name": "Peacock Premium",
+            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
+          },
+          {
+            "name": "Paramount+ Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
+          },
+          {
+            "name": "Paramount+ Roku Premium Channel",
+            "logo": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
+          },
+          {
+            "name": "Peacock Premium Plus",
+            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
+          },
+          {
+            "name": "Paramount Plus Essential",
+            "logo": "https://image.tmdb.org/t/p/original/5wym1C0jAvJeGirPdgVpcW0CCuy.jpg"
+          },
+          {
+            "name": "Paramount Plus Premium",
+            "logo": "https://image.tmdb.org/t/p/original/fts6X10Jn4QT0X6ac3udKEn2tJA.jpg"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
       "id": 544401,
       "title": "Cherry",
       "overview": "Cherry drifts from college dropout to army medic in Iraq—anchored only by his one true love, Emily. But after returning from the war with PTSD, his life spirals into drugs and crime as he struggles to find his place in the world.",
@@ -43393,52 +43405,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 1934,
-      "title": "Shakespeare in Love",
-      "overview": "Young William Shakespeare is forced to stage his latest comedy, 'Romeo and Ethel, the Pirate's Daughter', before it's even written. When lovely noblewoman Viola de Lesseps auditions for a role, they fall into forbidden love — and Shakespeare's play finds a new life (and title). As their relationship intensifies, the comedy soon transforms into tragedy.",
-      "poster_path": "/zdW7jdzPi4J9KZR3TyY2jn3Xh5e.jpg",
-      "release_date": "1998-12-11",
-      "year": 1998,
-      "vote_average": 6.838,
-      "vote_count": 3156,
-      "director": "John Madden",
-      "actors": "Joseph Fiennes, Gwyneth Paltrow, Geoffrey Rush",
-      "genres": "Romance, History, Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "Paramount+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/hExO4PtimLIYn3kBOrzsejNv7cT.jpg"
-          },
-          {
-            "name": "Paramount+ Roku Premium Channel",
-            "logo": "https://image.tmdb.org/t/p/original/ywIoxSjoYJGUIbR6BfxUiCHdPi3.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          },
-          {
-            "name": "Paramount Plus Essential",
-            "logo": "https://image.tmdb.org/t/p/original/5wym1C0jAvJeGirPdgVpcW0CCuy.jpg"
-          },
-          {
-            "name": "Paramount Plus Premium",
-            "logo": "https://image.tmdb.org/t/p/original/fts6X10Jn4QT0X6ac3udKEn2tJA.jpg"
           }
         ]
       },
@@ -44293,7 +44259,7 @@
       "year": 2022,
       "vote_average": 7.616,
       "vote_count": 809,
-      "director": "Charlotte Vandermeersch",
+      "director": "Felix van Groeningen",
       "actors": "Luca Marinelli, Alessandro Borghi, Lupo Barbiero",
       "genres": "Drama",
       "providers": {
@@ -54619,7 +54585,7 @@
       "year": 2014,
       "vote_average": 7.551,
       "vote_count": 3847,
-      "director": "Taika Waititi",
+      "director": "Jemaine Clement",
       "actors": "Jemaine Clement, Taika Waititi, Jonny Brugh",
       "genres": "Comedy, Horror",
       "providers": {
@@ -56634,7 +56600,7 @@
       "year": 2009,
       "vote_average": 6.723,
       "vote_count": 487,
-      "director": "Salvatore Ficarra",
+      "director": "Valentino Picone",
       "actors": "Salvatore Ficarra, Valentino Picone, Anna Safroncik",
       "genres": "Comedy",
       "providers": {
@@ -56651,7 +56617,7 @@
       "year": 2012,
       "vote_average": 6.673,
       "vote_count": 1263,
-      "director": "Lee Sternthal",
+      "director": "Brian Klugman",
       "actors": "Bradley Cooper, Zoe Saldaña, Jeremy Irons",
       "genres": "Drama, Thriller",
       "providers": {
@@ -57064,7 +57030,7 @@
       "year": 2014,
       "vote_average": 7.469,
       "vote_count": 3224,
-      "director": "Wash Westmoreland",
+      "director": "Richard Glatzer",
       "actors": "Julianne Moore, Kate Bosworth, Shane McRae",
       "genres": "Drama",
       "providers": {
@@ -60735,7 +60701,7 @@
       "year": 2023,
       "vote_average": 7.199,
       "vote_count": 322,
-      "director": "William Kaufman",
+      "director": "Johnny Strong",
       "actors": "Johnny Strong, Athena Durner, Raj Kala",
       "genres": "Action, War, Drama",
       "providers": {
@@ -61326,7 +61292,7 @@
       "year": 2003,
       "vote_average": 7.2,
       "vote_count": 523,
-      "director": "Robert Pulcini",
+      "director": "Shari Springer Berman",
       "actors": "Paul Giamatti, Hope Davis, Judah Friedlander",
       "genres": "Comedy, Drama",
       "providers": {
@@ -62539,7 +62505,7 @@
       "year": 2012,
       "vote_average": 7.117,
       "vote_count": 1743,
-      "director": "Valerie Faris",
+      "director": "Jonathan Dayton",
       "actors": "Paul Dano, Zoe Kazan, Chris Messina",
       "genres": "Comedy, Romance, Fantasy, Drama",
       "providers": {
@@ -67928,7 +67894,7 @@
       "year": 1995,
       "vote_average": 7.237,
       "vote_count": 1186,
-      "director": "Marc Caro",
+      "director": "Jean-Pierre Jeunet",
       "actors": "Ron Perlman, Dominique Pinon, Judith Vittet",
       "genres": "Fantasy, Science Fiction, Adventure",
       "providers": {
@@ -68182,7 +68148,7 @@
       "year": 2018,
       "vote_average": 7.364,
       "vote_count": 378,
-      "director": "Eric Métayer",
+      "director": "Andréa Bescond",
       "actors": "Andréa Bescond, Karin Viard, Clovis Cornillac",
       "genres": "Drama, Comedy",
       "providers": {
@@ -68445,7 +68411,7 @@
       "year": 2019,
       "vote_average": 6.676,
       "vote_count": 1336,
-      "director": "Scott Beck",
+      "director": "Bryan Woods",
       "actors": "Katie Stevens, Will Brittain, Lauryn McClain",
       "genres": "Horror, Thriller",
       "providers": {
@@ -68994,7 +68960,7 @@
       "year": 2019,
       "vote_average": 7.782,
       "vote_count": 971,
-      "director": "Éric Toledano",
+      "director": "Olivier Nakache",
       "actors": "Vincent Cassel, Reda Kateb, Hélène Vincent",
       "genres": "Comedy, Drama",
       "providers": {
@@ -73413,7 +73379,7 @@
       "year": 2019,
       "vote_average": 6.746,
       "vote_count": 1244,
-      "director": "Zach Lipovsky",
+      "director": "Adam B. Stein",
       "actors": "Emile Hirsch, Bruce Dern, Grace Park",
       "genres": "Science Fiction, Thriller",
       "providers": {
@@ -73936,7 +73902,7 @@
       "year": 2018,
       "vote_average": 6.913,
       "vote_count": 1436,
-      "director": "François Simard",
+      "director": "Yoann-Karl Whissell",
       "actors": "Graham Verchere, Judah Lewis, Caleb Emery",
       "genres": "Drama, Horror, Mystery",
       "providers": {
@@ -80823,49 +80789,6 @@
       "type": "movie"
     },
     {
-      "id": 10994,
-      "title": "White Oleander",
-      "overview": "A teenager journeys through a series of foster homes after her mother goes to prison for committing a crime of passion.",
-      "poster_path": "/pOdmhUaqvg4twAHqrhL5Onjgalb.jpg",
-      "release_date": "2002-10-11",
-      "year": 2002,
-      "vote_average": 7.1,
-      "vote_count": 414,
-      "director": "Peter Kosminsky",
-      "actors": "Alison Lohman, Michelle Pfeiffer, Renée Zellweger",
-      "genres": "Drama",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 10264,
-      "title": "Hamlet",
-      "overview": "Hamlet, Prince of Denmark, finds out that his uncle Claudius killed his father to obtain the throne, and plans revenge.",
-      "poster_path": "/cB5HbaiFoQLLmGeN2eeJjBGrp8U.jpg",
-      "release_date": "1990-12-19",
-      "year": 1990,
-      "vote_average": 6.6,
-      "vote_count": 427,
-      "director": "Franco Zeffirelli",
-      "actors": "Mel Gibson, Glenn Close, Alan Bates",
-      "genres": "Drama, History",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 347123,
       "title": "All the Way",
       "overview": "Lyndon B. Johnson's amazing 11-month journey from taking office after JFK's assassination, through the fight to pass the 1964 Civil Rights Act and his own presidential campaign, culminating on the night LBJ is actually elected to the office – no longer the 'accidental President.'",
@@ -85035,7 +84958,7 @@
       "year": 2014,
       "vote_average": 6.698,
       "vote_count": 559,
-      "director": "Andy Hamilton",
+      "director": "Guy Jenkin",
       "actors": "David Tennant, Rosamund Pike, Billy Connolly",
       "genres": "Comedy",
       "providers": {
@@ -85645,8 +85568,8 @@
       "poster_path": "/z8OKWw6DAZAOyz8F421euawr3Hs.jpg",
       "release_date": "2017-10-26",
       "year": 2017,
-      "vote_average": 6.562,
-      "vote_count": 405,
+      "vote_average": 6.555,
+      "vote_count": 406,
       "director": "Jason Hall",
       "actors": "Miles Teller, Haley Bennett, Joe Cole",
       "genres": "Drama, War",
@@ -86609,7 +86532,7 @@
       "year": 2020,
       "vote_average": 6.501,
       "vote_count": 784,
-      "director": "Al Campbell",
+      "director": "Alice Mathias",
       "actors": "Samuel L. Jackson, Hugh Grant, Lisa Kudrow",
       "genres": "Comedy",
       "providers": {
@@ -87046,7 +86969,7 @@
       "year": 2019,
       "vote_average": 6.9,
       "vote_count": 397,
-      "director": "Andrew Rhymer",
+      "director": "Jeff Chan",
       "actors": "Jack Quaid, Maya Erskine, Beck Bennett",
       "genres": "Comedy, Romance",
       "providers": {
@@ -90906,7 +90829,7 @@
       "year": 2007,
       "vote_average": 6.6,
       "vote_count": 447,
-      "director": "Luis Piedrahita",
+      "director": "Rodrigo Sopeña",
       "actors": "Lluís Homar, Santi Millán, Alejo Sauras",
       "genres": "Mystery, Thriller",
       "providers": {
@@ -92145,7 +92068,7 @@
       "year": 1997,
       "vote_average": 7.964,
       "vote_count": 2145,
-      "director": "Massimo Venier",
+      "director": "Aldo Baglio",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -93726,7 +93649,7 @@
       "year": 1999,
       "vote_average": 7.177,
       "vote_count": 328,
-      "director": "Luc Dardenne",
+      "director": "Jean-Pierre Dardenne",
       "actors": "Émilie Dequenne, Olivier Gourmet, Fabrizio Rongione",
       "genres": "Drama",
       "providers": {
@@ -93786,7 +93709,7 @@
       "year": 2014,
       "vote_average": 6.843,
       "vote_count": 319,
-      "director": "Esteban Roel",
+      "director": "Juanfer Andrés",
       "actors": "Macarena Gómez, Nadia de Santiago, Hugo Silva",
       "genres": "Horror, Thriller, Drama",
       "providers": {
@@ -94797,7 +94720,7 @@
       "year": 2000,
       "vote_average": 7.653,
       "vote_count": 1714,
-      "director": "Giovanni Storti",
+      "director": "Giacomo Poretti",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -96234,7 +96157,7 @@
       "year": 2017,
       "vote_average": 7.5,
       "vote_count": 621,
-      "director": "Grand Corps Malade",
+      "director": "Mehdi Idir",
       "actors": "Pablo Pauly, Soufiane Guerrab, Moussa Mansaly",
       "genres": "Drama, Comedy",
       "providers": {
@@ -96601,15 +96524,15 @@
         "in_production": true,
         "last_episode": {
           "season": 8,
-          "episode": 7,
-          "air_date": "2026-02-16",
-          "name": "Baja"
-        },
-        "next_episode": {
-          "season": 8,
           "episode": 8,
           "air_date": "2026-02-23",
           "name": "Grand Theft Aircraft"
+        },
+        "next_episode": {
+          "season": 8,
+          "episode": 9,
+          "air_date": "2026-03-02",
+          "name": "Fun and Games"
         }
       },
       "providers": {
@@ -98403,15 +98326,15 @@
         "in_production": true,
         "last_episode": {
           "season": 8,
-          "episode": 10,
-          "air_date": "2025-12-15",
-          "name": "Wolf Pack (2)"
-        },
-        "next_episode": {
-          "season": 8,
           "episode": 11,
           "air_date": "2026-02-23",
           "name": "Confetti"
+        },
+        "next_episode": {
+          "season": 8,
+          "episode": 12,
+          "air_date": "2026-03-02",
+          "name": "Daybreak"
         }
       },
       "providers": {
@@ -108170,16 +108093,16 @@
         "status": "Returning Series",
         "in_production": true,
         "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2025-03-04",
-          "name": "The Man Who Kept the Secrets"
+          "season": 2,
+          "episode": 3,
+          "air_date": "2026-02-23",
+          "name": "Another Day in Paradise"
         },
         "next_episode": {
           "season": 2,
-          "episode": 1,
-          "air_date": "2026-02-23",
-          "name": "Graceland"
+          "episode": 4,
+          "air_date": "2026-03-02",
+          "name": "A Holy Charge"
         }
       },
       "providers": {
@@ -117038,38 +116961,6 @@
       "type": "tv"
     },
     {
-      "id": 92830,
-      "title": "Obi-Wan Kenobi",
-      "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
-      "poster_path": "/4Lok3HBSfbQxibQZBygoVCwKKrZ.jpg",
-      "first_air_date": "2022-05-26",
-      "year": 2022,
-      "vote_average": 7.0,
-      "vote_count": 2141,
-      "actors": "Ewan McGregor, Vivien Lyra Blair, Moses Ingram",
-      "genres": "Sci-Fi & Fantasy, Action & Adventure, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2022-06-22",
-          "name": "Part VI"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Disney Plus",
-            "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 39859,
       "title": "Awkward.",
       "overview": "An irreverent look at the conflict, chaos and humor that defines teenage life through the eyes of 15-year-old Jenna Hamilton whose life begins to change when a simple accident becomes an epic misunderstanding and is blown way out of proportion. Narration in the first-person voice of Jenna's blog posts captures the humor within the struggles and experiences everyone can relate to from their formative years.",
@@ -117232,7 +117123,7 @@
       "poster_path": "/qg7WXAatXyQq6zO3SnWnRJEayeZ.jpg",
       "first_air_date": "2017-01-13",
       "year": 2017,
-      "vote_average": 7.386,
+      "vote_average": 7.4,
       "vote_count": 994,
       "actors": "Neil Patrick Harris, Patrick Warburton, Malina Weissman",
       "genres": "Action & Adventure, Family, Comedy, Mystery",
@@ -117493,7 +117384,7 @@
       "first_air_date": "2025-03-13",
       "year": 2025,
       "vote_average": 7.847,
-      "vote_count": 1430,
+      "vote_count": 1431,
       "actors": "N/A",
       "genres": "Drama, Crime",
       "tv_status": {
@@ -124791,8 +124682,8 @@
       "actors": "Jude Law, Ravi Cabot-Conyers, Ryan Kiera Armstrong",
       "genres": "Action & Adventure, Sci-Fi & Fantasy, Family",
       "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
+        "status": "Ended",
+        "in_production": false,
         "last_episode": {
           "season": 1,
           "episode": 8,
@@ -134490,15 +134381,15 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-02-24T00:47:48.338239",
+    "generated_at": "2026-02-24T06:50:13.759473",
     "start_date": "1990-01-01",
     "end_date": "2026-02-24",
     "start_year": 1990,
     "start_month": 1,
     "min_votes": 300,
     "min_rating": 6.5,
-    "total_movies": 3857,
-    "total_tv": 995,
-    "total_items": 4852
+    "total_movies": 3853,
+    "total_tv": 994,
+    "total_items": 4847
   }
 }
