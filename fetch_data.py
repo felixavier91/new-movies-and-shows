@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 300            # Minimum number of reviews/votes
+MIN_VOTES = 25            # Minimum number of reviews/votes
 MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
 
 # Date range: Fetch content from START_YEAR/START_MONTH to present
