@@ -21,9 +21,9 @@ START_MONTH = 1          # Month to start fetching from (1-12)
 
 MAX_PAGES_PER_TYPE = 1000 # Max pages to fetch per content type (movies/TV) - 1000 pages = ~20,000 items
 
-# Rate limiting
-REQUESTS_PER_10_SEC = 40
-DELAY_BETWEEN_REQUESTS = 10.0 / REQUESTS_PER_10_SEC  # 0.25 seconds
+# Rate limiting - AGGRESSIVE (risk of throttling but much faster)
+REQUESTS_PER_10_SEC = 80  # Double the default (was 40)
+DELAY_BETWEEN_REQUESTS = 10.0 / REQUESTS_PER_10_SEC  # 0.125 seconds
 
 # ============= THRESHOLD FUNCTIONS (EDIT THESE) =============
 CURRENT_YEAR = datetime.now().year
@@ -31,22 +31,23 @@ CURRENT_YEAR = datetime.now().year
 def get_min_votes_for_year(year):
     """
     Calculate minimum votes based on year.
-    Formula: 25 * (years_old)
+    Formula: 25 * (CURRENT_YEAR - year + 1)
     
     Examples:
-    - 2026: 25 * 0 = 0 (we'll use 25 as minimum)
-    - 2025: 25 * 1 = 25
-    - 2024: 25 * 2 = 50
-    - 2020: 25 * 6 = 150
-    - 2010: 25 * 16 = 400
-    - 2006: 25 * 20 = 500
-    - 2000: 25 * 26 = 650
-    - 1990: 25 * 36 = 900
+    - 2026: 25 * 1 = 25
+    - 2025: 25 * 2 = 50
+    - 2024: 25 * 3 = 75
+    - 2020: 25 * 7 = 175
+    - 2010: 25 * 17 = 425
+    - 2006: 25 * 21 = 525
+    - 2000: 25 * 27 = 675
+    - 1990: 25 * 37 = 925
     """
-    if year is None or year >= CURRENT_YEAR:
+    if year is None:
         return 25
-    years_old = CURRENT_YEAR - year
-    return max(25, 25 * years_old)
+    if year > CURRENT_YEAR:
+        return 25
+    return 25 * (CURRENT_YEAR - year + 1)
 
 def get_min_rating_for_year(year):
     """
