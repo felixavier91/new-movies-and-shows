@@ -15,12 +15,9 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 25            # Minimum number of reviews/votes (for current year)
-MIN_RATING = 6.0         # Minimum TMDB rating (0-10) (for recent years)
-
 # Date range: Fetch content from START_YEAR/START_MONTH to present
-START_YEAR = 1990        # Year to start fetching from (e.g., 2024)
-START_MONTH = 1          # Month to start fetching from (1-12, e.g., 2 = February)
+START_YEAR = 1990        # Year to start fetching from
+START_MONTH = 1          # Month to start fetching from (1-12)
 
 MAX_PAGES_PER_TYPE = 1000 # Max pages to fetch per content type (movies/TV) - 1000 pages = ~20,000 items
 
@@ -28,39 +25,46 @@ MAX_PAGES_PER_TYPE = 1000 # Max pages to fetch per content type (movies/TV) - 10
 REQUESTS_PER_10_SEC = 40
 DELAY_BETWEEN_REQUESTS = 10.0 / REQUESTS_PER_10_SEC  # 0.25 seconds
 
-# ============= DYNAMIC THRESHOLDS =============
+# ============= THRESHOLD FUNCTIONS (EDIT THESE) =============
 CURRENT_YEAR = datetime.now().year
 
 def get_min_votes_for_year(year):
     """
     Calculate minimum votes based on year.
-    2026: 25 votes
-    2025: 50 votes
-    2024: 75 votes
-    ...
-    1990: 900 votes (36 years * 25)
+    Formula: 25 * (years_old)
+    
+    Examples:
+    - 2026: 25 * 0 = 0 (we'll use 25 as minimum)
+    - 2025: 25 * 1 = 25
+    - 2024: 25 * 2 = 50
+    - 2020: 25 * 6 = 150
+    - 2010: 25 * 16 = 400
+    - 2006: 25 * 20 = 500
+    - 2000: 25 * 26 = 650
+    - 1990: 25 * 36 = 900
     """
-    if year is None:
-        return MIN_VOTES
+    if year is None or year >= CURRENT_YEAR:
+        return 25
     years_old = CURRENT_YEAR - year
-    return MIN_VOTES + (years_old * 25)
+    return max(25, 25 * years_old)
 
 def get_min_rating_for_year(year):
     """
     Calculate minimum rating based on year to account for rating inflation.
-    2015-2026: 6.0
-    2005-2014: 6.5
-    1990-2004: 7.0
-    """
-    if year is None:
-        return MIN_RATING
+    Formula: 6.0 + (years_old * 0.05)
     
-    if year >= 2015:
+    Examples:
+    - 2026: 6.0 + (0 * 0.05) = 6.0
+    - 2020: 6.0 + (6 * 0.05) = 6.3
+    - 2010: 6.0 + (16 * 0.05) = 6.8
+    - 2006: 6.0 + (20 * 0.05) = 7.0
+    - 2000: 6.0 + (26 * 0.05) = 7.3
+    - 1990: 6.0 + (36 * 0.05) = 7.8
+    """
+    if year is None or year >= CURRENT_YEAR:
         return 6.0
-    elif year >= 2005:
-        return 6.5
-    else:  # 1990-2004
-        return 7.0
+    years_old = CURRENT_YEAR - year
+    return min(10.0, 6.0 + (years_old * 0.05))  # Cap at 10.0
 
 # ============= SETUP =============
 TMDB_TOKEN = os.environ.get('TMDB_TOKEN')
@@ -76,12 +80,22 @@ HEADERS = {
 # Calculate date range from START_YEAR/START_MONTH to now
 end_date = datetime.now()
 start_date = datetime(START_YEAR, START_MONTH, 1)
-START_DATE_STR = start_date.strftime('%Y-%m-%d')
 
 print(f"🚀 Starting TMDB data fetch")
-print(f"📅 Date range: {START_DATE_STR} to {end_date.strftime('%Y-%m-%d')}")
-print(f"⭐ Min rating: {MIN_RATING}, Min votes: {MIN_VOTES}")
+print(f"📅 Date range: {start_date.strftime('%Y-%m-%d')} to {end_date.strftime('%Y-%m-%d')}")
 print(f"📆 Fetching from: {START_YEAR}-{START_MONTH:02d} to present\n")
+
+# Print threshold table for transparency
+print("📊 THRESHOLD TABLE:")
+print("=" * 60)
+print(f"{'Year':<8} {'Min Votes':<12} {'Min Rating':<12}")
+print("=" * 60)
+for year in range(START_YEAR, CURRENT_YEAR + 1, 5):  # Show every 5 years
+    votes = get_min_votes_for_year(year)
+    rating = get_min_rating_for_year(year)
+    print(f"{year:<8} {votes:<12} {rating:<12.2f}")
+print("=" * 60)
+print()
 
 # ============= RATE-LIMITED REQUEST =============
 last_request_time = 0
@@ -126,54 +140,32 @@ def fetch_item_details(item_id, media_type):
     return rate_limited_get(url)
 
 # ============= PROCESS MOVIES =============
-print("📽️  FETCHING MOVIES...")
-
-# Define cohorts with year ranges and appropriate thresholds
-movie_cohorts = [
-    {
-        'name': '2015-2026 (Recent)',
-        'start_date': '2015-01-01',
-        'end_date': end_date.strftime('%Y-%m-%d'),
-        'min_votes': 25,
-        'min_rating': 6.0
-    },
-    {
-        'name': '2005-2014 (Mid-range)',
-        'start_date': '2005-01-01',
-        'end_date': '2014-12-31',
-        'min_votes': 300,
-        'min_rating': 6.5
-    },
-    {
-        'name': '1990-2004 (Classic)',
-        'start_date': '1990-01-01',
-        'end_date': '2004-12-31',
-        'min_votes': 500,
-        'min_rating': 7.0
-    }
-]
+print("📽️  FETCHING MOVIES (YEAR BY YEAR)...")
+print()
 
 all_movies = []
 
-for cohort in movie_cohorts:
-    print(f"\n🎬 Fetching {cohort['name']}...")
-    print(f"   Date range: {cohort['start_date']} to {cohort['end_date']}")
-    print(f"   Min votes: {cohort['min_votes']}, Min rating: {cohort['min_rating']}")
+# Fetch year by year with appropriate thresholds
+for year in range(START_YEAR, CURRENT_YEAR + 1):
+    min_votes = get_min_votes_for_year(year)
+    min_rating = get_min_rating_for_year(year)
+    
+    print(f"🎬 {year}: Min {min_votes} votes, Min {min_rating:.2f} rating", end=" ")
     
     movies_url = (
         f"{API_BASE}/discover/movie"
         f"?sort_by=popularity.desc"
-        f"&primary_release_date.gte={cohort['start_date']}"
-        f"&primary_release_date.lte={cohort['end_date']}"
-        f"&vote_count.gte={cohort['min_votes']}"
-        f"&vote_average.gte={cohort['min_rating']}"
+        f"&primary_release_date.gte={year}-01-01"
+        f"&primary_release_date.lte={year}-12-31"
+        f"&vote_count.gte={min_votes}"
+        f"&vote_average.gte={min_rating}"
     )
     
-    cohort_movies = fetch_all_pages(movies_url)
-    print(f"   ✅ Found {len(cohort_movies)} movies in this cohort")
-    all_movies.extend(cohort_movies)
+    year_movies = fetch_all_pages(movies_url, max_pages=100)  # Limit per year
+    print(f"→ {len(year_movies)} movies")
+    all_movies.extend(year_movies)
 
-print(f"\n✅ Total movies across all cohorts: {len(all_movies)}\n")
+print(f"\n✅ Total movies across all years: {len(all_movies)}\n")
 
 print("📥 Fetching movie details (credits + providers)...")
 movies_data = []
@@ -271,54 +263,32 @@ movies_data = unique_movies
 print(f"✅ After deduplication: {len(movies_data)} unique movies\n")
 
 # ============= PROCESS TV SHOWS =============
-print("📺 FETCHING TV SHOWS...")
-
-# Define cohorts with year ranges and appropriate thresholds
-tv_cohorts = [
-    {
-        'name': '2015-2026 (Recent)',
-        'start_date': '2015-01-01',
-        'end_date': end_date.strftime('%Y-%m-%d'),
-        'min_votes': 25,
-        'min_rating': 6.0
-    },
-    {
-        'name': '2005-2014 (Mid-range)',
-        'start_date': '2005-01-01',
-        'end_date': '2014-12-31',
-        'min_votes': 300,
-        'min_rating': 6.5
-    },
-    {
-        'name': '1990-2004 (Classic)',
-        'start_date': '1990-01-01',
-        'end_date': '2004-12-31',
-        'min_votes': 500,
-        'min_rating': 7.0
-    }
-]
+print("📺 FETCHING TV SHOWS (YEAR BY YEAR)...")
+print()
 
 all_tv_shows = []
 
-for cohort in tv_cohorts:
-    print(f"\n📺 Fetching {cohort['name']}...")
-    print(f"   Date range: {cohort['start_date']} to {cohort['end_date']}")
-    print(f"   Min votes: {cohort['min_votes']}, Min rating: {cohort['min_rating']}")
+# Fetch year by year with appropriate thresholds
+for year in range(START_YEAR, CURRENT_YEAR + 1):
+    min_votes = get_min_votes_for_year(year)
+    min_rating = get_min_rating_for_year(year)
+    
+    print(f"📺 {year}: Min {min_votes} votes, Min {min_rating:.2f} rating", end=" ")
     
     tv_url = (
         f"{API_BASE}/discover/tv"
         f"?sort_by=popularity.desc"
-        f"&first_air_date.gte={cohort['start_date']}"
-        f"&first_air_date.lte={cohort['end_date']}"
-        f"&vote_count.gte={cohort['min_votes']}"
-        f"&vote_average.gte={cohort['min_rating']}"
+        f"&first_air_date.gte={year}-01-01"
+        f"&first_air_date.lte={year}-12-31"
+        f"&vote_count.gte={min_votes}"
+        f"&vote_average.gte={min_rating}"
     )
     
-    cohort_tv = fetch_all_pages(tv_url)
-    print(f"   ✅ Found {len(cohort_tv)} TV shows in this cohort")
-    all_tv_shows.extend(cohort_tv)
+    year_tv = fetch_all_pages(tv_url, max_pages=100)  # Limit per year
+    print(f"→ {len(year_tv)} shows")
+    all_tv_shows.extend(year_tv)
 
-print(f"\n✅ Total TV shows across all cohorts: {len(all_tv_shows)}\n")
+print(f"\n✅ Total TV shows across all years: {len(all_tv_shows)}\n")
 
 print("📥 Fetching TV show details (credits + providers)...")
 tv_data = []
