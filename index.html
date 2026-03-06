@@ -2407,12 +2407,18 @@
             applyFiltersAndDisplay();
         });
         
-        // Smart click handling on slider track
-        document.getElementById('sliderTrack').addEventListener('click', function(e) {
+        // Smart click/touch handling on slider track
+        function handleSliderTrackInteraction(e) {
+            // Prevent default to avoid conflicts
+            e.preventDefault();
+            
+            // Get touch or click position
+            const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+            
             // Get click position relative to track
             const track = e.currentTarget;
             const rect = track.getBoundingClientRect();
-            const clickX = e.clientX - rect.left;
+            const clickX = clientX - rect.left;
             const trackWidth = rect.width;
             
             // Calculate clicked year value (1990-2026)
@@ -2428,13 +2434,11 @@
             if (clickedYear < currentMin) {
                 // Click is to the left of both handles → move left handle
                 minYearSlider.value = clickedYear;
-                minYear = clickedYear;
                 document.getElementById('minYearLabel').textContent = clickedYear;
                 applyFiltersAndDisplay();
             } else if (clickedYear > currentMax) {
                 // Click is to the right of both handles → move right handle
                 maxYearSlider.value = clickedYear;
-                maxYear = clickedYear;
                 document.getElementById('maxYearLabel').textContent = clickedYear;
                 applyFiltersAndDisplay();
             } else {
@@ -2444,16 +2448,18 @@
                 
                 if (distToMin < distToMax) {
                     minYearSlider.value = clickedYear;
-                    minYear = clickedYear;
                     document.getElementById('minYearLabel').textContent = clickedYear;
                 } else {
                     maxYearSlider.value = clickedYear;
-                    maxYear = clickedYear;
                     document.getElementById('maxYearLabel').textContent = clickedYear;
                 }
                 applyFiltersAndDisplay();
             }
-        });
+        }
+        
+        const sliderTrack = document.getElementById('sliderTrack');
+        sliderTrack.addEventListener('click', handleSliderTrackInteraction);
+        sliderTrack.addEventListener('touchstart', handleSliderTrackInteraction);
 
         // Function to download table as CSV
         function downloadTableAsCSV() {
