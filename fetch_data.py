@@ -16,7 +16,7 @@ sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
 # Date range: Fetch content from START_YEAR/START_MONTH to present
-START_YEAR = 1990        # Year to start fetching from
+START_YEAR = 2025        # Year to start fetching from
 START_MONTH = 1          # Month to start fetching from (1-12)
 
 MAX_PAGES_PER_TYPE = 1000 # Max pages to fetch per content type (movies/TV) - 1000 pages = ~20,000 items
