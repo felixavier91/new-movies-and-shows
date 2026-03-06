@@ -16,7 +16,7 @@ sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
 MIN_VOTES = 300            # Minimum number of reviews/votes
-MIN_RATING = 6.5         # Minimum TMDB rating (0-10)
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
 
 # Date range: Fetch content from START_YEAR/START_MONTH to present
 START_YEAR = 1990        # Year to start fetching from (e.g., 2024)
