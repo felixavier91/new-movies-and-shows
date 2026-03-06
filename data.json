@@ -16145,7 +16145,7 @@
       "year": 2012,
       "vote_average": 6.893,
       "vote_count": 7416,
-      "director": "Lilly Wachowski",
+      "director": "Lana Wachowski",
       "actors": "Tom Hanks, Halle Berry, Jim Broadbent",
       "genres": "Drama, Science Fiction",
       "providers": {
@@ -81126,7 +81126,7 @@
       "year": 2024,
       "vote_average": 7.207,
       "vote_count": 430,
-      "director": "Logan George",
+      "director": "Celine Held",
       "actors": "Dylan O'Brien, Eliza Scanlen, Caroline Falk",
       "genres": "Drama, Mystery, Science Fiction, Thriller",
       "providers": {
@@ -82031,7 +82031,7 @@
       "year": 2024,
       "vote_average": 6.438,
       "vote_count": 233,
-      "director": "Josh Gordon",
+      "director": "Will Speck",
       "actors": "Anthony Ramos, Naomi Scott, Kristofer Hivju",
       "genres": "Science Fiction, Comedy, Action",
       "providers": {
@@ -139668,15 +139668,15 @@
         "in_production": true,
         "last_episode": {
           "season": 2,
-          "episode": 1,
-          "air_date": "2026-02-26",
-          "name": "Cause and Effect"
-        },
-        "next_episode": {
-          "season": 2,
           "episode": 2,
           "air_date": "2026-03-05",
           "name": "Resonance"
+        },
+        "next_episode": {
+          "season": 2,
+          "episode": 3,
+          "air_date": "2026-03-12",
+          "name": "Secrets"
         }
       },
       "providers": {
@@ -156117,7 +156117,7 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-03-06T04:58:01.421771",
+    "generated_at": "2026-03-06T06:30:30.854954",
     "start_date": "1990-01-01",
     "end_date": "2026-03-06",
     "start_year": 1990,
