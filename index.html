@@ -768,6 +768,17 @@
         #minYearSlider {
             pointer-events: auto !important;
         }
+        
+        /* Year slider thumbs need pointer events enabled */
+        #minYearSlider::-webkit-slider-thumb,
+        #maxYearSlider::-webkit-slider-thumb {
+            pointer-events: auto;
+        }
+        
+        #minYearSlider::-moz-range-thumb,
+        #maxYearSlider::-moz-range-thumb {
+            pointer-events: auto;
+        }
     </style>
 </head>
 <body>
@@ -829,7 +840,7 @@
                         <span id="minYearLabel">1990</span>
                         <span id="maxYearLabel">2026</span>
                     </div>
-                    <div style="position: relative; height: 40px;">
+                    <div id="sliderTrack" style="position: relative; height: 40px; cursor: pointer;">
                         <input type="range" id="minYearSlider" min="1990" max="2026" value="1990" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
                         <input type="range" id="maxYearSlider" min="1990" max="2026" value="2026" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
                     </div>
@@ -2394,6 +2405,54 @@
         // Filter only when user releases the slider (smooth dragging)
         maxYearSlider.addEventListener('change', function() {
             applyFiltersAndDisplay();
+        });
+        
+        // Smart click handling on slider track
+        document.getElementById('sliderTrack').addEventListener('click', function(e) {
+            // Get click position relative to track
+            const track = e.currentTarget;
+            const rect = track.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const trackWidth = rect.width;
+            
+            // Calculate clicked year value (1990-2026)
+            const minYear = 1990;
+            const maxYear = 2026;
+            const clickedYear = Math.round(minYear + (clickX / trackWidth) * (maxYear - minYear));
+            
+            // Get current slider positions
+            const currentMin = parseInt(minYearSlider.value);
+            const currentMax = parseInt(maxYearSlider.value);
+            
+            // Smart logic: move the appropriate handle
+            if (clickedYear < currentMin) {
+                // Click is to the left of both handles → move left handle
+                minYearSlider.value = clickedYear;
+                minYear = clickedYear;
+                document.getElementById('minYearLabel').textContent = clickedYear;
+                applyFiltersAndDisplay();
+            } else if (clickedYear > currentMax) {
+                // Click is to the right of both handles → move right handle
+                maxYearSlider.value = clickedYear;
+                maxYear = clickedYear;
+                document.getElementById('maxYearLabel').textContent = clickedYear;
+                applyFiltersAndDisplay();
+            } else {
+                // Click is between handles → move the closer one
+                const distToMin = Math.abs(clickedYear - currentMin);
+                const distToMax = Math.abs(clickedYear - currentMax);
+                
+                if (distToMin < distToMax) {
+                    minYearSlider.value = clickedYear;
+                    minYear = clickedYear;
+                    document.getElementById('minYearLabel').textContent = clickedYear;
+                } else {
+                    maxYearSlider.value = clickedYear;
+                    maxYear = clickedYear;
+                    document.getElementById('maxYearLabel').textContent = clickedYear;
+                }
+                applyFiltersAndDisplay();
+            }
         });
 
         // Function to download table as CSV
