@@ -22,7 +22,7 @@ MIN_RATING = 6.0         # Minimum TMDB rating (0-10) (for recent years)
 START_YEAR = 1990        # Year to start fetching from (e.g., 2024)
 START_MONTH = 1          # Month to start fetching from (1-12, e.g., 2 = February)
 
-MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500 pages = ~10,000 items
+MAX_PAGES_PER_TYPE = 1000 # Max pages to fetch per content type (movies/TV) - 1000 pages = ~20,000 items
 
 # Rate limiting
 REQUESTS_PER_10_SEC = 40
@@ -127,39 +127,63 @@ def fetch_item_details(item_id, media_type):
 
 # ============= PROCESS MOVIES =============
 print("📽️  FETCHING MOVIES...")
-movies_url = (
-    f"{API_BASE}/discover/movie"
-    f"?sort_by=popularity.desc"
-    f"&primary_release_date.gte={START_DATE_STR}"
-    f"&vote_count.gte={MIN_VOTES}"
-    f"&vote_average.gte={MIN_RATING}"
-)
 
-movies = fetch_all_pages(movies_url)
-print(f"✅ Found {len(movies)} movies\n")
+# Define cohorts with year ranges and appropriate thresholds
+movie_cohorts = [
+    {
+        'name': '2015-2026 (Recent)',
+        'start_date': '2015-01-01',
+        'end_date': end_date.strftime('%Y-%m-%d'),
+        'min_votes': 25,
+        'min_rating': 6.0
+    },
+    {
+        'name': '2005-2014 (Mid-range)',
+        'start_date': '2005-01-01',
+        'end_date': '2014-12-31',
+        'min_votes': 300,
+        'min_rating': 6.5
+    },
+    {
+        'name': '1990-2004 (Classic)',
+        'start_date': '1990-01-01',
+        'end_date': '2004-12-31',
+        'min_votes': 500,
+        'min_rating': 7.0
+    }
+]
+
+all_movies = []
+
+for cohort in movie_cohorts:
+    print(f"\n🎬 Fetching {cohort['name']}...")
+    print(f"   Date range: {cohort['start_date']} to {cohort['end_date']}")
+    print(f"   Min votes: {cohort['min_votes']}, Min rating: {cohort['min_rating']}")
+    
+    movies_url = (
+        f"{API_BASE}/discover/movie"
+        f"?sort_by=popularity.desc"
+        f"&primary_release_date.gte={cohort['start_date']}"
+        f"&primary_release_date.lte={cohort['end_date']}"
+        f"&vote_count.gte={cohort['min_votes']}"
+        f"&vote_average.gte={cohort['min_rating']}"
+    )
+    
+    cohort_movies = fetch_all_pages(movies_url)
+    print(f"   ✅ Found {len(cohort_movies)} movies in this cohort")
+    all_movies.extend(cohort_movies)
+
+print(f"\n✅ Total movies across all cohorts: {len(all_movies)}\n")
 
 print("📥 Fetching movie details (credits + providers)...")
 movies_data = []
 
-for i, movie in enumerate(movies):
+for i, movie in enumerate(all_movies):
     if i % 10 == 0:
-        progress_pct = int((i / len(movies)) * 100) if len(movies) > 0 else 0
-        print(f"  Movies: {i}/{len(movies)} ({progress_pct}%)", flush=True)
+        progress_pct = int((i / len(all_movies)) * 100) if len(all_movies) > 0 else 0
+        print(f"  Movies: {i}/{len(all_movies)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(movie['id'], 'movie')
-    
-    # Get year for dynamic thresholds
-    movie_year = datetime.strptime(movie['release_date'], '%Y-%m-%d').year if movie.get('release_date') else None
-    
-    # Apply dynamic vote threshold
-    required_votes = get_min_votes_for_year(movie_year)
-    if movie['vote_count'] < required_votes:
-        continue
-    
-    # Apply dynamic rating threshold
-    required_rating = get_min_rating_for_year(movie_year)
-    if movie['vote_average'] < required_rating:
-        continue
     
     # Extract director
     director = 'N/A'
@@ -248,39 +272,63 @@ print(f"✅ After deduplication: {len(movies_data)} unique movies\n")
 
 # ============= PROCESS TV SHOWS =============
 print("📺 FETCHING TV SHOWS...")
-tv_url = (
-    f"{API_BASE}/discover/tv"
-    f"?sort_by=popularity.desc"
-    f"&first_air_date.gte={START_DATE_STR}"
-    f"&vote_count.gte={MIN_VOTES}"
-    f"&vote_average.gte={MIN_RATING}"
-)
 
-tv_shows = fetch_all_pages(tv_url)
-print(f"✅ Found {len(tv_shows)} TV shows\n")
+# Define cohorts with year ranges and appropriate thresholds
+tv_cohorts = [
+    {
+        'name': '2015-2026 (Recent)',
+        'start_date': '2015-01-01',
+        'end_date': end_date.strftime('%Y-%m-%d'),
+        'min_votes': 25,
+        'min_rating': 6.0
+    },
+    {
+        'name': '2005-2014 (Mid-range)',
+        'start_date': '2005-01-01',
+        'end_date': '2014-12-31',
+        'min_votes': 300,
+        'min_rating': 6.5
+    },
+    {
+        'name': '1990-2004 (Classic)',
+        'start_date': '1990-01-01',
+        'end_date': '2004-12-31',
+        'min_votes': 500,
+        'min_rating': 7.0
+    }
+]
+
+all_tv_shows = []
+
+for cohort in tv_cohorts:
+    print(f"\n📺 Fetching {cohort['name']}...")
+    print(f"   Date range: {cohort['start_date']} to {cohort['end_date']}")
+    print(f"   Min votes: {cohort['min_votes']}, Min rating: {cohort['min_rating']}")
+    
+    tv_url = (
+        f"{API_BASE}/discover/tv"
+        f"?sort_by=popularity.desc"
+        f"&first_air_date.gte={cohort['start_date']}"
+        f"&first_air_date.lte={cohort['end_date']}"
+        f"&vote_count.gte={cohort['min_votes']}"
+        f"&vote_average.gte={cohort['min_rating']}"
+    )
+    
+    cohort_tv = fetch_all_pages(tv_url)
+    print(f"   ✅ Found {len(cohort_tv)} TV shows in this cohort")
+    all_tv_shows.extend(cohort_tv)
+
+print(f"\n✅ Total TV shows across all cohorts: {len(all_tv_shows)}\n")
 
 print("📥 Fetching TV show details (credits + providers)...")
 tv_data = []
 
-for i, show in enumerate(tv_shows):
+for i, show in enumerate(all_tv_shows):
     if i % 10 == 0:
-        progress_pct = int((i / len(tv_shows)) * 100) if len(tv_shows) > 0 else 0
-        print(f"  TV Shows: {i}/{len(tv_shows)} ({progress_pct}%)", flush=True)
+        progress_pct = int((i / len(all_tv_shows)) * 100) if len(all_tv_shows) > 0 else 0
+        print(f"  TV Shows: {i}/{len(all_tv_shows)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(show['id'], 'tv')
-    
-    # Get year for dynamic thresholds
-    show_year = datetime.strptime(show['first_air_date'], '%Y-%m-%d').year if show.get('first_air_date') else None
-    
-    # Apply dynamic vote threshold
-    required_votes = get_min_votes_for_year(show_year)
-    if show['vote_count'] < required_votes:
-        continue
-    
-    # Apply dynamic rating threshold
-    required_rating = get_min_rating_for_year(show_year)
-    if show['vote_average'] < required_rating:
-        continue
     
     # Extract top 3 actors
     actors = 'N/A'
