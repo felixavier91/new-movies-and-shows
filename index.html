@@ -835,14 +835,15 @@
                     </select>
                 </div>
                 
-                <div class="filter-row-year-slider" style="margin-bottom: 0px; padding: 0 50px;">
-                    <div style="display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 12px; color: #999; font-weight: 600;">
-                        <span id="minYearLabel">1990</span>
-                        <span id="maxYearLabel">2026</span>
-                    </div>
-                    <div id="sliderTrack" style="position: relative; height: 40px; cursor: pointer;">
-                        <input type="range" id="minYearSlider" min="1990" max="2026" value="1990" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
-                        <input type="range" id="maxYearSlider" min="1990" max="2026" value="2026" style="position: absolute; width: 100%; pointer-events: none; -webkit-appearance: none; appearance: none; background: transparent;">
+                <div class="filter-row-year-dropdowns" style="margin-bottom: 15px;">
+                    <div style="display: flex; gap: 8px; align-items: center;">
+                        <select id="minYearDropdown" style="flex: 1; padding: 8px 12px; background: #2a2a2a; color: white; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; outline: none;">
+                            <!-- Will be populated by JavaScript -->
+                        </select>
+                        <span style="color: #999; font-size: 12px;">to</span>
+                        <select id="maxYearDropdown" style="flex: 1; padding: 8px 12px; background: #2a2a2a; color: white; border: 2px solid #555; border-radius: 20px; cursor: pointer; font-size: 12px; font-weight: 600; outline: none;">
+                            <!-- Will be populated by JavaScript -->
+                        </select>
                     </div>
                 </div>
                 
@@ -2372,95 +2373,47 @@
         let minYear = 1990;
         let maxYear = 2026;
         
-        const minYearSlider = document.getElementById('minYearSlider');
-        const maxYearSlider = document.getElementById('maxYearSlider');
-        const minYearLabel = document.getElementById('minYearLabel');
-        const maxYearLabel = document.getElementById('maxYearLabel');
+        const minYearDropdown = document.getElementById('minYearDropdown');
+        const maxYearDropdown = document.getElementById('maxYearDropdown');
         
-        // Update label while dragging (smooth visual feedback)
-        minYearSlider.addEventListener('input', function() {
-            minYear = parseInt(this.value);
-            if (minYear > maxYear) {
-                minYear = maxYear;
-                this.value = maxYear;
-            }
-            minYearLabel.textContent = minYear;
-        });
-        
-        // Filter only when user releases the slider (smooth dragging)
-        minYearSlider.addEventListener('change', function() {
-            applyFiltersAndDisplay();
-        });
-        
-        // Update label while dragging (smooth visual feedback)
-        maxYearSlider.addEventListener('input', function() {
-            maxYear = parseInt(this.value);
-            if (maxYear < minYear) {
-                maxYear = minYear;
-                this.value = minYear;
-            }
-            maxYearLabel.textContent = maxYear;
-        });
-        
-        // Filter only when user releases the slider (smooth dragging)
-        maxYearSlider.addEventListener('change', function() {
-            applyFiltersAndDisplay();
-        });
-        
-        // Smart click/touch handling on slider track
-        function handleSliderTrackInteraction(e) {
-            // Prevent default to avoid conflicts
-            e.preventDefault();
+        // Populate year dropdowns (current year down to 1990)
+        const currentYear = new Date().getFullYear();
+        for (let year = currentYear; year >= 1990; year--) {
+            const minOption = document.createElement('option');
+            minOption.value = year;
+            minOption.textContent = year;
+            if (year === 1990) minOption.selected = true;
+            minYearDropdown.appendChild(minOption);
             
-            // Get touch or click position
-            const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
-            
-            // Get click position relative to track
-            const track = e.currentTarget;
-            const rect = track.getBoundingClientRect();
-            const clickX = clientX - rect.left;
-            const trackWidth = rect.width;
-            
-            // Calculate clicked year value (1990-2026)
-            const minYear = 1990;
-            const maxYear = 2026;
-            const clickedYear = Math.round(minYear + (clickX / trackWidth) * (maxYear - minYear));
-            
-            // Get current slider positions
-            const currentMin = parseInt(minYearSlider.value);
-            const currentMax = parseInt(maxYearSlider.value);
-            
-            // Smart logic: move the appropriate handle
-            if (clickedYear < currentMin) {
-                // Click is to the left of both handles → move left handle
-                minYearSlider.value = clickedYear;
-                document.getElementById('minYearLabel').textContent = clickedYear;
-                applyFiltersAndDisplay();
-            } else if (clickedYear > currentMax) {
-                // Click is to the right of both handles → move right handle
-                maxYearSlider.value = clickedYear;
-                document.getElementById('maxYearLabel').textContent = clickedYear;
-                applyFiltersAndDisplay();
-            } else {
-                // Click is between handles → move the closer one
-                const distToMin = Math.abs(clickedYear - currentMin);
-                const distToMax = Math.abs(clickedYear - currentMax);
-                
-                if (distToMin < distToMax) {
-                    minYearSlider.value = clickedYear;
-                    document.getElementById('minYearLabel').textContent = clickedYear;
-                } else {
-                    maxYearSlider.value = clickedYear;
-                    document.getElementById('maxYearLabel').textContent = clickedYear;
-                }
-                applyFiltersAndDisplay();
-            }
+            const maxOption = document.createElement('option');
+            maxOption.value = year;
+            maxOption.textContent = year;
+            if (year === currentYear) maxOption.selected = true;
+            maxYearDropdown.appendChild(maxOption);
         }
         
-        const sliderTrack = document.getElementById('sliderTrack');
-        sliderTrack.addEventListener('click', handleSliderTrackInteraction);
-        sliderTrack.addEventListener('touchstart', handleSliderTrackInteraction);
-
+        // Handle min year change
+        minYearDropdown.addEventListener('change', function() {
+            minYear = parseInt(this.value);
+            // If min > max, adjust max
+            if (minYear > maxYear) {
+                maxYear = minYear;
+                maxYearDropdown.value = minYear;
+            }
+            applyFiltersAndDisplay();
+        });
+        
+        // Handle max year change
+        maxYearDropdown.addEventListener('change', function() {
+            maxYear = parseInt(this.value);
+            // If max < min, adjust min
+            if (maxYear < minYear) {
+                minYear = maxYear;
+                minYearDropdown.value = maxYear;
+            }
+            applyFiltersAndDisplay();
+        });
+        
         // Function to download table as CSV
         function downloadTableAsCSV() {
             if (!allLoadedData || (!allLoadedData.movies.length && !allLoadedData.tv.length)) {
