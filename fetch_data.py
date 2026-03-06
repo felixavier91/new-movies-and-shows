@@ -15,8 +15,8 @@ from datetime import datetime, timedelta
 sys.stdout.reconfigure(line_buffering=True)
 
 # ============= CONFIGURATION (EDIT THESE) =============
-MIN_VOTES = 25            # Minimum number of reviews/votes
-MIN_RATING = 6.0         # Minimum TMDB rating (0-10)
+MIN_VOTES = 25            # Minimum number of reviews/votes (for current year)
+MIN_RATING = 6.0         # Minimum TMDB rating (0-10) (for recent years)
 
 # Date range: Fetch content from START_YEAR/START_MONTH to present
 START_YEAR = 2020        # Year to start fetching from (e.g., 2024)
@@ -27,6 +27,40 @@ MAX_PAGES_PER_TYPE = 500 # Max pages to fetch per content type (movies/TV) - 500
 # Rate limiting
 REQUESTS_PER_10_SEC = 40
 DELAY_BETWEEN_REQUESTS = 10.0 / REQUESTS_PER_10_SEC  # 0.25 seconds
+
+# ============= DYNAMIC THRESHOLDS =============
+CURRENT_YEAR = datetime.now().year
+
+def get_min_votes_for_year(year):
+    """
+    Calculate minimum votes based on year.
+    2026: 25 votes
+    2025: 50 votes
+    2024: 75 votes
+    ...
+    1990: 900 votes (36 years * 25)
+    """
+    if year is None:
+        return MIN_VOTES
+    years_old = CURRENT_YEAR - year
+    return MIN_VOTES + (years_old * 25)
+
+def get_min_rating_for_year(year):
+    """
+    Calculate minimum rating based on year to account for rating inflation.
+    2015-2026: 6.0
+    2005-2014: 6.5
+    1990-2004: 7.0
+    """
+    if year is None:
+        return MIN_RATING
+    
+    if year >= 2015:
+        return 6.0
+    elif year >= 2005:
+        return 6.5
+    else:  # 1990-2004
+        return 7.0
 
 # ============= SETUP =============
 TMDB_TOKEN = os.environ.get('TMDB_TOKEN')
@@ -113,6 +147,19 @@ for i, movie in enumerate(movies):
         print(f"  Movies: {i}/{len(movies)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(movie['id'], 'movie')
+    
+    # Get year for dynamic thresholds
+    movie_year = datetime.strptime(movie['release_date'], '%Y-%m-%d').year if movie.get('release_date') else None
+    
+    # Apply dynamic vote threshold
+    required_votes = get_min_votes_for_year(movie_year)
+    if movie['vote_count'] < required_votes:
+        continue
+    
+    # Apply dynamic rating threshold
+    required_rating = get_min_rating_for_year(movie_year)
+    if movie['vote_average'] < required_rating:
+        continue
     
     # Extract director
     director = 'N/A'
@@ -221,6 +268,19 @@ for i, show in enumerate(tv_shows):
         print(f"  TV Shows: {i}/{len(tv_shows)} ({progress_pct}%)", flush=True)
     
     details = fetch_item_details(show['id'], 'tv')
+    
+    # Get year for dynamic thresholds
+    show_year = datetime.strptime(show['first_air_date'], '%Y-%m-%d').year if show.get('first_air_date') else None
+    
+    # Apply dynamic vote threshold
+    required_votes = get_min_votes_for_year(show_year)
+    if show['vote_count'] < required_votes:
+        continue
+    
+    # Apply dynamic rating threshold
+    required_rating = get_min_rating_for_year(show_year)
+    if show['vote_average'] < required_rating:
+        continue
     
     # Extract top 3 actors
     actors = 'N/A'
