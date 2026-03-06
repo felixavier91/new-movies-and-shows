@@ -410,12 +410,10 @@ output_data = {
     'tv_shows': tv_data,
     'metadata': {
         'generated_at': datetime.now().isoformat(),
-        'start_date': START_DATE_STR,
+        'start_date': start_date.strftime('%Y-%m-%d'),
         'end_date': end_date.strftime('%Y-%m-%d'),
         'start_year': START_YEAR,
         'start_month': START_MONTH,
-        'min_votes': MIN_VOTES,
-        'min_rating': MIN_RATING,
         'total_movies': len(movies_data),
         'total_tv': len(tv_data),
         'total_items': len(movies_data) + len(tv_data)
