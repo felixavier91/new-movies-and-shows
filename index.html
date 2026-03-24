@@ -2254,7 +2254,7 @@
             
             // If empty, filter immediately to show all results
             if (searchValue.length === 0) {
-                applyFiltersAndDisplay();
+                requestAnimationFrame(() => applyFiltersAndDisplay());
                 return;
             }
             
@@ -2263,10 +2263,11 @@
                 return;
             }
             
-            // For 2+ characters, wait 500ms after user stops typing
+            // For 2+ characters, wait 800ms after user stops typing (increased for iPad)
             searchTimeout = setTimeout(() => {
-                applyFiltersAndDisplay();
-            }, 500);
+                // Use requestAnimationFrame to avoid blocking the UI
+                requestAnimationFrame(() => applyFiltersAndDisplay());
+            }, 800);
         });
 
         // Sort order radio button functionality
