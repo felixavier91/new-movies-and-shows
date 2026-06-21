@@ -2591,7 +2591,7 @@
       "year": 2000,
       "vote_average": 7.65,
       "vote_count": 1726,
-      "director": "Giacomo Poretti",
+      "director": "Aldo Baglio",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -7289,7 +7289,7 @@
       "year": 2006,
       "vote_average": 7.353,
       "vote_count": 1112,
-      "director": "Olivier Nakache",
+      "director": "Éric Toledano",
       "actors": "Jean-Paul Rouve, Marilou Berry, Omar Sy",
       "genres": "Comedy, Family",
       "providers": {
@@ -9201,8 +9201,8 @@
       "poster_path": "/cvkD3yiVXLg3as8EAG3LaTycONQ.jpg",
       "release_date": "2008-12-19",
       "year": 2008,
-      "vote_average": 6.983,
-      "vote_count": 4122,
+      "vote_average": 6.984,
+      "vote_count": 4123,
       "director": "Sam Mendes",
       "actors": "Leonardo DiCaprio, Kate Winslet, Kathy Bates",
       "genres": "Drama, Romance",
@@ -12199,8 +12199,8 @@
       "poster_path": "/pVNKXVQFukBaCz6ML7GH3kiPlQP.jpg",
       "release_date": "2010-11-26",
       "year": 2010,
-      "vote_average": 7.734,
-      "vote_count": 9330,
+      "vote_average": 7.733,
+      "vote_count": 9331,
       "director": "Tom Hooper",
       "actors": "Colin Firth, Geoffrey Rush, Helena Bonham Carter",
       "genres": "Drama, History",
@@ -13508,7 +13508,7 @@
       "year": 2011,
       "vote_average": 8.271,
       "vote_count": 18474,
-      "director": "Olivier Nakache",
+      "director": "Éric Toledano",
       "actors": "François Cluzet, Omar Sy, Anne Le Ny",
       "genres": "Drama, Comedy",
       "providers": {
@@ -16559,7 +16559,7 @@
       "year": 2012,
       "vote_average": 7.124,
       "vote_count": 1780,
-      "director": "Jonathan Dayton",
+      "director": "Valerie Faris",
       "actors": "Paul Dano, Zoe Kazan, Chris Messina",
       "genres": "Comedy, Romance, Fantasy, Drama",
       "providers": {
@@ -21730,7 +21730,7 @@
       "year": 2014,
       "vote_average": 7.5,
       "vote_count": 3275,
-      "director": "Richard Glatzer",
+      "director": "Wash Westmoreland",
       "actors": "Julianne Moore, Kate Bosworth, Shane McRae",
       "genres": "Drama",
       "providers": {
@@ -22777,7 +22777,7 @@
       "year": 2014,
       "vote_average": 6.79,
       "vote_count": 2015,
-      "director": "Nicolas Benamou",
+      "director": "Philippe Lacheau",
       "actors": "Philippe Lacheau, Alice David, Vincent Desagnat",
       "genres": "Comedy",
       "providers": {
@@ -23248,7 +23248,7 @@
       "year": 2014,
       "vote_average": 6.7,
       "vote_count": 573,
-      "director": "Guy Jenkin",
+      "director": "Andy Hamilton",
       "actors": "David Tennant, Rosamund Pike, Billy Connolly",
       "genres": "Comedy",
       "providers": {
@@ -24786,7 +24786,7 @@
       "year": 2015,
       "vote_average": 6.87,
       "vote_count": 8293,
-      "director": "John Requa",
+      "director": "Glenn Ficarra",
       "actors": "Will Smith, Margot Robbie, Adrian Martinez",
       "genres": "Romance, Comedy, Crime",
       "providers": {
@@ -31536,7 +31536,7 @@
       "year": 2017,
       "vote_average": 6.659,
       "vote_count": 12839,
-      "director": "Joachim Rønning",
+      "director": "Espen Sandberg",
       "actors": "Johnny Depp, Javier Bardem, Geoffrey Rush",
       "genres": "Adventure, Action, Fantasy",
       "providers": {
@@ -34482,7 +34482,7 @@
       "year": 2017,
       "vote_average": 6.756,
       "vote_count": 1966,
-      "director": "Valerie Faris",
+      "director": "Jonathan Dayton",
       "actors": "Emma Stone, Steve Carell, Andrea Riseborough",
       "genres": "Drama, Comedy, History",
       "providers": {
@@ -36825,7 +36825,7 @@
       "year": 2018,
       "vote_average": 8.237,
       "vote_count": 32131,
-      "director": "Joe Russo",
+      "director": "Anthony Russo",
       "actors": "Robert Downey Jr., Chris Evans, Chris Hemsworth",
       "genres": "Adventure, Action, Science Fiction",
       "providers": {
@@ -40592,7 +40592,7 @@
       "year": 2018,
       "vote_average": 6.452,
       "vote_count": 1286,
-      "director": "Jeremy Dyson",
+      "director": "Andy Nyman",
       "actors": "Andy Nyman, Paul Whitehouse, Alex Lawther",
       "genres": "Horror, Drama",
       "providers": {
@@ -40955,32 +40955,6 @@
           {
             "name": "Monsters and Nightmares Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/iNyKnUIIgICR71PO16ptEwJhzb2.jpg"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 351044,
-      "title": "Welcome to Marwen",
-      "overview": "When a devastating attack shatters Mark Hogancamp and wipes away all memories, no one expected recovery. Putting together pieces from his old and new life, Mark meticulously creates a wondrous town named Marwen where he can heal and be heroic. As he builds an astonishing art installation — a testament to the most powerful women he knows — through his fantasy world, he draws strength to triumph in the real one.",
-      "poster_path": "/dOULsxYQFsOR0cEBBB20xnjJkPD.jpg",
-      "release_date": "2018-12-21",
-      "year": 2018,
-      "vote_average": 6.499,
-      "vote_count": 1208,
-      "director": "Robert Zemeckis",
-      "actors": "Steve Carell, Leslie Mann, Merritt Wever",
-      "genres": "Drama, Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -43831,7 +43805,7 @@
       "year": 2019,
       "vote_average": 7.075,
       "vote_count": 5535,
-      "director": "Tyler Gillett",
+      "director": "Matt Bettinelli-Olpin",
       "actors": "Samara Weaving, Adam Brody, Mark O'Brien",
       "genres": "Horror, Comedy",
       "providers": {
@@ -46204,7 +46178,7 @@
       "year": 2019,
       "vote_average": 6.742,
       "vote_count": 1279,
-      "director": "Adam B. Stein",
+      "director": "Zach Lipovsky",
       "actors": "Emile Hirsch, Bruce Dern, Grace Park",
       "genres": "Science Fiction, Thriller",
       "providers": {
@@ -47804,7 +47778,7 @@
       "year": 2019,
       "vote_average": 7.6,
       "vote_count": 1144,
-      "director": "Kleber Mendonça Filho",
+      "director": "Juliano Dornelles",
       "actors": "Bárbara Colen, Thomás Aquino, Silvero Pereira",
       "genres": "Mystery, Western, Thriller",
       "providers": {
@@ -48301,7 +48275,7 @@
       "poster_path": "/2bhI7Ivk7VmvUaJaDTxJUgOXp1E.jpg",
       "release_date": "2019-03-13",
       "year": 2019,
-      "vote_average": 6.868,
+      "vote_average": 6.9,
       "vote_count": 719,
       "director": "Xavier Dolan",
       "actors": "Kit Harington, Natalie Portman, Jacob Tremblay",
@@ -48959,7 +48933,7 @@
       "year": 2019,
       "vote_average": 6.884,
       "vote_count": 806,
-      "director": "Grand Corps Malade",
+      "director": "Mehdi Idir",
       "actors": "Zita Hanrot, Liam Pierron, Soufiane Guerrab",
       "genres": "Drama, Comedy, Family",
       "providers": {
@@ -49656,7 +49630,7 @@
       "year": 2019,
       "vote_average": 6.566,
       "vote_count": 471,
-      "director": "Maxime Govare",
+      "director": "Cédric Le Gallo",
       "actors": "Nicolas Gob, Alban Lenoir, Geoffrey Couët",
       "genres": "Comedy",
       "providers": {
@@ -49909,7 +49883,7 @@
       "year": 2019,
       "vote_average": 6.864,
       "vote_count": 264,
-      "director": "Aitor Arregi",
+      "director": "Jose Mari Goenaga",
       "actors": "Antonio de la Torre, Belén Cuesta, Vicente Vergara",
       "genres": "Drama, History, Thriller",
       "providers": {
@@ -53821,7 +53795,7 @@
       "year": 2020,
       "vote_average": 6.31,
       "vote_count": 715,
-      "director": "Cary Murnion",
+      "director": "Jonathan Milott",
       "actors": "Lulu Wilson, Kevin James, Joel McHale",
       "genres": "Thriller, Horror, Action",
       "providers": {
@@ -56189,7 +56163,7 @@
       "year": 2020,
       "vote_average": 7.024,
       "vote_count": 515,
-      "director": "Martin Desmond Roe",
+      "director": "Travon Free",
       "actors": "Joey Bada$$, Andrew Howard, Zaria",
       "genres": "Drama",
       "providers": {
@@ -60819,7 +60793,7 @@
       "year": 2021,
       "vote_average": 7.109,
       "vote_count": 430,
-      "director": "Jon Erwin",
+      "director": "Andrew Erwin",
       "actors": "Zachary Levi, Anna Paquin, Hayden Zaller",
       "genres": "Drama, Family",
       "providers": {
@@ -61092,7 +61066,7 @@
       "vote_count": 774,
       "director": "Matthijs van Heijningen Jr.",
       "actors": "Gijs Blom, Jamie Flatters, Susan Radder",
-      "genres": "Action, War, Adventure, History, Drama",
+      "genres": "War, History, Drama",
       "providers": {
         "streaming": [
           {
@@ -64848,7 +64822,7 @@
       "year": 2022,
       "vote_average": 6.4,
       "vote_count": 1323,
-      "director": "Tomasz Mandes",
+      "director": "Barbara Białowąs",
       "actors": "Anna-Maria Sieklucka, Michele Morrone, Simone Susinna",
       "genres": "Romance, Drama",
       "providers": {
@@ -66615,7 +66589,7 @@
       "year": 2022,
       "vote_average": 6.38,
       "vote_count": 420,
-      "director": "Ariel Schulman",
+      "director": "Henry Joost",
       "actors": "Owen Wilson, Michael Peña, Walker Scobell",
       "genres": "Action, Adventure, Comedy, Science Fiction, Family",
       "providers": {
@@ -66998,7 +66972,7 @@
       "poster_path": "/dBQuk2LkHjrDsSjueirPQg96GCc.jpg",
       "release_date": "2022-11-18",
       "year": 2022,
-      "vote_average": 7.005,
+      "vote_average": 7.0,
       "vote_count": 1642,
       "director": "Luca Guadagnino",
       "actors": "Taylor Russell, Timothée Chalamet, Mark Rylance",
@@ -67388,8 +67362,8 @@
       "poster_path": "/bbBGSm1kjgmZ0O3bPUQIbA0xlKQ.jpg",
       "release_date": "2022-10-20",
       "year": 2022,
-      "vote_average": 7.383,
-      "vote_count": 469,
+      "vote_average": 7.384,
+      "vote_count": 470,
       "director": "David Frankel",
       "actors": "Bryan Cranston, Annette Bening, Rainn Wilson",
       "genres": "Comedy, Drama",
@@ -67759,8 +67733,8 @@
       "poster_path": "/h3zAzTMs5EP3cKusOxFNGSFE1WI.jpg",
       "release_date": "2022-11-10",
       "year": 2022,
-      "vote_average": 6.845,
-      "vote_count": 764,
+      "vote_average": 6.85,
+      "vote_count": 765,
       "director": "Sean Anders",
       "actors": "Will Ferrell, Ryan Reynolds, Octavia Spencer",
       "genres": "Comedy",
@@ -70595,7 +70569,7 @@
       "year": 2022,
       "vote_average": 6.326,
       "vote_count": 382,
-      "director": "Joseph Winter",
+      "director": "Vanessa Winter",
       "actors": "Joseph Winter, Melanie Stone, Jason K. Wixom",
       "genres": "Horror, Comedy, Fantasy",
       "providers": {
@@ -73905,7 +73879,7 @@
       "year": 2023,
       "vote_average": 7.352,
       "vote_count": 4677,
-      "director": "John Francis Daley",
+      "director": "Jonathan Goldstein",
       "actors": "Chris Pine, Michelle Rodriguez, Justice Smith",
       "genres": "Adventure, Fantasy, Comedy",
       "providers": {
@@ -76806,7 +76780,7 @@
       "year": 2023,
       "vote_average": 6.574,
       "vote_count": 102,
-      "director": "Liu Xiang",
+      "director": "Cui Rui",
       "actors": "Zhu Yilong, Ni Ni, Janice Man Wing-San",
       "genres": "Mystery, Crime, Thriller",
       "providers": {
@@ -77980,7 +77954,7 @@
       "year": 2023,
       "vote_average": 7.212,
       "vote_count": 335,
-      "director": "Johnny Strong",
+      "director": "William Kaufman",
       "actors": "Johnny Strong, Athena Durner, Raj Kala",
       "genres": "Action, War, Drama",
       "providers": {
@@ -79824,7 +79798,7 @@
       "year": 2023,
       "vote_average": 6.4,
       "vote_count": 130,
-      "director": "Murat Saraçoğlu",
+      "director": "Evren Karabıyık Günaydın",
       "actors": "Ayça Ayşin Turan, Ekin Koç, Zerrin Sümer",
       "genres": "Romance, Comedy",
       "providers": {
@@ -81711,7 +81685,7 @@
       "year": 2023,
       "vote_average": 6.4,
       "vote_count": 160,
-      "director": "Antonio Manetti",
+      "director": "Marco Manetti",
       "actors": "Giacomo Gianniotti, Miriam Leone, Valerio Mastandrea",
       "genres": "Crime, Action, Mystery, Thriller",
       "providers": {
@@ -90501,7 +90475,7 @@
       "year": 2024,
       "vote_average": 6.8,
       "vote_count": 140,
-      "director": "François Simard",
+      "director": "Yoann-Karl Whissell",
       "actors": "Turlough Convery, Benny O. Arthur, Jacqueline Moré",
       "genres": "Horror, Thriller, Action",
       "providers": {
@@ -92112,7 +92086,7 @@
       "year": 2024,
       "vote_average": 6.303,
       "vote_count": 145,
-      "director": "Zoran Boukherma",
+      "director": "Ludovic Boukherma",
       "actors": "Paul Kircher, Angelina Woreth, Sayyid El Alami",
       "genres": "Drama",
       "providers": {
@@ -96131,7 +96105,7 @@
       "year": 2025,
       "vote_average": 7.35,
       "vote_count": 1705,
-      "director": "Danny Philippou",
+      "director": "Michael Philippou",
       "actors": "Billy Barratt, Sally Hawkins, Mischa Heywood",
       "genres": "Horror",
       "providers": {
@@ -98588,8 +98562,8 @@
       "poster_path": "/7vQUAw3CX60dhzgzC7BQZFN7Y31.jpg",
       "release_date": "2025-09-04",
       "year": 2025,
-      "vote_average": 6.245,
-      "vote_count": 98,
+      "vote_average": 6.283,
+      "vote_count": 99,
       "director": "Chad Hartigan",
       "actors": "Zoey Deutch, Jonah Hauer-King, Ruby Cruz",
       "genres": "Comedy, Romance, Drama",
@@ -98614,8 +98588,8 @@
       "poster_path": "/hhkiqXpfpufwxVrdSftzeKIANl3.jpg",
       "release_date": "2025-03-20",
       "year": 2025,
-      "vote_average": 6.187,
-      "vote_count": 558,
+      "vote_average": 6.177,
+      "vote_count": 559,
       "director": "David Yarovesky",
       "actors": "Bill Skarsgård, Anthony Hopkins, Ashley Cartwright",
       "genres": "Horror, Thriller",
@@ -98886,8 +98860,8 @@
       "poster_path": "/uB8yTnF6YLIIVKuRJAK8LNk8C6w.jpg",
       "release_date": "2025-02-24",
       "year": 2025,
-      "vote_average": 6.874,
-      "vote_count": 646,
+      "vote_average": 6.873,
+      "vote_count": 649,
       "director": "Alex Parkinson",
       "actors": "Woody Harrelson, Simu Liu, Finn Cole",
       "genres": "Thriller, Drama",
@@ -98912,8 +98886,8 @@
       "poster_path": "/3qikoc12LQH6upkLZZlJY8wEZvN.jpg",
       "release_date": "2025-11-20",
       "year": 2025,
-      "vote_average": 6.278,
-      "vote_count": 54,
+      "vote_average": 6.345,
+      "vote_count": 55,
       "director": "Daniel J. Phillips",
       "actors": "Elizabeth Cullen, John Harlan Kim, Mia Challis",
       "genres": "Horror",
@@ -98929,7 +98903,7 @@
       "poster_path": "/PvdD2gTqSZfFWclP9ee4bqCn0B.jpg",
       "release_date": "2025-08-20",
       "year": 2025,
-      "vote_average": 6.34,
+      "vote_average": 6.336,
       "vote_count": 119,
       "director": "Julia Ducournau",
       "actors": "Mélissa Boros, Tahar Rahim, Golshifteh Farahani",
@@ -102157,7 +102131,7 @@
       "year": 2025,
       "vote_average": 6.2,
       "vote_count": 80,
-      "director": "Hélène Cattet",
+      "director": "Bruno Forzani",
       "actors": "Fabio Testi, Yannick Renier, Koen De Bouw",
       "genres": "Action, Thriller, Mystery",
       "providers": {
@@ -104312,7 +104286,7 @@
       "year": 2025,
       "vote_average": 6.467,
       "vote_count": 151,
-      "director": "Delphine Coulin",
+      "director": "Muriel Coulin",
       "actors": "Vincent Lindon, Benjamin Voisin, Stefan Crepon",
       "genres": "Drama",
       "providers": {
@@ -107482,7 +107456,7 @@
       "year": 2026,
       "vote_average": 7.4,
       "vote_count": 71,
-      "director": "Marcus Olsson",
+      "director": "Thérèse Ahlbeck",
       "actors": "Henrik Dorsin, Sissela Benn, Jonas Karlsson",
       "genres": "Drama, History, War",
       "providers": {
@@ -124620,7 +124594,7 @@
       "year": 2017,
       "vote_average": 8.634,
       "vote_count": 1529,
-      "actors": "Mariano González, Sebastián Athié, Juan David Penagos",
+      "actors": "Mariano González, Juan David Penagos, Sebastián Athié",
       "genres": "Comedy, Family, Soap",
       "tv_status": {
         "status": "Ended",
@@ -133982,10 +133956,6 @@
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
           },
           {
-            "name": "MGM Plus Roku Premium Channel",
-            "logo": "https://image.tmdb.org/t/p/original/lD7HKUmXDvUya58DceiTA809Zbf.jpg"
-          },
-          {
             "name": "Philo",
             "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
           },
@@ -137754,8 +137724,8 @@
       "poster_path": "/5VxoSKUlNFOuqBaw8kAHwEAtuHE.jpg",
       "first_air_date": "2020-03-26",
       "year": 2020,
-      "vote_average": 7.715,
-      "vote_count": 744,
+      "vote_average": 7.718,
+      "vote_count": 745,
       "actors": "Shira Haas, Amit Rahav, Jeff Wilbusch",
       "genres": "Drama",
       "tv_status": {
@@ -145268,10 +145238,6 @@
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
           },
           {
-            "name": "MGM Plus Roku Premium Channel",
-            "logo": "https://image.tmdb.org/t/p/original/lD7HKUmXDvUya58DceiTA809Zbf.jpg"
-          },
-          {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           }
@@ -145660,7 +145626,7 @@
       "first_air_date": "2022-04-22",
       "year": 2022,
       "vote_average": 8.569,
-      "vote_count": 1712,
+      "vote_count": 1713,
       "actors": "Joe Locke, Kit Connor, William Gao",
       "genres": "Drama",
       "tv_status": {
@@ -156419,7 +156385,7 @@
       "poster_path": "/jiGxkMP3lzPDaPw4F0EZAEiTSgL.jpg",
       "first_air_date": "2024-08-26",
       "year": 2024,
-      "vote_average": 8.495,
+      "vote_average": 8.5,
       "vote_count": 278,
       "actors": "Shin Min-a, Kim Young-dae, Lee Sang-yi",
       "genres": "Drama, Comedy",
@@ -156660,10 +156626,10 @@
       "id": 230448,
       "title": "Mr. Plankton",
       "overview": "A man plagued by misfortune and his ex, the unluckiest bride-to-be, are forced to accompany one another on the final journey of his life.",
-      "poster_path": "/AsnE5TY4NaYHGJXYxiVaA57nCqo.jpg",
+      "poster_path": "/c31cvdNNiAMvb4XVjAwYLNn3LNO.jpg",
       "first_air_date": "2024-11-08",
       "year": 2024,
-      "vote_average": 8.07,
+      "vote_average": 8.1,
       "vote_count": 122,
       "actors": "Woo Do-hwan, Lee You-mi, Oh Jung-se",
       "genres": "Comedy, Drama",
@@ -160130,16 +160096,7 @@
         "next_episode": null
       },
       "providers": {
-        "streaming": [
-          {
-            "name": "Starz Roku Premium Channel",
-            "logo": "https://image.tmdb.org/t/p/original/9laPF1MAiUxlqM8T98F3Gj0bhzd.jpg"
-          },
-          {
-            "name": "Spectrum On Demand",
-            "logo": "https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg"
-          }
-        ]
+        "streaming": []
       },
       "type": "tv"
     },
@@ -166251,8 +166208,8 @@
       "poster_path": "/cbODFqkcmRgrYH8NkG4Q4Hcg8Z1.jpg",
       "first_air_date": "2026-05-13",
       "year": 2026,
-      "vote_average": 8.985,
-      "vote_count": 492,
+      "vote_average": 8.987,
+      "vote_count": 493,
       "actors": "Ella Bright, Belmont Cameli, Mika Abdalla",
       "genres": "Drama",
       "tv_status": {
@@ -166287,8 +166244,8 @@
       "poster_path": "/fMECSPrTmRClSViMsXFYmiYIcWP.jpg",
       "first_air_date": "2026-06-05",
       "year": 2026,
-      "vote_average": 9.466,
-      "vote_count": 394,
+      "vote_average": 9.469,
+      "vote_count": 398,
       "actors": "Kim Moo-yul, Lee Sung-min, Jin Ki-joo",
       "genres": "Action & Adventure, Drama, Comedy",
       "tv_status": {
@@ -166323,7 +166280,7 @@
       "poster_path": "/xsiecCxd8lkcAluw0wWwbW5CwSv.jpg",
       "first_air_date": "2026-05-15",
       "year": 2026,
-      "vote_average": 9.327,
+      "vote_average": 9.3,
       "vote_count": 284,
       "actors": "Kelly Reilly, Cole Hauser, Finn Little",
       "genres": "Western, Drama",
@@ -166388,8 +166345,8 @@
       "poster_path": "/pb9oYHHNzauiCQZT03MpDAg46GI.jpg",
       "first_air_date": "2026-06-18",
       "year": 2026,
-      "vote_average": 8.5,
-      "vote_count": 32,
+      "vote_average": 8.569,
+      "vote_count": 36,
       "actors": "Sam Worthington, Britt Lower, Chi McBride",
       "genres": "Drama, Mystery, Crime",
       "tv_status": {
@@ -166460,8 +166417,8 @@
       "poster_path": "/oD8WSVqz84ZRfelkr7JPeJwR9Iv.jpg",
       "first_air_date": "2026-05-25",
       "year": 2026,
-      "vote_average": 8.514,
-      "vote_count": 564,
+      "vote_average": 8.515,
+      "vote_count": 565,
       "actors": "Nicolas Cage, Lamorne Morris, Li Jun Li",
       "genres": "Drama, Mystery, Crime",
       "tv_status": {
@@ -166496,8 +166453,8 @@
       "poster_path": "/5lcxWLVAEICkFpuAiV1aMy7ZZj3.jpg",
       "first_air_date": "2026-04-28",
       "year": 2026,
-      "vote_average": 8.226,
-      "vote_count": 188,
+      "vote_average": 8.224,
+      "vote_count": 190,
       "actors": "Matthew Rhys, Kate O'Flynn, Kevin Carroll",
       "genres": "Drama, Mystery, Comedy",
       "tv_status": {
@@ -166568,7 +166525,7 @@
       "poster_path": "/3ZLy3cfQa9prahoRq1teMmr5pvW.jpg",
       "first_air_date": "2026-06-04",
       "year": 2026,
-      "vote_average": 6.591,
+      "vote_average": 6.6,
       "vote_count": 44,
       "actors": "Amy Adams, Javier Bardem, Patrick Wilson",
       "genres": "Drama, Crime",
@@ -166665,13 +166622,13 @@
       "poster_path": "/rYLQbyIvbEd0lF84iXrx7CbPcBB.jpg",
       "first_air_date": "2026-05-08",
       "year": 2026,
-      "vote_average": 8.684,
-      "vote_count": 38,
+      "vote_average": 8.667,
+      "vote_count": 39,
       "actors": "Lim Ji-yeon, Heo Nam-jun, Jang Seung-jo",
       "genres": "Drama, Comedy, Sci-Fi & Fantasy",
       "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
+        "status": "Ended",
+        "in_production": false,
         "last_episode": {
           "season": 1,
           "episode": 13,
@@ -166814,8 +166771,8 @@
       "poster_path": "/nNYwETsj4XxZ4tnouiYCPBQNO2L.jpg",
       "first_air_date": "2026-04-10",
       "year": 2026,
-      "vote_average": 8.934,
-      "vote_count": 137,
+      "vote_average": 8.9,
+      "vote_count": 139,
       "actors": "IU, Byeon Woo-seok, Steve Sanghyun Noh",
       "genres": "Comedy, Drama",
       "tv_status": {
@@ -166886,8 +166843,8 @@
       "poster_path": "/k8yARbD9iYn2nRX2HvsopfKDN2r.jpg",
       "first_air_date": "2026-01-18",
       "year": 2026,
-      "vote_average": 8.435,
-      "vote_count": 934,
+      "vote_average": 8.437,
+      "vote_count": 935,
       "actors": "Peter Claffey, Dexter Sol Ansell",
       "genres": "Drama, Sci-Fi & Fantasy, Action & Adventure",
       "tv_status": {
@@ -167777,8 +167734,8 @@
       "poster_path": "/vjVTRhKLo6n4KxslvsnaKNTguuZ.jpg",
       "first_air_date": "2026-04-28",
       "year": 2026,
-      "vote_average": 8.2,
-      "vote_count": 100,
+      "vote_average": 8.213,
+      "vote_count": 101,
       "actors": "Jamie Bell, Richard Gadd, Neve McIntosh",
       "genres": "Drama",
       "tv_status": {
@@ -167945,8 +167902,8 @@
       "poster_path": "/nZVRyqVbDqfLSOrLcsGGTUHccZ8.jpg",
       "first_air_date": "2026-03-14",
       "year": 2026,
-      "vote_average": 8.107,
-      "vote_count": 103,
+      "vote_average": 8.091,
+      "vote_count": 104,
       "actors": "Michelle Pfeiffer, Kurt Russell, Beau Garrett",
       "genres": "Drama",
       "tv_status": {
@@ -167993,7 +167950,7 @@
       "poster_path": "/xda6V8R2DKoRKWmnofeJFHII3ia.jpg",
       "first_air_date": "2026-01-09",
       "year": 2026,
-      "vote_average": 8.655,
+      "vote_average": 8.7,
       "vote_count": 29,
       "actors": "Chen Xingxu, Lu Yuxiao",
       "genres": "Drama, Mystery",
@@ -169426,7 +169383,7 @@
           "season": 1,
           "episode": 24,
           "air_date": "2026-06-19",
-          "name": "Episode 24"
+          "name": "Amor en secreto"
         },
         "next_episode": {
           "season": 1,
@@ -169770,13 +169727,13 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-06-20T18:46:53.921840",
+    "generated_at": "2026-06-21T01:01:35.676727",
     "start_date": "1990-01-01",
-    "end_date": "2026-06-20",
+    "end_date": "2026-06-21",
     "start_year": 1990,
     "start_month": 1,
-    "total_movies": 4209,
+    "total_movies": 4208,
     "total_tv": 1614,
-    "total_items": 5823
+    "total_items": 5822
   }
 }
