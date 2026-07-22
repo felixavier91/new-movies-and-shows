@@ -8,7 +8,7 @@
       "release_date": "1990-09-12",
       "year": 1990,
       "vote_average": 8.452,
-      "vote_count": 14517,
+      "vote_count": 14519,
       "director": "Martin Scorsese",
       "actors": "Robert De Niro, Ray Liotta, Joe Pesci",
       "genres": "Drama, Crime",
@@ -25,7 +25,7 @@
       "release_date": "1990-11-09",
       "year": 1990,
       "vote_average": 7.847,
-      "vote_count": 4734,
+      "vote_count": 4735,
       "director": "Kevin Costner",
       "actors": "Kevin Costner, Mary McDonnell, Graham Greene",
       "genres": "Adventure, Drama, Western",
@@ -1524,7 +1524,7 @@
       "release_date": "1998-07-24",
       "year": 1998,
       "vote_average": 8.23,
-      "vote_count": 17444,
+      "vote_count": 17448,
       "director": "Steven Spielberg",
       "actors": "Tom Hanks, Tom Sizemore, Edward Burns",
       "genres": "War, Drama, History",
@@ -1578,7 +1578,7 @@
       "release_date": "1998-06-04",
       "year": 1998,
       "vote_average": 8.155,
-      "vote_count": 20464,
+      "vote_count": 20467,
       "director": "Peter Weir",
       "actors": "Jim Carrey, Laura Linney, Noah Emmerich",
       "genres": "Comedy, Drama",
@@ -1612,7 +1612,7 @@
       "release_date": "1998-07-01",
       "year": 1998,
       "vote_average": 8.327,
-      "vote_count": 12690,
+      "vote_count": 12691,
       "director": "Tony Kaye",
       "actors": "Edward Norton, Edward Furlong, Beverly D'Angelo",
       "genres": "Drama",
@@ -1628,7 +1628,7 @@
       "poster_path": "/3bv6WAp6BSxxYvB5ozKFUYuRA8C.jpg",
       "release_date": "1998-03-06",
       "year": 1998,
-      "vote_average": 7.835,
+      "vote_average": 7.8,
       "vote_count": 12294,
       "director": "Joel Coen",
       "actors": "Jeff Bridges, John Goodman, Julianne Moore",
@@ -1745,8 +1745,8 @@
       "poster_path": "/rYfUcEV88Z3gENrfYTE6i8yBkDr.jpg",
       "release_date": "1998-10-11",
       "year": 1998,
-      "vote_average": 7.426,
-      "vote_count": 949,
+      "vote_average": 7.428,
+      "vote_count": 950,
       "director": "Todd Solondz",
       "actors": "Jane Adams, Philip Seymour Hoffman, Dylan Baker",
       "genres": "Comedy, Drama",
@@ -4762,16 +4762,8 @@
       "providers": {
         "streaming": [
           {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           },
           {
             "name": "MovieSphere+ Amazon Channel",
@@ -7410,10 +7402,6 @@
       "providers": {
         "streaming": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "HBO Max Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
           },
@@ -7868,10 +7856,6 @@
       "providers": {
         "streaming": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "Philo",
             "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
           }
@@ -7979,23 +7963,6 @@
       "type": "movie"
     },
     {
-      "id": 13885,
-      "title": "Sweeney Todd: The Demon Barber of Fleet Street",
-      "overview": "The infamous story of Benjamin Barker, a.k.a Sweeney Todd, who sets up a barber shop down in London which is the basis for a sinister partnership with his fellow tenant, Mrs. Lovett. Based on the hit Broadway musical.",
-      "poster_path": "/gAW4J1bkRjZKmFsJsIiOBASeoAp.jpg",
-      "release_date": "2007-12-21",
-      "year": 2007,
-      "vote_average": 7.181,
-      "vote_count": 6399,
-      "director": "Tim Burton",
-      "actors": "Johnny Depp, Helena Bonham Carter, Alan Rickman",
-      "genres": "Drama, Horror",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 14139,
       "title": "Timecrimes",
       "overview": "A man accidentally gets into a time machine and travels back in time nearly an hour. Finding himself will be the first of a series of disasters of unforeseeable consequences.",
@@ -8037,6 +8004,23 @@
       "director": "Ben Affleck",
       "actors": "Casey Affleck, Michelle Monaghan, Morgan Freeman",
       "genres": "Crime, Drama, Mystery",
+      "providers": {
+        "streaming": []
+      },
+      "type": "movie"
+    },
+    {
+      "id": 13885,
+      "title": "Sweeney Todd: The Demon Barber of Fleet Street",
+      "overview": "The infamous story of Benjamin Barker, a.k.a Sweeney Todd, who sets up a barber shop down in London which is the basis for a sinister partnership with his fellow tenant, Mrs. Lovett. Based on the hit Broadway musical.",
+      "poster_path": "/gAW4J1bkRjZKmFsJsIiOBASeoAp.jpg",
+      "release_date": "2007-12-21",
+      "year": 2007,
+      "vote_average": 7.2,
+      "vote_count": 6399,
+      "director": "Tim Burton",
+      "actors": "Johnny Depp, Helena Bonham Carter, Alan Rickman",
+      "genres": "Drama, Horror",
       "providers": {
         "streaming": []
       },
@@ -8124,8 +8108,8 @@
       "poster_path": "/idbNSe8zsYKQL97dJApfOrDSdya.jpg",
       "release_date": "2007-12-25",
       "year": 2007,
-      "vote_average": 7.192,
-      "vote_count": 4137,
+      "vote_average": 7.193,
+      "vote_count": 4138,
       "director": "Rob Reiner",
       "actors": "Jack Nicholson, Morgan Freeman, Sean Hayes",
       "genres": "Drama, Comedy",
@@ -8141,8 +8125,8 @@
       "poster_path": "/oSW5OVXTulaIXcoNwJAp5YEKpbP.jpg",
       "release_date": "2007-09-07",
       "year": 2007,
-      "vote_average": 7.144,
-      "vote_count": 4010,
+      "vote_average": 7.143,
+      "vote_count": 4011,
       "director": "Wes Anderson",
       "actors": "Owen Wilson, Adrien Brody, Jason Schwartzman",
       "genres": "Adventure, Drama, Comedy",
@@ -12039,7 +12023,7 @@
       "year": 2010,
       "vote_average": 6.805,
       "vote_count": 6757,
-      "director": "Allen Hughes",
+      "director": "Albert Hughes",
       "actors": "Denzel Washington, Gary Oldman, Mila Kunis",
       "genres": "Action, Thriller, Science Fiction",
       "providers": {
@@ -12241,7 +12225,7 @@
       "year": 2010,
       "vote_average": 7.307,
       "vote_count": 5801,
-      "director": "Joel Coen",
+      "director": "Ethan Coen",
       "actors": "Jeff Bridges, Hailee Steinfeld, Matt Damon",
       "genres": "Drama, Adventure, Western",
       "providers": {
@@ -16491,10 +16475,6 @@
       "providers": {
         "streaming": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
           }
@@ -17583,7 +17563,7 @@
       "year": 2012,
       "vote_average": 7.324,
       "vote_count": 1805,
-      "director": "Alexandre de La Patellière",
+      "director": "Matthieu Delaporte",
       "actors": "Patrick Bruel, Valérie Benguigui, Charles Berling",
       "genres": "Comedy",
       "providers": {
@@ -20007,6 +19987,10 @@
           {
             "name": "Amazon Prime Video",
             "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+          },
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           },
           {
             "name": "YouTube TV",
@@ -23084,7 +23068,7 @@
       "year": 2014,
       "vote_average": 6.636,
       "vote_count": 803,
-      "director": "Justin Benson",
+      "director": "Aaron Moorhead",
       "actors": "Lou Taylor Pucci, Nadia Hilker, Nick Nevern",
       "genres": "Horror, Romance, Science Fiction",
       "providers": {
@@ -24816,7 +24800,7 @@
       "year": 2015,
       "vote_average": 6.871,
       "vote_count": 8336,
-      "director": "John Requa",
+      "director": "Glenn Ficarra",
       "actors": "Will Smith, Margot Robbie, Adrian Martinez",
       "genres": "Romance, Comedy, Crime",
       "providers": {
@@ -30405,10 +30389,6 @@
       "providers": {
         "streaming": [
           {
-            "name": "fuboTV",
-            "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
-          },
-          {
             "name": "Paramount Plus Premium",
             "logo": "https://image.tmdb.org/t/p/original/fts6X10Jn4QT0X6ac3udKEn2tJA.jpg"
           },
@@ -34399,7 +34379,7 @@
       "year": 2017,
       "vote_average": 6.505,
       "vote_count": 751,
-      "director": "Steeve Léonard",
+      "director": "Caroline Labrèche",
       "actors": "Diego Klattenhoff, Charlotte Sullivan, Brett Donahue",
       "genres": "Thriller, Drama, Horror",
       "providers": {
@@ -47124,7 +47104,7 @@
       "year": 2019,
       "vote_average": 6.916,
       "vote_count": 375,
-      "director": "Alix Mathurin",
+      "director": "Leïla Sy",
       "actors": "Bakary Diombera, Jammeh Diangana, Chloé Jouannet",
       "genres": "Drama, Crime",
       "providers": {
@@ -49645,7 +49625,7 @@
       "year": 2019,
       "vote_average": 6.87,
       "vote_count": 267,
-      "director": "Jon Garaño",
+      "director": "Jose Mari Goenaga",
       "actors": "Antonio de la Torre, Belén Cuesta, Vicente Vergara",
       "genres": "Drama, History, Thriller",
       "providers": {
@@ -52663,6 +52643,10 @@
             "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
           },
           {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
+          },
+          {
             "name": "fuboTV",
             "logo": "https://image.tmdb.org/t/p/original/9BgaNQRMDvVlji1JBZi6tcfxpKx.jpg"
           },
@@ -52677,6 +52661,10 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          },
+          {
+            "name": "Amazon Prime Video with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
           },
           {
             "name": "Magnolia Selects Amazon Channel",
@@ -53776,7 +53764,7 @@
       "year": 2020,
       "vote_average": 6.31,
       "vote_count": 727,
-      "director": "Cary Murnion",
+      "director": "Jonathan Milott",
       "actors": "Lulu Wilson, Kevin James, Joel McHale",
       "genres": "Thriller, Horror, Action",
       "providers": {
@@ -55115,7 +55103,7 @@
       "year": 2020,
       "vote_average": 6.505,
       "vote_count": 806,
-      "director": "Alice Mathias",
+      "director": "Al Campbell",
       "actors": "Samuel L. Jackson, Hugh Grant, Lisa Kudrow",
       "genres": "Comedy",
       "providers": {
@@ -56270,7 +56258,7 @@
       "year": 2020,
       "vote_average": 7.022,
       "vote_count": 519,
-      "director": "Travon Free",
+      "director": "Martin Desmond Roe",
       "actors": "Joey Bada$$, Andrew Howard, Zaria",
       "genres": "Drama",
       "providers": {
@@ -60285,7 +60273,7 @@
       "year": 2021,
       "vote_average": 6.631,
       "vote_count": 448,
-      "director": "Gastón Duprat",
+      "director": "Mariano Cohn",
       "actors": "Antonio Banderas, Penélope Cruz, Oscar Martínez",
       "genres": "Comedy, Drama",
       "providers": {
@@ -64396,7 +64384,7 @@
       "year": 2021,
       "vote_average": 6.484,
       "vote_count": 152,
-      "director": "Kathryn Michelle",
+      "director": "Elizabeta Vidovic",
       "actors": "Yancy Butler, Izabela Vidovic, George H. Xanthis",
       "genres": "Horror",
       "providers": {
@@ -69334,7 +69322,7 @@
       "year": 2022,
       "vote_average": 6.316,
       "vote_count": 453,
-      "director": "Emmanuel Marre",
+      "director": "Julie Lecoustre",
       "actors": "Adèle Exarchopoulos, Alexandre Perrier, Mara Taquin",
       "genres": "Drama, Comedy",
       "providers": {
@@ -72107,7 +72095,7 @@
       "year": 2022,
       "vote_average": 6.324,
       "vote_count": 389,
-      "director": "Joseph Winter",
+      "director": "Vanessa Winter",
       "actors": "Joseph Winter, Melanie Stone, Jason K. Wixom",
       "genres": "Horror, Comedy, Fantasy",
       "providers": {
@@ -76910,7 +76898,7 @@
       "year": 2023,
       "vote_average": 6.701,
       "vote_count": 513,
-      "director": "Cary Solomon",
+      "director": "Chuck Konzelman",
       "actors": "Sean Patrick Flanery, Jordan Belfi, Tom Ohmer",
       "genres": "Horror, Drama",
       "providers": {
@@ -78215,8 +78203,8 @@
       "poster_path": "/taYgn3RRpCGlTGdaGQvnSIOzXFy.jpg",
       "release_date": "2023-02-18",
       "year": 2023,
-      "vote_average": 6.9,
-      "vote_count": 550,
+      "vote_average": 6.904,
+      "vote_count": 551,
       "director": "Byun Sung-hyun",
       "actors": "Jeon Do-yeon, Sul Kyung-gu, Kim Si-a",
       "genres": "Action, Drama, Thriller, Crime",
@@ -78571,7 +78559,7 @@
       "year": 2023,
       "vote_average": 6.4,
       "vote_count": 130,
-      "director": "Evren Karabıyık Günaydın",
+      "director": "Murat Saraçoğlu",
       "actors": "Ayça Ayşin Turan, Ekin Koç, Zerrin Sümer",
       "genres": "Romance, Comedy",
       "providers": {
@@ -80730,7 +80718,7 @@
       "year": 2023,
       "vote_average": 7.084,
       "vote_count": 559,
-      "director": "Elizabeth Chai Vasarhelyi",
+      "director": "Jimmy Chin",
       "actors": "Annette Bening, Jodie Foster, Rhys Ifans",
       "genres": "Drama, History",
       "providers": {
@@ -81049,7 +81037,7 @@
       "year": 2023,
       "vote_average": 6.472,
       "vote_count": 214,
-      "director": "Nick Lieberman",
+      "director": "Molly Gordon",
       "actors": "Ben Platt, Molly Gordon, Noah Galvin",
       "genres": "Comedy",
       "providers": {
@@ -81702,7 +81690,7 @@
       "year": 2023,
       "vote_average": 6.4,
       "vote_count": 161,
-      "director": "Marco Manetti",
+      "director": "Antonio Manetti",
       "actors": "Giacomo Gianniotti, Miriam Leone, Valerio Mastandrea",
       "genres": "Crime, Action, Mystery, Thriller",
       "providers": {
@@ -85398,16 +85386,7 @@
       "actors": "Liam Hemsworth, Russell Crowe, Luke Hemsworth",
       "genres": "Action, War, Thriller",
       "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
+        "streaming": []
       },
       "type": "movie"
     },
@@ -88062,7 +88041,7 @@
       "year": 2024,
       "vote_average": 6.572,
       "vote_count": 272,
-      "director": "Will Speck",
+      "director": "Josh Gordon",
       "actors": "Anthony Ramos, Naomi Scott, Kristofer Hivju",
       "genres": "Science Fiction, Comedy, Action",
       "providers": {
@@ -89410,7 +89389,7 @@
       "year": 2024,
       "vote_average": 6.525,
       "vote_count": 241,
-      "director": "Ian Nelms",
+      "director": "Eshom Nelms",
       "actors": "Orlando Bloom, Andie MacDowell, Scott Haze",
       "genres": "Crime, Action, Thriller",
       "providers": {
@@ -96740,7 +96719,7 @@
       "year": 2025,
       "vote_average": 7.338,
       "vote_count": 1792,
-      "director": "Michael Philippou",
+      "director": "Danny Philippou",
       "actors": "Billy Barratt, Sally Hawkins, Mischa Heywood",
       "genres": "Horror",
       "providers": {
@@ -97692,7 +97671,7 @@
       "year": 2025,
       "vote_average": 6.728,
       "vote_count": 184,
-      "director": "Kevin McManus",
+      "director": "Matthew McManus",
       "actors": "Michaela McManus, Stella Marcus, Jeremy Holm",
       "genres": "Science Fiction, Thriller, Horror, Crime",
       "providers": {
@@ -108996,7 +108975,7 @@
       "year": 2026,
       "vote_average": 6.288,
       "vote_count": 80,
-      "director": "Nicolas Charlet",
+      "director": "Bruno Lavaine",
       "actors": "Laurent Lafitte, Olga Kurylenko, Blanche Gardin",
       "genres": "Comedy",
       "providers": {
@@ -134428,254 +134407,6 @@
       "type": "tv"
     },
     {
-      "id": 82744,
-      "title": "Catch-22",
-      "overview": "Pianosa Island, Italy, World War II. Bombardier John Yossarian tries to fulfill his duty, maintain sanity and return home as soon as possible, but incompetence and bureaucracy constantly stand in his way.",
-      "poster_path": "/1huTLz8UaEeOLJNwqMKCQs76Bl5.jpg",
-      "first_air_date": "2019-05-17",
-      "year": 2019,
-      "vote_average": 7.321,
-      "vote_count": 285,
-      "actors": "Christopher Abbott, Kyle Chandler, Daniel David Stewart",
-      "genres": "Comedy, Drama, War & Politics",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2019-05-17",
-          "name": "Episode 6"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 85702,
-      "title": "PEN15",
-      "overview": "Middle school as it really happened. Maya Erskine and Anna Konkle star in this adult comedy, playing versions of themselves as thirteen-year-old outcasts in the year 2000, surrounded by actual thirteen-year-olds, where the best day of your life can turn into your worst with the stroke of a gel pen.",
-      "poster_path": "/9rbyzSTXnrPHJZ1YEOQDK8gnNm8.jpg",
-      "first_air_date": "2019-02-08",
-      "year": 2019,
-      "vote_average": 8.312,
-      "vote_count": 311,
-      "actors": "Maya Erskine, Anna Konkle, Mutsuko Erskine",
-      "genres": "Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 15,
-          "air_date": "2021-12-03",
-          "name": "Home"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 85273,
-      "title": "NOS4A2",
-      "overview": "A young Victoria \"Vic\" McQueen discovers she has the power to unlock portals that help her find lost objects. As she delves further into this hidden universe, she encounters many other \"inscape travelers\" - some benevolent, and some who have been corrupted by their power. When Vic encounters Charlie Manx, an immortal who stays that way by feeding off of the souls of children, she makes a sworn enemy of Manx.",
-      "poster_path": "/gnosVTTRTCqooJuipwU6C0bgOGf.jpg",
-      "first_air_date": "2019-06-02",
-      "year": 2019,
-      "vote_average": 7.3,
-      "vote_count": 436,
-      "actors": "Ashleigh Cummings, Ólafur Darri Ólafsson, Jahkara Smith",
-      "genres": "Sci-Fi & Fantasy, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 10,
-          "air_date": "2020-08-23",
-          "name": "Bats"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
-          },
-          {
-            "name": "AMC Plus Apple TV Channel ",
-            "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
-          },
-          {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
-          },
-          {
-            "name": "AMC+ Roku Premium Channel",
-            "logo": "https://image.tmdb.org/t/p/original/gAGrSQCTAisxy2CsWbijVvJEnRo.jpg"
-          },
-          {
-            "name": "AMC+",
-            "logo": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "Shudder",
-            "logo": "https://image.tmdb.org/t/p/original/vEtdiYRPRbDCp1Tcn3BEPF1Ni76.jpg"
-          },
-          {
-            "name": "Shudder Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/qb6Lj5BhNJavdmRVDzAqAjd4Tj3.jpg"
-          },
-          {
-            "name": "Spectrum On Demand",
-            "logo": "https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          },
-          {
-            "name": "Shudder Apple TV Channel",
-            "logo": "https://image.tmdb.org/t/p/original/kLfq0I2MwiUFUY9yI1GwOeKxX8f.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 90823,
-      "title": "BIA",
-      "overview": "BIA tells the story of a group of teens who discover, share and develop their talents in the \"Fundom\", a place where they gather to hang out, create and express their art in a fun-filled and casual environment. Bia Urquiza, the main character, is a 16-year-old girl with great imagination and creativity.",
-      "poster_path": "/6jd80sReyYSiXME07CZE4XRk3k9.jpg",
-      "first_air_date": "2019-06-24",
-      "year": 2019,
-      "vote_average": 7.829,
-      "vote_count": 342,
-      "actors": "Isabela Souza, Julio Peña, Guido Messina",
-      "genres": "Drama, Comedy, Soap, Family",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 60,
-          "air_date": "2020-07-24",
-          "name": "Episode 60"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Disney Plus",
-            "logo": "https://image.tmdb.org/t/p/original/97yvRBw1GzX7fXprcF80er19ot.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 85526,
-      "title": "Pagan Peak",
-      "overview": "When a gruesomely staged body is found at the German-Austrian border, two detectives investigate. As the ritual-like murders continue, they enter the killer’s sinister world, set in the Alpine wilderness.",
-      "poster_path": "/e7BTJk4vAYqiTPiLt4rI2RhM7EA.jpg",
-      "first_air_date": "2019-01-25",
-      "year": 2019,
-      "vote_average": 7.486,
-      "vote_count": 214,
-      "actors": "Julia Jentsch, Nicholas Ofczarek, Johannes Zirner",
-      "genres": "Crime, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 8,
-          "air_date": "2023-06-15",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "MZ Choice Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/hTAIgvUnmu1Yv0wFVJRu9KKAPtJ.jpg"
-          },
-          {
-            "name": "Mhz Choice",
-            "logo": "https://image.tmdb.org/t/p/original/tnxLjN2lLYpkTIX8NPSId6bgqh8.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 86163,
-      "title": "Gentleman Jack",
-      "overview": "Halifax, West Yorkshire, England, 1832. Anne Lister attempts to revitalize her inherited home, Shibden Hall. Most notably for the time period, a part of her plan is to help the fate of her own family - by taking a wife.",
-      "poster_path": "/hLQl8LKLXdA4gF4ArR8TXzXGRYV.jpg",
-      "first_air_date": "2019-04-22",
-      "year": 2019,
-      "vote_average": 7.799,
-      "vote_count": 209,
-      "actors": "Suranne Jones, Sophie Rundle, Gemma Whelan",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2022-06-13",
-          "name": "It’s Not Illegal"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 84977,
       "title": "Russian Doll",
       "overview": "Nadia keeps dying and reliving her 36th birthday party. She's trapped in a surreal time loop -- and staring down the barrel of her own mortality.",
@@ -134712,6 +134443,33 @@
       "type": "tv"
     },
     {
+      "id": 75663,
+      "title": "Deadly Class",
+      "overview": "Follow a disillusioned teen recruited into a storied high school for assassins. Maintaining his moral code while surviving a ruthless curriculum, vicious social cliques, and his own adolescent uncertainties may prove fatal.",
+      "poster_path": "/u2GSiPazSXpyNQz0yymOUCUm944.jpg",
+      "first_air_date": "2019-01-16",
+      "year": 2019,
+      "vote_average": 7.4,
+      "vote_count": 334,
+      "actors": "Benjamin Wadsworth, Benedict Wong, Lana Condor",
+      "genres": "Drama, Crime, Action & Adventure",
+      "tv_status": {
+        "status": "Canceled",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 10,
+          "air_date": "2019-03-20",
+          "name": "Sink With California"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": []
+      },
+      "type": "tv"
+    },
+    {
       "id": 84231,
       "title": "Wayne",
       "overview": "In this gritty and sometimes bloody tale, sixteen year-old Wayne sets out on a dirt bike with his new crush Del to take back the 1978 Pontiac Trans Am that was stolen from his father before he died. It is Wayne and Del against the world.",
@@ -134738,6 +134496,38 @@
           {
             "name": "YouTube Premium",
             "logo": "https://image.tmdb.org/t/p/original/rMb93u1tBeErSYLv79zSTR07UdO.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 85702,
+      "title": "PEN15",
+      "overview": "Middle school as it really happened. Maya Erskine and Anna Konkle star in this adult comedy, playing versions of themselves as thirteen-year-old outcasts in the year 2000, surrounded by actual thirteen-year-olds, where the best day of your life can turn into your worst with the stroke of a gel pen.",
+      "poster_path": "/9rbyzSTXnrPHJZ1YEOQDK8gnNm8.jpg",
+      "first_air_date": "2019-02-08",
+      "year": 2019,
+      "vote_average": 8.312,
+      "vote_count": 311,
+      "actors": "Maya Erskine, Anna Konkle, Mutsuko Erskine",
+      "genres": "Comedy",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 2,
+          "episode": 15,
+          "air_date": "2021-12-03",
+          "name": "Home"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
         ]
       },
@@ -134780,116 +134570,32 @@
       "type": "tv"
     },
     {
-      "id": 88512,
-      "title": "Bonding",
-      "overview": "A New York City grad student moonlighting as a dominatrix enlists her gay BFF from high school to be her assistant.",
-      "poster_path": "/uNLh6LhYajpXHkklMnTOe3oNaAt.jpg",
-      "first_air_date": "2019-04-24",
+      "id": 82744,
+      "title": "Catch-22",
+      "overview": "Pianosa Island, Italy, World War II. Bombardier John Yossarian tries to fulfill his duty, maintain sanity and return home as soon as possible, but incompetence and bureaucracy constantly stand in his way.",
+      "poster_path": "/1huTLz8UaEeOLJNwqMKCQs76Bl5.jpg",
+      "first_air_date": "2019-05-17",
       "year": 2019,
-      "vote_average": 6.891,
-      "vote_count": 321,
-      "actors": "Zoe Levin, Brendan Scannell, Micah Stock",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2021-01-27",
-          "name": "Permission"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 88974,
-      "title": "Angel's Last Mission: Love",
-      "overview": "As a punishment for meddling in human affairs, an angel faces the impossible task of finding a soulmate for a cold-hearted ballerina.",
-      "poster_path": "/ltoY1cMTdh5ovUe6JhEsuU5Twd3.jpg",
-      "first_air_date": "2019-05-22",
-      "year": 2019,
-      "vote_average": 8.074,
-      "vote_count": 251,
-      "actors": "Shin Hae-sun, L, Lee Dong-gun",
-      "genres": "Drama, Comedy",
+      "vote_average": 7.321,
+      "vote_count": 285,
+      "actors": "Christopher Abbott, Kyle Chandler, Daniel David Stewart",
+      "genres": "Comedy, Drama, War & Politics",
       "tv_status": {
         "status": "Ended",
         "in_production": false,
         "last_episode": {
           "season": 1,
-          "episode": 32,
-          "air_date": "2019-07-11",
-          "name": "Yeon-seo's Life without Dan"
+          "episode": 6,
+          "air_date": "2019-05-17",
+          "name": "Episode 6"
         },
         "next_episode": null
       },
       "providers": {
         "streaming": [
           {
-            "name": "Rakuten Viki",
-            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
-          },
-          {
-            "name": "OnDemandKorea",
-            "logo": "https://image.tmdb.org/t/p/original/gR8rrj71VCLjlF1LJpplo72MXf0.jpg"
-          },
-          {
-            "name": "Kocowa Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/hStl3hxyHcqhh5BnfHU4bUsypGd.jpg"
-          },
-          {
-            "name": "Kocowa",
-            "logo": "https://image.tmdb.org/t/p/original/hwsU65QW7A4dbMEWkDpgHyCNcfS.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 84647,
-      "title": "The Society",
-      "overview": "When everyone else mysteriously vanishes from their wealthy town, the teen residents of West Ham must forge their own society to survive.",
-      "poster_path": "/mxOlnFEQMpxjIltr9Ox06iyjjvK.jpg",
-      "first_air_date": "2019-05-10",
-      "year": 2019,
-      "vote_average": 7.462,
-      "vote_count": 624,
-      "actors": "Kathryn Newton, Alex Fitzalan, Jack Mulhern",
-      "genres": "Drama, Sci-Fi & Fantasy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2019-05-10",
-          "name": "How it Happens"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
         ]
       },
@@ -134928,6 +134634,145 @@
       "type": "tv"
     },
     {
+      "id": 85526,
+      "title": "Pagan Peak",
+      "overview": "When a gruesomely staged body is found at the German-Austrian border, two detectives investigate. As the ritual-like murders continue, they enter the killer’s sinister world, set in the Alpine wilderness.",
+      "poster_path": "/e7BTJk4vAYqiTPiLt4rI2RhM7EA.jpg",
+      "first_air_date": "2019-01-25",
+      "year": 2019,
+      "vote_average": 7.486,
+      "vote_count": 214,
+      "actors": "Julia Jentsch, Nicholas Ofczarek, Johannes Zirner",
+      "genres": "Crime, Drama",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 3,
+          "episode": 8,
+          "air_date": "2023-06-15",
+          "name": "Episode 8"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "MZ Choice Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/hTAIgvUnmu1Yv0wFVJRu9KKAPtJ.jpg"
+          },
+          {
+            "name": "Mhz Choice",
+            "logo": "https://image.tmdb.org/t/p/original/tnxLjN2lLYpkTIX8NPSId6bgqh8.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 88236,
+      "title": "How to Sell Drugs Online (Fast)",
+      "overview": "To win back his ex-girlfriend, a nerdy teen starts selling ecstasy online out of his bedroom -- and becomes one of Europe's biggest dealers.",
+      "poster_path": "/xg7U76h1DNtwa0eBOIbFdiM80DR.jpg",
+      "first_air_date": "2019-05-31",
+      "year": 2019,
+      "vote_average": 7.89,
+      "vote_count": 948,
+      "actors": "Maximilian Mundt, Danilo Kamperidis, Lena Klenke",
+      "genres": "Drama, Comedy, Crime",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 4,
+          "episode": 6,
+          "air_date": "2025-04-08",
+          "name": "How Did That Ever Work?"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 91725,
+      "title": "The Spy",
+      "overview": "In the 1960s, Israeli clerk-turned-secret agent Eli Cohen goes deep undercover inside Syria on a perilous, years-long mission to spy for Mossad.",
+      "poster_path": "/bCGC6cAEKzm45J7SPsApAnp9mNx.jpg",
+      "first_air_date": "2019-09-06",
+      "year": 2019,
+      "vote_average": 7.375,
+      "vote_count": 343,
+      "actors": "Sacha Baron Cohen, Noah Emmerich, Hadar Ratzon Rotem",
+      "genres": "Drama",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 6,
+          "air_date": "2019-09-06",
+          "name": "Home"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "PBS Masterpiece Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/xN1vKpcypShJrWmf1t3dyGJM7sO.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 77459,
+      "title": "The Passage",
+      "overview": "A post-apocalyptic story about a botched U.S. government experiment that turns a group of death row inmates into highly infectious vampires, and an orphan girl who might be the only person able to stop the ensuing crisis.",
+      "poster_path": "/np1jcUOCjTGpoIzKwCnV35zxu5B.jpg",
+      "first_air_date": "2019-01-14",
+      "year": 2019,
+      "vote_average": 6.94,
+      "vote_count": 357,
+      "actors": "Mark-Paul Gosselaar, Saniyya Sidney, Caroline Chikezie",
+      "genres": "Sci-Fi & Fantasy, Action & Adventure, Drama",
+      "tv_status": {
+        "status": "Canceled",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 10,
+          "air_date": "2019-03-11",
+          "name": "Last Lesson"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": []
+      },
+      "type": "tv"
+    },
+    {
       "id": 98754,
       "title": "Club 57",
       "overview": "When Eva and Rubén travel back in time to 1957, they try to go unnoticed until they find a way to return. Their plans change after Eva falls for Italian heartthrob JJ, and her actions begin to drastically alter the future.",
@@ -134946,33 +134791,6 @@
           "episode": 60,
           "air_date": "2021-10-22",
           "name": "Episode 60"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 75663,
-      "title": "Deadly Class",
-      "overview": "Follow a disillusioned teen recruited into a storied high school for assassins. Maintaining his moral code while surviving a ruthless curriculum, vicious social cliques, and his own adolescent uncertainties may prove fatal.",
-      "poster_path": "/u2GSiPazSXpyNQz0yymOUCUm944.jpg",
-      "first_air_date": "2019-01-16",
-      "year": 2019,
-      "vote_average": 7.4,
-      "vote_count": 334,
-      "actors": "Benjamin Wadsworth, Benedict Wong, Lana Condor",
-      "genres": "Drama, Crime, Action & Adventure",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2019-03-20",
-          "name": "Sink With California"
         },
         "next_episode": null
       },
@@ -135117,33 +134935,6 @@
       "type": "tv"
     },
     {
-      "id": 77459,
-      "title": "The Passage",
-      "overview": "A post-apocalyptic story about a botched U.S. government experiment that turns a group of death row inmates into highly infectious vampires, and an orphan girl who might be the only person able to stop the ensuing crisis.",
-      "poster_path": "/np1jcUOCjTGpoIzKwCnV35zxu5B.jpg",
-      "first_air_date": "2019-01-14",
-      "year": 2019,
-      "vote_average": 6.94,
-      "vote_count": 357,
-      "actors": "Mark-Paul Gosselaar, Saniyya Sidney, Caroline Chikezie",
-      "genres": "Sci-Fi & Fantasy, Action & Adventure, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2019-03-11",
-          "name": "Last Lesson"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
       "id": 81532,
       "title": "Living with Yourself",
       "overview": "Burned out on life, Miles undergoes a strange procedure at a strip mall spa -- and wakes to find he's been replaced by a better version of himself.",
@@ -135162,82 +134953,6 @@
           "episode": 8,
           "air_date": "2019-10-18",
           "name": "Nice Knowing You"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 91725,
-      "title": "The Spy",
-      "overview": "In the 1960s, Israeli clerk-turned-secret agent Eli Cohen goes deep undercover inside Syria on a perilous, years-long mission to spy for Mossad.",
-      "poster_path": "/bCGC6cAEKzm45J7SPsApAnp9mNx.jpg",
-      "first_air_date": "2019-09-06",
-      "year": 2019,
-      "vote_average": 7.375,
-      "vote_count": 343,
-      "actors": "Sacha Baron Cohen, Noah Emmerich, Hadar Ratzon Rotem",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2019-09-06",
-          "name": "Home"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "PBS Masterpiece Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/xN1vKpcypShJrWmf1t3dyGJM7sO.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 88236,
-      "title": "How to Sell Drugs Online (Fast)",
-      "overview": "To win back his ex-girlfriend, a nerdy teen starts selling ecstasy online out of his bedroom -- and becomes one of Europe's biggest dealers.",
-      "poster_path": "/xg7U76h1DNtwa0eBOIbFdiM80DR.jpg",
-      "first_air_date": "2019-05-31",
-      "year": 2019,
-      "vote_average": 7.89,
-      "vote_count": 948,
-      "actors": "Maximilian Mundt, Danilo Kamperidis, Lena Klenke",
-      "genres": "Drama, Comedy, Crime",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 4,
-          "episode": 6,
-          "air_date": "2025-04-08",
-          "name": "How Did That Ever Work?"
         },
         "next_episode": null
       },
@@ -136426,114 +136141,6 @@
       "type": "tv"
     },
     {
-      "id": 82596,
-      "title": "Emily in Paris",
-      "overview": "New passions. New fashions. New Emily? A plucky American marketing whiz spreads her wings in life and love after landing her dream job in Paris.",
-      "poster_path": "/c0bkO416OU7YGdOFktk45H8REgL.jpg",
-      "first_air_date": "2020-10-02",
-      "year": 2020,
-      "vote_average": 7.558,
-      "vote_count": 1565,
-      "actors": "Lily Collins, Philippine Leroy-Beaulieu, Ashley Park",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 5,
-          "episode": 10,
-          "air_date": "2025-12-18",
-          "name": "Veni, Vidi, Venezia"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 113268,
-      "title": "The Uncanny Counter",
-      "overview": "A group of supernatural demon hunters known as \"Counters,\" each with unique abilities, disguise themselves as employees of a noodle restaurant, while tracking down evil spirits that terrorize the mortal world.",
-      "poster_path": "/bsbuXbQqryQ8aJlwXFkFXbrYko1.jpg",
-      "first_air_date": "2020-11-28",
-      "year": 2020,
-      "vote_average": 8.345,
-      "vote_count": 442,
-      "actors": "Cho Byeong-kyu, Yu Jun-sang, Kim Se-jeong",
-      "genres": "Drama, Mystery, Action & Adventure",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 12,
-          "air_date": "2023-09-03",
-          "name": "Episode 12"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 90812,
-      "title": "Industry",
-      "overview": "In the cutthroat world of international finance, a group of young graduates compete for a limited set of permanent positions at a top investment bank in London. The boundaries between colleague, friend, lover, and enemy soon blur as they immerse themselves in a company culture defined as much by sex, drugs and ego as it is by deals and dividends.",
-      "poster_path": "/mZ7YFEOxAKfjXJKWm0sYFXQ8n8A.jpg",
-      "first_air_date": "2020-11-09",
-      "year": 2020,
-      "vote_average": 6.826,
-      "vote_count": 273,
-      "actors": "Myha'la",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 4,
-          "episode": 8,
-          "air_date": "2026-03-01",
-          "name": "Both, And"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 87017,
       "title": "P-Valley",
       "overview": "Down deep in the Mississippi Delta, Trap music meets film noir in this kaleidoscopic story of a little-strip-club-that-could and the big characters who come through its doors—the hopeful, the lost, the broken, the ballers, the beautiful, and the damned.",
@@ -136590,6 +136197,42 @@
       "type": "tv"
     },
     {
+      "id": 113268,
+      "title": "The Uncanny Counter",
+      "overview": "A group of supernatural demon hunters known as \"Counters,\" each with unique abilities, disguise themselves as employees of a noodle restaurant, while tracking down evil spirits that terrorize the mortal world.",
+      "poster_path": "/bsbuXbQqryQ8aJlwXFkFXbrYko1.jpg",
+      "first_air_date": "2020-11-28",
+      "year": 2020,
+      "vote_average": 8.3,
+      "vote_count": 442,
+      "actors": "Cho Byeong-kyu, Yu Jun-sang, Kim Se-jeong",
+      "genres": "Drama, Mystery, Action & Adventure",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 2,
+          "episode": 12,
+          "air_date": "2023-09-03",
+          "name": "Episode 12"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
       "id": 100010,
       "title": "Big Sky",
       "overview": "Private detective Cassie Dewell partners with ex-cop Jenny Hoyt on a search for two sisters who have been kidnapped by a truck driver on a remote highway in Montana. When they discover that these are not the only girls who have disappeared in the area, they must race against the clock to stop the perpetrator before another woman is taken.",
@@ -136616,6 +136259,42 @@
           {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 87739,
+      "title": "The Queen's Gambit",
+      "overview": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
+      "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
+      "first_air_date": "2020-10-23",
+      "year": 2020,
+      "vote_average": 8.43,
+      "vote_count": 5591,
+      "actors": "Anya Taylor-Joy, Chloe Pirrie",
+      "genres": "Drama",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 7,
+          "air_date": "2020-10-23",
+          "name": "End Game"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -136664,70 +136343,6 @@
           {
             "name": "Peacock Premium Plus",
             "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 79680,
-      "title": "Snowpiercer",
-      "overview": "More than seven years after the world has become a frozen wasteland, the remnants of humanity inhabit a gigantic, perpetually-moving train that circles the globe as class warfare, social injustice and the politics of survival play out.",
-      "poster_path": "/exKzfiKzMdQBHrdd7zNmKauJkbg.jpg",
-      "first_air_date": "2020-05-17",
-      "year": 2020,
-      "vote_average": 7.356,
-      "vote_count": 1437,
-      "actors": "Daveed Diggs, Mickey Sumner, Alison Wright",
-      "genres": "Sci-Fi & Fantasy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 4,
-          "episode": 10,
-          "air_date": "2024-09-22",
-          "name": "Last Stop"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/ptmbGSttkyzawLbxx9MElmxKuVo.jpg"
-          },
-          {
-            "name": "AMC Plus Apple TV Channel ",
-            "logo": "https://image.tmdb.org/t/p/original/oTQdXIqM9iewlN4MC2nhKB0gHw.jpg"
-          },
-          {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/2ino0WmHA4GROB7NYKzT6PGqLcb.jpg"
-          },
-          {
-            "name": "AMC+",
-            "logo": "https://image.tmdb.org/t/p/original/ovmu6uot1XVvsemM2dDySXLiX57.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "Spectrum On Demand",
-            "logo": "https://image.tmdb.org/t/p/original/aAb9CUHjFe9Y3O57qnrJH0KOF1B.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          },
-          {
-            "name": "Shout! Factory Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/ivRp15loTWoVy3eEHALoYEyXI8J.jpg"
           }
         ]
       },
@@ -136948,42 +136563,6 @@
           {
             "name": "Starz Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/esiLBRzDUwodjfN8gA4qj7l3ZF7.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 87739,
-      "title": "The Queen's Gambit",
-      "overview": "In a 1950s orphanage, a young girl reveals an astonishing talent for chess and begins an unlikely journey to stardom while grappling with addiction.",
-      "poster_path": "/zU0htwkhNvBQdVSIKB9s6hgVeFK.jpg",
-      "first_air_date": "2020-10-23",
-      "year": 2020,
-      "vote_average": 8.43,
-      "vote_count": 5591,
-      "actors": "Anya Taylor-Joy, Chloe Pirrie",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 7,
-          "air_date": "2020-10-23",
-          "name": "End Game"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -137942,6 +137521,42 @@
       "type": "tv"
     },
     {
+      "id": 96608,
+      "title": "The Stranger",
+      "overview": "When a stranger makes a shocking claim about his wife, Adam Price's life upends as he becomes entangled in a web of secrets.",
+      "poster_path": "/qKtjZ6f8ip6M7pYiDcVs0QXUAly.jpg",
+      "first_air_date": "2020-01-30",
+      "year": 2020,
+      "vote_average": 7.152,
+      "vote_count": 564,
+      "actors": "Richard Armitage, Siobhan Finneran, Hannah John-Kamen",
+      "genres": "Mystery, Crime",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 8,
+          "air_date": "2020-01-30",
+          "name": "Episode 8"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
       "id": 101918,
       "title": "Valeria",
       "overview": "A writer in a creative and marital crisis finds refuge and support in her three best friends. Based on the novels by Elisabet Benavent.",
@@ -137978,24 +137593,24 @@
       "type": "tv"
     },
     {
-      "id": 108261,
-      "title": "Mr. Queen",
-      "overview": "A modern chef suddenly becomes trapped inside the body of a queen from the Joseon era, which causes chaos for everyone involved.",
-      "poster_path": "/ozuyMnOO5pekDklyPpUL1Htkuzy.jpg",
-      "first_air_date": "2020-12-12",
+      "id": 81354,
+      "title": "Ratched",
+      "overview": "In 1947, Mildred Ratched begins working as a nurse at a leading psychiatric hospital. But beneath her stylish exterior lurks a growing darkness.",
+      "poster_path": "/cDNxOIm6K5D2W21QyJWZ95sJzQt.jpg",
+      "first_air_date": "2020-09-18",
       "year": 2020,
-      "vote_average": 8.507,
-      "vote_count": 496,
-      "actors": "Shin Hae-sun, Kim Jung-hyun, Bae Jong-ok",
-      "genres": "Drama, Comedy, Sci-Fi & Fantasy",
+      "vote_average": 7.645,
+      "vote_count": 1263,
+      "actors": "Sarah Paulson, Finn Wittrock, Jon Jon Briones",
+      "genres": "Mystery, Drama, Crime",
       "tv_status": {
-        "status": "Ended",
+        "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 1,
-          "episode": 20,
-          "air_date": "2021-02-14",
-          "name": "My Life Without Me"
+          "episode": 8,
+          "air_date": "2020-09-18",
+          "name": "Mildred and Edmund"
         },
         "next_episode": null
       },
@@ -138006,8 +137621,80 @@
             "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
           },
           {
-            "name": "Rakuten Viki",
-            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 83851,
+      "title": "The Undoing",
+      "overview": "Grace and Jonathan Fraser are living the only lives they ever wanted. Overnight a chasm opens in their lives: a violent death and a chain of terrible revelations. Left behind in the wake of a spreading and very public disaster, Grace must dismantle one life and create another for her child and her family.",
+      "poster_path": "/3tDbJxobPN3EI2bBebL6zmusmw5.jpg",
+      "first_air_date": "2020-10-25",
+      "year": 2020,
+      "vote_average": 7.349,
+      "vote_count": 863,
+      "actors": "Nicole Kidman, Hugh Grant, Edgar Ramírez",
+      "genres": "Drama, Crime, Mystery",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 6,
+          "air_date": "2020-11-29",
+          "name": "The Bloody Truth"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "HBO Max Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
+          },
+          {
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+          },
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 96162,
+      "title": "Itaewon Class",
+      "overview": "In a colorful Seoul neighborhood, an ex-con and his friends fight a mighty foe to make their ambitious dreams for their street bar a reality.",
+      "poster_path": "/qg7q0piY0fTt2enlIRHwKKRwNjS.jpg",
+      "first_air_date": "2020-01-31",
+      "year": 2020,
+      "vote_average": 8.4,
+      "vote_count": 405,
+      "actors": "Park Seo-jun, Kim Da-mi, Kwon Na-ra",
+      "genres": "Drama",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 16,
+          "air_date": "2020-03-21",
+          "name": "Episode 16"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
           },
           {
             "name": "Netflix Standard with Ads",
@@ -138054,108 +137741,72 @@
       "type": "tv"
     },
     {
-      "id": 96162,
-      "title": "Itaewon Class",
-      "overview": "In a colorful Seoul neighborhood, an ex-con and his friends fight a mighty foe to make their ambitious dreams for their street bar a reality.",
-      "poster_path": "/qg7q0piY0fTt2enlIRHwKKRwNjS.jpg",
-      "first_air_date": "2020-01-31",
+      "id": 96734,
+      "title": "High Fidelity",
+      "overview": "Rob Brooks, a female record store owner in the rapidly gentrified neighborhood of Crown Heights, Brooklyn revisit past relationships through music and pop culture, while trying to get over her one true love.",
+      "poster_path": "/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg",
+      "first_air_date": "2020-02-14",
       "year": 2020,
-      "vote_average": 8.373,
-      "vote_count": 405,
-      "actors": "Park Seo-jun, Kim Da-mi, Kwon Na-ra",
-      "genres": "Drama",
+      "vote_average": 7.557,
+      "vote_count": 238,
+      "actors": "Zoë Kravitz, David H. Holmes, Da'Vine Joy Randolph",
+      "genres": "Comedy, Drama",
       "tv_status": {
-        "status": "Ended",
+        "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 1,
-          "episode": 16,
-          "air_date": "2020-03-21",
-          "name": "Episode 16"
+          "episode": 10,
+          "air_date": "2020-02-14",
+          "name": "The Other Side of the Rock"
         },
         "next_episode": null
       },
       "providers": {
         "streaming": [
           {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
         ]
       },
       "type": "tv"
     },
     {
-      "id": 96608,
-      "title": "The Stranger",
-      "overview": "When a stranger makes a shocking claim about his wife, Adam Price's life upends as he becomes entangled in a web of secrets.",
-      "poster_path": "/qKtjZ6f8ip6M7pYiDcVs0QXUAly.jpg",
-      "first_air_date": "2020-01-30",
+      "id": 89844,
+      "title": "30 Coins",
+      "overview": "Father Vergara—an exorcist, boxer and ex-convict—lives in a remote village in Spain. Hoping to be lost and forgotten, Vergara’s demons catch up to him.",
+      "poster_path": "/nueyd0FDfX9aUDD1UrxbjdjIvC.jpg",
+      "first_air_date": "2020-11-29",
       "year": 2020,
-      "vote_average": 7.152,
-      "vote_count": 564,
-      "actors": "Richard Armitage, Siobhan Finneran, Hannah John-Kamen",
-      "genres": "Mystery, Crime",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2020-01-30",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 98161,
-      "title": "Home Before Dark",
-      "overview": "Young investigative journalist Hilde Lisko moves with her family to the small town her father left behind, only to unearth shocking secrets in her pursuit of the truth.",
-      "poster_path": "/mt4P2epJrSaqrlkMP9fTUKLP9OE.jpg",
-      "first_air_date": "2020-04-03",
-      "year": 2020,
-      "vote_average": 7.5,
-      "vote_count": 476,
-      "actors": "Brooklynn Prince, Jim Sturgess, Abby Miller",
-      "genres": "Mystery, Drama",
+      "vote_average": 7.26,
+      "vote_count": 651,
+      "actors": "Eduard Fernández, Megan Montaner, Miguel Ángel Silvestre",
+      "genres": "Crime, Mystery, Drama",
       "tv_status": {
         "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 2,
-          "episode": 10,
-          "air_date": "2021-08-13",
-          "name": "The Smoking Gun"
+          "episode": 8,
+          "air_date": "2023-12-11",
+          "name": "The Eye of God"
         },
         "next_episode": null
       },
       "providers": {
         "streaming": [
           {
-            "name": "Apple TV",
-            "logo": "https://image.tmdb.org/t/p/original/mcbz1LgtErU9p4UdbZ0rG6RTWHX.jpg"
+            "name": "HBO Max Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
           },
           {
-            "name": "Apple TV Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/mHrYMgnZIp6lgW2aXg7ix9zGOnA.jpg"
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+          },
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
           }
         ]
       },
@@ -138192,42 +137843,6 @@
           {
             "name": "Apple TV Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/mHrYMgnZIp6lgW2aXg7ix9zGOnA.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 93785,
-      "title": "Barbarians",
-      "overview": "Three people's fates are interwoven in the Battle of the Teutoburg Forest in 9 A.D., during which Germanic warriors halt the spread of the Roman Empire.",
-      "poster_path": "/r3cUaeLUGT8c0YIR8qCDDH2iJSU.jpg",
-      "first_air_date": "2020-10-23",
-      "year": 2020,
-      "vote_average": 7.296,
-      "vote_count": 659,
-      "actors": "Laurence Rupp, Jeanne Goursaud, David Schütter",
-      "genres": "Action & Adventure, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 6,
-          "air_date": "2022-10-21",
-          "name": "The Price"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -138298,51 +137913,24 @@
       "type": "tv"
     },
     {
-      "id": 101048,
-      "title": "Doc",
-      "overview": "When Doctor Andrea Fanti loses 12 years of memories from a brain injury, he finds himself adjusting to a world full of strangers.",
-      "poster_path": "/6yFfvnYMGXYmGbtmiIrRuRzJzUU.jpg",
-      "first_air_date": "2020-03-26",
+      "id": 93785,
+      "title": "Barbarians",
+      "overview": "Three people's fates are interwoven in the Battle of the Teutoburg Forest in 9 A.D., during which Germanic warriors halt the spread of the Roman Empire.",
+      "poster_path": "/r3cUaeLUGT8c0YIR8qCDDH2iJSU.jpg",
+      "first_air_date": "2020-10-23",
       "year": 2020,
-      "vote_average": 8.094,
-      "vote_count": 202,
-      "actors": "Luca Argentero, Matilde Gioli, Pierpaolo Spollon",
-      "genres": "Drama, Action & Adventure",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 3,
-          "episode": 16,
-          "air_date": "2024-03-07",
-          "name": "Episode 16"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 85922,
-      "title": "Space Force",
-      "overview": "A four-star general begrudgingly teams up with an eccentric scientist to get the U.S. military's newest agency — Space Force — ready for lift-off.",
-      "poster_path": "/zgu3p4NvisS8CI68cUfBKbvAvu8.jpg",
-      "first_air_date": "2020-05-29",
-      "year": 2020,
-      "vote_average": 6.517,
-      "vote_count": 847,
-      "actors": "Steve Carell, John Malkovich, Ben Schwartz",
-      "genres": "Comedy, Drama",
+      "vote_average": 7.296,
+      "vote_count": 659,
+      "actors": "Laurence Rupp, Jeanne Goursaud, David Schütter",
+      "genres": "Action & Adventure, Drama",
       "tv_status": {
         "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 2,
-          "episode": 7,
-          "air_date": "2022-02-18",
-          "name": "THE HACK"
+          "episode": 6,
+          "air_date": "2022-10-21",
+          "name": "The Price"
         },
         "next_episode": null
       },
@@ -138361,24 +137949,24 @@
       "type": "tv"
     },
     {
-      "id": 96734,
-      "title": "High Fidelity",
-      "overview": "Rob Brooks, a female record store owner in the rapidly gentrified neighborhood of Crown Heights, Brooklyn revisit past relationships through music and pop culture, while trying to get over her one true love.",
-      "poster_path": "/6OTZ66ZlJvOVb5A8ALiPzTD0n3H.jpg",
-      "first_air_date": "2020-02-14",
+      "id": 88987,
+      "title": "Helstrom",
+      "overview": "Daimon and Ana Helstrom are the son and daughter of a mysterious and powerful serial killer. The siblings have a complicated dynamic as they track down the terrorizing worst of humanity — each with their attitude and skills.",
+      "poster_path": "/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg",
+      "first_air_date": "2020-10-16",
       "year": 2020,
-      "vote_average": 7.557,
-      "vote_count": 238,
-      "actors": "Zoë Kravitz, David H. Holmes, Da'Vine Joy Randolph",
-      "genres": "Comedy, Drama",
+      "vote_average": 6.672,
+      "vote_count": 244,
+      "actors": "Tom Austen, Sydney Lemmon, Elizabeth Marvel",
+      "genres": "Action & Adventure, Sci-Fi & Fantasy, Drama",
       "tv_status": {
         "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 1,
           "episode": 10,
-          "air_date": "2020-02-14",
-          "name": "The Other Side of the Rock"
+          "air_date": "2020-10-16",
+          "name": "Hell Storm"
         },
         "next_episode": null
       },
@@ -138393,124 +137981,32 @@
       "type": "tv"
     },
     {
-      "id": 83851,
-      "title": "The Undoing",
-      "overview": "Grace and Jonathan Fraser are living the only lives they ever wanted. Overnight a chasm opens in their lives: a violent death and a chain of terrible revelations. Left behind in the wake of a spreading and very public disaster, Grace must dismantle one life and create another for her child and her family.",
-      "poster_path": "/3tDbJxobPN3EI2bBebL6zmusmw5.jpg",
-      "first_air_date": "2020-10-25",
+      "id": 81349,
+      "title": "Devs",
+      "overview": "Young computer engineer Lily Chan investigates the secretive development division of her employer, a cutting-edge tech company based in San Francisco, which she believes is behind the murder of her boyfriend.",
+      "poster_path": "/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg",
+      "first_air_date": "2020-03-05",
       "year": 2020,
-      "vote_average": 7.349,
-      "vote_count": 863,
-      "actors": "Nicole Kidman, Hugh Grant, Edgar Ramírez",
-      "genres": "Drama, Crime, Mystery",
+      "vote_average": 7.344,
+      "vote_count": 822,
+      "actors": "Sonoya Mizuno, Nick Offerman, Jin Ha",
+      "genres": "Sci-Fi & Fantasy, Drama, Mystery",
       "tv_status": {
         "status": "Ended",
         "in_production": false,
         "last_episode": {
           "season": 1,
-          "episode": 6,
-          "air_date": "2020-11-29",
-          "name": "The Bloody Truth"
+          "episode": 8,
+          "air_date": "2020-04-16",
+          "name": "Episode 8"
         },
         "next_episode": null
       },
       "providers": {
         "streaming": [
           {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 90260,
-      "title": "I Am Not Okay with This",
-      "overview": "Angsty Syd navigates high school awkwardness, family drama and an unrequited crush on her best friend while trying to rein in her budding superpowers.",
-      "poster_path": "/kf3yX0ILNlLJ42X3lX2iYJ3QRp6.jpg",
-      "first_air_date": "2020-02-26",
-      "year": 2020,
-      "vote_average": 7.996,
-      "vote_count": 1992,
-      "actors": "Sophia Lillis, Wyatt Oleff, Sofia Bryant",
-      "genres": "Drama, Comedy, Sci-Fi & Fantasy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 7,
-          "air_date": "2020-02-26",
-          "name": "Deepest, Darkest Secret"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 108284,
-      "title": "Tale of the Nine Tailed",
-      "overview": "A TV producer discovers a secret supernatural world as she becomes entangled with a former deity who's spent centuries searching for his lost lover.",
-      "poster_path": "/v7VEIX1yOcFWY17eUprNhAS9xEp.jpg",
-      "first_air_date": "2020-10-07",
-      "year": 2020,
-      "vote_average": 8.353,
-      "vote_count": 493,
-      "actors": "Lee Dong-wook, Cho Bo-ah, Kim Bum",
-      "genres": "Sci-Fi & Fantasy, Drama, Comedy, Mystery",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 16,
-          "air_date": "2020-12-03",
-          "name": "The Rewritten Tale of the Nine Tailed"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/pvske1MyAoymrs5bguRfVqYiM9a.jpg"
-          },
-          {
-            "name": "Rakuten Viki",
-            "logo": "https://image.tmdb.org/t/p/original/73uV3YooOA8gD9YQTXFj2XakZWA.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
         ]
       },
@@ -138553,24 +138049,60 @@
       "type": "tv"
     },
     {
-      "id": 87689,
-      "title": "Warrior Nun",
-      "overview": "After waking up in a morgue, an orphaned teen discovers she now possesses superpowers as the chosen Halo-Bearer for a secret sect of demon-hunting nuns.",
-      "poster_path": "/fLP0mA7FiERZhDP1NJUaHpm6XM8.jpg",
-      "first_air_date": "2020-07-02",
+      "id": 98161,
+      "title": "Home Before Dark",
+      "overview": "Young investigative journalist Hilde Lisko moves with her family to the small town her father left behind, only to unearth shocking secrets in her pursuit of the truth.",
+      "poster_path": "/mt4P2epJrSaqrlkMP9fTUKLP9OE.jpg",
+      "first_air_date": "2020-04-03",
       "year": 2020,
-      "vote_average": 7.906,
-      "vote_count": 1318,
-      "actors": "Alba Baptista, Thekla Reuten, Lorena Andrea",
-      "genres": "Action & Adventure, Drama, Sci-Fi & Fantasy",
+      "vote_average": 7.5,
+      "vote_count": 476,
+      "actors": "Brooklynn Prince, Jim Sturgess, Abby Miller",
+      "genres": "Mystery, Drama",
       "tv_status": {
         "status": "Canceled",
         "in_production": false,
         "last_episode": {
           "season": 2,
+          "episode": 10,
+          "air_date": "2021-08-13",
+          "name": "The Smoking Gun"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Apple TV",
+            "logo": "https://image.tmdb.org/t/p/original/mcbz1LgtErU9p4UdbZ0rG6RTWHX.jpg"
+          },
+          {
+            "name": "Apple TV Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/mHrYMgnZIp6lgW2aXg7ix9zGOnA.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 111743,
+      "title": "Love & Anarchy",
+      "overview": "A married consultant and a young IT tech kick off a flirty game that challenges societal norms — and leads them to re-evaluate their entire lives.",
+      "poster_path": "/c8iN8MnIP27AbUkEPtI4DeCNJv9.jpg",
+      "first_air_date": "2020-11-04",
+      "year": 2020,
+      "vote_average": 7.126,
+      "vote_count": 253,
+      "actors": "Ida Engvoll, Björn Mosten, Carla Sehn",
+      "genres": "Comedy, Drama",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 2,
           "episode": 8,
-          "air_date": "2022-11-10",
-          "name": "Jeremiah 29:13"
+          "air_date": "2022-06-16",
+          "name": "Art, Love, Capitalism and the Courage to Change Their Conditions"
         },
         "next_episode": null
       },
@@ -138583,46 +138115,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 89844,
-      "title": "30 Coins",
-      "overview": "Father Vergara—an exorcist, boxer and ex-convict—lives in a remote village in Spain. Hoping to be lost and forgotten, Vergara’s demons catch up to him.",
-      "poster_path": "/nueyd0FDfX9aUDD1UrxbjdjIvC.jpg",
-      "first_air_date": "2020-11-29",
-      "year": 2020,
-      "vote_average": 7.26,
-      "vote_count": 651,
-      "actors": "Eduard Fernández, Megan Montaner, Miguel Ángel Silvestre",
-      "genres": "Crime, Mystery, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2023-12-11",
-          "name": "The Eye of God"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
           }
         ]
       },
@@ -138659,38 +138151,6 @@
           {
             "name": "Apple TV Amazon Channel",
             "logo": "https://image.tmdb.org/t/p/original/mHrYMgnZIp6lgW2aXg7ix9zGOnA.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 81349,
-      "title": "Devs",
-      "overview": "Young computer engineer Lily Chan investigates the secretive development division of her employer, a cutting-edge tech company based in San Francisco, which she believes is behind the murder of her boyfriend.",
-      "poster_path": "/uv63iNWOh69bSJYJQZjiX6n8B3m.jpg",
-      "first_air_date": "2020-03-05",
-      "year": 2020,
-      "vote_average": 7.344,
-      "vote_count": 822,
-      "actors": "Sonoya Mizuno, Nick Offerman, Jin Ha",
-      "genres": "Sci-Fi & Fantasy, Drama, Mystery",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2020-04-16",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
           }
         ]
       },
@@ -138756,42 +138216,6 @@
       },
       "providers": {
         "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 81354,
-      "title": "Ratched",
-      "overview": "In 1947, Mildred Ratched begins working as a nurse at a leading psychiatric hospital. But beneath her stylish exterior lurks a growing darkness.",
-      "poster_path": "/cDNxOIm6K5D2W21QyJWZ95sJzQt.jpg",
-      "first_air_date": "2020-09-18",
-      "year": 2020,
-      "vote_average": 7.645,
-      "vote_count": 1263,
-      "actors": "Sarah Paulson, Finn Wittrock, Jon Jon Briones",
-      "genres": "Mystery, Drama, Crime",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2020-09-18",
-          "name": "Mildred and Edmund"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
       },
       "type": "tv"
     },
@@ -139023,24 +138447,24 @@
       "type": "tv"
     },
     {
-      "id": 86850,
-      "title": "Dracula",
-      "overview": "Transylvania, 1897. The blood-drinking Count Dracula is drawing his plans against Victorian London. And be warned: the dead travel fast.",
-      "poster_path": "/5SqUNnExnN7Cr8rzyTXJTWmEMHn.jpg",
-      "first_air_date": "2020-01-01",
+      "id": 100333,
+      "title": "Summertime",
+      "overview": "A modern love story set during the summer on Italy’s Adriatic Coast. An undeniable attraction brings together Ale and Summer, who come from very different worlds. For both, these holidays will be an unforgettable journey that will take them far from who they were before they met.",
+      "poster_path": "/9PCmLDADfqrCnnxOo8yeM5AjnWY.jpg",
+      "first_air_date": "2020-04-29",
       "year": 2020,
-      "vote_average": 6.987,
-      "vote_count": 837,
-      "actors": "Claes Bang, John Heffernan, Dolly Wells",
-      "genres": "Drama, Action & Adventure",
+      "vote_average": 6.817,
+      "vote_count": 452,
+      "actors": "Coco Rebecca Edogamhe, Ludovico Tersigni, Amanda Campana",
+      "genres": "Drama, Comedy",
       "tv_status": {
         "status": "Ended",
         "in_production": false,
         "last_episode": {
-          "season": 1,
-          "episode": 3,
-          "air_date": "2020-01-03",
-          "name": "The Dark Compass"
+          "season": 3,
+          "episode": 8,
+          "air_date": "2022-05-04",
+          "name": "Episode 8"
         },
         "next_episode": null
       },
@@ -139053,6 +138477,105 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 111625,
+      "title": "Dash & Lily",
+      "overview": "Opposites attract at Christmas as cynical Dash and sunny Lily trade messages and dares in a red notebook they pass back and forth around New York City.",
+      "poster_path": "/eqBW1sqUxtOf1arBUAWNPJP5msD.jpg",
+      "first_air_date": "2020-11-10",
+      "year": 2020,
+      "vote_average": 7.814,
+      "vote_count": 361,
+      "actors": "Austin Abrams, Midori Francis, Dante Brown",
+      "genres": "Comedy, Drama",
+      "tv_status": {
+        "status": "Canceled",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 8,
+          "air_date": "2020-11-10",
+          "name": "New Year's Eve"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 99654,
+      "title": "18 Again",
+      "overview": "At a difficult place in his marriage and career, a middle-aged man gets a shot at a do-over when he's transformed back into his 18-year-old body.",
+      "poster_path": "/jwrumjdNdtlHRzthQEj9HmxehcR.jpg",
+      "first_air_date": "2020-09-21",
+      "year": 2020,
+      "vote_average": 8.345,
+      "vote_count": 268,
+      "actors": "Lee Do-hyun, Kim Ha-neul, Yoon Sang-hyun",
+      "genres": "Drama, Comedy, Sci-Fi & Fantasy",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 16,
+          "air_date": "2020-11-10",
+          "name": "Life Goes On"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": []
+      },
+      "type": "tv"
+    },
+    {
+      "id": 92053,
+      "title": "For Life",
+      "overview": "A prisoner becomes a lawyer, litigating cases for other inmates while fighting to overturn his own life sentence for a crime he didn’t commit.",
+      "poster_path": "/2WeCMpWSrOOJNXoruq5bq8qmKEx.jpg",
+      "first_air_date": "2020-02-11",
+      "year": 2020,
+      "vote_average": 7.9,
+      "vote_count": 277,
+      "actors": "Nicholas Pinnock, Indira Varma, Joy Bryant",
+      "genres": "Crime, Drama",
+      "tv_status": {
+        "status": "Canceled",
+        "in_production": false,
+        "last_episode": {
+          "season": 2,
+          "episode": 10,
+          "air_date": "2021-02-24",
+          "name": "Andy Josiah"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          },
+          {
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
           }
         ]
       },
@@ -139095,334 +138618,6 @@
       "type": "tv"
     },
     {
-      "id": 97219,
-      "title": "Hi Bye, Mama!",
-      "overview": "Cha Yu-ri died in an accident five years ago, leaving her husband Cho Gang-hwa to raise their daughter by himself. She becomes a ghost and watches over them until one fateful day she is brought back to life by the deities and told she can become human again if she returns to her place in 49 days. Though her husband has remarried, so she must decide between her or his happiness as she slowly re-integrates back into her old lifestyle.",
-      "poster_path": "/mc5nLj2EM480d6tlxKsj2GRfsDC.jpg",
-      "first_air_date": "2020-02-22",
-      "year": 2020,
-      "vote_average": 8.1,
-      "vote_count": 456,
-      "actors": "Kim Tae-hee, Lee Kyoo-hyung, Go Bo-gyeol",
-      "genres": "Sci-Fi & Fantasy, Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 16,
-          "air_date": "2020-04-19",
-          "name": "Petals Fall, But the Flower Endures"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 99047,
-      "title": "Record of Youth",
-      "overview": "In a cutthroat world where the life you’re born into decides your success, three aspiring youths are determined to change that perception as they fight for their dreams.",
-      "poster_path": "/54yTLS5d4OPOuunzOvHlmP82eIT.jpg",
-      "first_air_date": "2020-09-07",
-      "year": 2020,
-      "vote_average": 8.05,
-      "vote_count": 240,
-      "actors": "Park Bo-gum, Park So-dam, Byeon Woo-seok",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 16,
-          "air_date": "2020-10-27",
-          "name": "Episode 16"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 100333,
-      "title": "Summertime",
-      "overview": "A modern love story set during the summer on Italy’s Adriatic Coast. An undeniable attraction brings together Ale and Summer, who come from very different worlds. For both, these holidays will be an unforgettable journey that will take them far from who they were before they met.",
-      "poster_path": "/9PCmLDADfqrCnnxOo8yeM5AjnWY.jpg",
-      "first_air_date": "2020-04-29",
-      "year": 2020,
-      "vote_average": 6.8,
-      "vote_count": 451,
-      "actors": "Coco Rebecca Edogamhe, Ludovico Tersigni, Amanda Campana",
-      "genres": "Drama, Comedy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 8,
-          "air_date": "2022-05-04",
-          "name": "Episode 8"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 111743,
-      "title": "Love & Anarchy",
-      "overview": "A married consultant and a young IT tech kick off a flirty game that challenges societal norms — and leads them to re-evaluate their entire lives.",
-      "poster_path": "/c8iN8MnIP27AbUkEPtI4DeCNJv9.jpg",
-      "first_air_date": "2020-11-04",
-      "year": 2020,
-      "vote_average": 7.126,
-      "vote_count": 253,
-      "actors": "Ida Engvoll, Björn Mosten, Carla Sehn",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 2,
-          "episode": 8,
-          "air_date": "2022-06-16",
-          "name": "Art, Love, Capitalism and the Courage to Change Their Conditions"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 88987,
-      "title": "Helstrom",
-      "overview": "Daimon and Ana Helstrom are the son and daughter of a mysterious and powerful serial killer. The siblings have a complicated dynamic as they track down the terrorizing worst of humanity — each with their attitude and skills.",
-      "poster_path": "/5QmcKsepYpO9XYsWNLwsiULoaAu.jpg",
-      "first_air_date": "2020-10-16",
-      "year": 2020,
-      "vote_average": 6.672,
-      "vote_count": 244,
-      "actors": "Tom Austen, Sydney Lemmon, Elizabeth Marvel",
-      "genres": "Action & Adventure, Sci-Fi & Fantasy, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2020-10-16",
-          "name": "Hell Storm"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 88408,
-      "title": "The New Pope",
-      "overview": "As Pope Pius XIII hangs between life and death in a coma, charming and sophisticated moderate English aristocrat Sir John Brannox is placed on the papal throne and adopts the name John Paul III. A sequel series to “The Young Pope.”",
-      "poster_path": "/lqIcuN2ORtCkCrGErghTp5Rrhec.jpg",
-      "first_air_date": "2020-01-10",
-      "year": 2020,
-      "vote_average": 7.62,
-      "vote_count": 308,
-      "actors": "Jude Law, John Malkovich, Silvio Orlando",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 9,
-          "air_date": "2020-02-07",
-          "name": "Ninth Episode"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 103086,
-      "title": "All For Love",
-      "overview": "A penniless country boy goes in search of his runaway sister in Bogotá, where he falls for an aspiring singer, but gets tangled up in organized crime.",
-      "poster_path": "/oTmIP28BCEtgWBdxRMgK33nS0EA.jpg",
-      "first_air_date": "2020-01-07",
-      "year": 2020,
-      "vote_average": 7.563,
-      "vote_count": 421,
-      "actors": "Ana María Estupiñán, Carlos Torres, Mario Duarte",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 69,
-          "air_date": "2021-04-27",
-          "name": "Episode 69"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 88166,
-      "title": "I Know This Much Is True",
-      "overview": "The parallel lives of identical twin brothers Dominick and Thomas Birdsey in an epic story of betrayal, sacrifice and forgiveness set against the backdrop of 20th century America.",
-      "poster_path": "/y6bjZiYZa1U8UJ2KxgJuU0B8M5K.jpg",
-      "first_air_date": "2020-05-09",
-      "year": 2020,
-      "vote_average": 7.628,
-      "vote_count": 286,
-      "actors": "Mark Ruffalo, Melissa Leo, Rosie O'Donnell",
-      "genres": "Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2020-06-13",
-          "name": "Episode Six"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 93289,
-      "title": "Brave New World",
-      "overview": "In a utopia whose perfection hinges upon control of monogamy and privacy, members of the collective begin to question the rules, putting their regimented society on a collision course with forbidden love and revolution.",
-      "poster_path": "/vPl7hAY0vt0OPhIflRb5IXrssBv.jpg",
-      "first_air_date": "2020-07-15",
-      "year": 2020,
-      "vote_average": 6.648,
-      "vote_count": 233,
-      "actors": "Alden Ehrenreich, Jessica Brown Findlay, Harry Lloyd",
-      "genres": "Sci-Fi & Fantasy, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 9,
-          "air_date": "2020-07-15",
-          "name": "Soma Red"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/2aGrp1xw3qhwCYvNGAJZPdjfeeX.jpg"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/drPlq5beqXtBaP7MNs8W616YRhm.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 90257,
       "title": "Little Fires Everywhere",
       "overview": "The intertwined fates of the picture-perfect Richardson family and an enigmatic mother and daughter who upend their lives. Explore the weight of secrets, the nature of art and identity, the ferocious pull of motherhood – and the danger in believing that following the rules can avert disaster.",
@@ -139449,6 +138644,78 @@
           {
             "name": "Hulu",
             "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 83125,
+      "title": "Cursed",
+      "overview": "In this fresh take on the Arthurian legend, teenager Nimue joins forces with mercenary Arthur on a quest to find Merlin and deliver an ancient sword.",
+      "poster_path": "/wrLC5kx0nEq9U0MyJD7dnOT6m5F.jpg",
+      "first_air_date": "2020-07-16",
+      "year": 2020,
+      "vote_average": 7.143,
+      "vote_count": 983,
+      "actors": "Katherine Langford, Devon Terrell, Gustaf Skarsgård",
+      "genres": "Action & Adventure, Sci-Fi & Fantasy",
+      "tv_status": {
+        "status": "Canceled",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 10,
+          "air_date": "2020-07-16",
+          "name": "The Sacrifice"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 104108,
+      "title": "Reality Z",
+      "overview": "A zombie apocalypse that imprisons participants and producers of a reality show called Olimpo, The House of the Gods. The studio becomes a shelter for those who seek salvation in Rio de Janeiro where chaos and hopelessness begin to rule.",
+      "poster_path": "/hpqLI8lq8u1biqZgdQomERkIsSC.jpg",
+      "first_air_date": "2020-06-10",
+      "year": 2020,
+      "vote_average": 6.568,
+      "vote_count": 279,
+      "actors": "Ravel Andrade, Ana Hartmann, João Pedro Zappa",
+      "genres": "Sci-Fi & Fantasy",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 1,
+          "episode": 10,
+          "air_date": "2020-06-10",
+          "name": "Be Human"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
           }
         ]
       },
@@ -139482,36 +138749,40 @@
       "type": "tv"
     },
     {
-      "id": 92053,
-      "title": "For Life",
-      "overview": "A prisoner becomes a lawyer, litigating cases for other inmates while fighting to overturn his own life sentence for a crime he didn’t commit.",
-      "poster_path": "/2WeCMpWSrOOJNXoruq5bq8qmKEx.jpg",
-      "first_air_date": "2020-02-11",
+      "id": 102434,
+      "title": "The Head",
+      "overview": "In an isolated and inaccessible Antarctic research station in which winter has fallen on the South Pole and the sun will soon disappear for the next six months, a small team, known as the Winterers, remain at the Polaris VI Antarctic Research Station to continue their innovative research. Renowned biologist Arthur Wilde is determined to find a solution to climate change, but his quest turns into a nightmare when several of his esteemed scientists suddenly begin to die.",
+      "poster_path": "/gFiFKWx8nBjo3iRYcosdJeYUtaX.jpg",
+      "first_air_date": "2020-06-12",
       "year": 2020,
-      "vote_average": 7.9,
-      "vote_count": 277,
-      "actors": "Nicholas Pinnock, Indira Varma, Joy Bryant",
-      "genres": "Crime, Drama",
+      "vote_average": 7.056,
+      "vote_count": 189,
+      "actors": "Katharine O'Donnelly, John Lynch, Olivia Morris",
+      "genres": "Mystery, Drama",
       "tv_status": {
-        "status": "Canceled",
+        "status": "Ended",
         "in_production": false,
         "last_episode": {
-          "season": 2,
-          "episode": 10,
-          "air_date": "2021-02-24",
-          "name": "Andy Josiah"
+          "season": 3,
+          "episode": 6,
+          "air_date": "2025-01-23",
+          "name": "Episode XVIII"
         },
         "next_episode": null
       },
       "providers": {
         "streaming": [
           {
-            "name": "Hulu",
-            "logo": "https://image.tmdb.org/t/p/original/bxBlRPEPpMVDc4jMhSrTf2339DW.jpg"
+            "name": "HBO Max Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
           },
           {
             "name": "YouTube TV",
             "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
+          },
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
           }
         ]
       },
@@ -139644,69 +138915,6 @@
           "episode": 4,
           "air_date": "2020-10-26",
           "name": "Episode 4"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 111625,
-      "title": "Dash & Lily",
-      "overview": "Opposites attract at Christmas as cynical Dash and sunny Lily trade messages and dares in a red notebook they pass back and forth around New York City.",
-      "poster_path": "/eqBW1sqUxtOf1arBUAWNPJP5msD.jpg",
-      "first_air_date": "2020-11-10",
-      "year": 2020,
-      "vote_average": 7.814,
-      "vote_count": 361,
-      "actors": "Austin Abrams, Midori Francis, Dante Brown",
-      "genres": "Comedy, Drama",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 8,
-          "air_date": "2020-11-10",
-          "name": "New Year's Eve"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 99654,
-      "title": "18 Again",
-      "overview": "At a difficult place in his marriage and career, a middle-aged man gets a shot at a do-over when he's transformed back into his 18-year-old body.",
-      "poster_path": "/jwrumjdNdtlHRzthQEj9HmxehcR.jpg",
-      "first_air_date": "2020-09-21",
-      "year": 2020,
-      "vote_average": 8.345,
-      "vote_count": 268,
-      "actors": "Lee Do-hyun, Kim Ha-neul, Yoon Sang-hyun",
-      "genres": "Drama, Comedy, Sci-Fi & Fantasy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 16,
-          "air_date": "2020-11-10",
-          "name": "Life Goes On"
         },
         "next_episode": null
       },
@@ -139940,42 +139148,6 @@
       "type": "tv"
     },
     {
-      "id": 104108,
-      "title": "Reality Z",
-      "overview": "A zombie apocalypse that imprisons participants and producers of a reality show called Olimpo, The House of the Gods. The studio becomes a shelter for those who seek salvation in Rio de Janeiro where chaos and hopelessness begin to rule.",
-      "poster_path": "/hpqLI8lq8u1biqZgdQomERkIsSC.jpg",
-      "first_air_date": "2020-06-10",
-      "year": 2020,
-      "vote_average": 6.568,
-      "vote_count": 279,
-      "actors": "Ravel Andrade, Ana Hartmann, João Pedro Zappa",
-      "genres": "Sci-Fi & Fantasy",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2020-06-10",
-          "name": "Be Human"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 89571,
       "title": "NEXT",
       "overview": "A Silicon Valley pioneer discovers that one of his own creations – a powerful A.I. – might spell global catastrophe, and teams up with a cybercrime agent to fight a villain unlike anything we’ve ever seen – one whose greatest weapon against us is ourselves.",
@@ -139999,42 +139171,6 @@
       },
       "providers": {
         "streaming": []
-      },
-      "type": "tv"
-    },
-    {
-      "id": 83125,
-      "title": "Cursed",
-      "overview": "In this fresh take on the Arthurian legend, teenager Nimue joins forces with mercenary Arthur on a quest to find Merlin and deliver an ancient sword.",
-      "poster_path": "/wrLC5kx0nEq9U0MyJD7dnOT6m5F.jpg",
-      "first_air_date": "2020-07-16",
-      "year": 2020,
-      "vote_average": 7.143,
-      "vote_count": 983,
-      "actors": "Katherine Langford, Devon Terrell, Gustaf Skarsgård",
-      "genres": "Action & Adventure, Sci-Fi & Fantasy",
-      "tv_status": {
-        "status": "Canceled",
-        "in_production": false,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2020-07-16",
-          "name": "The Sacrifice"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/pbpMk2JmcoNnQwx5JGpXngfoWtp.jpg"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/dpR8r13zWDeUR0QkzWidrdMxa56.jpg"
-          }
-        ]
       },
       "type": "tv"
     },
@@ -140105,46 +139241,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/8aBqoNeGGr0oSA85iopgNZUOTOc.jpg"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 102434,
-      "title": "The Head",
-      "overview": "In an isolated and inaccessible Antarctic research station in which winter has fallen on the South Pole and the sun will soon disappear for the next six months, a small team, known as the Winterers, remain at the Polaris VI Antarctic Research Station to continue their innovative research. Renowned biologist Arthur Wilde is determined to find a solution to climate change, but his quest turns into a nightmare when several of his esteemed scientists suddenly begin to die.",
-      "poster_path": "/gFiFKWx8nBjo3iRYcosdJeYUtaX.jpg",
-      "first_air_date": "2020-06-12",
-      "year": 2020,
-      "vote_average": 7.056,
-      "vote_count": 189,
-      "actors": "Katharine O'Donnelly, John Lynch, Olivia Morris",
-      "genres": "Mystery, Drama",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 3,
-          "episode": 6,
-          "air_date": "2025-01-23",
-          "name": "Episode XVIII"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/embS4GPK7c8pjbuY2O2irV5rYch.jpg"
-          },
-          {
-            "name": "YouTube TV",
-            "logo": "https://image.tmdb.org/t/p/original/x9zOHTUkQzt3PgPVKbMH9CKBwLK.jpg"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/jbe4gVSfRlbPTdESXhEKpornsfu.jpg"
           }
         ]
       },
@@ -158588,7 +157684,7 @@
           "season": 2,
           "episode": 1,
           "air_date": "2026-07-22",
-          "name": "Episode 1"
+          "name": "Jinman, That Same Day"
         }
       },
       "providers": {
@@ -174442,13 +173538,13 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-07-22T08:33:59.467535",
+    "generated_at": "2026-07-22T13:47:25.577938",
     "start_date": "1990-01-01",
     "end_date": "2026-07-22",
     "start_year": 1990,
     "start_month": 1,
     "total_movies": 4297,
-    "total_tv": 1666,
-    "total_items": 5963
+    "total_tv": 1644,
+    "total_items": 5941
   }
 }
