@@ -2724,7 +2724,7 @@
       "year": 2000,
       "vote_average": 7.651,
       "vote_count": 1734,
-      "director": "Aldo Baglio",
+      "director": "Giacomo Poretti",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -13865,7 +13865,7 @@
       "year": 2011,
       "vote_average": 8.272,
       "vote_count": 18644,
-      "director": "Éric Toledano",
+      "director": "Olivier Nakache",
       "actors": "François Cluzet, Omar Sy, Anne Le Ny",
       "genres": "Drama, Comedy",
       "providers": {
@@ -23266,7 +23266,7 @@
       "year": 2014,
       "vote_average": 6.627,
       "vote_count": 806,
-      "director": "Justin Benson",
+      "director": "Aaron Moorhead",
       "actors": "Lou Taylor Pucci, Nadia Hilker, Nick Nevern",
       "genres": "Horror, Romance, Science Fiction",
       "providers": {
@@ -32013,7 +32013,7 @@
       "year": 2016,
       "vote_average": 7.26,
       "vote_count": 283,
-      "director": "Gastón Duprat",
+      "director": "Mariano Cohn",
       "actors": "Oscar Martínez, Dady Brieva, Andrea Frigerio",
       "genres": "Comedy, Drama",
       "providers": {
@@ -40130,7 +40130,7 @@
       "year": 2018,
       "vote_average": 6.911,
       "vote_count": 1493,
-      "director": "Yoann-Karl Whissell",
+      "director": "Anouk Whissell",
       "actors": "Graham Verchere, Judah Lewis, Caleb Emery",
       "genres": "Drama, Horror, Mystery",
       "providers": {
@@ -40241,7 +40241,7 @@
       "year": 2018,
       "vote_average": 7.369,
       "vote_count": 385,
-      "director": "Andréa Bescond",
+      "director": "Eric Métayer",
       "actors": "Andréa Bescond, Karin Viard, Clovis Cornillac",
       "genres": "Drama, Comedy",
       "providers": {
@@ -55588,7 +55588,7 @@
       "year": 2020,
       "vote_average": 6.322,
       "vote_count": 242,
-      "director": "Frederik Louis Hviid",
+      "director": "Anders Ølholm",
       "actors": "Jacob Lohmann, Simon Sears, Tarek Zayat",
       "genres": "Action, Crime",
       "providers": {
@@ -66860,7 +66860,7 @@
       "year": 2022,
       "vote_average": 6.381,
       "vote_count": 1333,
-      "director": "Barbara Białowąs",
+      "director": "Tomasz Mandes",
       "actors": "Anna-Maria Sieklucka, Michele Morrone, Simone Susinna",
       "genres": "Romance, Drama",
       "providers": {
@@ -72483,7 +72483,7 @@
       "year": 2022,
       "vote_average": 6.318,
       "vote_count": 455,
-      "director": "Emmanuel Marre",
+      "director": "Julie Lecoustre",
       "actors": "Adèle Exarchopoulos, Alexandre Perrier, Mara Taquin",
       "genres": "Drama, Comedy",
       "providers": {
@@ -73167,7 +73167,7 @@
       "year": 2022,
       "vote_average": 7.633,
       "vote_count": 848,
-      "director": "Felix van Groeningen",
+      "director": "Charlotte Vandermeersch",
       "actors": "Luca Marinelli, Alessandro Borghi, Lupo Barbiero",
       "genres": "Drama",
       "providers": {
@@ -75259,7 +75259,7 @@
       "year": 2023,
       "vote_average": 7.357,
       "vote_count": 4804,
-      "director": "Jonathan Goldstein",
+      "director": "John Francis Daley",
       "actors": "Chris Pine, Michelle Rodriguez, Justice Smith",
       "genres": "Adventure, Fantasy, Comedy",
       "providers": {
@@ -75678,7 +75678,7 @@
       "year": 2023,
       "vote_average": 7.141,
       "vote_count": 3865,
-      "director": "Danny Philippou",
+      "director": "Michael Philippou",
       "actors": "Sophie Wilde, Alexandra Jensen, Joe Bird",
       "genres": "Horror",
       "providers": {
@@ -80344,7 +80344,7 @@
       "year": 2023,
       "vote_average": 6.4,
       "vote_count": 130,
-      "director": "Murat Saraçoğlu",
+      "director": "Evren Karabıyık Günaydın",
       "actors": "Ayça Ayşin Turan, Ekin Koç, Zerrin Sümer",
       "genres": "Romance, Comedy",
       "providers": {
@@ -80631,7 +80631,7 @@
       "year": 2023,
       "vote_average": 6.5,
       "vote_count": 214,
-      "director": "Molly Gordon",
+      "director": "Nick Lieberman",
       "actors": "Ben Platt, Molly Gordon, Noah Galvin",
       "genres": "Comedy",
       "providers": {
@@ -88187,7 +88187,7 @@
       "year": 2024,
       "vote_average": 6.569,
       "vote_count": 274,
-      "director": "Josh Gordon",
+      "director": "Will Speck",
       "actors": "Anthony Ramos, Naomi Scott, Kristofer Hivju",
       "genres": "Science Fiction, Comedy, Action",
       "providers": {
@@ -148845,15 +148845,15 @@
         "in_production": true,
         "last_episode": {
           "season": 4,
-          "episode": 2,
-          "air_date": "2026-07-30",
-          "name": "The Griffin Incident"
-        },
-        "next_episode": {
-          "season": 4,
           "episode": 3,
           "air_date": "2026-08-06",
           "name": "Human Best Friend"
+        },
+        "next_episode": {
+          "season": 4,
+          "episode": 4,
+          "air_date": "2026-08-13",
+          "name": "A Case of Chiaroscuro"
         }
       },
       "providers": {
@@ -154887,17 +154887,12 @@
         "status": "Returning Series",
         "in_production": true,
         "last_episode": {
-          "season": 2,
-          "episode": 10,
-          "air_date": "2025-08-28",
-          "name": "Showdowns and Sparkles"
-        },
-        "next_episode": {
           "season": 3,
-          "episode": 1,
+          "episode": 10,
           "air_date": "2026-08-06",
-          "name": "Homecoming"
-        }
+          "name": "The Beautiful and The Damned"
+        },
+        "next_episode": null
       },
       "providers": {
         "streaming": [
@@ -155174,15 +155169,15 @@
         "in_production": true,
         "last_episode": {
           "season": 5,
-          "episode": 140,
-          "air_date": "2026-08-05",
-          "name": "Episode 140"
-        },
-        "next_episode": {
-          "season": 5,
           "episode": 141,
           "air_date": "2026-08-06",
           "name": "Episode 141"
+        },
+        "next_episode": {
+          "season": 5,
+          "episode": 142,
+          "air_date": "2026-08-07",
+          "name": "Episode 142"
         }
       },
       "providers": {
@@ -159975,16 +159970,11 @@
         "in_production": true,
         "last_episode": {
           "season": 2,
-          "episode": 7,
-          "air_date": "2026-07-30",
-          "name": "What Else Can You Do?"
-        },
-        "next_episode": {
-          "season": 2,
           "episode": 8,
           "air_date": "2026-08-06",
           "name": "Like Sugar"
-        }
+        },
+        "next_episode": null
       },
       "providers": {
         "streaming": [
@@ -171906,15 +171896,15 @@
         "in_production": true,
         "last_episode": {
           "season": 1,
-          "episode": 2,
-          "air_date": "2026-07-30",
-          "name": "Spoiler: Zack's in This One"
-        },
-        "next_episode": {
-          "season": 1,
           "episode": 3,
           "air_date": "2026-08-06",
           "name": "Spoiler: Bert Is Magic"
+        },
+        "next_episode": {
+          "season": 1,
+          "episode": 4,
+          "air_date": "2026-08-13",
+          "name": "Spoiler: Stuart Makes a Wallet"
         }
       },
       "providers": {
@@ -176432,9 +176422,9 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-08-07T00:11:38.882291",
+    "generated_at": "2026-08-07T02:39:58.264967",
     "start_date": "1990-01-01",
-    "end_date": "2026-08-06",
+    "end_date": "2026-08-07",
     "start_year": 1990,
     "start_month": 1,
     "total_movies": 4321,
