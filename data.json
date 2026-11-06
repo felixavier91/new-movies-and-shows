@@ -7,8 +7,8 @@
       "poster_path": "/9OkCLM73MIU2CrKZbqiT8Ln1wY2.jpg",
       "release_date": "1990-09-12",
       "year": 1990,
-      "vote_average": 8.451,
-      "vote_count": 14988,
+      "vote_average": 8.452,
+      "vote_count": 14989,
       "director": "Martin Scorsese",
       "actors": "Robert De Niro, Ray Liotta, Joe Pesci",
       "genres": "Drama, Crime",
@@ -108,7 +108,7 @@
       "poster_path": "/uS9m8OBk1A8eM9I042bx8XXpqAq.jpg",
       "release_date": "1991-02-14",
       "year": 1991,
-      "vote_average": 8.345,
+      "vote_average": 8.3,
       "vote_count": 18803,
       "director": "Jonathan Demme",
       "actors": "Jodie Foster, Anthony Hopkins, Scott Glenn",
@@ -1188,7 +1188,7 @@
       "poster_path": "/bCpMIywuNZeWt3i5UMLEIc0VSwM.jpg",
       "release_date": "1997-07-11",
       "year": 1997,
-      "vote_average": 7.452,
+      "vote_average": 7.453,
       "vote_count": 5279,
       "director": "Robert Zemeckis",
       "actors": "Jodie Foster, Matthew McConaughey, James Woods",
@@ -1354,8 +1354,8 @@
       "poster_path": "/4UOa079915QjiTA2u5hT2yKVgUu.jpg",
       "release_date": "1997-09-12",
       "year": 1997,
-      "vote_average": 7.581,
-      "vote_count": 7718,
+      "vote_average": 7.582,
+      "vote_count": 7719,
       "director": "David Fincher",
       "actors": "Michael Douglas, Sean Penn, Deborah Kara Unger",
       "genres": "Drama, Thriller, Mystery",
@@ -1441,7 +1441,7 @@
       "poster_path": "/xNVJr9q6AtSbjosS6Ed9YirOkSo.jpg",
       "release_date": "1997-12-27",
       "year": 1997,
-      "vote_average": 7.596,
+      "vote_average": 7.6,
       "vote_count": 938,
       "director": "Kiyoshi Kurosawa",
       "actors": "Koji Yakusho, Masato Hagiwara, Tsuyoshi Ujiki",
@@ -1621,7 +1621,7 @@
       "year": 1997,
       "vote_average": 7.966,
       "vote_count": 2191,
-      "director": "Aldo Baglio",
+      "director": "Massimo Venier",
       "actors": "Aldo Baglio, Giovanni Storti, Giacomo Poretti",
       "genres": "Comedy",
       "providers": {
@@ -3989,32 +3989,6 @@
       "type": "movie"
     },
     {
-      "id": 1360,
-      "title": "Frida",
-      "overview": "A biography of artist Frida Kahlo, who channeled the pain of a crippling injury and her tempestuous marriage into her work.",
-      "poster_path": "/a4hgR6aKoohB6MHni171jbi9BkU.jpg",
-      "release_date": "2002-08-29",
-      "year": 2002,
-      "vote_average": 7.4,
-      "vote_count": 2235,
-      "director": "Julie Taymor",
-      "actors": "Salma Hayek Pinault, Alfred Molina, Mía Maestro",
-      "genres": "Drama, Romance",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Paramount Plus Premium",
-            "logo": "https://image.tmdb.org/t/p/original/4N4BMd0Mm0kHAmF7RZgL5lW3cwc.png"
-          },
-          {
-            "name": "Paramount Plus Essential",
-            "logo": "https://image.tmdb.org/t/p/original/uPWQPyF4nqwtfPNmGcFcenU57HG.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 12093,
       "title": "Lilya 4-ever",
       "overview": "In a struggling post-Soviet community, Lilya a teenage girl is abandoned when her mother moves to the United States with her boyfriend. Facing neglect and poverty, she meets Andrei, who offers her a job in Sweden, giving her hope for a better life — and a journey that will change everything.",
@@ -4055,8 +4029,8 @@
       "poster_path": "/rCzpDGLbOoPwLjy3OAm5NUPOTrC.jpg",
       "release_date": "2003-12-17",
       "year": 2003,
-      "vote_average": 8.5,
-      "vote_count": 27759,
+      "vote_average": 8.506,
+      "vote_count": 27760,
       "director": "Peter Jackson",
       "actors": "Elijah Wood, Ian McKellen, Viggo Mortensen",
       "genres": "Adventure, Fantasy, Action",
@@ -4223,7 +4197,7 @@
       "poster_path": "/3jCLmYDIIiSMPujbwygNpqdpM8N.jpg",
       "release_date": "2003-09-18",
       "year": 2003,
-      "vote_average": 7.374,
+      "vote_average": 7.4,
       "vote_count": 8421,
       "director": "Sofia Coppola",
       "actors": "Bill Murray, Scarlett Johansson, Giovanni Ribisi",
@@ -4325,7 +4299,7 @@
       "poster_path": "/oagqAwp48dMPoCT94yDJUDOCVPi.jpg",
       "release_date": "2003-01-31",
       "year": 2003,
-      "vote_average": 7.169,
+      "vote_average": 7.168,
       "vote_count": 1989,
       "director": "Prachya Pinkaew",
       "actors": "Tony Jaa, Petchtai Wongkamlao, Patrarin Punyanutatam",
@@ -5171,7 +5145,7 @@
       "release_date": "2004-06-25",
       "year": 2004,
       "vote_average": 7.34,
-      "vote_count": 17180,
+      "vote_count": 17181,
       "director": "Sam Raimi",
       "actors": "Tobey Maguire, Kirsten Dunst, James Franco",
       "genres": "Action, Adventure, Science Fiction",
@@ -5246,8 +5220,8 @@
       "poster_path": "/gycdE1ARByGQcK4fYR2mgpU6OO.jpg",
       "release_date": "2004-06-16",
       "year": 2004,
-      "vote_average": 7.81,
-      "vote_count": 3985,
+      "vote_average": 7.809,
+      "vote_count": 3986,
       "director": "Richard Linklater",
       "actors": "Ethan Hawke, Julie Delpy, Vernon Dobtcheff",
       "genres": "Drama, Romance",
@@ -5332,8 +5306,8 @@
       "poster_path": "/jIN65qw0Giplo4CshzMrxz204Wn.jpg",
       "release_date": "2004-09-29",
       "year": 2004,
-      "vote_average": 7.351,
-      "vote_count": 1183,
+      "vote_average": 7.353,
+      "vote_count": 1184,
       "director": "Wong Kar-wai",
       "actors": "Tony Leung Chiu-wai, Gong Li, Faye Wong",
       "genres": "Drama, Science Fiction, Romance",
@@ -6162,7 +6136,7 @@
       "poster_path": "/ptJKY9WGDUUL064ge3jW78zBX0t.jpg",
       "release_date": "2005-09-23",
       "year": 2005,
-      "vote_average": 7.162,
+      "vote_average": 7.2,
       "vote_count": 3952,
       "director": "David Cronenberg",
       "actors": "Viggo Mortensen, Maria Bello, Ed Harris",
@@ -6724,8 +6698,8 @@
       "poster_path": "/1avD1JeaRiJX5M4ahPdZPypGoGN.jpg",
       "release_date": "2006-02-23",
       "year": 2006,
-      "vote_average": 7.9,
-      "vote_count": 16146,
+      "vote_average": 7.897,
+      "vote_count": 16147,
       "director": "James McTeigue",
       "actors": "Natalie Portman, Hugo Weaving, Stephen Rea",
       "genres": "Action, Thriller, Science Fiction",
@@ -7848,8 +7822,8 @@
       "poster_path": "/fhbiz5BsGUVEZmzPP72SoPlbMz0.jpg",
       "release_date": "2007-12-12",
       "year": 2007,
-      "vote_average": 7.224,
-      "vote_count": 17532,
+      "vote_average": 7.225,
+      "vote_count": 17533,
       "director": "Francis Lawrence",
       "actors": "Will Smith, Alice Braga, Charlie Tahan",
       "genres": "Drama, Science Fiction, Thriller",
@@ -7888,7 +7862,7 @@
       "release_date": "2007-03-02",
       "year": 2007,
       "vote_average": 7.534,
-      "vote_count": 12092,
+      "vote_count": 12093,
       "director": "David Fincher",
       "actors": "Jake Gyllenhaal, Mark Ruffalo, Anthony Edwards",
       "genres": "Crime, Mystery, Thriller",
@@ -9244,7 +9218,7 @@
       "poster_path": "/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
       "release_date": "2008-07-16",
       "year": 2008,
-      "vote_average": 8.54,
+      "vote_average": 8.5,
       "vote_count": 37237,
       "director": "Christopher Nolan",
       "actors": "Christian Bale, Heath Ledger, Aaron Eckhart",
@@ -9274,8 +9248,8 @@
       "poster_path": "/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
       "release_date": "2008-04-30",
       "year": 2008,
-      "vote_average": 7.668,
-      "vote_count": 29132,
+      "vote_average": 7.7,
+      "vote_count": 29133,
       "director": "Jon Favreau",
       "actors": "Robert Downey Jr., Terrence Howard, Jeff Bridges",
       "genres": "Action, Science Fiction, Adventure",
@@ -9313,7 +9287,7 @@
       "poster_path": "/2C8QCXdMlojTxZjfBlINr4FWcb6.jpg",
       "release_date": "2008-05-07",
       "year": 2008,
-      "vote_average": 7.818,
+      "vote_average": 7.8,
       "vote_count": 7927,
       "director": "Mark Herman",
       "actors": "Asa Butterfield, Vera Farmiga, David Thewlis",
@@ -9330,7 +9304,7 @@
       "poster_path": "/26wEWZYt6yJkwRVkjcbwJEFh9IS.jpg",
       "release_date": "2008-12-25",
       "year": 2008,
-      "vote_average": 7.607,
+      "vote_average": 7.6,
       "vote_count": 14214,
       "director": "David Fincher",
       "actors": "Brad Pitt, Cate Blanchett, Taraji P. Henson",
@@ -9352,8 +9326,8 @@
       "poster_path": "/sT5ITTlTcnPOeFzHEu5j0hTZUvD.jpg",
       "release_date": "2008-06-12",
       "year": 2008,
-      "vote_average": 7.296,
-      "vote_count": 3197,
+      "vote_average": 7.297,
+      "vote_count": 3198,
       "director": "Pascal Laugier",
       "actors": "Morjana Alaoui, Mylène Jampanoï, Catherine Bégin",
       "genres": "Horror, Drama, Thriller",
@@ -10688,7 +10662,7 @@
       "release_date": "2009-06-02",
       "year": 2009,
       "vote_average": 7.183,
-      "vote_count": 7887,
+      "vote_count": 7888,
       "director": "Anne Fletcher",
       "actors": "Sandra Bullock, Ryan Reynolds, Malin Akerman",
       "genres": "Comedy, Romance, Drama",
@@ -10710,7 +10684,7 @@
       "release_date": "2009-05-06",
       "year": 2009,
       "vote_average": 7.439,
-      "vote_count": 10846,
+      "vote_count": 10847,
       "director": "J.J. Abrams",
       "actors": "Chris Pine, Zachary Quinto, Leonard Nimoy",
       "genres": "Science Fiction, Action, Adventure",
@@ -12470,7 +12444,7 @@
       "release_date": "2010-04-28",
       "year": 2010,
       "vote_average": 6.855,
-      "vote_count": 23181,
+      "vote_count": 23182,
       "director": "Jon Favreau",
       "actors": "Robert Downey Jr., Gwyneth Paltrow, Don Cheadle",
       "genres": "Adventure, Action, Science Fiction",
@@ -12885,7 +12859,7 @@
       "year": 2010,
       "vote_average": 7.304,
       "vote_count": 6006,
-      "director": "Ethan Coen",
+      "director": "Joel Coen",
       "actors": "Jeff Bridges, Hailee Steinfeld, Matt Damon",
       "genres": "Drama, Adventure, Western",
       "providers": {
@@ -12921,7 +12895,7 @@
       "poster_path": "/g8KB77SPA7SyU8eid6TAEpt9skU.jpg",
       "release_date": "2010-04-17",
       "year": 2010,
-      "vote_average": 7.599,
+      "vote_average": 7.6,
       "vote_count": 1087,
       "director": "Isaac Florentine",
       "actors": "Scott Adkins, Mykel Shannon Jenkins, Mark Ivanir",
@@ -13125,7 +13099,7 @@
       "release_date": "2010-05-13",
       "year": 2010,
       "vote_average": 6.999,
-      "vote_count": 3078,
+      "vote_count": 3079,
       "director": "Gary Winick",
       "actors": "Amanda Seyfried, Christopher Egan, Gael García Bernal",
       "genres": "Comedy, Drama, Romance",
@@ -13278,7 +13252,7 @@
       "poster_path": "/6YJ39NqRJ0ljUQohizHmE2hB6Wh.jpg",
       "release_date": "2010-08-20",
       "year": 2010,
-      "vote_average": 7.411,
+      "vote_average": 7.4,
       "vote_count": 659,
       "director": "Randall Wallace",
       "actors": "Diane Lane, John Malkovich, Scott Glenn",
@@ -14290,7 +14264,7 @@
       "year": 2011,
       "vote_average": 8.274,
       "vote_count": 19032,
-      "director": "Éric Toledano",
+      "director": "Olivier Nakache",
       "actors": "François Cluzet, Omar Sy, Anne Le Ny",
       "genres": "Drama, Comedy",
       "providers": {
@@ -14735,7 +14709,7 @@
       "release_date": "2011-03-30",
       "year": 2011,
       "vote_average": 7.313,
-      "vote_count": 9546,
+      "vote_count": 9547,
       "director": "Duncan Jones",
       "actors": "Jake Gyllenhaal, Michelle Monaghan, Vera Farmiga",
       "genres": "Thriller, Science Fiction, Mystery",
@@ -15390,8 +15364,8 @@
       "poster_path": "/3moPqIC1EBFilLI3YJNa5Nfel3e.jpg",
       "release_date": "2011-12-21",
       "year": 2011,
-      "vote_average": 7.912,
-      "vote_count": 470,
+      "vote_average": 7.908,
+      "vote_count": 471,
       "director": "Kang Je-kyu",
       "actors": "Jang Dong-gun, Joe Odagiri, Fan Bingbing",
       "genres": "Drama, Action, History, War",
@@ -15479,7 +15453,7 @@
       "poster_path": "/gwNM4SGTSSxAdcz5rej8MMzKhDX.jpg",
       "release_date": "2011-09-30",
       "year": 2011,
-      "vote_average": 7.049,
+      "vote_average": 7.05,
       "vote_count": 2109,
       "director": "Jeff Nichols",
       "actors": "Michael Shannon, Jessica Chastain, Shea Whigham",
@@ -15774,8 +15748,8 @@
       "poster_path": "/mAquHAmoBgZ1omUNdNsnGVNX74c.jpg",
       "release_date": "2011-06-03",
       "year": 2011,
-      "vote_average": 6.844,
-      "vote_count": 1194,
+      "vote_average": 6.843,
+      "vote_count": 1195,
       "director": "Mike Mills",
       "actors": "Ewan McGregor, Christopher Plummer, Mélanie Laurent",
       "genres": "Drama, Romance, Comedy",
@@ -15832,44 +15806,6 @@
       "genres": "Drama, Crime",
       "providers": {
         "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 77495,
-      "title": "Sleep Tight",
-      "overview": "César, an unhappy concierge, maintains a peculiar relationship with the very diverse inhabitants of the upper-class apartment building where he works in Barcelona.",
-      "poster_path": "/i44Mr6t3reXt7z28OMCPZTllRfr.jpg",
-      "release_date": "2011-10-14",
-      "year": 2011,
-      "vote_average": 7.1,
-      "vote_count": 1277,
-      "director": "Jaume Balagueró",
-      "actors": "Luis Tosar, Marta Etura, Alberto San Juan",
-      "genres": "Thriller, Horror",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
-          },
-          {
-            "name": "AMC+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
-          },
-          {
-            "name": "Shudder Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/yb4PbHPVpvJ2JizOuZoJSLXsjcG.png"
-          },
-          {
-            "name": "Shudder Apple TV channel",
-            "logo": "https://image.tmdb.org/t/p/original/56UClPygDruoT7kvuPeIMJC59Zx.png"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
-          }
-        ]
       },
       "type": "movie"
     },
@@ -16084,7 +16020,7 @@
       "year": 2011,
       "vote_average": 7.065,
       "vote_count": 476,
-      "director": "Luc Dardenne",
+      "director": "Jean-Pierre Dardenne",
       "actors": "Cécile de France, Thomas Doret, Jérémie Renier",
       "genres": "Drama",
       "providers": {
@@ -17432,7 +17368,7 @@
       "poster_path": "/zELurt0GVRkR5X5ymuk7KXUxhC8.jpg",
       "release_date": "2012-07-25",
       "year": 2012,
-      "vote_average": 7.108,
+      "vote_average": 7.1,
       "vote_count": 1860,
       "director": "Jonathan Dayton",
       "actors": "Paul Dano, Zoe Kazan, Chris Messina",
@@ -17740,7 +17676,7 @@
       "year": 2012,
       "vote_average": 6.7,
       "vote_count": 1349,
-      "director": "Lee Sternthal",
+      "director": "Brian Klugman",
       "actors": "Bradley Cooper, Zoe Saldaña, Jeremy Irons",
       "genres": "Drama, Thriller",
       "providers": {
@@ -18134,7 +18070,7 @@
       "year": 2012,
       "vote_average": 7.0,
       "vote_count": 611,
-      "director": "Michael Apted",
+      "director": "Curtis Hanson",
       "actors": "Gerard Butler, Jonny Weston, Elisabeth Shue",
       "genres": "Drama",
       "providers": {
@@ -20156,7 +20092,7 @@
       "poster_path": "/oXSy3nEKFtfw5iRxdG8ouEFAnxs.jpg",
       "release_date": "2013-07-26",
       "year": 2013,
-      "vote_average": 7.377,
+      "vote_average": 7.4,
       "vote_count": 1514,
       "director": "Ryan Coogler",
       "actors": "Michael B. Jordan, Melonie Díaz, Octavia Spencer",
@@ -20296,7 +20232,7 @@
       "year": 2013,
       "vote_average": 7.119,
       "vote_count": 465,
-      "director": "David Siegel",
+      "director": "Scott McGehee",
       "actors": "Julianne Moore, Steve Coogan, Alexander Skarsgård",
       "genres": "Drama",
       "providers": {
@@ -22903,7 +22839,7 @@
       "year": 2014,
       "vote_average": 6.8,
       "vote_count": 2054,
-      "director": "Philippe Lacheau",
+      "director": "Nicolas Benamou",
       "actors": "Philippe Lacheau, Alice David, Vincent Desagnat",
       "genres": "Comedy",
       "providers": {
@@ -23653,8 +23589,8 @@
       "poster_path": "/qBnkNKjbJV0E8GvEPidBS1nIRWD.jpg",
       "release_date": "2014-09-04",
       "year": 2014,
-      "vote_average": 6.7,
-      "vote_count": 1934,
+      "vote_average": 6.734,
+      "vote_count": 1935,
       "director": "Chris Evans",
       "actors": "Chris Evans, Alice Eve, Emma Fitzpatrick",
       "genres": "Romance, Drama, Comedy",
@@ -24872,7 +24808,7 @@
       "poster_path": "/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
       "release_date": "2015-04-22",
       "year": 2015,
-      "vote_average": 7.278,
+      "vote_average": 7.3,
       "vote_count": 25296,
       "director": "Joss Whedon",
       "actors": "Robert Downey Jr., Chris Hemsworth, Mark Ruffalo",
@@ -24987,7 +24923,7 @@
       "poster_path": "/j91LJmcWo16CArFOoapsz84bwxb.jpg",
       "release_date": "2015-03-06",
       "year": 2015,
-      "vote_average": 6.826,
+      "vote_average": 6.8,
       "vote_count": 7558,
       "director": "Kenneth Branagh",
       "actors": "Lily James, Cate Blanchett, Richard Madden",
@@ -25401,7 +25337,7 @@
       "release_date": "2015-09-09",
       "year": 2015,
       "vote_average": 6.728,
-      "vote_count": 11343,
+      "vote_count": 11345,
       "director": "Wes Ball",
       "actors": "Dylan O'Brien, Kaya Scodelario, Thomas Brodie-Sangster",
       "genres": "Science Fiction, Action, Thriller, Adventure",
@@ -30078,9 +30014,9 @@
       "poster_path": "/qmSpHC0CSNyNll9WhlwWYuwoQ28.jpg",
       "release_date": "2016-06-27",
       "year": 2016,
-      "vote_average": 6.991,
+      "vote_average": 7.0,
       "vote_count": 7134,
-      "director": "Ariel Schulman",
+      "director": "Henry Joost",
       "actors": "Emma Roberts, Dave Franco, Emily Meade",
       "genres": "Mystery, Adventure, Crime",
       "providers": {
@@ -30281,7 +30217,7 @@
       "poster_path": "/ptfvQlqe2xJiMSewSj52qAVq5z0.jpg",
       "release_date": "2016-11-25",
       "year": 2016,
-      "vote_average": 7.401,
+      "vote_average": 7.4,
       "vote_count": 2052,
       "director": "John Madden",
       "actors": "Jessica Chastain, Mark Strong, Gugu Mbatha-Raw",
@@ -32786,7 +32722,7 @@
       "release_date": "2017-07-05",
       "year": 2017,
       "vote_average": 7.332,
-      "vote_count": 24193,
+      "vote_count": 24194,
       "director": "Jon Watts",
       "actors": "Tom Holland, Michael Keaton, Robert Downey Jr.",
       "genres": "Action, Adventure, Science Fiction",
@@ -33087,8 +33023,8 @@
       "poster_path": "/pSgXKPU5h6U89ipF7HBYajvYt7j.jpg",
       "release_date": "2017-12-20",
       "year": 2017,
-      "vote_average": 6.8,
-      "vote_count": 14913,
+      "vote_average": 6.823,
+      "vote_count": 14914,
       "director": "Jake Kasdan",
       "actors": "Dwayne Johnson, Kevin Hart, Jack Black",
       "genres": "Adventure, Comedy, Fantasy",
@@ -34963,7 +34899,7 @@
       "year": 2017,
       "vote_average": 7.203,
       "vote_count": 3301,
-      "director": "Josh Safdie",
+      "director": "Benny Safdie",
       "actors": "Robert Pattinson, Benny Safdie, Buddy Duress",
       "genres": "Crime, Thriller, Drama",
       "providers": {
@@ -35502,7 +35438,7 @@
       "poster_path": "/eowzonDJMCuNXoJGVkP9Z7oCmiM.jpg",
       "release_date": "2017-03-02",
       "year": 2017,
-      "vote_average": 6.965,
+      "vote_average": 7.0,
       "vote_count": 3608,
       "director": "Ry Russo-Young",
       "actors": "Zoey Deutch, Kian Lawley, Halston Sage",
@@ -36665,7 +36601,7 @@
       "year": 2017,
       "vote_average": 7.0,
       "vote_count": 1651,
-      "director": "Éric Toledano",
+      "director": "Olivier Nakache",
       "actors": "Jean-Pierre Bacri, Gilles Lellouche, Jean-Paul Rouve",
       "genres": "Comedy",
       "providers": {
@@ -36894,7 +36830,7 @@
       "poster_path": "/fcQOeSQV6flz28ybZCkcmCsdqkR.jpg",
       "release_date": "2017-06-19",
       "year": 2017,
-      "vote_average": 6.615,
+      "vote_average": 6.618,
       "vote_count": 416,
       "director": "Tarik Saleh",
       "actors": "Fares Fares, Mari Malek, Yasser Ali Maher",
@@ -38214,7 +38150,7 @@
       "year": 2017,
       "vote_average": 7.4,
       "vote_count": 629,
-      "director": "Mehdi Idir",
+      "director": "Grand Corps Malade",
       "actors": "Pablo Pauly, Soufiane Guerrab, Moussa Mansaly",
       "genres": "Drama, Comedy",
       "providers": {
@@ -38793,8 +38729,8 @@
       "poster_path": "/s8K0US4tUEoOrQ1LDh0eppuwGDx.jpg",
       "release_date": "2018-01-10",
       "year": 2018,
-      "vote_average": 7.071,
-      "vote_count": 8657,
+      "vote_average": 7.07,
+      "vote_count": 8658,
       "director": "Wes Ball",
       "actors": "Dylan O'Brien, Kaya Scodelario, Thomas Brodie-Sangster",
       "genres": "Science Fiction, Action, Adventure, Thriller",
@@ -40154,7 +40090,7 @@
       "poster_path": "/2icwBom0t5nmOuZI9FVXF3gkMK0.jpg",
       "release_date": "2018-10-19",
       "year": 2018,
-      "vote_average": 8.06,
+      "vote_average": 8.1,
       "vote_count": 2264,
       "director": "George Tillman Jr.",
       "actors": "Amandla Stenberg, Regina Hall, Russell Hornsby",
@@ -41728,7 +41664,7 @@
       "year": 2018,
       "vote_average": 6.92,
       "vote_count": 1547,
-      "director": "François Simard",
+      "director": "Yoann-Karl Whissell",
       "actors": "Graham Verchere, Judah Lewis, Caleb Emery",
       "genres": "Drama, Horror, Mystery",
       "providers": {
@@ -42701,7 +42637,7 @@
       "year": 2018,
       "vote_average": 6.435,
       "vote_count": 1330,
-      "director": "Jeremy Dyson",
+      "director": "Andy Nyman",
       "actors": "Andy Nyman, Paul Whitehouse, Alex Lawther",
       "genres": "Horror, Drama",
       "providers": {
@@ -45099,44 +45035,6 @@
       "type": "movie"
     },
     {
-      "id": 315205,
-      "title": "Good Manners",
-      "overview": "Clara, a lonely nurse from the outskirts of São Paulo, is hired by mysterious and wealthy Ana as the nanny for her unborn child. The two women develop a strong bond, but soon Clara discovers a terrifying secret about the child.",
-      "poster_path": "/dFGfmI9tIWCpEZbGUhI40uznL1F.jpg",
-      "release_date": "2018-01-25",
-      "year": 2018,
-      "vote_average": 6.5,
-      "vote_count": 243,
-      "director": "Juliana Rojas",
-      "actors": "Isabél Zuaa, Marjorie Estiano, Miguel Lobo",
-      "genres": "Fantasy, Horror, Mystery, Drama",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Philo",
-            "logo": "https://image.tmdb.org/t/p/original/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
-          },
-          {
-            "name": "OVID",
-            "logo": "https://image.tmdb.org/t/p/original/g4C5BqC8EC0xcBY57C4Mnm5Ht8k.png"
-          },
-          {
-            "name": "Fandor Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/pqV8nzIxmOKVDsDrQ5wCPYuSM5P.png"
-          },
-          {
-            "name": "Screambox Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/zRn4rBGPYDeZvTeZEBySDdqHzS8.png"
-          },
-          {
-            "name": "Cineverse Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/mkikn40hHk3K3Xis19dnzyRnHBB.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 514124,
       "title": "How About Adolf?",
       "overview": "The family dinner at Stephan and Elisabeth could have been wonderful. But when Thomas announces that he and his pregnant girlfriend Anna are going to call their son Adolf, the hosts and the family friend René are stuck in the throat.",
@@ -45189,6 +45087,44 @@
       "genres": "Comedy, Drama",
       "providers": {
         "streaming": []
+      },
+      "type": "movie"
+    },
+    {
+      "id": 315205,
+      "title": "Good Manners",
+      "overview": "Clara, a lonely nurse from the outskirts of São Paulo, is hired by mysterious and wealthy Ana as the nanny for her unborn child. The two women develop a strong bond, but soon Clara discovers a terrifying secret about the child.",
+      "poster_path": "/dFGfmI9tIWCpEZbGUhI40uznL1F.jpg",
+      "release_date": "2018-01-25",
+      "year": 2018,
+      "vote_average": 6.5,
+      "vote_count": 243,
+      "director": "Juliana Rojas",
+      "actors": "Isabél Zuaa, Marjorie Estiano, Miguel Lobo",
+      "genres": "Fantasy, Horror, Mystery, Drama",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Philo",
+            "logo": "https://image.tmdb.org/t/p/original/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+          },
+          {
+            "name": "OVID",
+            "logo": "https://image.tmdb.org/t/p/original/g4C5BqC8EC0xcBY57C4Mnm5Ht8k.png"
+          },
+          {
+            "name": "Fandor Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/pqV8nzIxmOKVDsDrQ5wCPYuSM5P.png"
+          },
+          {
+            "name": "Screambox Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/zRn4rBGPYDeZvTeZEBySDdqHzS8.png"
+          },
+          {
+            "name": "Cineverse Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/mkikn40hHk3K3Xis19dnzyRnHBB.png"
+          }
+        ]
       },
       "type": "movie"
     },
@@ -45438,7 +45374,7 @@
       "release_date": "2019-06-28",
       "year": 2019,
       "vote_average": 7.386,
-      "vote_count": 17859,
+      "vote_count": 17860,
       "director": "Jon Watts",
       "actors": "Tom Holland, Jake Gyllenhaal, Samuel L. Jackson",
       "genres": "Action, Adventure, Science Fiction",
@@ -45539,7 +45475,7 @@
       "poster_path": "/yn5ihODtZ7ofn8pDYfxCmxh8AXI.jpg",
       "release_date": "2019-12-25",
       "year": 2019,
-      "vote_average": 7.852,
+      "vote_average": 7.9,
       "vote_count": 7119,
       "director": "Greta Gerwig",
       "actors": "Saoirse Ronan, Emma Watson, Florence Pugh",
@@ -45613,7 +45549,7 @@
       "poster_path": "/7LEI8ulZzO5gy9Ww2NVCrKmHeDZ.jpg",
       "release_date": "2019-07-03",
       "year": 2019,
-      "vote_average": 7.138,
+      "vote_average": 7.1,
       "vote_count": 8610,
       "director": "Ari Aster",
       "actors": "Florence Pugh, Jack Reynor, William Jackson Harper",
@@ -46583,7 +46519,7 @@
       "year": 2019,
       "vote_average": 7.17,
       "vote_count": 5684,
-      "director": "Benny Safdie",
+      "director": "Josh Safdie",
       "actors": "Adam Sandler, LaKeith Stanfield, Julia Fox",
       "genres": "Drama, Thriller, Crime",
       "providers": {
@@ -47553,7 +47489,7 @@
       "poster_path": "/8wBEye516IKul9sW7JKGcFXVGfV.jpg",
       "release_date": "2019-11-12",
       "year": 2019,
-      "vote_average": 7.148,
+      "vote_average": 7.1,
       "vote_count": 1674,
       "director": "Charlie Bean",
       "actors": "Tessa Thompson, Justin Theroux, Kiersey Clemons",
@@ -47792,7 +47728,7 @@
       "release_date": "2019-11-07",
       "year": 2019,
       "vote_average": 7.178,
-      "vote_count": 2707,
+      "vote_count": 2708,
       "director": "Paul Feig",
       "actors": "Emilia Clarke, Henry Golding, Michelle Yeoh",
       "genres": "Comedy, Drama, Romance",
@@ -47841,23 +47777,6 @@
       "type": "movie"
     },
     {
-      "id": 521777,
-      "title": "Good Boys",
-      "overview": "A group of young boys on the cusp of becoming teenagers embark on an epic quest to fix their broken drone before their parents get home.",
-      "poster_path": "/tximyCXMEnWIIyOy9STkOduUprG.jpg",
-      "release_date": "2019-08-14",
-      "year": 2019,
-      "vote_average": 6.825,
-      "vote_count": 2097,
-      "director": "Gene Stupnitsky",
-      "actors": "Jacob Tremblay, Keith L. Williams, Brady Noon",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 486131,
       "title": "Shaft",
       "overview": "JJ, aka John Shaft Jr., may be a cyber security expert with a degree from MIT, but to uncover the truth behind his best friend’s untimely death, he needs an education only his dad can provide. Absent throughout JJ’s youth, the legendary locked-and-loaded John Shaft agrees to help his progeny navigate Harlem’s heroin-infested underbelly.",
@@ -47880,86 +47799,17 @@
       "type": "movie"
     },
     {
-      "id": 574436,
-      "title": "Piranhas",
-      "overview": "A gang of teenage boys stalk the streets of Naples armed with hand guns and AK-47s to do their mob bosses' bidding – until they decide to be the bosses themselves.",
-      "poster_path": "/7fcIdggCiqoz3vddPhb9TkHlEYC.jpg",
-      "release_date": "2019-02-14",
+      "id": 472674,
+      "title": "The Goldfinch",
+      "overview": "A boy in New York is taken in by a wealthy family after his mother is killed in a bombing at the Metropolitan Museum of Art. In a rush of panic, he steals 'The Goldfinch', a painting that eventually draws him into a world of crime.",
+      "poster_path": "/5Jx9VyVPiK9GQ7ouKLkTUYnZSQ4.jpg",
+      "release_date": "2019-09-12",
       "year": 2019,
-      "vote_average": 6.832,
-      "vote_count": 546,
-      "director": "Claudio Giovannesi",
-      "actors": "Francesco Di Napoli, Artem Tkachuk, Viviana Aprea",
-      "genres": "Drama, Crime",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 619441,
-      "title": "Goodbye",
-      "overview": "Seville, Spain. Juan Santos, a convicted petty criminal, gets out of jail for a day to celebrate with Triana, his wife, the first communion of their daughter Estrella.",
-      "poster_path": "/tzr7XZNEq6zwgBVQzrrEHieOUI2.jpg",
-      "release_date": "2019-11-22",
-      "year": 2019,
-      "vote_average": 7.0,
-      "vote_count": 241,
-      "director": "Paco Cabezas",
-      "actors": "Mario Casas, Natalia de Molina, Ruth Díaz",
-      "genres": "Drama, Thriller",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
-      "id": 586863,
-      "title": "Les Misérables",
-      "overview": "Stéphane has recently joined the Anti-Crime Squad in Montfermeil, in the suburbs of Paris, France, where Victor Hugo set his famed novel “Les Miserables”. Alongside his new colleagues Chris and Gwada – both experienced members of the team – he quickly discovers tensions running high between local gangs. When the trio finds themselves overrun during the course of an arrest, a drone captures the encounter, threatening to expose the reality of everyday life.",
-      "poster_path": "/2ZQV9rPFXF0iFfKbsAvVIweQ1yM.jpg",
-      "release_date": "2019-11-14",
-      "year": 2019,
-      "vote_average": 7.563,
-      "vote_count": 1645,
-      "director": "Ladj Ly",
-      "actors": "Damien Bonnard, Alexis Manenti, Djebril Zonga",
-      "genres": "Crime, Drama, Thriller",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 441183,
-      "title": "Light of My Life",
-      "overview": "Years after a pandemic wipes out most of the female population, a father struggles to shield his daughter from a dangerous and predatory world.",
-      "poster_path": "/zbQQrOclR6G4r3T3EuOjp0f6VG9.jpg",
-      "release_date": "2019-08-09",
-      "year": 2019,
-      "vote_average": 6.486,
-      "vote_count": 625,
-      "director": "Casey Affleck",
-      "actors": "Casey Affleck, Anna Pniowsky, Elisabeth Moss",
-      "genres": "Science Fiction, Drama",
+      "vote_average": 7.116,
+      "vote_count": 968,
+      "director": "John Crowley",
+      "actors": "Ansel Elgort, Oakes Fegley, Nicole Kidman",
+      "genres": "Drama",
       "providers": {
         "streaming": []
       },
@@ -48000,58 +47850,272 @@
       "type": "movie"
     },
     {
-      "id": 620725,
-      "title": "Jexi",
-      "overview": "Phil's new phone comes with an unexpected feature, Jexi...an A.I. determined to keep him all to herself in a comedy about what can happen when you love your phone more than all else.",
-      "poster_path": "/sizYjc8lAFStRZXtI1uRBDsOTt6.jpg",
-      "release_date": "2019-10-10",
+      "id": 416144,
+      "title": "Hotel Mumbai",
+      "overview": "Mumbai, India, November 26, 2008. While several terrorists spread hatred and death through the city, others attack the Taj Mahal Palace Hotel. Both hotel staff and guests risk their lives, making unthinkable sacrifices to protect themselves and keep everyone safe while help arrives.",
+      "poster_path": "/v32SC4HFZtlDRWXMaR2V2dWqAXJ.jpg",
+      "release_date": "2019-03-14",
       "year": 2019,
-      "vote_average": 6.754,
-      "vote_count": 1335,
-      "director": "Scott Moore",
-      "actors": "Adam Devine, Alexandra Shipp, Rose Byrne",
-      "genres": "Comedy",
+      "vote_average": 7.527,
+      "vote_count": 1822,
+      "director": "Anthony Maras",
+      "actors": "Dev Patel, Armie Hammer, Nazanin Boniadi",
+      "genres": "Thriller, History, Drama, Action",
       "providers": {
         "streaming": [
           {
-            "name": "MovieSphere+ Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/9GQLqBo5obK0r3nhZl24BadRKPq.png"
+            "name": "JustWatch TV Plus",
+            "logo": "https://image.tmdb.org/t/p/original/bSAgNVOaVZcmdts8TZSp0nYxsD3.png"
           }
         ]
       },
       "type": "movie"
     },
     {
-      "id": 472674,
-      "title": "The Goldfinch",
-      "overview": "A boy in New York is taken in by a wealthy family after his mother is killed in a bombing at the Metropolitan Museum of Art. In a rush of panic, he steals 'The Goldfinch', a painting that eventually draws him into a world of crime.",
-      "poster_path": "/5Jx9VyVPiK9GQ7ouKLkTUYnZSQ4.jpg",
-      "release_date": "2019-09-12",
+      "id": 571055,
+      "title": "Down",
+      "overview": "A pair of coworkers gets trapped in an elevator over a long weekend, but what at first promises to be a romantic connection turns nefarious as each party begins to reveal who they truly are.",
+      "poster_path": "/tWD5FXfXTRcYzXZLq0bg8hxmQrs.jpg",
+      "release_date": "2019-02-01",
       "year": 2019,
-      "vote_average": 7.116,
-      "vote_count": 968,
-      "director": "John Crowley",
-      "actors": "Ansel Elgort, Oakes Fegley, Nicole Kidman",
-      "genres": "Drama",
+      "vote_average": 6.8,
+      "vote_count": 258,
+      "director": "Daniel Stamm",
+      "actors": "Natalie Martinez, Matt Lauria, Christina Leone",
+      "genres": "Horror, Thriller, TV Movie",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Hulu",
+            "logo": "https://image.tmdb.org/t/p/original/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 521777,
+      "title": "Good Boys",
+      "overview": "A group of young boys on the cusp of becoming teenagers embark on an epic quest to fix their broken drone before their parents get home.",
+      "poster_path": "/tximyCXMEnWIIyOy9STkOduUprG.jpg",
+      "release_date": "2019-08-14",
+      "year": 2019,
+      "vote_average": 6.825,
+      "vote_count": 2097,
+      "director": "Gene Stupnitsky",
+      "actors": "Jacob Tremblay, Keith L. Williams, Brady Noon",
+      "genres": "Comedy",
       "providers": {
         "streaming": []
       },
       "type": "movie"
     },
     {
-      "id": 477018,
-      "title": "The Translators",
-      "overview": "Nine translators, hired to translate the eagerly awaited final book of a bestselling trilogy, are confined in a luxurious bunker.",
-      "poster_path": "/8A6qALzfMxgj51ly8KyTCZfXutG.jpg",
-      "release_date": "2019-12-20",
+      "id": 551332,
+      "title": "The Two Popes",
+      "overview": "Frustrated with the direction of the church, Cardinal Bergoglio requests permission to retire in 2012 from Pope Benedict. Instead, facing scandal and self-doubt, the introspective Pope Benedict summons his harshest critic and future successor to Rome to reveal a secret that would shake the foundations of the Catholic Church.",
+      "poster_path": "/4d4mTSfDIFIbUbMLUfaKodvxYXA.jpg",
+      "release_date": "2019-11-27",
       "year": 2019,
-      "vote_average": 6.389,
-      "vote_count": 579,
-      "director": "Régis Roinsard",
-      "actors": "Olga Kurylenko, Lambert Wilson, Manolis Mavromatakis",
-      "genres": "Mystery, Thriller",
+      "vote_average": 7.469,
+      "vote_count": 3260,
+      "director": "Fernando Meirelles",
+      "actors": "Jonathan Pryce, Anthony Hopkins, Juan Minujín",
+      "genres": "Drama, History",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 619441,
+      "title": "Goodbye",
+      "overview": "Seville, Spain. Juan Santos, a convicted petty criminal, gets out of jail for a day to celebrate with Triana, his wife, the first communion of their daughter Estrella.",
+      "poster_path": "/tzr7XZNEq6zwgBVQzrrEHieOUI2.jpg",
+      "release_date": "2019-11-22",
+      "year": 2019,
+      "vote_average": 7.0,
+      "vote_count": 241,
+      "director": "Paco Cabezas",
+      "actors": "Mario Casas, Natalia de Molina, Ruth Díaz",
+      "genres": "Drama, Thriller",
       "providers": {
         "streaming": []
+      },
+      "type": "movie"
+    },
+    {
+      "id": 586863,
+      "title": "Les Misérables",
+      "overview": "Stéphane has recently joined the Anti-Crime Squad in Montfermeil, in the suburbs of Paris, France, where Victor Hugo set his famed novel “Les Miserables”. Alongside his new colleagues Chris and Gwada – both experienced members of the team – he quickly discovers tensions running high between local gangs. When the trio finds themselves overrun during the course of an arrest, a drone captures the encounter, threatening to expose the reality of everyday life.",
+      "poster_path": "/2ZQV9rPFXF0iFfKbsAvVIweQ1yM.jpg",
+      "release_date": "2019-11-14",
+      "year": 2019,
+      "vote_average": 7.562,
+      "vote_count": 1646,
+      "director": "Ladj Ly",
+      "actors": "Damien Bonnard, Alexis Manenti, Djebril Zonga",
+      "genres": "Crime, Drama, Thriller",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+          },
+          {
+            "name": "Amazon Prime Video with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 506528,
+      "title": "Harriet",
+      "overview": "The extraordinary tale of Harriet Tubman's escape from slavery and transformation into one of America's greatest heroes. Her courage, ingenuity and tenacity freed hundreds of slaves and changed the course of history.",
+      "poster_path": "/rsUs58bDqpJJxZSOebZOMN9gzw2.jpg",
+      "release_date": "2019-11-01",
+      "year": 2019,
+      "vote_average": 7.317,
+      "vote_count": 967,
+      "director": "Kasi Lemmons",
+      "actors": "Cynthia Erivo, Leslie Odom Jr., Janelle Monáe",
+      "genres": "Drama, History",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 403300,
+      "title": "A Hidden Life",
+      "overview": "Austrian farmer Franz Jägerstätter faces the threat of execution for refusing to fight for the Nazis during World War II.",
+      "poster_path": "/taUkn5MsZIq5kpTABsF2563j5zp.jpg",
+      "release_date": "2019-08-27",
+      "year": 2019,
+      "vote_average": 7.179,
+      "vote_count": 824,
+      "director": "Terrence Malick",
+      "actors": "August Diehl, Valerie Pachner, Maria Simon",
+      "genres": "History, Drama, War",
+      "providers": {
+        "streaming": [
+          {
+            "name": "fuboTV",
+            "logo": "https://image.tmdb.org/t/p/original/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+          },
+          {
+            "name": "YouTube TV",
+            "logo": "https://image.tmdb.org/t/p/original/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+          },
+          {
+            "name": "FXNow",
+            "logo": "https://image.tmdb.org/t/p/original/a7ZF6Ng3d6KDMylLUMH1OjAeTqW.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 449985,
+      "title": "Triple Threat",
+      "overview": "A crime syndicate places a hit on a billionaire's daughter, making her the target of an elite assassin squad. A small band of down-and-out mercenaries protects her, fighting tooth and nail to stop the assassins from reaching their target.",
+      "poster_path": "/cSpM3QxmoSLp4O1WAMQpUDcaB7R.jpg",
+      "release_date": "2019-03-19",
+      "year": 2019,
+      "vote_average": 6.391,
+      "vote_count": 672,
+      "director": "Jesse V. Johnson",
+      "actors": "Tony Jaa, Tiger Chen Hu, Iko Uwais",
+      "genres": "Thriller, Action",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+          },
+          {
+            "name": "Peacock Premium",
+            "logo": "https://image.tmdb.org/t/p/original/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+          },
+          {
+            "name": "FlixFling",
+            "logo": "https://image.tmdb.org/t/p/original/hkw2s2Su8EyifB9EbbQP64Fj1xA.png"
+          },
+          {
+            "name": "ViX Premium Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/dZn7SR1rarhMVKnO0OXCAvMjbcv.png"
+          },
+          {
+            "name": "Amazon Prime Video with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+          },
+          {
+            "name": "Peacock Premium Plus",
+            "logo": "https://image.tmdb.org/t/p/original/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+          },
+          {
+            "name": "Hi-YAH Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/mlciWnmFopns3WZGENR6ZZoNnZO.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 393624,
+      "title": "Official Secrets",
+      "overview": "The true story of British intelligence whistleblower Katharine Gun who—prior to the 2003 Iraq invasion—leaked a top-secret NSA memo exposing a joint US-UK illegal spying operation against members of the UN Security Council. The memo proposed blackmailing member states into voting for war.",
+      "poster_path": "/lyCGqSkT3PqLYQXiWs4FCVJBAYW.jpg",
+      "release_date": "2019-08-30",
+      "year": 2019,
+      "vote_average": 7.222,
+      "vote_count": 1169,
+      "director": "Gavin Hood",
+      "actors": "Keira Knightley, Matt Smith, Ralph Fiennes",
+      "genres": "Thriller, History, Drama",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Philo",
+            "logo": "https://image.tmdb.org/t/p/original/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+          },
+          {
+            "name": "AMC Plus Apple TV channel",
+            "logo": "https://image.tmdb.org/t/p/original/wLl5LRLVC6UOSaUlsmuzY0H9LS1.png"
+          },
+          {
+            "name": "AMC+ Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/tg5ufQ1GkYDCMxSSxemfeKWcvRe.png"
+          },
+          {
+            "name": "AMC+",
+            "logo": "https://image.tmdb.org/t/p/original/wsCUflcmL4dCkzBUaGP8cj1cTkh.png"
+          },
+          {
+            "name": "Sundance Now",
+            "logo": "https://image.tmdb.org/t/p/original/uSoP5JLrUjHWDFikg9EJKcm7IvQ.png"
+          }
+        ]
       },
       "type": "movie"
     },
@@ -48125,6 +48189,32 @@
       "type": "movie"
     },
     {
+      "id": 574436,
+      "title": "Piranhas",
+      "overview": "A gang of teenage boys stalk the streets of Naples armed with hand guns and AK-47s to do their mob bosses' bidding – until they decide to be the bosses themselves.",
+      "poster_path": "/7fcIdggCiqoz3vddPhb9TkHlEYC.jpg",
+      "release_date": "2019-02-14",
+      "year": 2019,
+      "vote_average": 6.832,
+      "vote_count": 546,
+      "director": "Claudio Giovannesi",
+      "actors": "Francesco Di Napoli, Artem Tkachuk, Viviana Aprea",
+      "genres": "Drama, Crime",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+          },
+          {
+            "name": "Amazon Prime Video with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
       "id": 533444,
       "title": "Waves",
       "overview": "A controlling father’s attempts to ensure that his two children succeed in high school backfire after his son experiences a career-ending sports injury. Their familial bonds are eventually placed under severe strain by an unexpected tragedy.",
@@ -48141,6 +48231,28 @@
           {
             "name": "JustWatch TV Plus",
             "logo": "https://image.tmdb.org/t/p/original/bSAgNVOaVZcmdts8TZSp0nYxsD3.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 620725,
+      "title": "Jexi",
+      "overview": "Phil's new phone comes with an unexpected feature, Jexi...an A.I. determined to keep him all to herself in a comedy about what can happen when you love your phone more than all else.",
+      "poster_path": "/sizYjc8lAFStRZXtI1uRBDsOTt6.jpg",
+      "release_date": "2019-10-10",
+      "year": 2019,
+      "vote_average": 6.754,
+      "vote_count": 1335,
+      "director": "Scott Moore",
+      "actors": "Adam Devine, Alexandra Shipp, Rose Byrne",
+      "genres": "Comedy",
+      "providers": {
+        "streaming": [
+          {
+            "name": "MovieSphere+ Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/9GQLqBo5obK0r3nhZl24BadRKPq.png"
           }
         ]
       },
@@ -48173,6 +48285,23 @@
       "type": "movie"
     },
     {
+      "id": 477018,
+      "title": "The Translators",
+      "overview": "Nine translators, hired to translate the eagerly awaited final book of a bestselling trilogy, are confined in a luxurious bunker.",
+      "poster_path": "/8A6qALzfMxgj51ly8KyTCZfXutG.jpg",
+      "release_date": "2019-12-20",
+      "year": 2019,
+      "vote_average": 6.389,
+      "vote_count": 579,
+      "director": "Régis Roinsard",
+      "actors": "Olga Kurylenko, Lambert Wilson, Manolis Mavromatakis",
+      "genres": "Mystery, Thriller",
+      "providers": {
+        "streaming": []
+      },
+      "type": "movie"
+    },
+    {
       "id": 504562,
       "title": "Motherless Brooklyn",
       "overview": "New York City, 1957. Lionel Essrog, a private detective living with Tourette syndrome, tries to solve the murder of his mentor and best friend, armed only with vague clues and the strength of his obsessive mind.",
@@ -48184,6 +48313,23 @@
       "director": "Edward Norton",
       "actors": "Edward Norton, Bruce Willis, Gugu Mbatha-Raw",
       "genres": "Drama, Thriller",
+      "providers": {
+        "streaming": []
+      },
+      "type": "movie"
+    },
+    {
+      "id": 441183,
+      "title": "Light of My Life",
+      "overview": "Years after a pandemic wipes out most of the female population, a father struggles to shield his daughter from a dangerous and predatory world.",
+      "poster_path": "/zbQQrOclR6G4r3T3EuOjp0f6VG9.jpg",
+      "release_date": "2019-08-09",
+      "year": 2019,
+      "vote_average": 6.486,
+      "vote_count": 625,
+      "director": "Casey Affleck",
+      "actors": "Casey Affleck, Anna Pniowsky, Elisabeth Moss",
+      "genres": "Science Fiction, Drama",
       "providers": {
         "streaming": []
       },
@@ -50974,7 +51120,7 @@
       "year": 2019,
       "vote_average": 6.9,
       "vote_count": 819,
-      "director": "Grand Corps Malade",
+      "director": "Mehdi Idir",
       "actors": "Zita Hanrot, Liam Pierron, Soufiane Guerrab",
       "genres": "Drama, Comedy, Family",
       "providers": {
@@ -51585,7 +51731,7 @@
       "year": 2019,
       "vote_average": 6.875,
       "vote_count": 279,
-      "director": "Jose Mari Goenaga",
+      "director": "Jon Garaño",
       "actors": "Antonio de la Torre, Belén Cuesta, Vicente Vergara",
       "genres": "Drama, History, Thriller",
       "providers": {
@@ -51923,7 +52069,7 @@
       "year": 2019,
       "vote_average": 6.8,
       "vote_count": 225,
-      "director": "Chuck Konzelman",
+      "director": "Cary Solomon",
       "actors": "Ashley Bratcher, Brooks Ryan, Robia LaMorte",
       "genres": "Drama",
       "providers": {
@@ -52268,7 +52414,7 @@
       "release_date": "2020-02-12",
       "year": 2020,
       "vote_average": 7.263,
-      "vote_count": 10662,
+      "vote_count": 10663,
       "director": "Jeff Fowler",
       "actors": "Ben Schwartz, James Marsden, Tika Sumpter",
       "genres": "Action, Science Fiction, Comedy, Family",
@@ -52997,7 +53143,7 @@
       "poster_path": "/riYInlsq2kf1AWoGm80JQW5dLKp.jpg",
       "release_date": "2020-09-22",
       "year": 2020,
-      "vote_average": 7.204,
+      "vote_average": 7.2,
       "vote_count": 6917,
       "director": "Harry Bradbeer",
       "actors": "Millie Bobby Brown, Henry Cavill, Sam Claflin",
@@ -56927,8 +57073,8 @@
       "poster_path": "/bkuuvDoPkOJpg0ZDzHkUWt8ZG5A.jpg",
       "release_date": "2020-02-22",
       "year": 2020,
-      "vote_average": 7.117,
-      "vote_count": 356,
+      "vote_average": 7.122,
+      "vote_count": 357,
       "director": "Yoon Sung-hyun",
       "actors": "Lee Je-hoon, Ahn Jae-hong, Choi Woo-shik",
       "genres": "Drama, Action, Thriller",
@@ -58430,7 +58576,7 @@
       "year": 2020,
       "vote_average": 6.7,
       "vote_count": 620,
-      "director": "Fabio D'Innocenzo",
+      "director": "Damiano D'Innocenzo",
       "actors": "Elio Germano, Tommaso Di Cola, Giulietta Rebeggiani",
       "genres": "Drama",
       "providers": {
@@ -59398,7 +59544,7 @@
       "release_date": "2021-08-25",
       "year": 2021,
       "vote_average": 6.533,
-      "vote_count": 1328,
+      "vote_count": 1329,
       "director": "Michael Mohan",
       "actors": "Sydney Sweeney, Justice Smith, Ben Hardy",
       "genres": "Thriller",
@@ -62797,7 +62943,7 @@
       "year": 2021,
       "vote_average": 7.108,
       "vote_count": 454,
-      "director": "Andrew Erwin",
+      "director": "Jon Erwin",
       "actors": "Zachary Levi, Anna Paquin, Hayden Zaller",
       "genres": "Drama, Family",
       "providers": {
@@ -66586,7 +66732,7 @@
       "year": 2021,
       "vote_average": 6.5,
       "vote_count": 155,
-      "director": "Kathryn Michelle",
+      "director": "Elizabeta Vidovic",
       "actors": "Yancy Butler, Izabela Vidovic, George H. Xanthis",
       "genres": "Horror",
       "providers": {
@@ -68597,8 +68743,8 @@
       "poster_path": "/4yFG6cSPaCaPhyJ1vtGOtMD1lgh.jpg",
       "release_date": "2022-10-20",
       "year": 2022,
-      "vote_average": 7.463,
-      "vote_count": 3643,
+      "vote_average": 7.464,
+      "vote_count": 3644,
       "director": "Martin McDonagh",
       "actors": "Colin Farrell, Brendan Gleeson, Kerry Condon",
       "genres": "Drama, Comedy",
@@ -69399,7 +69545,7 @@
       "poster_path": "/uyNLq2Dc3s4IOdcYTU8ZtM2lTjb.jpg",
       "release_date": "2022-11-18",
       "year": 2022,
-      "vote_average": 6.643,
+      "vote_average": 6.6,
       "vote_count": 1219,
       "director": "Adam Shankman",
       "actors": "Amy Adams, Patrick Dempsey, James Marsden",
@@ -69849,7 +69995,7 @@
       "year": 2022,
       "vote_average": 7.271,
       "vote_count": 1825,
-      "director": "Channing Tatum",
+      "director": "Reid Carolin",
       "actors": "Channing Tatum, Aavi Haas, Ryder McLaughlin",
       "genres": "Drama, Comedy",
       "providers": {
@@ -76117,7 +76263,7 @@
       "release_date": "2023-05-17",
       "year": 2023,
       "vote_average": 6.961,
-      "vote_count": 6625,
+      "vote_count": 6626,
       "director": "Louis Leterrier",
       "actors": "Vin Diesel, Michelle Rodriguez, Tyrese Gibson",
       "genres": "Action, Crime, Thriller",
@@ -76315,7 +76461,7 @@
       "year": 2023,
       "vote_average": 6.908,
       "vote_count": 3401,
-      "director": "Tyler Gillett",
+      "director": "Matt Bettinelli-Olpin",
       "actors": "Melissa Barrera, Jenna Ortega, Jasmin Savoy Brown",
       "genres": "Horror, Thriller, Crime",
       "providers": {
@@ -76546,7 +76692,7 @@
       "release_date": "2023-06-25",
       "year": 2023,
       "vote_average": 6.49,
-      "vote_count": 4473,
+      "vote_count": 4474,
       "director": "James Mangold",
       "actors": "Harrison Ford, Phoebe Waller-Bridge, Mads Mikkelsen",
       "genres": "Adventure, Action",
@@ -77089,7 +77235,7 @@
       "release_date": "2023-06-02",
       "year": 2023,
       "vote_average": 7.694,
-      "vote_count": 2539,
+      "vote_count": 2540,
       "director": "Celine Song",
       "actors": "Greta Lee, Teo Yoo, John Magaro",
       "genres": "Drama, Romance",
@@ -77177,7 +77323,7 @@
       "poster_path": "/VHSzNBTwxV8vh7wylo7O9CLdac.jpg",
       "release_date": "2023-10-27",
       "year": 2023,
-      "vote_average": 7.65,
+      "vote_average": 7.7,
       "vote_count": 2763,
       "director": "Alexander Payne",
       "actors": "Paul Giamatti, Dominic Sessa, Da'Vine Joy Randolph",
@@ -78842,7 +78988,7 @@
       "year": 2023,
       "vote_average": 6.718,
       "vote_count": 563,
-      "director": "Chuck Konzelman",
+      "director": "Cary Solomon",
       "actors": "Sean Patrick Flanery, Jordan Belfi, Tom Ohmer",
       "genres": "Horror, Drama",
       "providers": {
@@ -81490,7 +81636,7 @@
       "year": 2023,
       "vote_average": 7.073,
       "vote_count": 587,
-      "director": "Jimmy Chin",
+      "director": "Elizabeth Chai Vasarhelyi",
       "actors": "Annette Bening, Jodie Foster, Rhys Ifans",
       "genres": "Drama, History",
       "providers": {
@@ -85505,7 +85651,7 @@
       "poster_path": "/fYbjXgBQUPgj1mtcmH0GafbJlXV.jpg",
       "release_date": "2023-06-07",
       "year": 2023,
-      "vote_average": 6.884,
+      "vote_average": 6.88,
       "vote_count": 255,
       "director": "Cédric Kahn",
       "actors": "Arieh Worthalter, Arthur Harari, Stéphan Guérin-Tillié",
@@ -86839,7 +86985,7 @@
       "release_date": "2024-07-24",
       "year": 2024,
       "vote_average": 7.587,
-      "vote_count": 9789,
+      "vote_count": 9790,
       "director": "Shawn Levy",
       "actors": "Ryan Reynolds, Hugh Jackman, Emma Corrin",
       "genres": "Action, Comedy, Science Fiction",
@@ -86894,8 +87040,8 @@
       "poster_path": "/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
       "release_date": "2024-05-22",
       "year": 2024,
-      "vote_average": 7.4,
-      "vote_count": 5352,
+      "vote_average": 7.444,
+      "vote_count": 5353,
       "director": "George Miller",
       "actors": "Anya Taylor-Joy, Chris Hemsworth, Tom Burke",
       "genres": "Action, Science Fiction, Adventure",
@@ -86937,7 +87083,7 @@
       "release_date": "2024-10-04",
       "year": 2024,
       "vote_average": 6.775,
-      "vote_count": 1348,
+      "vote_count": 1349,
       "director": "Carles Torrens",
       "actors": "Francisco Ortiz, José María Yázpik, Berta Vázquez",
       "genres": "Drama, Action, Horror",
@@ -87239,7 +87385,7 @@
       "release_date": "2024-09-04",
       "year": 2024,
       "vote_average": 6.913,
-      "vote_count": 3435,
+      "vote_count": 3436,
       "director": "Tim Burton",
       "actors": "Michael Keaton, Winona Ryder, Catherine O'Hara",
       "genres": "Comedy, Fantasy, Horror",
@@ -87288,7 +87434,7 @@
       "poster_path": "/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
       "release_date": "2024-11-13",
       "year": 2024,
-      "vote_average": 6.587,
+      "vote_average": 6.6,
       "vote_count": 4870,
       "director": "Ridley Scott",
       "actors": "Paul Mescal, Denzel Washington, Pedro Pascal",
@@ -87378,7 +87524,7 @@
       "poster_path": "/1GvBhRxY6MELDfxFrete6BNhBB5.jpg",
       "release_date": "2024-12-11",
       "year": 2024,
-      "vote_average": 6.404,
+      "vote_average": 6.4,
       "vote_count": 2591,
       "director": "J.C. Chandor",
       "actors": "Aaron Taylor-Johnson, Ariana DeBose, Fred Hechinger",
@@ -87508,8 +87654,8 @@
       "poster_path": "/pjnD08FlMAIXsfOLKQbvmO0f0MD.jpg",
       "release_date": "2024-07-10",
       "year": 2024,
-      "vote_average": 6.749,
-      "vote_count": 3255,
+      "vote_average": 6.748,
+      "vote_count": 3256,
       "director": "Lee Isaac Chung",
       "actors": "Daisy Edgar-Jones, Glen Powell, Anthony Ramos",
       "genres": "Action, Thriller",
@@ -88951,7 +89097,7 @@
       "poster_path": "/hS4GYkYpN1rfl4GIxyc02sCyfAj.jpg",
       "release_date": "2024-05-03",
       "year": 2024,
-      "vote_average": 6.171,
+      "vote_average": 6.2,
       "vote_count": 863,
       "director": "Jane Schoenbrun",
       "actors": "Justice Smith, Jack Haven, Ian Foreman",
@@ -89833,7 +89979,7 @@
       "year": 2024,
       "vote_average": 6.628,
       "vote_count": 309,
-      "director": "Will Speck",
+      "director": "Josh Gordon",
       "actors": "Anthony Ramos, Naomi Scott, Kristofer Hivju",
       "genres": "Science Fiction, Comedy, Action",
       "providers": {
@@ -90197,8 +90343,8 @@
       "poster_path": "/r1h1YltM7bwzlWE330izIgQSwkj.jpg",
       "release_date": "2024-11-28",
       "year": 2024,
-      "vote_average": 7.222,
-      "vote_count": 619,
+      "vote_average": 7.225,
+      "vote_count": 621,
       "director": "Logan George",
       "actors": "Dylan O'Brien, Eliza Scanlen, Caroline Falk",
       "genres": "Mystery, Science Fiction, Thriller",
@@ -91530,7 +91676,7 @@
       "year": 2024,
       "vote_average": 6.605,
       "vote_count": 262,
-      "director": "Eshom Nelms",
+      "director": "Ian Nelms",
       "actors": "Orlando Bloom, Andie MacDowell, Scott Haze",
       "genres": "Crime, Action, Thriller",
       "providers": {
@@ -92873,7 +93019,7 @@
       "year": 2024,
       "vote_average": 6.324,
       "vote_count": 376,
-      "director": "Tig Notaro",
+      "director": "Stephanie Allynne",
       "actors": "Dakota Johnson, Sonoya Mizuno, Jermaine Fowler",
       "genres": "Comedy, Romance, Drama",
       "providers": {
@@ -96792,7 +96938,7 @@
       "year": 2024,
       "vote_average": 6.9,
       "vote_count": 230,
-      "director": "Arnaud Larrieu",
+      "director": "Jean-Marie Larrieu",
       "actors": "Karim Leklou, Laetitia Dosch, Sara Giraudeau",
       "genres": "Comedy, Drama",
       "providers": {
@@ -98231,7 +98377,7 @@
       "poster_path": "/6FRFIogh3zFnVWn7Z6zcYnIbRcX.jpg",
       "release_date": "2025-03-26",
       "year": 2025,
-      "vote_average": 6.665,
+      "vote_average": 6.7,
       "vote_count": 2165,
       "director": "David Ayer",
       "actors": "Jason Statham, Jason Flemyng, Merab Ninidze",
@@ -98265,32 +98411,6 @@
           {
             "name": "Amazon Prime Video with Ads",
             "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 1317149,
-      "title": "I Swear",
-      "overview": "Diagnosed with Tourette Syndrome at 15, John Davidson navigates his way against the odds through troubled teenage years and into adulthood, finding inspiration in the kindness of others to discover his true purpose in life.",
-      "poster_path": "/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg",
-      "release_date": "2025-09-22",
-      "year": 2025,
-      "vote_average": 8.298,
-      "vote_count": 663,
-      "director": "Kirk Jones",
-      "actors": "Robert Aramayo, Maxine Peake, Peter Mullan",
-      "genres": "Drama, History",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
           }
         ]
       },
@@ -98554,6 +98674,32 @@
       "type": "movie"
     },
     {
+      "id": 1317149,
+      "title": "I Swear",
+      "overview": "Diagnosed with Tourette Syndrome at 15, John Davidson navigates his way against the odds through troubled teenage years and into adulthood, finding inspiration in the kindness of others to discover his true purpose in life.",
+      "poster_path": "/vUwyhNWBKkSwK8ELvEeBRwV724h.jpg",
+      "release_date": "2025-09-22",
+      "year": 2025,
+      "vote_average": 8.3,
+      "vote_count": 663,
+      "director": "Kirk Jones",
+      "actors": "Robert Aramayo, Maxine Peake, Peter Mullan",
+      "genres": "Drama, History",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
       "id": 1291608,
       "title": "Dhurandhar",
       "overview": "In the early 2000s, an undercover operative infiltrates Karachi's underworld, breaking into its inner circle to dismantle a violent nexus from within.",
@@ -98574,32 +98720,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 1317288,
-      "title": "Marty Supreme",
-      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
-      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
-      "release_date": "2025-12-19",
-      "year": 2025,
-      "vote_average": 7.364,
-      "vote_count": 2370,
-      "director": "Josh Safdie",
-      "actors": "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion",
-      "genres": "Drama, Thriller",
-      "providers": {
-        "streaming": [
-          {
-            "name": "HBO Max Amazon Channel",
-            "logo": "https://image.tmdb.org/t/p/original/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
-          },
-          {
-            "name": "HBO Max",
-            "logo": "https://image.tmdb.org/t/p/original/skypuy7SXuugIQeYg0IglmzoKaS.png"
           }
         ]
       },
@@ -98638,8 +98758,8 @@
       "poster_path": "/eDo0pNruy0Qgj6BdTyHIR4cxHY8.jpg",
       "release_date": "2025-06-12",
       "year": 2025,
-      "vote_average": 6.264,
-      "vote_count": 1503,
+      "vote_average": 6.261,
+      "vote_count": 1504,
       "director": "Celine Song",
       "actors": "Dakota Johnson, Chris Evans, Pedro Pascal",
       "genres": "Romance, Drama",
@@ -98771,6 +98891,32 @@
           {
             "name": "Shudder",
             "logo": "https://image.tmdb.org/t/p/original/58O6yqUFM6qoOiBNAddJs7xNKc.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 1317288,
+      "title": "Marty Supreme",
+      "overview": "Marty Mauser, a young man with a dream no one respects, goes to hell and back in pursuit of greatness.",
+      "poster_path": "/lYWEXbQgRTR4ZQleSXAgRbxAjvq.jpg",
+      "release_date": "2025-12-19",
+      "year": 2025,
+      "vote_average": 7.4,
+      "vote_count": 2370,
+      "director": "Josh Safdie",
+      "actors": "Timothée Chalamet, Gwyneth Paltrow, Odessa A'zion",
+      "genres": "Drama, Thriller",
+      "providers": {
+        "streaming": [
+          {
+            "name": "HBO Max Amazon Channel",
+            "logo": "https://image.tmdb.org/t/p/original/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+          },
+          {
+            "name": "HBO Max",
+            "logo": "https://image.tmdb.org/t/p/original/skypuy7SXuugIQeYg0IglmzoKaS.png"
           }
         ]
       },
@@ -99160,7 +99306,7 @@
       "release_date": "2025-09-10",
       "year": 2025,
       "vote_average": 6.837,
-      "vote_count": 2133,
+      "vote_count": 2134,
       "director": "Francis Lawrence",
       "actors": "Cooper Hoffman, David Jonsson, Garrett Wareing",
       "genres": "Science Fiction, Thriller, Horror",
@@ -100496,8 +100642,8 @@
       "poster_path": "/uwvKQIjJpC37IEsEj4ZAn1ITyRy.jpg",
       "release_date": "2025-08-19",
       "year": 2025,
-      "vote_average": 6.732,
-      "vote_count": 368,
+      "vote_average": 6.741,
+      "vote_count": 369,
       "director": "Lasse Hallström",
       "actors": "Madelyn Cline, KJ Apa, Sofia Wylie",
       "genres": "Romance, Drama",
@@ -101418,7 +101564,7 @@
       "vote_count": 394,
       "director": "Kaouther Ben Hania",
       "actors": "Hind Rajab, Motaz Malhees, Saja Kilani",
-      "genres": "Drama, History",
+      "genres": "Drama",
       "providers": {
         "streaming": [
           {
@@ -101834,7 +101980,7 @@
       "year": 2025,
       "vote_average": 6.653,
       "vote_count": 134,
-      "director": "Scott McGehee",
+      "director": "David Siegel",
       "actors": "Naomi Watts, Bill Murray, Ann Dowd",
       "genres": "Comedy, Drama",
       "providers": {
@@ -103835,7 +103981,7 @@
       "year": 2025,
       "vote_average": 6.358,
       "vote_count": 282,
-      "director": "Anna Boden",
+      "director": "Ryan Fleck",
       "actors": "Jay Ellis, Pedro Pascal, Ben Mendelsohn",
       "genres": "Action, Crime, Comedy",
       "providers": {
@@ -104021,7 +104167,7 @@
       "year": 2025,
       "vote_average": 6.5,
       "vote_count": 71,
-      "director": "Jean-Pierre Dardenne",
+      "director": "Luc Dardenne",
       "actors": "Babette Verbeek, Elsa Houben, Janaïna Halloy Fokan",
       "genres": "Drama",
       "providers": {
@@ -105500,8 +105646,8 @@
       "poster_path": "/orcdyqJZhbr731iN7yq7TK5zluc.jpg",
       "release_date": "2025-06-27",
       "year": 2025,
-      "vote_average": 6.785,
-      "vote_count": 258,
+      "vote_average": 6.782,
+      "vote_count": 259,
       "director": "Martin Bourboulon",
       "actors": "Roschdy Zem, Lyna Khoudri, Sidse Babett Knudsen",
       "genres": "War, Action, Thriller",
@@ -105585,8 +105731,8 @@
       "poster_path": "/kMIiBztK0PgwIQ0FMItv4dd8wIL.jpg",
       "release_date": "2025-03-20",
       "year": 2025,
-      "vote_average": 7.446,
-      "vote_count": 138,
+      "vote_average": 7.45,
+      "vote_count": 139,
       "director": "Tracie Laymon",
       "actors": "Barbie Ferreira, John Leguizamo, French Stewart",
       "genres": "Comedy, Drama",
@@ -109527,7 +109673,7 @@
       "year": 2025,
       "vote_average": 6.2,
       "vote_count": 50,
-      "director": "Johnny Marchetta",
+      "director": "Björn Franklin",
       "actors": "Toby Kebbell, Shia LaBeouf, James Cosmo",
       "genres": "Crime, Drama",
       "providers": {
@@ -109669,7 +109815,7 @@
       "year": 2025,
       "vote_average": 6.6,
       "vote_count": 83,
-      "director": "Elsa Bennett",
+      "director": "Hippolyte Dard",
       "actors": "Valérie Bonneton, Michèle Laroque, Sabrina Ouazani",
       "genres": "Comedy, Drama",
       "providers": {
@@ -109948,7 +110094,7 @@
       "year": 2026,
       "vote_average": 7.312,
       "vote_count": 743,
-      "director": "Michael Spierig",
+      "director": "Peter Spierig",
       "actors": "Harriet Slater, Arsema Thomas, Tom Brittney",
       "genres": "Thriller",
       "providers": {
@@ -110497,23 +110643,6 @@
       "type": "movie"
     },
     {
-      "id": 1263337,
-      "title": "Heart of the Beast",
-      "overview": "After a harrowing plane crash, Special Forces officer James Belmont and his combat dog, Odin, find themselves stranded deep in the Alaskan wilderness. Together, they are forced into a brutal fight for survival against the elements.",
-      "poster_path": "/1ApfSA8JTqeha3GTFEY8syV4auq.jpg",
-      "release_date": "2026-09-19",
-      "year": 2026,
-      "vote_average": 7.3,
-      "vote_count": 375,
-      "director": "David Ayer",
-      "actors": "Brad Pitt, J.K. Simmons, Anna Lambe",
-      "genres": "Adventure, Thriller",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 1083381,
       "title": "Backrooms",
       "overview": "A strange doorway appears in the basement of a furniture showroom.",
@@ -110548,7 +110677,7 @@
       "year": 2026,
       "vote_average": 7.7,
       "vote_count": 31,
-      "director": "Eleanor Wilson",
+      "director": "Alex Huston Fischer",
       "actors": "Olivia Colman, Alexander Skarsgård, Peter Dinklage",
       "genres": "Romance, Fantasy, Comedy",
       "providers": {
@@ -110563,7 +110692,7 @@
       "poster_path": "/1ATXKrIPJyKNwnJ6lcG088Sa6zi.jpg",
       "release_date": "2026-09-28",
       "year": 2026,
-      "vote_average": 7.49,
+      "vote_average": 7.492,
       "vote_count": 498,
       "director": "Alejandro G. Iñárritu",
       "actors": "Tom Cruise, Riz Ahmed, John Goodman",
@@ -110581,7 +110710,7 @@
       "release_date": "2026-05-21",
       "year": 2026,
       "vote_average": 8.21,
-      "vote_count": 1521,
+      "vote_count": 1522,
       "director": "Yeon Sang-ho",
       "actors": "Gianna Jun, Koo Kyo-hwan, Ji Chang-wook",
       "genres": "Horror, Action, Science Fiction",
@@ -110640,8 +110769,8 @@
       "poster_path": "/7DmtuAK5gYGlMFA45Oxkl1bEpIC.jpg",
       "release_date": "2026-08-12",
       "year": 2026,
-      "vote_average": 7.06,
-      "vote_count": 2323,
+      "vote_average": 7.059,
+      "vote_count": 2324,
       "director": "David Robert Mitchell",
       "actors": "Anne Hathaway, Ewan McGregor, Maisy Stella",
       "genres": "Science Fiction, Mystery, Thriller",
@@ -110779,40 +110908,14 @@
       "type": "movie"
     },
     {
-      "id": 1257147,
-      "title": "My Best Friend",
-      "overview": "When empty nest syndrome hits, two BFFs follow their teen daughters to Portugal and find love, fun and a whole new meaning of friendship along the way.",
-      "poster_path": "/wGfTFVeguXDXYrwPQ8QMFsaSK2M.jpg",
-      "release_date": "2026-09-03",
-      "year": 2026,
-      "vote_average": 8.2,
-      "vote_count": 33,
-      "director": "Susana Garcia",
-      "actors": "Ingrid Guimarães, Mônica Martelli, Giulia Benite",
-      "genres": "Comedy",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
       "id": 1288069,
       "title": "Tenzing",
       "overview": "A determined man embarks on a high-stakes quest—and defies seemingly impossible odds—to fulfill his dream of being the first to reach the summit of Mount Everest.",
       "poster_path": "/eI0QW02PYqhnmIvLRdn9vrfVVP7.jpg",
       "release_date": "2026-10-09",
       "year": 2026,
-      "vote_average": 8.25,
-      "vote_count": 264,
+      "vote_average": 8.258,
+      "vote_count": 266,
       "director": "Jennifer Peedom",
       "actors": "Genden Phuntsok, Tom Hiddleston, Willem Dafoe",
       "genres": "Drama, History, Adventure",
@@ -110859,6 +110962,32 @@
       "director": "Patrick Hughes",
       "actors": "Alan Ritchson, Stephan James, Blake Richardson",
       "genres": "Action, Science Fiction, Thriller",
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+          }
+        ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 1257147,
+      "title": "My Best Friend",
+      "overview": "When empty nest syndrome hits, two BFFs follow their teen daughters to Portugal and find love, fun and a whole new meaning of friendship along the way.",
+      "poster_path": "/wGfTFVeguXDXYrwPQ8QMFsaSK2M.jpg",
+      "release_date": "2026-09-03",
+      "year": 2026,
+      "vote_average": 8.221,
+      "vote_count": 34,
+      "director": "Susana Garcia",
+      "actors": "Ingrid Guimarães, Mônica Martelli, Giulia Benite",
+      "genres": "Comedy",
       "providers": {
         "streaming": [
           {
@@ -110996,7 +111125,7 @@
       "poster_path": "/uRxrNXQWkHoENm3nwVOZDYSCx2F.jpg",
       "release_date": "2026-07-07",
       "year": 2026,
-      "vote_average": 7.584,
+      "vote_average": 7.6,
       "vote_count": 1910,
       "director": "Sébastien Vaniček",
       "actors": "Souheila Yacoub, Tandi Wright, Hunter Doohan",
@@ -111022,8 +111151,8 @@
       "poster_path": "/vfZxVHextAGC70zrNhS8lsROqP1.jpg",
       "release_date": "2026-09-23",
       "year": 2026,
-      "vote_average": 7.9,
-      "vote_count": 710,
+      "vote_average": 7.911,
+      "vote_count": 711,
       "director": "Claire Scanlon",
       "actors": "Lili Reinhart, Tom Bateman, Rachel Marsh",
       "genres": "Romance, Comedy",
@@ -111097,7 +111226,7 @@
       "release_date": "2026-06-03",
       "year": 2026,
       "vote_average": 7.076,
-      "vote_count": 2316,
+      "vote_count": 2318,
       "director": "Travis Knight",
       "actors": "Nicholas Galitzine, Camila Mendes, Alison Brie",
       "genres": "Action, Fantasy, Science Fiction",
@@ -111224,7 +111353,7 @@
       "poster_path": "/jjyuk0edLiW8vOSnlfwWCCLpbh5.jpg",
       "release_date": "2026-02-25",
       "year": 2026,
-      "vote_average": 6.21,
+      "vote_average": 6.2,
       "vote_count": 1424,
       "director": "Kevin Williamson",
       "actors": "Neve Campbell, Isabel May, Courteney Cox",
@@ -111251,7 +111380,7 @@
       "release_date": "2026-04-29",
       "year": 2026,
       "vote_average": 7.025,
-      "vote_count": 2534,
+      "vote_count": 2535,
       "director": "David Frankel",
       "actors": "Meryl Streep, Anne Hathaway, Emily Blunt",
       "genres": "Comedy, Drama",
@@ -111454,7 +111583,7 @@
       "release_date": "2026-06-17",
       "year": 2026,
       "vote_average": 6.8,
-      "vote_count": 642,
+      "vote_count": 643,
       "director": "Adrian Chiarella",
       "actors": "Joe Bird, Stacy Clausen, Mia Wasikowska",
       "genres": "Horror, Romance",
@@ -111624,23 +111753,6 @@
       "type": "movie"
     },
     {
-      "id": 1340102,
-      "title": "Lion Fist",
-      "overview": "Martial arts fighter Joe goes to prison for four years and takes his wife's blame for a drug bust. After his release, he learns that his son needs expensive surgery because of a life-threatening tumor. Joe's only chance to save him: a brutal all-styles tournament with a $100,000 prize.",
-      "poster_path": "/ezFIXWTbIXlBuZ4kKgto4N3i3of.jpg",
-      "release_date": "2026-09-10",
-      "year": 2026,
-      "vote_average": 7.139,
-      "vote_count": 54,
-      "director": "Taim M. Adams",
-      "actors": "Mathis Landwehr, Li Yanlong, Kurt McKinney",
-      "genres": "Action",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 950028,
       "title": "The Invite",
       "overview": "Joe and Angela's marriage is on thin ice. When they invite their enigmatic upstairs neighbors for a dinner party, the night spirals into unexpected places. Have they reignited the spark or lit the match that burns it all down?",
@@ -111663,6 +111775,23 @@
             "logo": "https://image.tmdb.org/t/p/original/skypuy7SXuugIQeYg0IglmzoKaS.png"
           }
         ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 1340102,
+      "title": "Lion Fist",
+      "overview": "Martial arts fighter Joe goes to prison for four years and takes his wife's blame for a drug bust. After his release, he learns that his son needs expensive surgery because of a life-threatening tumor. Joe's only chance to save him: a brutal all-styles tournament with a $100,000 prize.",
+      "poster_path": "/ezFIXWTbIXlBuZ4kKgto4N3i3of.jpg",
+      "release_date": "2026-09-10",
+      "year": 2026,
+      "vote_average": 7.1,
+      "vote_count": 54,
+      "director": "Taim M. Adams",
+      "actors": "Mathis Landwehr, Li Yanlong, Kurt McKinney",
+      "genres": "Action",
+      "providers": {
+        "streaming": []
       },
       "type": "movie"
     },
@@ -111776,8 +111905,8 @@
       "poster_path": "/kMhVs1XqmzXlD0mDQ4rTJh4Kvf1.jpg",
       "release_date": "2026-02-04",
       "year": 2026,
-      "vote_average": 6.3,
-      "vote_count": 209,
+      "vote_average": 6.269,
+      "vote_count": 210,
       "director": "Philippe Lacheau",
       "actors": "Philippe Lacheau, Jamel Debbouze, Tarek Boudali",
       "genres": "Adventure, Comedy, Family",
@@ -111882,8 +112011,8 @@
       "poster_path": "/gmmCh2BvTKp0YGT2FYG0eOQJELi.jpg",
       "release_date": "2026-07-10",
       "year": 2026,
-      "vote_average": 7.1,
-      "vote_count": 31,
+      "vote_average": 7.109,
+      "vote_count": 32,
       "director": "John Suits",
       "actors": "Sean Bean, Mackenzie Foy, Odeya Rush",
       "genres": "Action, Drama, Western",
@@ -111934,7 +112063,7 @@
       "poster_path": "/rnIOUhzwJDfgQakx8EjoNyItKgs.jpg",
       "release_date": "2026-04-01",
       "year": 2026,
-      "vote_average": 6.904,
+      "vote_average": 6.9,
       "vote_count": 2032,
       "director": "Kristoffer Borgli",
       "actors": "Zendaya, Robert Pattinson, Alana Haim",
@@ -112008,8 +112137,8 @@
       "poster_path": "/bsrd6ItRwNrg3DGlUDYrEy1S9C1.jpg",
       "release_date": "2026-09-16",
       "year": 2026,
-      "vote_average": 6.711,
-      "vote_count": 90,
+      "vote_average": 6.714,
+      "vote_count": 91,
       "director": "Padraic McKinley",
       "actors": "Ethan Hawke, Russell Crowe, Julia Jones",
       "genres": "Drama, Thriller",
@@ -112231,8 +112360,8 @@
       "poster_path": "/aRfFP8stzodl0bo8ywoNZXdaVwo.jpg",
       "release_date": "2026-07-31",
       "year": 2026,
-      "vote_average": 7.4,
-      "vote_count": 565,
+      "vote_average": 7.442,
+      "vote_count": 566,
       "director": "Kate Dolan",
       "actors": "David Rysdahl, Lily Sullivan, Claudia Doumit",
       "genres": "Horror, Science Fiction, Thriller",
@@ -112254,7 +112383,7 @@
       "release_date": "2026-08-27",
       "year": 2026,
       "vote_average": 6.818,
-      "vote_count": 992,
+      "vote_count": 994,
       "director": "James Ashcroft",
       "actors": "Robert De Niro, Michelle Monaghan, Adam Scott",
       "genres": "Crime, Drama, Thriller",
@@ -112355,23 +112484,6 @@
       "type": "movie"
     },
     {
-      "id": 1165366,
-      "title": "De Gaulle: Résistance",
-      "overview": "June, 1940. France collapses and signs the armistice. In the midst of the chaos, one man refuses to give up. Alone against the odds, this unknown general flees to London to save what remains of freedom.",
-      "poster_path": "/ylXQDz9eAQuC785UQaz5wum2GSe.jpg",
-      "release_date": "2026-06-03",
-      "year": 2026,
-      "vote_average": 7.811,
-      "vote_count": 272,
-      "director": "Antonin Baudry",
-      "actors": "Simon Abkarian, Simon Russell Beale, Florian Lesieur",
-      "genres": "History, Drama, War",
-      "providers": {
-        "streaming": []
-      },
-      "type": "movie"
-    },
-    {
       "id": 1213243,
       "title": "Toxic",
       "overview": "A powerful drug cartel pulls the strings behind a facade of sun-soaked beaches as a gritty, violent underworld power struggle emerges during the crumbling of Portuguese colonial rule.",
@@ -112411,6 +112523,23 @@
             "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
           }
         ]
+      },
+      "type": "movie"
+    },
+    {
+      "id": 1165366,
+      "title": "De Gaulle: Résistance",
+      "overview": "June, 1940. France collapses and signs the armistice. In the midst of the chaos, one man refuses to give up. Alone against the odds, this unknown general flees to London to save what remains of freedom.",
+      "poster_path": "/ylXQDz9eAQuC785UQaz5wum2GSe.jpg",
+      "release_date": "2026-06-03",
+      "year": 2026,
+      "vote_average": 7.8,
+      "vote_count": 272,
+      "director": "Antonin Baudry",
+      "actors": "Simon Abkarian, Simon Russell Beale, Florian Lesieur",
+      "genres": "History, Drama, War",
+      "providers": {
+        "streaming": []
       },
       "type": "movie"
     },
@@ -112490,8 +112619,8 @@
       "poster_path": "/uwZF5guNR5EnXkjIVTk4UPTVGiS.jpg",
       "release_date": "2026-08-07",
       "year": 2026,
-      "vote_average": 7.4,
-      "vote_count": 184,
+      "vote_average": 7.381,
+      "vote_count": 185,
       "director": "Matt Johnson",
       "actors": "Dominic Sessa, Antonio Banderas, Emilia Jones",
       "genres": "Drama, Comedy",
@@ -113022,8 +113151,8 @@
       "poster_path": "/rWcfOdY7TU6lTdazWj0ebDZnAfO.jpg",
       "release_date": "2026-02-13",
       "year": 2026,
-      "vote_average": 7.11,
-      "vote_count": 1176,
+      "vote_average": 7.112,
+      "vote_count": 1177,
       "director": "Gore Verbinski",
       "actors": "Sam Rockwell, Juno Temple, Haley Lu Richardson",
       "genres": "Science Fiction, Action, Comedy",
@@ -113975,7 +114104,7 @@
       "poster_path": "/uS5RSCYHw9DJFZ0mMLJaPnuKNjA.jpg",
       "release_date": "2026-08-08",
       "year": 2026,
-      "vote_average": 8.915,
+      "vote_average": 8.9,
       "vote_count": 59,
       "director": "Wen Muye",
       "actors": "Shen Teng, Jiang Qiming, Omar Sherif",
@@ -114018,8 +114147,8 @@
       "poster_path": "/bM37B5CuMWrPyGPpNsKzTGict4Q.jpg",
       "release_date": "2026-10-14",
       "year": 2026,
-      "vote_average": 7.6,
-      "vote_count": 38,
+      "vote_average": 7.603,
+      "vote_count": 39,
       "director": "Andrey Zvyagintsev",
       "actors": "Dmitriy Mazurov, Iris Lebedeva, Varvara Shmykova",
       "genres": "Drama, Crime, Thriller",
@@ -114172,7 +114301,7 @@
       "poster_path": "/3iVDCDS1VwHIm95PjWEPwsfdhaf.jpg",
       "release_date": "2026-08-13",
       "year": 2026,
-      "vote_average": 6.75,
+      "vote_average": 6.742,
       "vote_count": 122,
       "director": "Andrew Patterson",
       "actors": "Matthew McConaughey, Kurt Russell, Angelina LookingGlass",
@@ -114863,8 +114992,8 @@
       "poster_path": "/eRLuOfJyVJBN6htK6pGoVDUxkPa.jpg",
       "release_date": "2026-07-02",
       "year": 2026,
-      "vote_average": 6.2,
-      "vote_count": 27,
+      "vote_average": 6.304,
+      "vote_count": 28,
       "director": "Daniel Stamm",
       "actors": "Carla Gugino, Lou Taylor Pucci, Katharine Isabelle",
       "genres": "Horror",
@@ -114885,32 +115014,6 @@
           {
             "name": "MGM Plus",
             "logo": "https://image.tmdb.org/t/p/original/q63Uzpu7JAs566vA2G23Lk7LcID.png"
-          }
-        ]
-      },
-      "type": "movie"
-    },
-    {
-      "id": 1560681,
-      "title": "Colors of Evil: Black",
-      "overview": "Investigating the disappearance of children in a remote Polish town, prosecutor Leopold Bilski must unravel a sinister local legend before it's too late.",
-      "poster_path": "/reeKdj7BSznr7wSGzAtIMrPFgKo.jpg",
-      "release_date": "2026-06-10",
-      "year": 2026,
-      "vote_average": 6.765,
-      "vote_count": 172,
-      "director": "Adrian Panek",
-      "actors": "Jakub Gierszał, Marianna Zydek, Andrzej Chyra",
-      "genres": "Thriller, Mystery, Crime",
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
           }
         ]
       },
@@ -116706,7 +116809,7 @@
       "year": 2026,
       "vote_average": 6.3,
       "vote_count": 117,
-      "director": "Bruno Lavaine",
+      "director": "Nicolas Charlet",
       "actors": "Laurent Lafitte, Olga Kurylenko, Blanche Gardin",
       "genres": "Comedy",
       "providers": {
@@ -118355,7 +118458,7 @@
       "year": 2026,
       "vote_average": 7.039,
       "vote_count": 64,
-      "director": "Romane Gueret",
+      "director": "Lise Akoka",
       "actors": "Fanta Kebe, Shirel Nataf, Amel Bent",
       "genres": "Comedy",
       "providers": {
@@ -118544,7 +118647,7 @@
       "poster_path": "/rcBx0p8h51LHceyhquYMxbspJQu.jpg",
       "first_air_date": "1993-09-10",
       "year": 1993,
-      "vote_average": 8.366,
+      "vote_average": 8.4,
       "vote_count": 3777,
       "actors": "David Duchovny, Gillian Anderson",
       "genres": "Mystery, Sci-Fi & Fantasy, Crime",
@@ -118984,7 +119087,7 @@
       "poster_path": "/y7fVZkyheCEQHDUEHwNmYENGfT2.jpg",
       "first_air_date": "1997-03-10",
       "year": 1997,
-      "vote_average": 8.097,
+      "vote_average": 8.1,
       "vote_count": 2104,
       "actors": "Sarah Michelle Gellar, Nicholas Brendon, Alyson Hannigan",
       "genres": "Comedy, Drama, Sci-Fi & Fantasy",
@@ -119157,15 +119260,15 @@
         "in_production": true,
         "last_episode": {
           "season": 28,
-          "episode": 4,
-          "air_date": "2026-10-29",
-          "name": "Arcana"
-        },
-        "next_episode": {
-          "season": 28,
           "episode": 5,
           "air_date": "2026-11-05",
           "name": "Forsaken"
+        },
+        "next_episode": {
+          "season": 28,
+          "episode": 6,
+          "air_date": "2026-11-12",
+          "name": "Obedience"
         }
       },
       "providers": {
@@ -119209,7 +119312,7 @@
       "poster_path": "/rTc7ZXdroqjkKivFPvCPX0Ru7uw.jpg",
       "first_air_date": "1999-01-10",
       "year": 1999,
-      "vote_average": 8.678,
+      "vote_average": 8.7,
       "vote_count": 3780,
       "actors": "James Gandolfini, Edie Falco, Jamie-Lynn Sigler",
       "genres": "Crime, Drama",
@@ -121056,15 +121159,15 @@
         "in_production": true,
         "last_episode": {
           "season": 23,
-          "episode": 3,
-          "air_date": "2026-10-29",
-          "name": "It's All Wrong, but It's All Right"
-        },
-        "next_episode": {
-          "season": 23,
           "episode": 4,
           "air_date": "2026-11-05",
           "name": "Love on the Brain"
+        },
+        "next_episode": {
+          "season": 23,
+          "episode": 5,
+          "air_date": "2026-11-12",
+          "name": "Stronger (What Doesn't Kill You)"
         }
       },
       "providers": {
@@ -124817,8 +124920,8 @@
       "poster_path": "/yCkPLQ10qKIUgRBXmQVVMF1h96d.jpg",
       "first_air_date": "2011-10-05",
       "year": 2011,
-      "vote_average": 8.078,
-      "vote_count": 6288,
+      "vote_average": 8.079,
+      "vote_count": 6289,
       "actors": "Sarah Paulson, Evan Peters, Angela Bassett",
       "genres": "Drama, Mystery, Sci-Fi & Fantasy",
       "tv_status": {
@@ -126391,8 +126494,8 @@
       "poster_path": "/mpjlDzVjp7oyHUe2LaF9ltKe6f1.jpg",
       "first_air_date": "2013-09-17",
       "year": 2013,
-      "vote_average": 8.2,
-      "vote_count": 4231,
+      "vote_average": 8.206,
+      "vote_count": 4232,
       "actors": "Andy Samberg, Melissa Fumero, Terry Crews",
       "genres": "Comedy, Crime",
       "tv_status": {
@@ -126625,50 +126728,6 @@
       "type": "tv"
     },
     {
-      "id": 46896,
-      "title": "The Originals",
-      "overview": "The Vampire Diaries spin-off that follows the Mikaelsons, a family of millennia-old, power-hungry vampires who want to reclaim the city they built, New Orleans, and dominate all those who have wronged them.",
-      "poster_path": "/keJOhJXGiLL54EW6QocbyvQGquA.jpg",
-      "first_air_date": "2013-10-03",
-      "year": 2013,
-      "vote_average": 8.584,
-      "vote_count": 3688,
-      "actors": "Joseph Morgan, Daniel Gillies, Charles Michael Davis",
-      "genres": "Sci-Fi & Fantasy, Drama, Mystery",
-      "tv_status": {
-        "status": "Ended",
-        "in_production": false,
-        "last_episode": {
-          "season": 5,
-          "episode": 13,
-          "air_date": "2018-08-01",
-          "name": "When the Saints Go Marching In"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Amazon Prime Video",
-            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
-          },
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
-          },
-          {
-            "name": "Amazon Prime Video with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/yrEwyMzEKdqAoGhaWUARtIxByol.png"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 41727,
       "title": "Banshee",
       "overview": "Banshee is an American drama television series set in a small town in Pennsylvania Amish country and features an enigmatic ex-con posing as a murdered sheriff who imposes his own brand of justice while also cooking up plans that serve his own interests.",
@@ -126699,6 +126758,50 @@
           {
             "name": "HBO Max",
             "logo": "https://image.tmdb.org/t/p/original/skypuy7SXuugIQeYg0IglmzoKaS.png"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
+      "id": 46896,
+      "title": "The Originals",
+      "overview": "The Vampire Diaries spin-off that follows the Mikaelsons, a family of millennia-old, power-hungry vampires who want to reclaim the city they built, New Orleans, and dominate all those who have wronged them.",
+      "poster_path": "/keJOhJXGiLL54EW6QocbyvQGquA.jpg",
+      "first_air_date": "2013-10-03",
+      "year": 2013,
+      "vote_average": 8.6,
+      "vote_count": 3689,
+      "actors": "Joseph Morgan, Daniel Gillies, Charles Michael Davis",
+      "genres": "Sci-Fi & Fantasy, Drama, Mystery",
+      "tv_status": {
+        "status": "Ended",
+        "in_production": false,
+        "last_episode": {
+          "season": 5,
+          "episode": 13,
+          "air_date": "2018-08-01",
+          "name": "When the Saints Go Marching In"
+        },
+        "next_episode": null
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Amazon Prime Video",
+            "logo": "https://image.tmdb.org/t/p/original/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+          },
+          {
+            "name": "Peacock Premium",
+            "logo": "https://image.tmdb.org/t/p/original/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+          },
+          {
+            "name": "Amazon Prime Video with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+          },
+          {
+            "name": "Peacock Premium Plus",
+            "logo": "https://image.tmdb.org/t/p/original/yrEwyMzEKdqAoGhaWUARtIxByol.png"
           }
         ]
       },
@@ -135630,7 +135733,7 @@
       "year": 2017,
       "vote_average": 8.63,
       "vote_count": 1538,
-      "actors": "Mariano González, Sebastián Athié, Juan David Penagos",
+      "actors": "Mariano González, Juan David Penagos, Sebastián Athié",
       "genres": "Comedy, Family, Soap",
       "tv_status": {
         "status": "Ended",
@@ -136760,15 +136863,15 @@
         "in_production": true,
         "last_episode": {
           "season": 10,
-          "episode": 3,
-          "air_date": "2026-10-29",
-          "name": "Streets of Fire"
-        },
-        "next_episode": {
-          "season": 10,
           "episode": 4,
           "air_date": "2026-11-05",
           "name": "Imposter Syndrome"
+        },
+        "next_episode": {
+          "season": 10,
+          "episode": 5,
+          "air_date": "2026-11-12",
+          "name": "Who's Your Daddy?"
         }
       },
       "providers": {
@@ -139727,7 +139830,7 @@
       "poster_path": "/nr0r7YTn1l84KLG1iCSO5ofHTvO.jpg",
       "first_air_date": "2019-04-21",
       "year": 2019,
-      "vote_average": 8.85,
+      "vote_average": 8.8,
       "vote_count": 1049,
       "actors": "Elizabeth Tabish",
       "genres": "Action & Adventure, Family, Drama",
@@ -144906,15 +145009,15 @@
         "in_production": true,
         "last_episode": {
           "season": 4,
-          "episode": 10,
-          "air_date": "2026-10-29",
-          "name": "Episode 10"
+          "episode": 12,
+          "air_date": "2026-11-05",
+          "name": "Episode 12"
         },
         "next_episode": {
           "season": 4,
-          "episode": 11,
-          "air_date": "2026-11-05",
-          "name": "Episode 11"
+          "episode": 13,
+          "air_date": "2026-11-12",
+          "name": "Episode 13"
         }
       },
       "providers": {
@@ -166636,6 +166739,47 @@
       "type": "tv"
     },
     {
+      "id": 225385,
+      "title": "Black Doves",
+      "overview": "When a spy posing as a politician's wife learns her lover has been murdered, an old assassin friend joins her on a quest for truth — and vengeance.",
+      "poster_path": "/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
+      "first_air_date": "2024-12-05",
+      "year": 2024,
+      "vote_average": 7.041,
+      "vote_count": 467,
+      "actors": "Keira Knightley, Ben Whishaw, Sarah Lancashire",
+      "genres": "Action & Adventure, Mystery, Crime",
+      "tv_status": {
+        "status": "Returning Series",
+        "in_production": true,
+        "last_episode": {
+          "season": 1,
+          "episode": 6,
+          "air_date": "2024-12-05",
+          "name": "In the Bleak Midwinter"
+        },
+        "next_episode": {
+          "season": 2,
+          "episode": 1,
+          "air_date": "2026-11-05",
+          "name": "Black Door"
+        }
+      },
+      "providers": {
+        "streaming": [
+          {
+            "name": "Netflix",
+            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
+          },
+          {
+            "name": "Netflix Standard with Ads",
+            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+          }
+        ]
+      },
+      "type": "tv"
+    },
+    {
       "id": 196322,
       "title": "Dark Matter",
       "overview": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
@@ -166687,15 +166831,15 @@
         "in_production": true,
         "last_episode": {
           "season": 3,
-          "episode": 4,
-          "air_date": "2026-10-29",
-          "name": "The Devil's Interval and a British Stripper"
-        },
-        "next_episode": {
-          "season": 3,
           "episode": 5,
           "air_date": "2026-11-05",
           "name": "A Snotty Attitude and a Party on a School Night"
+        },
+        "next_episode": {
+          "season": 3,
+          "episode": 6,
+          "air_date": "2026-11-12",
+          "name": "A Ten-Year Reunion and an Outta-the-Box Thinker"
         }
       },
       "providers": {
@@ -166974,7 +167118,7 @@
       "first_air_date": "2024-02-27",
       "year": 2024,
       "vote_average": 8.428,
-      "vote_count": 1969,
+      "vote_count": 1970,
       "actors": "Hiroyuki Sanada, Cosmo Jarvis, Anna Sawai",
       "genres": "Drama, War & Politics",
       "tv_status": {
@@ -167069,42 +167213,6 @@
           {
             "name": "Netflix Standard with Ads",
             "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
-      "id": 222766,
-      "title": "The Day of the Jackal",
-      "overview": "An unrivalled and highly elusive lone assassin, the Jackal, makes his living carrying out hits for the highest fee. But following his latest kill, he meets his match in a tenacious British intelligence officer who starts to track down the Jackal in a thrilling cat-and-mouse chase across Europe, leaving destruction in its wake.",
-      "poster_path": "/tYLecM3WSEjlkKhkGiH5G68Dprm.jpg",
-      "first_air_date": "2024-11-07",
-      "year": 2024,
-      "vote_average": 8.241,
-      "vote_count": 1408,
-      "actors": "Eddie Redmayne, Lashana Lynch, Eleanor Matsuura",
-      "genres": "Drama, Action & Adventure, Mystery",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 1,
-          "episode": 10,
-          "air_date": "2024-12-12",
-          "name": "Episode 10"
-        },
-        "next_episode": null
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Peacock Premium",
-            "logo": "https://image.tmdb.org/t/p/original/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
-          },
-          {
-            "name": "Peacock Premium Plus",
-            "logo": "https://image.tmdb.org/t/p/original/yrEwyMzEKdqAoGhaWUARtIxByol.png"
           }
         ]
       },
@@ -167463,47 +167571,6 @@
       "type": "tv"
     },
     {
-      "id": 225385,
-      "title": "Black Doves",
-      "overview": "When a spy posing as a politician's wife learns her lover has been murdered, an old assassin friend joins her on a quest for truth — and vengeance.",
-      "poster_path": "/srlsyEfIBz2MNWBndVc3opOaNGS.jpg",
-      "first_air_date": "2024-12-05",
-      "year": 2024,
-      "vote_average": 7.0,
-      "vote_count": 466,
-      "actors": "Keira Knightley, Ben Whishaw, Sarah Lancashire",
-      "genres": "Action & Adventure, Mystery, Crime",
-      "tv_status": {
-        "status": "Returning Series",
-        "in_production": true,
-        "last_episode": {
-          "season": 1,
-          "episode": 6,
-          "air_date": "2024-12-05",
-          "name": "In the Bleak Midwinter"
-        },
-        "next_episode": {
-          "season": 2,
-          "episode": 1,
-          "air_date": "2026-11-05",
-          "name": "Black Door"
-        }
-      },
-      "providers": {
-        "streaming": [
-          {
-            "name": "Netflix",
-            "logo": "https://image.tmdb.org/t/p/original/rK1KljqmbvO9HQa1PBFLILWah72.png"
-          },
-          {
-            "name": "Netflix Standard with Ads",
-            "logo": "https://image.tmdb.org/t/p/original/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
-          }
-        ]
-      },
-      "type": "tv"
-    },
-    {
       "id": 108545,
       "title": "3 Body Problem",
       "overview": "Across continents and decades, five brilliant friends make earth-shattering discoveries as the laws of science unravel and an existential threat emerges.",
@@ -167587,15 +167654,15 @@
         "in_production": true,
         "last_episode": {
           "season": 4,
-          "episode": 96,
-          "air_date": "2026-11-04",
-          "name": "Episode 96"
-        },
-        "next_episode": {
-          "season": 4,
           "episode": 97,
           "air_date": "2026-11-05",
           "name": "Episode 97"
+        },
+        "next_episode": {
+          "season": 4,
+          "episode": 98,
+          "air_date": "2026-11-06",
+          "name": "Episode 98"
         }
       },
       "providers": {
@@ -171258,8 +171325,8 @@
       "poster_path": "/6aM5Lyp3zUtPyc0WVofES6UrV06.jpg",
       "first_air_date": "2024-04-30",
       "year": 2024,
-      "vote_average": 6.5,
-      "vote_count": 125,
+      "vote_average": 6.472,
+      "vote_count": 126,
       "actors": "Elisabeth Moss, Yumna Marwan, Dali Benssalah",
       "genres": "Drama, Crime",
       "tv_status": {
@@ -172560,16 +172627,11 @@
         "in_production": true,
         "last_episode": {
           "season": 2,
-          "episode": 4,
-          "air_date": "2026-11-02",
-          "name": "Episode 4"
+          "episode": 8,
+          "air_date": "2026-10-25",
+          "name": "Episode 8"
         },
-        "next_episode": {
-          "season": 2,
-          "episode": 5,
-          "air_date": "2026-11-08",
-          "name": "Episode 5"
-        }
+        "next_episode": null
       },
       "providers": {
         "streaming": [
@@ -173197,15 +173259,15 @@
         "in_production": true,
         "last_episode": {
           "season": 2,
-          "episode": 3,
-          "air_date": "2026-10-29",
-          "name": "Let There Be Darkness"
-        },
-        "next_episode": {
-          "season": 2,
           "episode": 4,
           "air_date": "2026-11-05",
           "name": "In Cold Blood"
+        },
+        "next_episode": {
+          "season": 2,
+          "episode": 5,
+          "air_date": "2026-11-12",
+          "name": "Ding-Dong-Ditch"
         }
       },
       "providers": {
@@ -179328,8 +179390,8 @@
       "poster_path": "/WGyAyBPncfuu8MZhLY9RtfZPM0.jpg",
       "first_air_date": "2026-10-13",
       "year": 2026,
-      "vote_average": 8.642,
-      "vote_count": 265,
+      "vote_average": 8.644,
+      "vote_count": 267,
       "actors": "Paul Bettany, James Spader, Ruaridh Mollica",
       "genres": "Sci-Fi & Fantasy, Drama",
       "tv_status": {
@@ -179365,8 +179427,8 @@
       "poster_path": "/wUvzMC7EToPgci31ZZRCeqCmQ6d.jpg",
       "first_air_date": "2026-10-30",
       "year": 2026,
-      "vote_average": 7.646,
-      "vote_count": 48,
+      "vote_average": 7.676,
+      "vote_count": 51,
       "actors": "Lee Jae-wook, Go Min-si, Kim Min-ha",
       "genres": "Mystery",
       "tv_status": {
@@ -179401,8 +179463,8 @@
       "poster_path": "/nyvXVcPnHEwVmqCdzjjCsu1jqhm.jpg",
       "first_air_date": "2026-10-29",
       "year": 2026,
-      "vote_average": 7.706,
-      "vote_count": 34,
+      "vote_average": 7.657,
+      "vote_count": 35,
       "actors": "Liev Schreiber, Zazie Beetz, Stephen Graham",
       "genres": "Crime, Drama, Mystery",
       "tv_status": {
@@ -179410,15 +179472,15 @@
         "in_production": true,
         "last_episode": {
           "season": 1,
-          "episode": 2,
-          "air_date": "2026-10-29",
-          "name": "For Such a Time as This"
-        },
-        "next_episode": {
-          "season": 1,
           "episode": 3,
           "air_date": "2026-11-05",
           "name": "Eyes on the Inside"
+        },
+        "next_episode": {
+          "season": 1,
+          "episode": 4,
+          "air_date": "2026-11-12",
+          "name": "The Courier"
         }
       },
       "providers": {
@@ -179539,7 +179601,7 @@
       "poster_path": "/kSAXIAovLC4z7Wp2Hy8oqLmpkox.jpg",
       "first_air_date": "2026-10-19",
       "year": 2026,
-      "vote_average": 9.038,
+      "vote_average": 9.0,
       "vote_count": 52,
       "actors": "Yim Si-wan, Seorina, Kim Jung-hyun",
       "genres": "Comedy, Drama, Crime, Action & Adventure",
@@ -179580,7 +179642,7 @@
       "poster_path": "/6mUMquPQBFJGqTACS3Azkwwrx8d.jpg",
       "first_air_date": "2026-10-07",
       "year": 2026,
-      "vote_average": 8.274,
+      "vote_average": 8.3,
       "vote_count": 559,
       "actors": "Summer H. Howell, Samantha Sloyan, Siena Agudong",
       "genres": "Mystery, Drama, Sci-Fi & Fantasy",
@@ -179956,7 +180018,7 @@
       "poster_path": "/ecRrKGXfflZmDZBD4irdkybClT.jpg",
       "first_air_date": "2026-10-09",
       "year": 2026,
-      "vote_average": 8.766,
+      "vote_average": 8.8,
       "vote_count": 62,
       "actors": "Kim Young-kwang, Chae Soo-bin, Cha Woo-min",
       "genres": "Sci-Fi & Fantasy, Comedy, Drama",
@@ -181493,7 +181555,7 @@
       "poster_path": "/6yy9nQlFt2l6UVWzrfhszFCaZ5C.jpg",
       "first_air_date": "2026-01-27",
       "year": 2026,
-      "vote_average": 7.101,
+      "vote_average": 7.1,
       "vote_count": 400,
       "actors": "Yahya Abdul-Mateen II, Arian Moayed, X Mayo",
       "genres": "Comedy, Drama",
@@ -181588,8 +181650,8 @@
       "poster_path": "/wXfTsO7pqAqo94f0AHaas9rjBNh.jpg",
       "first_air_date": "2026-01-22",
       "year": 2026,
-      "vote_average": 7.8,
-      "vote_count": 95,
+      "vote_average": 7.818,
+      "vote_count": 96,
       "actors": "Tom Sharp, Rose Reid",
       "genres": "Sci-Fi & Fantasy, Action & Adventure, Drama",
       "tv_status": {
@@ -182673,8 +182735,8 @@
       "poster_path": "/gTP1MKGz5kIrXCpb3HTgzVyIW6l.jpg",
       "first_air_date": "2026-06-22",
       "year": 2026,
-      "vote_average": 8.866,
-      "vote_count": 86,
+      "vote_average": 8.833,
+      "vote_count": 87,
       "actors": "Seo In-guk, Park Ji-hyun, Kang Mi-na",
       "genres": "Comedy, Drama",
       "tv_status": {
@@ -183741,8 +183803,8 @@
       "poster_path": "/mgXTCQ86lV3oudr2KXXO5zGEqIb.jpg",
       "first_air_date": "2026-04-09",
       "year": 2026,
-      "vote_average": 6.641,
-      "vote_count": 64,
+      "vote_average": 6.677,
+      "vote_count": 65,
       "actors": "Dan Levy, Laurie Metcalf, Taylor Ortega",
       "genres": "Comedy, Crime",
       "tv_status": {
@@ -183817,8 +183879,8 @@
       "poster_path": "/yb682O0KCZlS5qRydxOytO5A6co.jpg",
       "first_air_date": "2026-04-29",
       "year": 2026,
-      "vote_average": 8.4,
-      "vote_count": 87,
+      "vote_average": 8.455,
+      "vote_count": 88,
       "actors": "Alfonso Herrera, Dolores Fonzi, Nicole Wallace",
       "genres": "Drama",
       "tv_status": {
@@ -184822,8 +184884,8 @@
       "poster_path": "/wcgjZ7koqOYDcKUn6DmnNolqmUS.jpg",
       "first_air_date": "2026-07-17",
       "year": 2026,
-      "vote_average": 8.2,
-      "vote_count": 26,
+      "vote_average": 8.074,
+      "vote_count": 27,
       "actors": "Alícia Falcó, Pablo Álvarez, Georgina Amorós",
       "genres": "Drama",
       "tv_status": {
@@ -186332,13 +186394,13 @@
     }
   ],
   "metadata": {
-    "generated_at": "2026-11-05T23:26:47.298173",
+    "generated_at": "2026-11-06T05:00:10.115095",
     "start_date": "1990-01-01",
-    "end_date": "2026-11-05",
+    "end_date": "2026-11-06",
     "start_year": 1990,
     "start_month": 1,
-    "total_movies": 4565,
-    "total_tv": 1796,
-    "total_items": 6361
+    "total_movies": 4568,
+    "total_tv": 1795,
+    "total_items": 6363
   }
 }
