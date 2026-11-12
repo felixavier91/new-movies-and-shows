@@ -857,7 +857,7 @@
             
         </div>
 
-        <div style="flex: 1; overflow-y: auto;">
+        <div style="flex: 1; min-width: 0;">
             <div id="cardsContainer" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px; padding: 0;">
                 <!-- Cards will be populated here -->
             </div>
@@ -1447,8 +1447,10 @@
                             color: white;
                             padding: 20px;
                             opacity: 0;
-                            transition: opacity 0.3s ease;
-                            overflow-y: auto;
+                            visibility: hidden;
+                            transition: opacity 0.3s ease, visibility 0.3s;
+                            overflow-y: hidden;
+                            overscroll-behavior: contain;
                             display: flex;
                             flex-direction: column;
                             justify-content: flex-start;
@@ -1484,16 +1486,22 @@
                     if (isOverlayVisible) {
                         overlay.style.opacity = '0';
                         overlay.style.pointerEvents = 'none';
+                        overlay.style.visibility = 'hidden';
+                        overlay.style.overflowY = 'hidden';
                         isOverlayVisible = false;
                     } else {
                         // Close any other open overlays first
                         document.querySelectorAll('.card-overlay').forEach(o => {
                             o.style.opacity = '0';
                             o.style.pointerEvents = 'none';
+                            o.style.visibility = 'hidden';
+                            o.style.overflowY = 'hidden';
                         });
                         
                         overlay.style.opacity = '1';
                         overlay.style.pointerEvents = 'auto';
+                        overlay.style.visibility = 'visible';
+                        overlay.style.overflowY = 'auto';
                         isOverlayVisible = true;
                     }
                 });
@@ -1505,6 +1513,8 @@
                     document.querySelectorAll('.card-overlay').forEach(overlay => {
                         overlay.style.opacity = '0';
                         overlay.style.pointerEvents = 'none';
+                        overlay.style.visibility = 'hidden';
+                        overlay.style.overflowY = 'hidden';
                     });
                 }
             });
