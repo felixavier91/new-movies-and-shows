@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plot Search · New Movies & Shows</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000000;
+            color: #e6e6e6;
+            min-height: 100vh;
+        }
+
+        .top {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background: #000000;
+            border-bottom: 1px solid #333;
+            padding: 12px 16px;
+        }
+
+        .top-inner, .list {
+            max-width: 860px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .back {
+            color: #999;
+            text-decoration: none;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+        .back:hover { color: #ffffff; }
+
+        #q {
+            flex: 1;
+            min-width: 0;
+            padding: 12px 14px;
+            border: 2px solid #555;
+            background: #2a2a2a;
+            color: #ffffff;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        #q:focus { outline: none; border-color: #999; }
+
+        .sub {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 14px;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .types { display: flex; gap: 6px; }
+        .types button {
+            padding: 6px 12px;
+            background: #1a1a1a;
+            color: #bbb;
+            border: 1px solid #555;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .types button.on {
+            background: #ffffff;
+            color: #000000;
+            border-color: #ffffff;
+            font-weight: bold;
+        }
+
+        #count {
+            color: #999;
+            font-size: 12px;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .list { padding: 6px 16px 60px; }
+
+        .item {
+            padding: 14px 0;
+            border-bottom: 1px solid #222;
+        }
+
+        .item h2 {
+            font-size: 16px;
+            font-weight: 600;
+            color: #ffffff;
+            line-height: 1.3;
+        }
+
+        .item h2 span {
+            font-weight: normal;
+            font-size: 13px;
+            color: #888;
+            margin-left: 6px;
+            white-space: nowrap;
+        }
+
+        .item p {
+            margin-top: 5px;
+            font-size: 15px;
+            line-height: 1.55;
+            color: #cfcfcf;
+            overflow-wrap: anywhere;
+        }
+
+        mark {
+            background: #ffd54a;
+            color: #000000;
+            border-radius: 2px;
+            padding: 0 1px;
+        }
+
+        .msg {
+            padding: 40px 0;
+            text-align: center;
+            color: #888;
+            font-size: 15px;
+        }
+
+        #more {
+            display: none;
+            width: 100%;
+            margin-top: 18px;
+            padding: 12px;
+            background: #1a1a1a;
+            color: #ffffff;
+            border: 1px solid #555;
+            border-radius: 6px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top-inner">
+            <div class="row">
+                <a class="back" href="index.html">← Posters</a>
+                <input type="search" id="q" placeholder="Search plots… e.g. heist, time travel, &quot;small town&quot;" autocomplete="off" autofocus>
+            </div>
+            <div class="sub">
+                <div class="types" id="types">
+                    <button data-type="all" class="on">All</button>
+                    <button data-type="movie">Movies</button>
+                    <button data-type="tv">Shows</button>
+                </div>
+                <span id="count">Loading…</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div id="results"></div>
+        <button id="more">Show more</button>
+    </div>
+
+    <script>
+        const PAGE = 100;
+        let items = [];
+        let matches = [];
+        let shown = 0;
+        let terms = [];
+        let type = 'all';
+
+        const qEl = document.getElementById('q');
+        const resultsEl = document.getElementById('results');
+        const countEl = document.getElementById('count');
+        const moreEl = document.getElementById('more');
+
+        function esc(s) {
+            return s.replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
+
+        // Words must all appear in the plot; "quoted text" is matched as a phrase.
+        function parseTerms(q) {
+            const out = [];
+            const re = /"([^"]+)"|(\S+)/g;
+            let m;
+            while ((m = re.exec(q.toLowerCase())) !== null) {
+                const t = (m[1] || m[2]).replace(/"/g, '').trim();
+                if (t) out.push(t);
+            }
+            return out;
+        }
+
+        function highlight(text) {
+            if (!terms.length) return esc(text);
+            const pattern = terms
+                .slice()
+                .sort((a, b) => b.length - a.length)
+                .map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+                .join('|');
+            const re = new RegExp(pattern, 'gi');
+            let out = '';
+            let last = 0;
+            let m;
+            while ((m = re.exec(text)) !== null) {
+                if (m[0].length === 0) { re.lastIndex++; continue; }
+                out += esc(text.slice(last, m.index)) + '<mark>' + esc(m[0]) + '</mark>';
+                last = m.index + m[0].length;
+            }
+            return out + esc(text.slice(last));
+        }
+
+        function renderMore() {
+            const slice = matches.slice(shown, shown + PAGE);
+            const html = slice.map(it =>
+                '<div class="item"><h2>' + esc(it.title) +
+                '<span>' + (it.year || '') + ' · ' + (it.type === 'tv' ? 'Show' : 'Movie') + '</span></h2>' +
+                '<p>' + highlight(it.plot) + '</p></div>'
+            ).join('');
+            resultsEl.insertAdjacentHTML('beforeend', html);
+            shown += slice.length;
+            moreEl.style.display = shown < matches.length ? 'block' : 'none';
+        }
+
+        function update() {
+            terms = parseTerms(qEl.value);
+            matches = items.filter(it =>
+                (type === 'all' || it.type === type) &&
+                terms.every(t => it.low.includes(t))
+            );
+            resultsEl.innerHTML = '';
+            shown = 0;
+            window.scrollTo(0, 0);
+
+            const total = type === 'all' ? items.length : items.filter(it => it.type === type).length;
+            countEl.textContent = terms.length
+                ? matches.length.toLocaleString() + ' of ' + total.toLocaleString() + ' plots match'
+                : total.toLocaleString() + ' plots';
+
+            if (!matches.length) {
+                resultsEl.innerHTML = '<div class="msg">No plots mention that. Try fewer or different words.</div>';
+                moreEl.style.display = 'none';
+                return;
+            }
+            renderMore();
+        }
+
+        let timer = null;
+        qEl.addEventListener('input', () => {
+            clearTimeout(timer);
+            timer = setTimeout(update, 120);
+        });
+
+        document.getElementById('types').addEventListener('click', e => {
+            const btn = e.target.closest('button');
+            if (!btn) return;
+            type = btn.dataset.type;
+            document.querySelectorAll('#types button').forEach(b => b.classList.toggle('on', b === btn));
+            update();
+        });
+
+        moreEl.addEventListener('click', renderMore);
+
+        // Load the next batch automatically when the reader nears the bottom
+        window.addEventListener('scroll', () => {
+            if (shown < matches.length &&
+                window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) {
+                renderMore();
+            }
+        });
+
+        async function load() {
+            try {
+                const response = await fetch('data.json');
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                const data = await response.json();
+                const movies = (data.movies || []).map(m => ({ ...m, type: 'movie', date: m.release_date }));
+                const tv = (data.tv_shows || data.tv || []).map(t => ({ ...t, type: 'tv', date: t.first_air_date }));
+                items = [...movies, ...tv]
+                    .filter(it => (it.overview || '').trim())
+                    .map(it => ({
+                        title: it.title || 'Untitled',
+                        year: it.year || (it.date || '').slice(0, 4),
+                        type: it.type,
+                        date: it.date || '',
+                        plot: it.overview.trim(),
+                        low: it.overview.toLowerCase()
+                    }))
+                    .sort((a, b) => b.date.localeCompare(a.date));
+                update();
+            } catch (error) {
+                countEl.textContent = '';
+                resultsEl.innerHTML = '<div class="msg">Could not load data.json (' + esc(String(error.message)) + ').</div>';
+            }
+        }
+
+        // plots.html?q=heist opens with that search already typed in
+        qEl.value = new URLSearchParams(location.search).get('q') || '';
+
+        load();
+    </script>
+</body>
+</html>
