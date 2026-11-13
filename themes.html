@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themes · New Movies & Shows</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #000000;
+            color: #e6e6e6;
+            min-height: 100vh;
+        }
+        .top {
+            position: sticky; top: 0; z-index: 10;
+            background: #000000;
+            border-bottom: 1px solid #333;
+            padding: 12px 16px;
+        }
+        .top-inner, .list { max-width: 860px; margin: 0 auto; }
+        .row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+        .back { color: #999; text-decoration: none; font-size: 14px; white-space: nowrap; }
+        .back:hover { color: #fff; }
+        .tabs, .types { display: flex; gap: 6px; flex-wrap: wrap; }
+        button { font-family: inherit; }
+        .tabs button, .types button, .act button, .chip, #more {
+            padding: 7px 12px;
+            background: #1a1a1a;
+            color: #bbb;
+            border: 1px solid #555;
+            border-radius: 5px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        .tabs button { font-size: 15px; padding: 9px 14px; }
+        .tabs button.on, .types button.on {
+            background: #fff; color: #000; border-color: #fff; font-weight: bold;
+        }
+        .sub {
+            display: flex; flex-wrap: wrap; gap: 8px 14px;
+            align-items: center; justify-content: space-between;
+            margin-top: 10px;
+        }
+        #count { color: #999; font-size: 12px; }
+        .list { padding: 6px 16px 60px; }
+        h1 { font-size: 20px; color: #fff; margin: 16px 0 4px; line-height: 1.3; }
+        .hint { color: #999; font-size: 14px; line-height: 1.5; margin: 6px 0 12px; }
+
+        .theme {
+            display: block; width: 100%; text-align: left;
+            padding: 13px 0;
+            background: none; border: none; border-bottom: 1px solid #222;
+            color: inherit; cursor: pointer;
+        }
+        .theme:hover b { text-decoration: underline; }
+        .theme b { font-size: 16px; color: #fff; font-weight: 600; }
+        .theme .n { color: #888; font-size: 13px; margin-left: 8px; white-space: nowrap; }
+        .theme .liked { color: #7ddc8a; font-size: 13px; margin-left: 8px; white-space: nowrap; }
+        .theme .ex { display: block; margin-top: 4px; color: #aaa; font-size: 13.5px; line-height: 1.45; }
+
+        .item { display: flex; gap: 12px; padding: 14px 0; border-bottom: 1px solid #222; }
+        .item img, .item .noimg {
+            width: 62px; height: 93px; flex: none;
+            border-radius: 4px; background: #1a1a1a; object-fit: cover;
+        }
+        .item .body { flex: 1; min-width: 0; }
+        .item h2 { font-size: 16px; font-weight: 600; color: #fff; line-height: 1.3; }
+        .item h2 span { font-weight: normal; font-size: 13px; color: #888; margin-left: 6px; white-space: nowrap; }
+        .item .why { font-size: 12.5px; color: #7ddc8a; margin-top: 3px; }
+        .item .where { font-size: 12.5px; color: #888; margin-top: 3px; }
+        .item p { margin-top: 5px; font-size: 14.5px; line-height: 1.5; color: #cfcfcf; overflow-wrap: anywhere; }
+        .act { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+        .act button.up.on { background: #1f6f33; border-color: #2f9e4a; color: #fff; }
+        .act button.down.on { background: #7a2323; border-color: #b33; color: #fff; }
+
+        #find {
+            width: 100%; padding: 12px 14px;
+            border: 2px solid #555; background: #2a2a2a; color: #fff;
+            border-radius: 6px; font-size: 16px; margin-top: 6px;
+        }
+        #find:focus { outline: none; border-color: #999; }
+        .chips { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
+        .chip.up { border-color: #2f9e4a; color: #cfe; }
+        .chip.down { border-color: #b33; color: #fcc; }
+        .msg { padding: 40px 0; text-align: center; color: #888; font-size: 15px; }
+        #more { display: none; width: 100%; margin-top: 18px; padding: 12px; font-size: 14px; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top-inner">
+            <div class="row">
+                <a class="back" href="index.html">← Posters</a>
+                <div class="tabs">
+                    <button data-go="themes" id="tab-themes">Themes</button>
+                    <button data-go="me" id="tab-me">For me</button>
+                </div>
+            </div>
+            <div class="sub">
+                <div class="types" id="types">
+                    <button data-type="all" class="on">All</button>
+                    <button data-type="movie">Movies</button>
+                    <button data-type="tv">Shows</button>
+                    <button id="good" title="Only titles rated 7 or higher">★ 7+ only</button>
+                </div>
+                <span id="count">Loading…</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="list">
+        <div id="head"></div>
+        <div id="results"></div>
+        <button id="more">Show more</button>
+    </div>
+
+    <script>
+        const PAGE = 60;
+        const IMG = 'https://image.tmdb.org/t/p/w154';
+        let items = [];          // every title that has a plot + theme
+        let byKey = {};
+        let themes = [];         // names
+        let dim = 0, vec = null; // plot fingerprints, one row per title
+        let type = 'all', good = false;
+        let list = [], shown = 0, whyFor = null;
+
+        const headEl = document.getElementById('head');
+        const resultsEl = document.getElementById('results');
+        const countEl = document.getElementById('count');
+        const moreEl = document.getElementById('more');
+
+        // ---- taste: what you marked, kept in this browser only ----
+        let taste = {};
+        try { taste = JSON.parse(localStorage.getItem('taste') || '{}'); } catch (e) {}
+        function saveTaste() { try { localStorage.setItem('taste', JSON.stringify(taste)); } catch (e) {} }
+        const liked = () => items.filter(it => taste[it.key] === 1);
+        const disliked = () => items.filter(it => taste[it.key] === -1);
+
+        function esc(s) {
+            return String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+        }
+        function sim(a, b) {
+            let s = 0; const x = a * dim, y = b * dim;
+            for (let i = 0; i < dim; i++) s += vec[x + i] * vec[y + i];
+            return s;
+        }
+        // Rating that doesn't let a 9.5 with 12 votes beat an 8.3 with 10,000
+        function quality(it) {
+            const v = it.vote_count || 0, m = 200;
+            return (v / (v + m)) * (it.vote_average || 0) + (m / (v + m)) * 6.3;
+        }
+        const pass = it => (type === 'all' || it.type === type) && (!good || (it.vote_average >= 7 && it.vote_count >= 50));
+
+        function itemHtml(it) {
+            const t = taste[it.key] || 0;
+            const prov = (it.providers && it.providers.streaming || []).map(p => p.name)
+                .filter(n => !/channel|with ads/i.test(n)).slice(0, 3).join(', ');
+            const why = whyFor && whyFor[it.key];
+            return '<div class="item" data-key="' + it.key + '">' +
+                (it.poster_path ? '<img loading="lazy" src="' + IMG + it.poster_path + '" alt="">' : '<div class="noimg"></div>') +
+                '<div class="body"><h2>' + esc(it.title) + '<span>' + (it.year || '') + ' · ' +
+                (it.type === 'tv' ? 'Show' : 'Movie') + (it.vote_average ? ' · ★ ' + it.vote_average.toFixed(1) : '') + '</span></h2>' +
+                (why ? '<div class="why">Because you liked ' + esc(why) + '</div>' : '') +
+                (prov ? '<div class="where">On ' + esc(prov) + '</div>' : '') +
+                '<p>' + esc(it.plot) + '</p>' +
+                '<div class="act">' +
+                '<button class="up' + (t === 1 ? ' on' : '') + '" data-rate="1">👍 Liked it</button>' +
+                '<button class="down' + (t === -1 ? ' on' : '') + '" data-rate="-1">👎 Not for me</button>' +
+                '<button data-like="1">More like this</button>' +
+                '<button data-theme="' + it.theme + '">' + esc(themes[it.theme]) + '</button>' +
+                '</div></div></div>';
+        }
+
+        function renderMore() {
+            const slice = list.slice(shown, shown + PAGE);
+            resultsEl.insertAdjacentHTML('beforeend', slice.map(itemHtml).join(''));
+            shown += slice.length;
+            moreEl.style.display = shown < list.length ? 'block' : 'none';
+        }
+        function showList(l, emptyMsg) {
+            list = l; shown = 0; resultsEl.innerHTML = '';
+            if (!l.length) { resultsEl.innerHTML = '<div class="msg">' + emptyMsg + '</div>'; moreEl.style.display = 'none'; return; }
+            renderMore();
+        }
+
+        // ---- views ----
+        function viewThemes() {
+            whyFor = null;
+            const likes = liked();
+            const rows = themes.map((name, i) => {
+                const all = items.filter(it => it.theme === i && pass(it));
+                return {
+                    i, name, n: all.length,
+                    liked: likes.filter(it => it.theme === i).length,
+                    ex: all.slice().sort((a, b) => (b.vote_count || 0) - (a.vote_count || 0)).slice(0, 5).map(it => it.title)
+                };
+            }).filter(r => r.n).sort((a, b) => b.liked - a.liked || b.n - a.n);
+            headEl.innerHTML = '<h1>' + rows.length + ' themes</h1><p class="hint">Every plot was read and grouped by what the story is about. ' +
+                'Pick a theme that sounds like your kind of thing' + (likes.length ? '; themes with your 👍 come first.' : '.') + '</p>';
+            list = []; moreEl.style.display = 'none';
+            resultsEl.innerHTML = rows.map(r =>
+                '<button class="theme" data-theme="' + r.i + '"><b>' + esc(r.name) + '</b><span class="n">' + r.n + ' titles</span>' +
+                (r.liked ? '<span class="liked">👍 ' + r.liked + '</span>' : '') +
+                '<span class="ex">' + esc(r.ex.join(' · ')) + '</span></button>').join('');
+            countEl.textContent = items.filter(pass).length.toLocaleString() + ' titles';
+        }
+
+        function viewTheme(i) {
+            whyFor = null;
+            const l = items.filter(it => it.theme === i && pass(it)).sort((a, b) => quality(b) - quality(a));
+            headEl.innerHTML = '<h1>' + esc(themes[i] || '') + '</h1><p class="hint">Best rated first. 👍 the ones you already love and the "For me" tab gets smarter.</p>';
+            countEl.textContent = l.length + ' titles';
+            showList(l, 'Nothing here with these filters.');
+        }
+
+        function viewLike(key) {
+            whyFor = null;
+            const src = byKey[key];
+            if (!src) return viewThemes();
+            const l = items.filter(it => it !== src && pass(it))
+                .map(it => [sim(src.row, it.row), it]).sort((a, b) => b[0] - a[0]).slice(0, 60).map(x => x[1]);
+            headEl.innerHTML = '<h1>Plots closest to ' + esc(src.title) + '</h1><p class="hint">' + esc(src.plot) + '</p>';
+            countEl.textContent = l.length + ' closest plots';
+            showList(l, 'Nothing here with these filters.');
+        }
+
+        function recommend() {
+            const likes = liked(), nos = disliked();
+            whyFor = {};
+            return items.filter(it => !taste[it.key] && pass(it)).map(it => {
+                // score = how close this plot is to the 3 liked plots nearest to it, minus anything close to a 👎
+                const s = likes.map(l => [sim(l.row, it.row), l]).sort((a, b) => b[0] - a[0]);
+                const top = s.slice(0, 3);
+                let score = top.reduce((a, x) => a + x[0], 0) / top.length;
+                let worst = 0;
+                for (const n of nos) worst = Math.max(worst, sim(n.row, it.row));
+                score -= 0.5 * worst;
+                score += 0.02 * (quality(it) - 6.3);
+                whyFor[it.key] = s[0][1].title;
+                return [score, it];
+            }).sort((a, b) => b[0] - a[0]).slice(0, 150).map(x => x[1]);
+        }
+
+        function viewMe(keepSearch) {
+            const likes = liked(), nos = disliked();
+            if (!keepSearch) {
+                headEl.innerHTML = '<h1>For me</h1><p class="hint">Tell it a few titles you already love. It then ranks everything else by how close the plot is to the ones you liked ' +
+                    '(and away from the ones you didn\'t). 5 to 10 likes already works well.</p>' +
+                    '<input type="search" id="find" placeholder="Type a title you loved…" autocomplete="off">' +
+                    '<div class="chips" id="chips"></div>';
+                document.getElementById('find').addEventListener('input', () => viewMe(true));
+            }
+            document.getElementById('chips').innerHTML =
+                likes.map(it => '<button class="chip up" data-unrate="' + it.key + '">👍 ' + esc(it.title) + ' ✕</button>').join('') +
+                nos.map(it => '<button class="chip down" data-unrate="' + it.key + '">👎 ' + esc(it.title) + ' ✕</button>').join('');
+            const q = document.getElementById('find').value.trim().toLowerCase();
+            if (q) {
+                whyFor = null;
+                const l = items.filter(it => it.low.includes(q)).sort((a, b) => (b.vote_count || 0) - (a.vote_count || 0)).slice(0, 40);
+                countEl.textContent = l.length + ' titles found';
+                return showList(l, 'No title like that in the list.');
+            }
+            if (!likes.length) {
+                whyFor = null;
+                countEl.textContent = 'No likes yet';
+                list = []; moreEl.style.display = 'none';
+                resultsEl.innerHTML = '<div class="msg">Search a title above and tap 👍, or browse Themes and 👍 what you know.</div>';
+                return;
+            }
+            const l = recommend();
+            countEl.textContent = 'Top ' + l.length + ' from ' + likes.length + ' 👍' + (nos.length ? ' and ' + nos.length + ' 👎' : '');
+            showList(l, 'Nothing left with these filters.');
+        }
+
+        function route() {
+            const h = decodeURIComponent(location.hash.slice(1));
+            document.getElementById('tab-themes').classList.toggle('on', h !== 'me');
+            document.getElementById('tab-me').classList.toggle('on', h === 'me');
+            document.getElementById('tab-me').textContent = 'For me' + (liked().length ? ' (' + liked().length + ' 👍)' : '');
+            window.scrollTo(0, 0);
+            if (h === 'me') viewMe();
+            else if (h.startsWith('t=')) viewTheme(+h.slice(2));
+            else if (h.startsWith('like=')) viewLike(h.slice(5));
+            else viewThemes();
+        }
+        const go = h => { if (location.hash.slice(1) === h) route(); else location.hash = h; };
+        window.addEventListener('hashchange', route);
+
+        // ---- clicks ----
+        document.addEventListener('click', e => {
+            const b = e.target.closest('button');
+            if (!b) return;
+            if (b.dataset.go) return go(b.dataset.go);
+            if (b.dataset.theme !== undefined) return go('t=' + b.dataset.theme);
+            if (b.dataset.unrate) { delete taste[b.dataset.unrate]; saveTaste(); return route(); }
+            if (b.id === 'good') { good = !good; b.classList.toggle('on', good); return route(); }
+            if (b.dataset.type) {
+                type = b.dataset.type;
+                document.querySelectorAll('#types button[data-type]').forEach(x => x.classList.toggle('on', x === b));
+                return route();
+            }
+            if (b.id === 'more') return renderMore();
+            const card = b.closest('.item');
+            if (!card) return;
+            const key = card.dataset.key;
+            if (b.dataset.like) return go('like=' + key);
+            if (b.dataset.rate) {
+                const r = +b.dataset.rate;
+                if (taste[key] === r) delete taste[key]; else taste[key] = r;
+                saveTaste();
+                card.querySelector('.up').classList.toggle('on', taste[key] === 1);
+                card.querySelector('.down').classList.toggle('on', taste[key] === -1);
+                document.getElementById('tab-me').textContent = 'For me' + (liked().length ? ' (' + liked().length + ' 👍)' : '');
+                const chips = document.getElementById('chips');
+                if (chips) {   // on the For-me tab: clear the search and re-rank right away
+                    const f = document.getElementById('find');
+                    if (f.value) { f.value = ''; }
+                    viewMe(true);
+                }
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            if (shown < list.length && window.innerHeight + window.scrollY >= document.body.offsetHeight - 600) renderMore();
+        });
+
+        async function load() {
+            try {
+                const [dr, tr] = await Promise.all([fetch('data.json'), fetch('themes.json')]);
+                if (!dr.ok || !tr.ok) throw new Error('HTTP ' + dr.status + '/' + tr.status);
+                const data = await dr.json(), th = await tr.json();
+                themes = th.themes; dim = th.dim;
+                const raw = atob(th.vec), n = th.ids.length;
+                vec = new Float32Array(n * dim);
+                for (let r = 0; r < n; r++) {
+                    let norm = 0;
+                    for (let i = 0; i < dim; i++) {
+                        let v = raw.charCodeAt(r * dim + i); if (v > 127) v -= 256;
+                        vec[r * dim + i] = v; norm += v * v;
+                    }
+                    norm = Math.sqrt(norm) || 1;
+                    for (let i = 0; i < dim; i++) vec[r * dim + i] /= norm;
+                }
+                const rowOf = {};
+                th.ids.forEach((k, r) => { rowOf[k] = r; });
+                const all = [
+                    ...(data.movies || []).map(m => ({ ...m, type: 'movie' })),
+                    ...(data.tv_shows || []).map(t => ({ ...t, type: 'tv' }))
+                ];
+                items = [];
+                for (const it of all) {
+                    const key = it.type + ':' + it.id, row = rowOf[key];
+                    if (row === undefined || !(it.overview || '').trim()) continue;   // newer than the last theme build
+                    it.key = key; it.row = row; it.theme = th.theme[row];
+                    it.plot = it.overview.trim(); it.title = it.title || 'Untitled'; it.low = it.title.toLowerCase();
+                    items.push(it); byKey[key] = it;
+                }
+                route();
+            } catch (error) {
+                countEl.textContent = '';
+                resultsEl.innerHTML = '<div class="msg">Could not load the data (' + esc(String(error.message)) + ').</div>';
+            }
+        }
+        load();
+    </script>
+</body>
+</html>
