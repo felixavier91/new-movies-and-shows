@@ -1,3 +1,4 @@
+"""One-off exploration tool used for the first grouping (prints keywords per cluster). The live process is refresh_themes.py."""
 import json, sys, numpy as np
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import CountVectorizer
